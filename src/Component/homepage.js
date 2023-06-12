@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { ReactComponent as Globe } from '../images/about-globe.svg'
+import { Link } from 'react-router-dom'
 
 const Homepage = () => {
 
@@ -117,7 +118,8 @@ const Homepage = () => {
 
              </p>
             <a href="#" className="common-btn mt-4 d-inline-block">
-              Contact us
+                 
+                 <Link to="/contact" className="nav-link ">Contact Us</Link>
             </a>
           </div>
         </div>
@@ -1027,9 +1029,12 @@ const Homepage = () => {
               We are the leading Software Development Company in India providing Digital solutions for businesses
 Our team of experts is dedicated to delivering high-quality software services that meet the specific needs of each client. From web and mobile app development to custom software solutions, we offer a comprehensive range of services that cater to a variety of industries.
             </p>
-            <a href="#" className="common-btn mt-4 d-inline-block">
+            
+              
+              <Link to="/about-us" className="common-btn mt-4 d-inline-block">
               Read More
-            </a>
+                </Link>
+            
           </div>
 
         </div>
@@ -1063,7 +1068,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                 Deliver personalized experiences for the entire customer journey.
               </p>
               <div className="product-read-more-wrapper">
-                <a href="#" className="product-read-more">
+                <Link to="/digital-experience-platform"  className="product-read-more">
                   Click to Read More<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1072,7 +1077,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                   </svg>
 
                   <div className="product-read-more-border"></div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1090,7 +1095,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                 To ensure integration with existing work practices
               </p>
               <div className="product-read-more-wrapper">
-                <a href="#" className="product-read-more">
+              <Link to="/integrated-estate-managment-system" className="product-read-more">
                   Click to Read More<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1099,7 +1104,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                   </svg>
 
                   <div className="product-read-more-border"></div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1118,7 +1123,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                 improve great customer Service
               </p>
               <div className="product-read-more-wrapper">
-                <a href="#" className="product-read-more">
+              <Link to="/intelligent-ticketing-managmnet" className="product-read-more">
                   Click to Read More<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1127,7 +1132,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                   </svg>
 
                   <div className="product-read-more-border"></div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1146,7 +1151,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                 physical events right now
               </p>
               <div className="product-read-more-wrapper">
-                <a href="#" className="product-read-more">
+              <Link to="/virtual-event-managment" className="product-read-more">
                   Click to Read More<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1155,7 +1160,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                   </svg>
 
                   <div className="product-read-more-border"></div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1183,6 +1188,10 @@ Our team of experts is dedicated to delivering high-quality software services th
                     We create custom applications at pace of business need. Here is why GIKS Rapid application
                     development methodology is the right fit to create enterprise-grade custom applications
                   </p>
+                  <Link to="/application-development" className="common-btn mt-4 d-inline-block">
+                    Read More
+                   </Link>
+                  
                 </div>
                 <div className="col-lg-8">
                   <div className="slider-wrapper">
@@ -1213,6 +1222,9 @@ Our team of experts is dedicated to delivering high-quality software services th
                   <p className="common-para slider-content">
                     We are providing Innovative Solutions for Interconnected IoT devices. Helping organizations grow by providing real-time insights into their operations, optimizing their processes, reducing costs, improving Digital Customer Experience, and creating new revenue streams through innovative products and services.
                   </p>
+                  <Link to="/internet-of-things" className="common-btn mt-4 d-inline-block">
+                    Read More
+                   </Link>
                 </div>
                 <div className="col-lg-8">
                   <div className="slider-wrapper">
@@ -1236,12 +1248,14 @@ Our team of experts is dedicated to delivering high-quality software services th
               <div className="row">
                 <div className="col-lg-4 slider-left">
                   <h2 className="common-heading">
-                    Application<br/>
-                    Development
+                  IT Security Managment
                   </h2>
                   <p className="common-para slider-content">
                     To help businesses of all sizes improve their operations and reach their goals. Our team of experienced developers can create custom applications that meet your specific needs, whether you need a new software solution for your internal operations or a mobile app to engage with your customers.
                   </p>
+                  <Link to="/it-security-managment" className="common-btn mt-4 d-inline-block">
+                    Read More
+                   </Link>
                 </div>
                 <div className="col-lg-8">
                   <div className="slider-wrapper">

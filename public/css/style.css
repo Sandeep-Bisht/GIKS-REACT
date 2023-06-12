@@ -818,7 +818,7 @@ border: 2px solid #0D99FF;
 .home-slider .common-heading{
     position: relative;
     z-index: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-top: 50px;
 }
  #counter .counterone{
@@ -940,7 +940,7 @@ border: 2px solid #0D99FF;
     position: relative;
     z-index: 2;
 }
-.slider-left .common-heading,.slider-left .common-para{
+.slider-left .common-heading,.slider-left .common-para,.slider-left .common-btn{
     position: relative;
     left: 140px;
 }

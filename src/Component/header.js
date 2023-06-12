@@ -358,14 +358,13 @@ const Header = () => {
 
               </ul>
             </li>
-            <li className="nav-item">
-            <Link to="/contact" className="nav-link">Contact</Link>
-            </li>
+          
             <li className="nav-item">
             <Link to="/blog" className="nav-link">Blogs</Link>
             </li>
             <li className="nav-item">
-              <a className="get-in-touch nav-link" href="#">Get in Touch</a>
+              
+              <Link to="/contact" className="nav-link get-in-touch">Contact Us</Link>
             </li>
 
           </ul>
