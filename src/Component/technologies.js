@@ -10,7 +10,7 @@ const Technologies = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Our Technologies</h1>
                         <p className="common-para">
-                          Accelerate change across your enterprise to create lasting value
+                        Accelerate change across your enterprise to create lasting value
                         </p>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ const Technologies = () => {
                 <div className="col-lg-8 mx-auto text-center">
                     <h2 className="sub-pages-heading">Our Capabilities</h2>
                     <p className="common-para">
-                      We combine local insights with deep expertiseacross 10+ industries to tailor the servicesthat solve your biggest challenges.
+                    We combine local insights with deep expertise across 10+ industries to tailor the services that solve your biggest challenges.
                     </p>
                 </div>
             </div>
@@ -33,7 +33,8 @@ const Technologies = () => {
                       Intelligent Platform Services
                     </p>
                     <p className="common-para">
-                      Transform your business into an intelligent enterprise with solutions from Oracle, Microsoft, Liferay, Salesforce, Adobe and more.
+                      Transform your business into an intelligent enterprise with solutions from Oracle, Microsoft, 
+                      Liferay, Salesforce, Adobe and more.
                     </p>
                 </div>
                 <div className="col-lg-4 mb-2">

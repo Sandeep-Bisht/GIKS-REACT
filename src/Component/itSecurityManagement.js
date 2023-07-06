@@ -14,9 +14,7 @@ const ItSecurityManagement = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">IT Security Managment</h1>
                         <p className="common-para">
-                            We create custom applications at pace of business need. Here is why GIKS<br/>Rapid
-                            application development methodology is the right fit to create<br/>enterprise-grade custom
-                            applications.
+                        With a team of highly skilled professionals, we offer comprehensive solutions to safeguard your digital assets and protect against evolving cybersecurity threats. From risk assessments and vulnerability management to incident response and security monitoring, we ensure the resilience and integrity of your IT infrastructure. 
                         </p>
                     </div>
                 </div>
@@ -27,69 +25,67 @@ const ItSecurityManagement = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Custom Application Development Using Rapid</h2>
+                    <h2 className="sub-pages-heading">Firewall Management</h2>
                     <p className="common-para">
-                        Rapid application development tools prioritize speed and agility so that IT<br/> teams can
-                        increase their productivity and improve project outcomes.
+                       If you aspire to embrace innovation through cloud, analytics, mobility, and social business, our Firewall management service offers a flat-pricing model and a vendor-neutral approach. This approach not only reduces costs and mitigates risks but also enables effective regulatory compliance management and meets the requirements of a highly interconnected and data-driven world.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Great Looking Apps Out of the Box
+                      Intrusion Detection and Prevention System Management
                     </p>
                     <p className="common-para">
-                        Pre-built themes and app templates, to quicken event driven navigation and consistent design.
+                    The management of intrusion detection and prevention systems aims to deliver strong, instantaneous security monitoring, administration, and analysis for networks and servers.gn.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Extensible Code Base
+                    Security-Rich Web Gateway Management
                     </p>
                     <p className="common-para">
-                        Code generated can be easily extended or maintained using your favorite IDE.
+                    Our Security Services offers the most comprehensive range of consulting and global managed security services in the industry. We provide top-notch assessments and security strategies to major enterprises worldwide, including critical approaches like zero trust.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        No Code Lock-in
+                       Unified Threat Management
                     </p>
                     <p className="common-para">
-                        The code generated is Maven compliant, Open Source and can be exported as a ZIP or WAR file.
+                     GIKS India provides cutting-edge AI insights to streamline and coordinate essential tasks. Our diverse programs seamlessly combine the strengths of penetration testing, managed security services, incident response, artificial intelligence, and a digital protection platform.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Lower Infra tco with Docker
+                    Secure SD-WAN
                     </p>
                     <p className="common-para">
-                        Lightweight Docker based containerization model that runs 2-3 times faster than VMs.
+                    The task of securing modern enterprises is increasingly challenging due to the rising number of endpoints and wide area networks (WAN) that require protection. Users now expect access to applications and data beyond the conventional security boundaries, while the cybercrime landscape continues to grow more hostile.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Accelerate API Reuse
+                    Endpoint Security Services
                     </p>
                     <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
+                    With our extensive experience of over 5+ years in endpoint security, we provide cutting-edge tools, technology, and round-the-clock support to ensure the security of your environment. Our dedicated service delivery team efficiently manages multiple platforms, safeguarding millions of endpoints for hundreds of clients.                                                                                                                                                                        
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        More productivity with fewer people
+                      Amazon Guard Duty Services
                     </p>
                     <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
+                    Experience enhanced, unified data protection for your hybrid AWS cloud environment through our services. Benefit from a comprehensive range of powerful security controls, including discovery and classification, vulnerability and risk assessments, real-time monitoring and alerting, encryption, and advanced analytics.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Why RAD for your Applications</h2>
+                    <h2 className="sub-pages-heading">What is IT Security Management</h2>
                     <p className="common-para">
-                        When apps are needed by the day, why should development take months? RAD gives your enterprise
-                        a<br/> tomorrow ready approach to build applications.
+                    IT security management refers to the practice of protecting information technology systems and data from unauthorized access, disruptions, and threats. It involves implementing and maintaining a set of policies, procedures, and technologies to ensure the confidentiality, integrity, and availability of IT resources.
                     </p>
                 </div>
             </div>
@@ -98,25 +94,23 @@ const ItSecurityManagement = () => {
                     <ul className="list-unstyled ps-0 first">
                         <li>
                             <p className="product-services-box-heading">
-                                Innovate as you renovate
+                              Provides Security to all Your Information
                             </p>
                             <p className="common-para">
-                                Pre-built themes and app templates, to quicken event driven navigation and consistent
-                                design.
+                            An Information Security Management System (ISMS) ensures the protection of all your information, including intellectual property, company secrets, personal data, and other forms of information. It doesn't matter if the information is in digital or physical format, or where it is stored. The ISMS provides security across all forms and storage locations without any distinction
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Tackle skills shortage
+                              Enhances Defence Against Cyber-Attacks
                             </p>
                             <p className="common-para">
-                                Why code from line 1? With skill obsolescence happening sooner than ever RAD takes less
-                                time, cost and skill to create applications.
+                            By implementing an Information Security Management System (ISMS), your organization's ability to withstand cyber-attacks is enhanced.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Scale out faster
+                               Reduces security-related costs
                             </p>
                             <p className="common-para">
                                 With a cloud built on Docker, RAD helps apps to scale out. Microservices architecture is
@@ -125,20 +119,18 @@ const ItSecurityManagement = () => {
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Save time & budget
+                               Improves company work culture: 
                             </p>
                             <p className="common-para">
-                                Optimize for maintenance, not performance. With RAD failing is inexpensive and cycle
-                                times are shorter.
+                            The comprehensive nature of an ISMS encompasses the entire organization, encompassing not only the IT department but also the people, processes, and technologies involved.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Close the design code gap
+                              Safeguard confidentiality, integrity and availability of data
                             </p>
                             <p className="common-para">
-                                Code growing further from initial design is a familiar problem. RAD helps keep code
-                                close to design aiding cleaner and faster iterations.
+                              A robust ISMS provides a range of policies, technical measures, and physical controls to safeguard the confidentiality, integrity, and availability of an organization's data.
                             </p>
                         </li>
                     </ul>
@@ -146,40 +138,34 @@ const ItSecurityManagement = () => {
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Custom Application Development</h2>
+                    <h2 className="sub-pages-heading">User Security Management</h2>
                     <p className="common-para">
-                        We deliver custom web, mobile and desktop software solutions that broadly fall under 3
-                        main<br/>categories –
-                        management of B2B, B2C interactions and internal operations.
+                    Privileges dictate the actions that users are permitted to perform on domain objects, while permissions determine the level of access a user possesses for a particular domain object. Domain objects encompass various entities such as the domain itself, folders, nodes, grids, licenses, database connections, operating system profiles, and application services.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Create New or Extend Existing Application</h2>
+                    <h2 className="sub-pages-heading">Security Assessment services</h2>
                     <ul className="second">
-                        <li className="common-para">Create data models, relationships and database constraints from existing
-                            system of records</li>
-                        <li className="common-para">Develop auto-import pipeline for existing database schema with support
-                            for multiple database platforms</li>
-                        <li className="common-para">Enable connection to Mobile backend services (MBaaS) of your choice
-                            (like AWS Mobile Services and Azure Mobile Services) for identity<br/>management & sync,
-                            analytics, push notifications, and more</li>
-                        <li className="common-para">Develop new integrations (or) connect with existing web services APIs
-                            (REST and SOAP) to enable an API-based custom application<br/>development</li>
+                        <li className="common-para">Risk Assessment and Risk Treatment</li>
+                        <li className="common-para">Security Process Audits</li>
+                        <li className="common-para">Pentest</li>
+                        <li className="common-para">Security Testing of Source Code</li>
+                        <li className="common-para">Vulnerability Assessment</li>
+                      
 
                     </ul>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Create Native Experiences</h2>
+                    <h2 className="sub-pages-heading">IT Infrastructure Protection Service</h2>
                     <ul className="second">
-                        <li className="common-para">Enable access to native device features like camera, location, network,
-                            battery, contacts, local storage and more in your enterprise app</li>
-                        <li className="common-para">Accelerate app performance by leveraging offline storage</li>
-                        <li className="common-para">Develop native themes and UI controls (HTML5) that adapt to any screen
-                            of choice</li>
+                    <li className="common-para">Web Application Firewall (WAF) solution</li>
+                    <li className="common-para">Intrusion Prevention System (IPS) implementation</li>
+                    <li className="common-para">Network Implementation Services</li>
+                    <li className="common-para">Network Operation Services</li>
                     </ul>
                 </div>
             </div>
@@ -194,8 +180,7 @@ const ItSecurityManagement = () => {
                             Website Development
                         </p>
                         <p className="common-para">
-                            We are a web & app development company that turns your ideas into a new driving force of
-                            your business.</p>
+                        As a web and app development company, we specialize in transforming your ideas into powerful catalysts for your business growth.</p>
                     </div>
                 </div>
                 <div className="col-lg-3">
@@ -207,8 +192,7 @@ const ItSecurityManagement = () => {
                         Custom App Development
                     </p>
                     <p className="common-para">
-                        Our expertise in e-commerce, adtech/martech, and people-to-people fields as well as other
-                        business areas helps us develop web and mobile solutions tailored with care for our clients.</p></div>
+                    With our proficiency in e-commerce, adtech/martech, peer-to-peer sectors, and various other business domains, we excel in crafting bespoke web and mobile solutions that cater to the unique needs of our clients.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -219,9 +203,7 @@ const ItSecurityManagement = () => {
                         Liferay Development
                     </p>
                     <p className="common-para">
-                        Liferay DXP offers developers a complete platform for building web apps, mobile apps, and web
-                        services quickly, using features and frameworks designed for rapid development, good
-                        performance, and ease of use.</p></div>
+                    Liferay DXP empowers developers with a comprehensive platform for fast creation of web apps, mobile apps, and web services. Its feature-rich frameworks prioritize rapid development, optimal performance, and user-friendly experience.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -232,9 +214,7 @@ const ItSecurityManagement = () => {
                         Mobile App Development
                     </p>
                     <p className="common-para">
-                        To create a fast and smooth app for any platform, we also deliver products with outsourcing app
-                        development model. This model gives a reasonable solution to control the budget and other
-                        recourses.</p></div>
+                    For the efficient development of fast and seamless applications across multiple platforms, we offer an outsourcing app development model. This model provides a cost-effective solution for managing budgets and resources while ensuring the creation of high-quality products..</p></div>
                 </div>
             </div>
 

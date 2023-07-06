@@ -14,9 +14,7 @@ const ApplicationDevelopment = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Application Development</h1>
                         <p className="common-para">
-                            We create custom applications at pace of business need. Here is why GIKS<br/>Rapid
-                            application development methodology is the right fit to create<br/>enterprise-grade custom
-                            applications.
+                        As a leading application development company in India,<br/> we excel in providing cutting-edge application development solutions.
                         </p>
                     </div>
                 </div>
@@ -27,134 +25,87 @@ const ApplicationDevelopment = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Custom Application Development Using Rapid</h2>
+                    <h2 className="sub-pages-heading">Accelerate Your Project with Rapid Application Development (RAD)</h2>
                     <p className="common-para">
-                        Rapid application development tools prioritize speed and agility so that IT<br/> teams can
-                        increase their productivity and improve project outcomes.
+                     We use rapid application development (RAD) to create custom software applications faster and efficiently that meet your specific business requirements. 
+                    </p>
+                    <h2 className="sub-pages-heading">What is Rapid Application Development</h2>
+                    <p className="common-para">
+                    An Agile software development methodology that emphasizes fast-paced and iterative development cycles. 
+                    Rapid Application Development aims to deliver high-quality software solutions quickly by prioritizing user feedback, 
+                    collaboration, and iterative prototyping. In Rapid Application Development process focuses on rapid prototyping, allowing stakeholders to visualize and interact with the application early on. RAD enables faster development, reduces time-to-market, and promotes flexibility for changes and enhancements.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
-                <div className="col-lg-2">
+                 <div className='col-lg-12'>
+                 <h2 className="sub-pages-heading mb-4">Why RAD for your Applications</h2>
+                 </div>
+                <div className="col-lg-3">
                     <p className="product-services-box-heading">
-                        Great Looking Apps Out of the Box
+                    Reduced development time
                     </p>
                     <p className="common-para">
-                        Pre-built themes and app templates, to quicken event driven navigation and consistent design.
+                    RAD can significantly reduce the time it takes to develop an application. This is because RAD focuses on iterative development, which means that the application is built in small increments and tested frequently. This helps to identify and fix defects early in the development process, which can save time and money in the long run.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-3">
                     <p className="product-services-box-heading">
-                        Extensible Code Base
+                    Improved quality
                     </p>
                     <p className="common-para">
-                        Code generated can be easily extended or maintained using your favorite IDE.
+                    RAD can also improve the quality of applications. This is because RAD emphasizes testing and feedback from users. By getting feedback from users early and often, I can ensure that the application meets their needs.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-3">
                     <p className="product-services-box-heading">
-                        No Code Lock-in
+                       Lower costs: 
                     </p>
                     <p className="common-para">
-                        The code generated is Maven compliant, Open Source and can be exported as a ZIP or WAR file.
+                       RAD can also help to lower the costs of application development. This is because RAD can help to reduce the number of defects in the application, which can save on the cost of fixing defects. Additionally, RAD can help to reduce the amount of time that I need to spend on the project, which can also save money
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-3">
                     <p className="product-services-box-heading">
-                        Lower Infra tco with Docker
+                    Increased flexibility: 
                     </p>
                     <p className="common-para">
-                        Lightweight Docker based containerization model that runs 2-3 times faster than VMs.
+                    RAD can help to increase the flexibility of applications. This is because RAD allows me to quickly and easily make changes to the application as needed. This can be important for businesses that are constantly changing or that need to be able to respond quickly to market changes.
                     </p>
                 </div>
-                <div className="col-lg-2">
-                    <p className="product-services-box-heading">
-                        Accelerate API Reuse
-                    </p>
-                    <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
-                    </p>
-                </div>
-                <div className="col-lg-2">
-                    <p className="product-services-box-heading">
-                        More productivity with fewer people
-                    </p>
-                    <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
-                    </p>
-                </div>
+                
             </div>
-            <div className="row mt-60">
+            <div className="row mt-60 ">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Why RAD for your Applications</h2>
-                    <p className="common-para">
-                        When apps are needed by the day, why should development take months? RAD gives your enterprise
-                        a<br/> tomorrow ready approach to build applications.
-                    </p>
+                    <h2 className="sub-pages-heading">Additional advantages of RAD for custom application development:</h2>
+                    
                 </div>
             </div>
-            <div className="row mt-60">
+            <div className="row ">
                 <div className="col-md-12">
                     <ul className="list-unstyled ps-0 first">
                         <li>
                             <p className="product-services-box-heading">
-                                Innovate as you renovate
+                            Increased user satisfaction
                             </p>
                             <p className="common-para">
-                                Pre-built themes and app templates, to quicken event driven navigation and consistent
-                                design.
+                               By getting feedback from users early and often, RAD can help to ensure that the application meets the needs of the users. This can lead to increased user satisfaction and increased adoption of the application.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Tackle skills shortage
+                            Improved business agility
                             </p>
                             <p className="common-para">
-                                Why code from line 1? With skill obsolescence happening sooner than ever RAD takes less
-                                time, cost and skill to create applications.
+                            RAD can help businesses to be more agile and responsive to change. This is because RAD allows businesses to quickly and easily develop new applications or make changes to existing applications. This can be a major advantage in today's rapidly changing business environment.
                             </p>
                         </li>
-                        <li>
-                            <p className="product-services-box-heading">
-                                Scale out faster
-                            </p>
-                            <p className="common-para">
-                                With a cloud built on Docker, RAD helps apps to scale out. Microservices architecture is
-                                replacing the super app with a network of smaller apps.
-                            </p>
-                        </li>
-                        <li>
-                            <p className="product-services-box-heading">
-                                Save time & budget
-                            </p>
-                            <p className="common-para">
-                                Optimize for maintenance, not performance. With RAD failing is inexpensive and cycle
-                                times are shorter.
-                            </p>
-                        </li>
-                        <li>
-                            <p className="product-services-box-heading">
-                                Close the design code gap
-                            </p>
-                            <p className="common-para">
-                                Code growing further from initial design is a familiar problem. RAD helps keep code
-                                close to design aiding cleaner and faster iterations.
-                            </p>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
-            <div className="row mt-60">
-                <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Custom Application Development</h2>
-                    <p className="common-para">
-                        We deliver custom web, mobile and desktop software solutions that broadly fall under 3
-                        main<br/>categories –
-                        management of B2B, B2C interactions and internal operations.
-                    </p>
-                </div>
-            </div>
-            <div className="row mt-60">
+            
+            <div className="row mt-60 d-none">
                 <div className="col-md-12">
                     <h2 className="sub-pages-heading">Create New or Extend Existing Application</h2>
                     <ul className="second">
@@ -171,7 +122,7 @@ const ApplicationDevelopment = () => {
                     </ul>
                 </div>
             </div>
-            <div className="row mt-60">
+            <div className="row mt-60 d-none">
                 <div className="col-md-12">
                     <h2 className="sub-pages-heading">Create Native Experiences</h2>
                     <ul className="second">
@@ -194,8 +145,7 @@ const ApplicationDevelopment = () => {
                             Website Development
                         </p>
                         <p className="common-para">
-                            We are a web & app development company that turns your ideas into a new driving force of
-                            your business.</p>
+                        As a web and app development company, we specialize in transforming your ideas into powerful catalysts for your business growth.</p>
                     </div>
                 </div>
                 <div className="col-lg-3">
@@ -207,8 +157,7 @@ const ApplicationDevelopment = () => {
                         Custom App Development
                     </p>
                     <p className="common-para">
-                        Our expertise in e-commerce, adtech/martech, and people-to-people fields as well as other
-                        business areas helps us develop web and mobile solutions tailored with care for our clients.</p></div>
+                    With our proficiency in e-commerce, adtech/martech, peer-to-peer sectors, and various other business domains, we excel in crafting bespoke web and mobile solutions that cater to the unique needs of our clients.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -219,9 +168,7 @@ const ApplicationDevelopment = () => {
                         Liferay Development
                     </p>
                     <p className="common-para">
-                        Liferay DXP offers developers a complete platform for building web apps, mobile apps, and web
-                        services quickly, using features and frameworks designed for rapid development, good
-                        performance, and ease of use.</p></div>
+                    Liferay DXP empowers developers with a comprehensive platform for fast creation of web apps, mobile apps, and web services. Its feature-rich frameworks prioritize rapid development, optimal performance, and user-friendly experience.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -232,9 +179,7 @@ const ApplicationDevelopment = () => {
                         Mobile App Development
                     </p>
                     <p className="common-para">
-                        To create a fast and smooth app for any platform, we also deliver products with outsourcing app
-                        development model. This model gives a reasonable solution to control the budget and other
-                        recourses.</p></div>
+                    For the efficient development of fast and seamless applications across multiple platforms, we offer an outsourcing app development model. This model provides a cost-effective solution for managing budgets and resources while ensuring the creation of high-quality products..</p></div>
                 </div>
             </div>
 

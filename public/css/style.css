@@ -120,12 +120,39 @@ a {
 }
 .common-btn{
     font-family: 'Roboto', sans-serif;
-    color: #0D99FF;
+    color: #0D99FF!important;
     border: 2px solid #0D99FF;
     padding: 5px 15px;
     font-weight: 500;
     font-size: 13px;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 2;
 }
+.common-btn::before
+{
+    content: '';
+    background-color: rgba(13, 153, 255, .4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    transform: translateX(-100%) rotate(70deg);
+    transition: all .5s;
+}
+.common-btn:hover::before{
+    transform: translateX(100%) rotate(70deg);
+  
+}
+.common-btn:hover
+{
+    
+    
+    box-shadow: 0px 0px 12px rgba(13, 87, 138, 0.9);
+}
+
 .common-read-more
 {
     font-family: 'Roboto', sans-serif;
@@ -142,12 +169,16 @@ a {
     box-shadow: none;
     color: #fff;
 }
-.sub-pages-heading
+.sub-pages-heading,.sub-pages-heading1
 {
     font-family: 'Playfair Display', serif; 
     color: #007DFF;
     font-weight: 700; 
     font-size: 20px; 
+}
+.sub-pages-heading1
+{
+   font-size: 23px;
 }
 
 /* ------------------------header----------------------------- */
@@ -389,6 +420,7 @@ header .dropdown-item:focus, header .dropdown-item:hover
     position: relative;
     height: 380px;
     cursor: pointer;
+    margin-bottom:15px;
  
 }
 .product-card:hover{
@@ -396,8 +428,8 @@ header .dropdown-item:focus, header .dropdown-item:hover
 }
 .product-card img
 {
-    height: 114px;
-    width: 114px;
+    height: 140px;
+    width: 140px;
 }
 .product-card-heading{
     color: #fff;
@@ -647,6 +679,19 @@ header .dropdown-item:focus, header .dropdown-item:hover
 {
     display: flex;
     justify-content: space-between;
+}
+.upper-icons
+{
+    position: absolute;
+    top: -39px;
+    left: 0;
+    right: 0;
+}
+.lower-icons{
+    position: absolute;
+    bottom:-39px;
+    left: 0;
+    right: 0;
 }
 .upper-icons img,.lower-icons img{
     height: 40px;
@@ -1819,3 +1864,1231 @@ footer .copyright-box .three ul li{
         border: 2px solid rgba(255,255,255,.9);
     color: rgba(255,255,255,.9);
     }
+
+/* -------------------------external css------------------------ */
+.casestudy-singlepage{
+    padding: 100px 0;
+    background-color: #01172a
+}
+ .common-heading{
+    color: #007DFF;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0px 0px 33px rgba(13, 211, 255, 0.9);
+}
+
+ .common-para{
+  font-family:  'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+.pic img{
+    transition: all .4s ease-in-out;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pic:hover img{
+    transform: scale(1.1);
+}
+
+.pic{
+    overflow: hidden;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.title .btn{
+    background: gray;
+    opacity: 1;
+}
+.title .btn:hover
+{
+   background-color: #fff;
+   color: #000;
+}
+.pic:hover .title{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.casestudy-singlepage .col-md-4 .connect{
+    margin: 8px 0;
+    text-align: center;
+}
+ 
+   
+
+
+
+
+/* ------------------------media query------------------ */
+    
+
+@media (max-width: 1399.98px) 
+{
+  
+ }
+@media (max-width: 1199.98px)
+{  
+    .home-banner-container
+    {
+        height: 80vh;
+    }
+    .home-banner .banner-title
+    {
+        font-size: 42px;
+    }
+    .banner-subtitle
+    {
+        font-size: 32px;
+    }
+    .product-card
+    {
+        padding: 20px;
+        height: 325px;
+    }
+    .product-card-heading
+    {
+        margin-bottom: 10px;
+    }
+    .product-read-more
+    {
+       font-size: 12px;
+
+    }
+    .product-read-more svg
+    {
+        height: 10px;
+        width: 10px;
+    }
+    .case-study-card
+    {
+        padding: 20px 15px;
+    }
+    
+}
+@media (max-width: 1024.98px) 
+{
+   
+    .common-heading
+    {
+        font-size: 32px;
+    }
+    .common-subheading
+    {
+        font-size: 18px;
+    }
+    .common-para
+    {
+        font-size: 12px;
+    }
+    .common-btn
+    {
+       font-size: 12px;
+       padding: 3px 14px;
+    }
+    .common-read-more
+    {
+        font-size:12px;
+    }
+    .navbar-brand img
+    {
+        width: 65%!important;
+    }
+    .home-banner .banner-title
+        {
+            font-size: 38px;
+            margin-bottom: 0;
+        }
+        .banner-subtitle
+        {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        header .nav-link
+        {
+            font-size:13px;
+        }
+        header .nav-link.get-in-touch
+        {
+            padding: 3px 15px!important;
+        }
+        #counter .counterone
+        {
+            font-size:32px;
+        }
+        #counter .conterfour
+        {
+            font-size:17px;
+        }
+        .home-slider #counter
+        {
+            top:0;
+            margin-left:30px;
+        }
+        .home-slider
+        {
+            padding: 60px 0 0px 0;
+        }
+        .vertical-text-box
+        {
+            height:90%;
+            z-index: 10;
+        }
+        .vertical-text-box span
+        {
+            font-size:12px;
+            top:60%;
+        }
+        .home-slider .owl-carousel .owl-nav
+        {
+            margin-top:0;
+        }
+        .home-slider .owl-carousel .owl-nav .owl-prev,.home-slider .owl-carousel .owl-nav .owl-next
+        {
+            font-size:40px;
+        }
+        .home-blog .blog-heading{
+            font-size:12px;
+            line-height:1.5;
+        }
+        .tab-slider .owl-nav .owl-prev, .tab-slider .owl-nav .owl-next{
+            height:35px;
+            width: 35px;
+        }
+        .tab-slider .owl-nav .owl-prev svg,.tab-slider .owl-nav .owl-next svg {
+            width: 15px;
+        }
+ }
+
+@media (max-width: 991.98px) 
+{
+
+    .common-heading
+    {
+        font-size: 28px;
+    }
+    .common-subheading
+    {
+        font-size: 16px;
+    }
+    .common-para
+    {
+        font-size: 11px;
+    }
+    .common-btn
+    {
+       font-size: 11px;
+       padding: 3px 14px;
+    }
+    .common-read-more
+    {
+        font-size:11px;
+    }
+   header .nav-link
+    {
+        padding: 6px 0px;
+
+    }
+    header .nav-link.get-in-touch 
+    {
+        margin-left:0;
+    }
+       nav .navbar-nav
+      {
+        background: #1d2f42;
+        padding: 20px 20px;
+        border-radius: 4px;
+        height: 270px;
+        overflow: auto;
+    
+      }
+      .drop-icon
+      {
+        height: 28px;
+        width: 28px;
+      }
+      .drop-icon svg
+      {
+        height: 14px;
+      }
+    nav .navbar-toggler-icon
+    {
+        background-image:none;
+        width: auto;
+        height:auto;
+        
+    }
+    nav .navbar-toggler
+    {
+        background: #007DFF;
+        border-radius: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: 35px;
+        justify-content: center;
+        height: 35px;
+        font-size: 25px;
+        border: 2px solid rgba(255,255,255,.65);
+        color: #fff;
+    }
+    nav .navbar-toggler svg{
+       
+        height:30px;
+    }
+    .navbar-toggler:focus
+    {
+        box-shadow:none;
+        outline:0;
+    }
+    nav .navbar-nav li
+    {
+        width: 100%;
+    }
+    .home-banner .banner-title
+    {
+        font-size:32px;
+    }
+    .banner-subtitle
+    {
+        font-size:22px;
+    }
+    .home-service
+    {
+        padding: 100px 0;
+    }
+    .product-card
+    {
+        height:300px;
+        margin-bottom:25px;
+    }
+    .slider-left .common-heading, .slider-left .common-para, .slider-left .common-btn
+    {
+        left:25px;
+    }
+    .slider-left .common-heading
+    {
+        font-size:24px;
+    }
+    .home-slider #counter
+    {
+        margin-left:0;
+
+    }
+    .slider-wrapper img
+    {
+        height:300px;
+    }
+    #counter .counterone
+    {
+        font-size:24px;
+    }
+    #counter .conterfour
+    {
+        font-size:15px;
+    }
+    .vertical-text-box span {
+        font-size: 11px;
+        top: 50%;
+    }
+    .home-slider .owl-carousel .owl-nav .owl-prev, .home-slider .owl-carousel .owl-nav .owl-next
+    {
+        font-size:32px;
+    }
+    .case-study-card
+    {
+        padding: 10px;
+    }
+     .case-study-heading
+    {
+        font-size:10px;
+    }
+    .case-study-pic img
+    {
+        width: 50px;
+        height:50px;
+    }
+    .case-study-card-row .col-3
+    {
+        padding: 4px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left img
+    {
+        height:100px;
+        width: 100px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left
+    {
+        display: block;
+    }
+    .case-study-card .second-view .second-view-wrapper .left .case-study-second-content-heading
+    {
+        font-size:20px;
+        margin-bottom:4px;
+    }
+    .case-study-card .second-view .second-view-wrapper .common-para
+    {
+        padding-right:0;
+    }
+    .case-study-card.expand .cross
+    {
+        position: absolute;
+        right: 10px;
+    }
+    .home-blog .blog-heading
+    {
+        font-size: 11px;
+    }
+    .tab-slider .owl-nav .owl-prev, .tab-slider .owl-nav .owl-next {
+        width: 30px;
+        height: 30px;
+    }
+    .tab-slider .owl-nav .owl-prev svg, .tab-slider .owl-nav .owl-next svg
+    {
+        width: 12px;
+    }
+    .about-process,.about-skill
+    {
+        padding: 60px 0 60px 0;
+    }
+    .about-skill .skill-card svg
+    {
+        height: 120px;
+        width: 120px;
+    }
+    .about-skill .skill-card .skill-card-heading
+    {
+        font-size: 20px;
+    }
+    .process-card-number
+    {
+        font-size: 22px;
+    }
+    .process-card .middle svg
+    {
+        height: 20px;
+        width: 20px;
+    }
+    .process-card .icon-heading
+    {
+        font-size: 22px;
+    }
+    .process-card  .lower .common-para
+    {
+        font-size: 12px;
+    }
+    .client-card-heading
+    {
+        font-size: 22px;
+    }
+    .about-clients .client-card img
+    {
+        height: 100px;
+        width: 100px;
+     }
+    .map-box iframe
+    {
+        height: 300px;
+    }
+    .single-blog-page .blog-single-card .common-para
+    {
+        margin-bottom: 2px;
+    }
+    .blog-single-card-pic img
+    {
+        height: 140px;
+    }
+    .blog-single-card-content
+    {
+        padding:15px 20px;
+    }
+    .blog-title
+    {
+        margin-bottom: 0;
+    }
+    .blog-category
+    {
+        margin: 5px 0;
+    }
+    .single-blog-page.blog-detail .blog-detail-heading
+    {
+        font-size: 18px;
+    }
+    .single-blog-page.blog-detail .blog-detail-heading.text-white
+    {
+        font-size: 15px!important;
+    }
+    .single-blog-page.blog-detail .blog-detail-date
+    {
+        display: inline-block;
+        padding: 10px;
+    }
+    .product-about img
+    {
+        height: 200px;
+    }
+    .product-about .product-services-box
+    {
+        margin-bottom: 30px;
+        height: auto;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+ }
+
+
+
+
+ @media (max-width: 800.98px) 
+ {
+    .home-slider #counter
+    {
+        margin-left: 20px;
+    }
+    .contact-single-right .form-control
+    {
+        padding: 4px 8px;
+    }
+    .contact-single-right textarea
+    {
+        height: 70px!important;
+    }
+  }
+
+
+@media (max-width: 767.98px) 
+{
+    .common-heading
+    {
+        font-size: 19px;
+    }
+    .common-subheading
+    {
+        font-size: 13px;
+        padding: 0;
+    }
+    .common-para
+    {
+        font-size: 11px;
+    }
+    .common-btn
+    {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+    .common-read-more
+    {
+        font-size:11px;
+    }
+    .sub-pages-heading
+    {
+        font-size: 17px;
+    }
+    
+   header .nav-link
+    {
+        padding: 6px 0px;
+
+    }
+    .home-banner-container
+    {
+        height: 70vh;
+    }
+    .home-about
+    {
+        padding: 60px 0;
+    }
+    .home-banner .banner-title
+    {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+    .banner-subtitle
+    {
+        font-size: 16px;
+    }
+    .product-card{
+        height: 280px;
+    }
+    .product-card img
+    {
+        width: 100px;
+        height: 100px;
+    }
+    #counter .counterone
+    {
+        font-size: 20px;
+    }
+    #counter .conterfour
+    {
+        font-size: 13px;
+    }
+    .slider-left .common-heading {
+        font-size: 19px;
+        margin: 20px 0;
+    }
+    .case-study-card-row
+    {
+        margin-top: 30px;
+    }
+    .case-study-pic img
+    {
+        height: 45px;
+        width: 45px;
+    }
+    .case-study-card
+    {
+        margin-bottom: 15px;
+       min-height: 110px;
+       border-radius: 4px;
+    }
+    .home-service
+    {
+        padding: 60px 0;
+    }
+    .vertical-text-box
+    {
+        left:60px;
+    }
+    .home-case-studies
+    {
+        padding: 60px 0 60px 0;
+    }
+    .case-study-card .second-view .second-view-wrapper .left img
+    {
+        height: 80px;
+        width: 80px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left .case-study-second-content-heading
+    {
+        font-size: 18px;
+    }
+    .case-study-card.expand .cross {
+        position: absolute;
+        right: 10px;
+        border-width: 2px;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .upper-icons img,.lower-icons img
+    {
+        height: 30px;
+    }
+    .upper-icons
+    {
+        top:-30px;
+    }
+    .lower-icons
+    {
+        bottom: -30px;
+    }
+    .home-blog
+    {
+        padding: 60px 0 60px 0;   
+    }
+
+    .tab-slider .owl-stage .active{
+        clip-path:none;
+       
+         transform-style: none;
+        transform: none; 
+    }
+    
+    .tab-slider .owl-stage .active + .active{
+        clip-path:none;
+       
+        transform-style: none;
+       transform: none; 
+    }
+    
+    .tab-slider .owl-stage .active + .active + .active{
+        clip-path:none;
+       
+        transform-style: none;
+       transform: none; 
+     }
+    
+     .tab-slider .owl-stage .active + .active + .active + .active{
+          
+        clip-path:none;
+       
+        transform-style: none;
+       transform: none; 
+     }
+    
+     .tab-slider .owl-stage .active + .active + .active + .active + .active{
+        clip-path:none;
+       
+        transform-style: none;
+       transform: none; 
+     }
+     .tab-slider .owl-item .item .blog-card
+     {
+        width: 45%;
+        margin: auto;
+     }
+    
+     .tab-slider .owl-item .item .blog-card .blog-content
+     {
+        opacity: 1;
+        visibility: visible;
+     }
+     .tab-slider .owl-nav
+     {
+        bottom: auto;
+     }
+
+   /* -------------------footer----- */
+   .grid-container { 
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;}
+    
+    .grid-container-wrapper {
+        width: 31.333%;
+        padding: 10px 10px 0 10px;
+    }
+    footer ul li
+    {
+        padding: 0px;
+    }
+    .footer-heading
+    {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .footer-link
+    {
+        font-size: 11px;
+    }
+    footer .copyright-box .two ul li
+    {
+        margin: 0 2px;
+    }
+    footer .copyright-box .one img{
+        width: 50%!important;
+    }
+    footer .copyright-box .two ul
+    {
+        position: relative;
+        right: 15px;
+    }
+    footer .copyright-box .two ul li a img
+    {
+        height:25px;
+        margin-left: 10px;
+    }
+    footer .copyright-box
+   {
+  flex-wrap: wrap;
+   }
+   footer .copyright-box .one{
+    width: 30%;
+   }
+   footer .copyright-box .two{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+   }
+   footer .copyright-box .three{
+    width: 100vw;
+    margin-top: 3px;
+    display: flex;
+    justify-content: end;
+   }
+   footer .copyright-box .three ul li a img{
+    height: 15px;
+   }
+   .about-who-we-are
+   {
+    height: auto;
+    padding: 100px 0;
+   }
+   .about-who-we-are .common-heading
+   {
+    margin-bottom: 10px;
+   }
+   .about-skill .skill-card svg
+   {
+    height: 80px;
+    width: 80px;
+   }
+   .about-skill .skill-card .skill-card-heading {
+    font-size: 16px;
+   }
+   .about-skill .ivySlide .owl-nav .owl-next ,.about-skill .ivySlide .owl-nav .owl-prev{
+    font-size: 11px;
+    height: 20px;
+    width: 20px;
+   
+}
+.about-clients .client-card img
+{
+    height: 80px;
+    width: 80px;
+}
+.client-card-heading
+{
+    font-size: 18px;
+}
+  
+
+.blog-single-card-pic img
+{
+    height: 120px;
+}
+.blog-title
+{
+    font-size: 12px;
+}
+
+.single-blog-page .blog-right-wrapper .search-box-wrapper input.form-control
+{
+    padding: 5px 10px;
+}
+.blog-right-wrapper-heading {
+    
+    font-size: 12px;
+    margin: 8px 0;
+}
+.single-blog-page .blog-right-wrapper .recent-post-box p a
+{
+    font-size: 10px;
+}
+
+.single-blog-page .blog-right-wrapper .client-info img
+{
+    height: 50px;
+    width: 50px;
+}
+.quote-box svg
+{
+    height: 20px;
+    width: 20px;
+}
+.single-blog-page .blog-right-wrapper .widget-list .widget-list-item
+{
+    font-size: 11px;
+}
+.single-blog-page .blog-right-wrapper .download-brochure
+{
+    padding: 5px 15px;
+}
+.single-blog-page
+{
+    padding: 30px;
+}
+.product-about .product-services-box
+{
+    height: 200px;
+}
+.casestudy-singlepage .row
+{
+    flex-direction: column-reverse;
+} 
+.casestudy-singlepage img{
+    height: 330px;
+}
+
+}
+
+
+
+
+ @media (max-width: 630.98px) 
+ { 
+    .vertical-text-box
+    {
+        left:35px;
+    }
+    .casestudy-singlepage img{
+        height: 230px;
+    }
+  }
+
+@media (max-width: 575.98px) 
+{ 
+    .home-banner-container .row{
+        flex-direction: column-reverse;
+    }
+    .home-banner-container .row img{
+        width: 300px;
+        margin-top: 70px;
+    }
+    .home-banner-second-col{
+        text-align: center;
+    }
+    .home-banner-left
+    {
+        padding: 0 25px;
+    }
+    .home-about-pic{
+        text-align: center;
+    }
+    .home-about .home-about-pic svg{
+        width:200px;
+        height: 200px;
+        margin-top: 50px;
+    }
+    .home-about-content
+    {
+        padding:0 25px;
+        text-align: left!important;
+    }
+
+    nav .navbar-nav {
+         height: 260px;
+        overflow: auto;
+    }
+    .product-card{
+        height: 230px;
+    }
+    .product-card img{
+        height: 80px;
+        width: 80px;
+    }
+    .product-card-heading{
+        font-size: 13px;
+    }
+    .product-card-pic{
+        margin-bottom: 15px;
+    }
+    .common-padding-25{
+        padding: 0 25px;
+    }
+    .product-read-more{
+        font-size: 10px;
+    }
+    .product-read-more svg{
+        height: 8px;
+        width: 8px;
+    }
+    .vertical-text-box
+    {
+        left:14px;
+    }
+    .vertical-text-box span {
+        font-size: 10px;
+        top: 45%;
+    }
+    .slider-left .common-heading, .slider-left .common-para, .slider-left .common-btn
+    {
+        left:50px;
+    }
+    .home-slider .owl-carousel .owl-nav .owl-prev, .home-slider .owl-carousel .owl-nav .owl-next{
+        font-size: 25px;
+    }
+    #counter .counterone{
+        font-size: 15px;
+    }
+    .home-slider {
+        padding: 30px 0 0px 0;
+    }
+    #counter .conterfour {
+        font-size: 11px;
+        margin-left: 2px;
+    }
+    .upper-icons img,.lower-icons img
+    {
+        height: 25px;
+    }
+    .upper-icons
+    {
+        top:-25px;
+    }
+    .lower-icons
+    {
+        bottom: -25px;
+    }
+    .home-blog {
+        padding: 40px 0 40px 0;
+    }
+    .case-study-card
+    {
+        min-height: 120px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left img
+    {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+    .drop-icon
+    {
+        height: 25px;
+        width: 25px;
+    }
+    .drop-icon svg
+    {
+        height: 13px;
+    }
+    header .dropdown-menu .dropdown-item
+    {
+        font-size: 13px;
+    }
+    .about-clients
+    {
+        padding: 60px 0 60px 0;
+    }
+    .about-clients .client-card
+    {
+        padding: 20px;
+    }
+    .about-clients .client-card img
+    {
+        height: 70px;
+        width: 70px;
+    }
+    .client-card-right
+    {
+        padding-left: 0;
+    }
+    .client-card-heading
+    {
+        font-size: 15px;
+    }
+    .about-skill .skill-card
+    {
+        padding: 10px;
+    }
+    .about-who-we-are
+    {
+        padding: 60px 30px;
+    }
+    .contact-single
+    {
+         padding: 60px 30px 60px 30px;
+    }
+    .mob-col-reverse
+    {
+        flex-direction: column-reverse;
+    }
+    .contact-single-left
+    {
+        margin-top: 30px;
+    }
+    .contact-single-left ul
+    {
+        margin-top: 20px;
+    }
+    .product-about
+    {
+        padding: 30px;
+    }
+    .product-about .product-services-box
+    {
+        height: auto;
+    }
+    
+    .product-services-box-heading 
+    {
+        font-size: 13px;
+    }
+    .product-about .product-services-box
+    {
+        width: 80%;
+        margin: 12px auto;
+    }
+    .services-about,.technology-about
+    {
+       padding: 30px;
+    }
+    .mt-60
+    {
+        margin-top: 30px;
+    }
+    footer
+    {
+        padding-top: 20px;
+    }
+ }
+ @media (max-width: 516.98px) 
+ {
+    .case-study-card{
+        padding: 10px 4px;
+    }
+    .common-padding-25
+    {
+        padding: 0 20px;
+    }
+    .process-card
+    {
+       padding: 15px;
+    }
+    .services-about ul.first li
+    {
+        flex: 1 0 100%;
+    }
+    .mt-60
+    {
+        margin-top: 30px;
+    }
+ }
+
+ @media (max-width: 483.98px) 
+ { 
+    footer .copyright-box .one
+    {
+        width: 25%;
+    }
+    footer .copyright-box .two{
+        width: 75%;
+    }
+    footer .copyright-box .two ul li a img
+    {
+        margin-left: 0;
+        padding-left: 8px;
+    }
+    .footer-heading{
+        font-size: 11px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left .case-study-second-content-heading
+    {
+        font-size: 16px;
+    }
+  }
+
+
+  @media (max-width: 440.98px) {
+     
+    .common-heading
+    {
+        font-size: 19px;
+    }
+    .common-subheading
+    {
+        font-size: 13px;
+        padding: 0;
+    }
+    .common-para
+    {
+        font-size: 11px;
+    }
+    .common-btn
+    {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+    .common-read-more
+    {
+        font-size:11px;
+    }
+
+
+    header .nav-link {
+        padding: 4px 0px;
+    }
+    header .nav-link
+    {
+        font-size: 12px;
+    }
+    nav .navbar-nav {
+        height: 220px;
+       overflow: auto;
+   }
+    
+    .home-banner-container .row img
+    {
+        width: 270px;
+    }
+    .home-banner .banner-title
+    {
+        font-size: 18px;
+    }
+    .banner-subtitle
+    {
+        font-size: 14px;
+    }
+    .product-card {
+        height: 247px;
+        padding: 10px;
+        border-radius: 3px;
+    }
+    .product-card img {
+        height: 60px;
+        width: 60px;
+    }
+    .product-card-heading {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .tab-slider .owl-item .item .blog-card
+    {
+        width: 70%;
+    }
+    .slider-left .common-heading, .slider-left .common-para{
+        width: 60vw;
+    }
+    .about-skill .skill-card svg
+    {
+        height: 60px;
+        width: 60px;
+    }
+    .about-skill .skill-card .skill-card-heading
+    {
+        font-size: 13px;
+    }
+    .process-card .middle
+    {
+        padding-bottom: 10px;
+    }
+    .process-card-number
+    {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .process-card .middle svg
+    {
+        height: 16px;
+        width: 16px;
+    }
+    .process-card .icon-heading
+    {
+        font-size: 16px;
+    }
+    .process-card .lower .common-para
+    {
+        font-size: 11px;
+    }
+    .about-skill .skill-card
+    {
+        padding: 5px;
+    }
+  }
+
+  @media (max-width: 380.98px)
+  {
+    .client-card-heading
+    {
+        font-size: 13px;
+    }
+    .about-clients .client-card img
+    {
+        height: 60px;
+        width: 60px;
+    }
+  }
+
+

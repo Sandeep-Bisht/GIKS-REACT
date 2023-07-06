@@ -19,6 +19,14 @@ import Contact from '../Component/contact'
 import Blog from '../Component/blog'
 import BlogDetails from '../Component/blogDetails'
 import PageNotFound from '../Component/pageNotFound'
+import FreindsCludStudy from '../Component/freindsClubStudy'
+import NationalHydrographicStudy from '../Component/nhoStudy'
+import IshaanavStudy from '../Component/ishaanavStudy'
+import JaimaicaStudy from '../Component/jaimaicaStudy'
+import NorthenRailwayStudy from '../Component/nrcmsStudy'
+import JgcStudy from '../Component/jgcStudy'
+import PioneerStudy from '../Component/pioneer'
+import IncaStudy from '../Component/incaStudy'
 
 const ApplicationRoutes = () => {
   return (
@@ -43,6 +51,16 @@ const ApplicationRoutes = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/blog-detail' element={<BlogDetails/>}/>
+        <Route path='/freinds-club-study' element={<FreindsCludStudy/>}/>
+        <Route path='/national-hydrographic-study' element={<NationalHydrographicStudy/>}/>
+        <Route path='/ishaanav-study' element={<IshaanavStudy/>}/>
+        <Route path='/jaimaica-study' element={<JaimaicaStudy/>}/>
+        <Route path='/nrcms-study' element={<NorthenRailwayStudy/>}/>
+        <Route path='/jgc-study' element={<JgcStudy/>}/>
+        <Route path='/pioneer-study' element={<PioneerStudy/>}/>
+        <Route path='/inca-study' element={<IncaStudy/>}/>
+
+        
     </Routes>
   )
 }

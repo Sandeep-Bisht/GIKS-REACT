@@ -10,7 +10,7 @@ const PlatformBasedDevelopment = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Platform Based Development</h1>
                         <p className="common-para">
-                          Accelerate change across your enterprise to create lasting value
+                        Deliver personalized experiences for the entire customer journey.
                         </p>
                     </div>
                 </div>
@@ -21,61 +21,32 @@ const PlatformBasedDevelopment = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 mx-auto text-center">
-                    <h2 className="sub-pages-heading">Our Capabilities</h2>
+                    <h2 className="sub-pages-heading">A Flexible Platform to Fit Your Needs</h2>
                     <p className="common-para">
-                      We combine local insights with deep expertiseacross 10+ industries to tailor the servicesthat solve your biggest challenges.
+                       We use Liferay which is designed to work within your existing business processes 
+                       and technologies to build a custom solution that uniquely meets your needs. Great experiences don’t just happen, 
+                       we just create them with Liferay.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-lg-4 mb-2">
                     <p className="product-services-box-heading">
-                      Intelligent Platform Services
+                    Liferay
                     </p>
                     <p className="common-para">
-                      Transform your business into an intelligent enterprise with solutions from Oracle, Microsoft, Liferay, Salesforce, Adobe and more.
+                    We are experts in utilizing Liferay to build enterprise portals for digital agility. Unlocking software potential for tangible outcomes for enterprises unifying Audiences with Real, Tangible Business Advantages is our expertise.
                     </p>
                 </div>
                 <div className="col-lg-4 mb-2">
                     <p className="product-services-box-heading">
-                      Intelligent software engineering services
+                    MERN
                     </p>
                     <p className="common-para">
-                      Build systems to drive your business strategy using data, AI, cloud and new technologies.
+                    With our expertise in MongoDB, Express.js, React.js, and Node.js, we deliver customized solutions that are tailored to your unique requirements, ensuring seamless functionality and an exceptional user experience.
                     </p>
                 </div>
-                <div className="col-lg-4 mb-2">
-                    <p className="product-services-box-heading">
-                      Intelligent cloud and infrastructure
-                    </p>
-                    <p className="common-para">
-                      Accelerate growth with end-to-end services powered by intelligent automation, security and analytics.
-                    </p>
-                </div>
-                <div className="col-lg-4 mb-2">
-                    <p className="product-services-box-heading">
-                      Technology innovation
-                    </p>
-                    <p className="common-para">
-                      Shape the future of business and technology through applied technology R&D, rapid prototyping and innovation at scale.
-                    </p>
-                </div>
-                <div className="col-lg-4 mb-2">
-                    <p className="product-services-box-heading">
-                      Technology strategy and advisory
-                    </p>
-                    <p className="common-para">
-                      Realize exceptional business value from technology.
-                    </p>
-                </div>
-                <div className="col-lg-4 mb-2">
-                    <p className="product-services-box-heading">
-                      Security
-                    </p>
-                    <p className="common-para">
-                      Grow confidently and build cyber resilience from the inside out with our innovative cybersecurity services.
-                    </p>
-                </div>
+               
             </div>
          
 

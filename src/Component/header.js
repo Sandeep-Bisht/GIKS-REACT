@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {HiOutlineBars3BottomRight} from 'react-icons/hi2'
 
 const Header = () => {
   return (
@@ -11,7 +12,9 @@ const Header = () => {
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon">
+                 <HiOutlineBars3BottomRight/>
+          </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ms-auto d-flex align-items-center">
@@ -215,7 +218,7 @@ const Header = () => {
                         </defs>
                       </svg>
 
-                    </span>Infrastructure Managment</Link></li>
+                    </span>IT Infrastructure Managment</Link></li>
                 <li>
                 <Link to="/business-consulting" className="dropdown-item">
                   
