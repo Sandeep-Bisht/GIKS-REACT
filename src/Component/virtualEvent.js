@@ -1,127 +1,124 @@
 import React from 'react'
 
 const VirtualEvent = () => {
-  return (
-    <>
-        <section className="about-who-we-are repeated-hero-banner digital-experience-platform">
-        <div className="container">
-            <div className="row">
-                <div className="col-md-10 col-lg-10">
-                    <div className="about-single-content">
-                        <h1 className="common-heading">Virtual Event Managmnet</h1>
-                        <p className="common-para">
-                            Deliver personalized experiences for the entire customer journey.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="product-about">
-        <div className="container">
-            <div className="row align-items-center">
-                 <div className="col-lg-6">
-                    <div className="product-about-content">
-                         <h2 className="sub-pages-heading">A Flexible Platform to Fit Your Needs</h2>
-                         <p className="common-para">We use Liferay which is designed to work within your existing business processes and technologies to 
-                            build a custom solution that uniquely meets your needs. Great experiences don’t just happen, we just create them with Liferay.</p>
-                    </div>
-                 </div>
-                 <div className="col-lg-6">
-                     <div className="product-about-pic d-flex justify-content-center">
-                         <img src="/images/digital-experience/1.gif"/>
-                     </div>
-                 </div>
-            </div>
-            <div className="row align-items-center mt-60 mb-lg-5 pb-lg-5">
-                <div className="col-lg-6">
-                    <div className="product-about-pic d-flex justify-content-center">
-                        <img src="/images/digital-experience/2.gif"/>
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                   <div className="product-about-content">
-                        <h2 className="sub-pages-heading">Integrate customer requirement for a successful digital transformation.</h2>
-                        <p className="common-para">
-                            Digital transformations often neglect to really transform organizations. Numerous projects are rejected because they simply can’t exhibit value on an industrial scale. This is especially valid for projects that may not deliver direct income and where the goals are essentially pointed toward further developing efficiency, responsiveness, and/or capacity for innovation in larger, conventional organizations. Digital transformation in the industry presents critical difficulties, not only in terms of the amount of investment required but also the difficulties in estimating performance, sharing new practices across the association, and carrying out changes for an enormous scope. But even with a clear and all-encompassing digital roadmap, numerous organizations still find themselves trapped in the disarray of proof of concept, which is a need these days to test the legitimacy of any usage scenario, business model, or value proposition.
-                       </p>
-                   </div>
-                </div>
-                
-           </div>
-           <div className="row mt-60">
-               <div className="col-lg-12 text-center">
-                  <h2 className="sub-pages-heading">Digital Consulting Services</h2>
-                  <p className="common-para">We help you build a comprehensive roadmap to accelerate your digital transformation</p>
-               </div>
-           </div>
-           <div className="row mt-60">
-                <div className="col-lg-4">
-                    <div className="product-services-box">
-                        <div className="inner-wrapper">
-                              <p className="product-services-box-heading">
-                                Strategic Consulting
-                              </p>
-                             <ul>
-                                 <li className="common-para">Growth Strategy</li>
-                                 <li className="common-para">Business Modeling</li>
-                                 <li className="common-para">Time of Entry</li>
-                                 <li className="common-para">Gap Identification</li>
-                                 <li className="common-para">Channel Strategy</li>
-                                 <li className="common-para">Digital Risk Management</li>
-                             </ul>
+    return (
+        <>
+            <section className="about-who-we-are repeated-hero-banner digital-experience-platform">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-10 col-lg-10">
+                            <div className="about-single-content">
+                                <h1 className="common-heading">Virtual Event Managmnet</h1>
+                                <p className="common-para">
+                                    While nothing can be done for physical events right now, we can help you pivot your event from a physical event to a fully virtual one.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
-                    <div className="product-services-box">
-                        <div className="inner-wrapper">
-                              <p className="product-services-box-heading">
-                                Customer Experience & Design
-                              </p>
-                             <ul>
-                                 <li className="common-para">Channel Mix</li>
-                                 <li className="common-para">Accessibility Design</li>
-                                 <li className="common-para">People, Process and System<br/>Interaction Design</li>
-                                 <li className="common-para">Brand Design</li>
-                                 <li className="common-para">Channel Strategy</li>
-                                 <li className="common-para">Primary & Secondary User Research</li>
-                             </ul>
+            </section>
+            <section className="product-about">
+                <div className="container">
+
+                    <div className="row mt-60">
+                        <div className="col-lg-12 ">
+                            <h2 className="sub-pages-heading">Key Features</h2>
+                            <p className="common-para">
+                                No matter what your industry is, GIKS has experience in helping organisations of all shapes and sizes to better plan, manage, market, and analyse their events and meetings.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row mt-lg-4">
+                        <div className="col-lg-12">
+                            <p className="product-services-box-heading mb-lg-1">
+                                Flexible & Configurable</p>
+                            <p className="common-para">
+                                Combine any number of spaces and designs to create your virtual event.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                                Registration</p>
+                            <p className="common-para">
+                                Capture attendee details prior to event access for easy post-event communication.
+                            </p>
+
+                            <p className="product-services-box-heading mb-lg-1">
+
+                                Engaging Presentations</p>
+                            <p className="common-para">
+                                It is a brain child of years of industry experts who have handcrafted solutions for the next generation.
+                                Every day, we constantly strive to improve our solutions and thus bring a lot of value to your own personal well-being.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                                Entitlements & Attendee groups</p>
+                            <p className="common-para">
+                                Present the right content to the right audience with powerful entitlement options.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                                Gamification</p>
+                            <p className="common-para">
+                                Incentivize attendees to interact throughout the environment with games, contests, and more.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                                Social Networking & Connection</p>
+                            <p className="common-para">
+                                Bring attendees together to network and collaborate via chat and social channels.
+                            </p>
+                        </div>
+                    </div>
+                    {/* ---------copy----------------- */}
+                    <div className="row mt-60">
+                        <div className="col-lg-12 ">
+                            <h2 className="sub-pages-heading">
+                                
+                      Everything you need to optimize your events at scale
+
+                            </h2>
+                            <p className="common-para">
+                            We introduces GIKS to global markets, optimizes the event experience, and extends the shelf-life of event content so companies can improve engagement and increase event ROI.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row mt-lg-4">
+                        <div className="col-lg-12">
+                            <p className="product-services-box-heading mb-lg-1">
+                            Scalability</p>
+                            <p className="common-para">
+                            Our virtual events platforms are hosted in the cloud, allowing companies to expand to accommodate any size audience.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                            Enterprise-level Security</p>
+                            <p className="common-para">
+                            Our platform complies with the most stringent enterprise security requirements, with features including whitelisting, blacklisting, and secure cookie handling.
+                            </p>
+
+                            <p className="product-services-box-heading mb-lg-1">
+
+                            The HTML Advantage</p>
+                            <p className="common-para">
+                                Our virtual event software stands out as the sole solution developed with HTML5, ensuring a seamless mobile experience and comprehensive cross-platform support.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                                
+                       Detailed Metrics and Reporting</p>
+                            <p className="common-para">
+                            Our platform tracks and measures your event ROI. Gain insight into user behaviour and content preferences and track quality leads.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                            Choice of Rooms and Spaces</p>
+                            <p className="common-para">
+                            From single conference rooms to full-size events featuring exhibit halls, booths, lounges, and more, Our software customizes your platform to meet your needs.
+                            </p>
+                            <p className="product-services-box-heading mb-lg-1">
+                            Social Networking & Interactions</p>
+                            <p className="common-para">
+                            Interact directly with your virtual event attendees and expand the dialog with live chats, polls, RSS feeds, and social media.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
-                    <div className="product-services-box">
-                        <div className="inner-wrapper">
-                              <p className="product-services-box-heading">
-                                Technology & Engineering
-                              </p>
-                             <ul>
-                                 <li className="common-para">Technology Forecasting</li>
-                                 <li className="common-para">Business Modeling</li>
-                                 <li className="common-para">Time of Entry</li>
-                                 <li className="common-para">Gap Identification</li>
-                                 <li className="common-para">Channel Strategy</li>
-                                 <li className="common-para">Digital Risk Management</li>
-                             </ul>
-                        </div>
-                    </div>
-                </div>
-                
-           </div>
-           <div className="row mt-60">
-             <div className="col-lg-12">
-                <h2 className="sub-pages-heading mb-lg-4">Understanding customer experience in Digital Times/DXP (Digital Experience Platform).</h2>
-                <p className="common-para">
-                    Would you pay more for a memorable experience, given by a brand you like? In the future, your clients assuredly will. More than costs or items, experiences that flash incredible emotions will shape purchasing behaviors and brand dedication. Having discussions may sound simple. but in the present complex world, it's everything but. It requires not just conveying content to sites, email, versatile applications, customer portals, social platforms, IoT gadgets, virtual and augmented reality gadgets, in-store kiosks, digital signage, POS systems, and the sky is the limit from there; yet additionally interfacing the experiences on them.
-                    Customers have come to acknowledge that giving data to organizations is a necessary part of digital. However, they anticipate that brands should realize them in return. Marketing leaders regularly talk about putting clients first, but the fact is 42% of organizations never request any feedback. Customers can detect this disconnect. They know when the human component is absent. Our responsibility is to proactively search out and fix broken experiences before the clients drive away.
-                </p>
-             </div>
-           </div>
-        </div>
-    </section>
-    </>
-  )
+            </section>
+        </>
+    )
 }
 
 export default VirtualEvent

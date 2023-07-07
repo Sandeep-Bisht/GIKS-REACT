@@ -14,9 +14,7 @@ const BusinessCousulting = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Business Consulting</h1>
                         <p className="common-para">
-                            We create custom applications at pace of business need. Here is why GIKS<br/>Rapid
-                            application development methodology is the right fit to create<br/>enterprise-grade custom
-                            applications.
+                        Business Process Consulting refers to the practice of analysing, evaluating, and improving the operational processes within an organization. With our Business Process Consulting service, we help businesses enhance their workflows, reduce costs, and achieve their objectives with maximum effectiveness.
                         </p>
                     </div>
                 </div>
@@ -27,69 +25,62 @@ const BusinessCousulting = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Custom Application Development Using Rapid</h2>
+                    <h2 className="sub-pages-heading">Strategic IT Consulting Services</h2>
                     <p className="common-para">
-                        Rapid application development tools prioritize speed and agility so that IT<br/> teams can
-                        increase their productivity and improve project outcomes.
+                    GIKS India, a prominent IT consulting firm, offers customized IT consultancy services and comprehensive business IT support to organizations of all sizes.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Great Looking Apps Out of the Box
+                    IT Assessments
                     </p>
                     <p className="common-para">
-                        Pre-built themes and app templates, to quicken event driven navigation and consistent design.
+                    Our IT assessments help you gain a deeper understanding of your IT environment, aligning with your strategic business goals and objectives.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Extensible Code Base
+                    IT Strategy & Planning
                     </p>
                     <p className="common-para">
-                        Code generated can be easily extended or maintained using your favorite IDE.
+                    Our dedicated team of technical experts collaborates with you to develop an IT strategy that aligns your technology choices with your business requirements.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        No Code Lock-in
+                    Business Continuity & Disaster Recovery
                     </p>
                     <p className="common-para">
-                        The code generated is Maven compliant, Open Source and can be exported as a ZIP or WAR file.
+                    We help you establish a business continuity plan that safeguards your critical systems and processes, providing you with peace of mind.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Lower Infra tco with Docker
+                    
+Lower Infrastructure Total Cost of Ownership (TCO) with Docker
                     </p>
                     <p className="common-para">
-                        Lightweight Docker based containerization model that runs 2-3 times faster than VMs.
+                    Docker, a lightweight containerization model, offers significant performance advantages, 
+                    running 2-3 times faster than traditional virtual machines (VMs).
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Accelerate API Reuse
+                    Governance, Risk, & Compliance
                     </p>
                     <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
+                    We collaborate with you to assess, plan, implement, and manage IT systems, ensuring a seamless alignment between your infrastructure and organizational strategy.
                     </p>
                 </div>
-                <div className="col-lg-2">
-                    <p className="product-services-box-heading">
-                        More productivity with fewer people
-                    </p>
-                    <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
-                    </p>
-                </div>
+               
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Why RAD for your Applications</h2>
+                    <h2 className="sub-pages-heading">Unlock the Full Potential of Our Custom-Tailored IT Consultancy Services</h2>
                     <p className="common-para">
-                        When apps are needed by the day, why should development take months? RAD gives your enterprise
-                        a<br/> tomorrow ready approach to build applications.
+                    Experience Comprehensive Customized IT Consultancy Services for Your Business. Discover the Difference with Our Strategic Guidance and Expertise in Cloud Strategy, Budget Planning, Risk Management, Disaster Recovery, Business Continuity, IT Assessment, Strategic Planning, and Communication Solutions
                     </p>
                 </div>
             </div>
@@ -98,25 +89,23 @@ const BusinessCousulting = () => {
                     <ul className="list-unstyled ps-0 first">
                         <li>
                             <p className="product-services-box-heading">
-                                Innovate as you renovate
+                            Web and App Development
                             </p>
                             <p className="common-para">
-                                Pre-built themes and app templates, to quicken event driven navigation and consistent
-                                design.
+                            As a web and app development company, we specialize in transforming your ideas into powerful catalysts for your business growth.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Tackle skills shortage
+                            Custom App Development
                             </p>
                             <p className="common-para">
-                                Why code from line 1? With skill obsolescence happening sooner than ever RAD takes less
-                                time, cost and skill to create applications.
+                            With our proficiency in e-commerce, adtech/martech, peer-to-peer sectors, and various other business domains, we excel in crafting bespoke web and mobile solutions that cater to the unique needs of our clients.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Scale out faster
+                            Liferay Development
                             </p>
                             <p className="common-para">
                                 With a cloud built on Docker, RAD helps apps to scale out. Microservices architecture is
@@ -194,8 +183,7 @@ const BusinessCousulting = () => {
                             Website Development
                         </p>
                         <p className="common-para">
-                            We are a web & app development company that turns your ideas into a new driving force of
-                            your business.</p>
+                        As a web and app development company, we specialize in transforming your ideas into powerful catalysts for your business growth.</p>
                     </div>
                 </div>
                 <div className="col-lg-3">
@@ -207,8 +195,7 @@ const BusinessCousulting = () => {
                         Custom App Development
                     </p>
                     <p className="common-para">
-                        Our expertise in e-commerce, adtech/martech, and people-to-people fields as well as other
-                        business areas helps us develop web and mobile solutions tailored with care for our clients.</p></div>
+                    With our proficiency in e-commerce, adtech/martech, peer-to-peer sectors, and various other business domains, we excel in crafting bespoke web and mobile solutions that cater to the unique needs of our clients.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -219,9 +206,7 @@ const BusinessCousulting = () => {
                         Liferay Development
                     </p>
                     <p className="common-para">
-                        Liferay DXP offers developers a complete platform for building web apps, mobile apps, and web
-                        services quickly, using features and frameworks designed for rapid development, good
-                        performance, and ease of use.</p></div>
+                    Liferay DXP empowers developers with a comprehensive platform for fast creation of web apps, mobile apps, and web services. Its feature-rich frameworks prioritize rapid development, optimal performance, and user-friendly experience.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -232,9 +217,7 @@ const BusinessCousulting = () => {
                         Mobile App Development
                     </p>
                     <p className="common-para">
-                        To create a fast and smooth app for any platform, we also deliver products with outsourcing app
-                        development model. This model gives a reasonable solution to control the budget and other
-                        recourses.</p></div>
+                    For the efficient development of fast and seamless applications across multiple platforms, we offer an outsourcing app development model. This model provides a cost-effective solution for managing budgets and resources while ensuring the creation of high-quality products..</p></div>
                 </div>
             </div>
 

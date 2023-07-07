@@ -11,8 +11,8 @@ const Blog = () => {
                     <h1 className="common-heading text-center">Blog</h1>
                 </div>
             </div>
-            <div className="row mt-60">
-                <div className="col-lg-9">
+            <div className="row mt-60 mob-col-reverse">
+                <div className="col-lg-9 col-md-7 col-sm-7">
                     <div className="blog-left-wrapper">
                         <div className="blog-single-card">
                             <Link to="/blog-detail">
@@ -234,7 +234,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-3 col-md-5 col-sm-5">
                     <div className="blog-right-wrapper">
                         <div className="row">
                             <div className="col-md-12">

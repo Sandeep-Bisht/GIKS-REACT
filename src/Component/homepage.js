@@ -43,7 +43,10 @@ const Homepage = () => {
             480: {
                 items: 1
             },
-            769: {
+            767:{
+                     items: 1
+            },
+            768: {
                 items: 5
             },
             1200: {
@@ -103,7 +106,7 @@ const Homepage = () => {
     <div className="home-banner">
     <div className="container home-banner-container">
       <div className="row align-items-center">
-        <div className="col-lg-7">
+        <div className="col-lg-7 col-md-7 col-sm-6">
           <div className="home-banner-left">
             <p className="banner-title f1">
               <span className="one">Inn</span><span className="two">ova</span><span className="three">ting</span> <span
@@ -117,14 +120,14 @@ const Homepage = () => {
               Offering customized and innovative solutions for scalable enterprises. We specialize in Providing software development services that cater to the unique needs and requirements for the organizations.
 
              </p>
-            <a href="#" className="common-btn mt-4 d-inline-block">
+            <a href="#" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
                  
                  <Link to="/contact" className="nav-link ">Contact Us</Link>
             </a>
           </div>
         </div>
-        <div className="col-lg-5">
-          <img src="/images/banner.gif" className="img-fluid" alt="" />
+        <div className="col-lg-5 col-md-5 col-sm-6 home-banner-second-col">
+          {/* <img src="/images/banner.gif" className="img-fluid banner-pic" alt="" /> */}
         </div>
       </div>
 
@@ -134,7 +137,7 @@ const Homepage = () => {
   <section className="home-about">
     <div className="container">
       <div className="row align-items-center">
-        <div className="col-lg-5">
+        <div className="col-lg-5 col-md-5 col-sm-5">
           <div className="home-about-pic">
 
              {/* <img src="/images/about-single.png" className="img-fluid" alt="about"/>  */}
@@ -1017,7 +1020,7 @@ const Homepage = () => {
 
         </div>
 
-        <div className="col-lg-7">
+        <div className="col-lg-7 col-md-7 col-sm-7">
 
           <div className="home-about-content text-center">
             <h1 className="common-heading">About Us</h1>
@@ -1031,7 +1034,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </p>
             
               
-              <Link to="/about-us" className="common-btn mt-4 d-inline-block">
+              <Link to="/about-us" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
               Read More
                 </Link>
             
@@ -1054,8 +1057,8 @@ Our team of experts is dedicated to delivering high-quality software services th
           <h2 className="common-heading ">Products</h2>
         </div>
       </div>
-      <div className="row mt-60">
-        <div className="col-lg-3">
+      <div className="row mt-60 common-padding-25">
+        <div className="col-lg-3 col-md-6 col-sm-6 col-6">
           <div className="product-card">
             <div className="product-card-pic">
               <img src="/images/products/1.gif" />
@@ -1082,7 +1085,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-6 col-sm-6 col-6">
           <div className="product-card">
             <div className="product-card-pic">
               <img src="/images/products/2.gif" />
@@ -1109,7 +1112,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-6 col-sm-6 col-6">
           <div className="product-card">
             <div className="product-card-pic">
               <img src="/images/products/3.gif" />
@@ -1137,7 +1140,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-6 col-sm-6 col-6">
           <div className="product-card">
             <div className="product-card-pic">
               <img src="/images/products/4.gif" />
@@ -1177,117 +1180,21 @@ Our team of experts is dedicated to delivering high-quality software services th
       <div className="row">
         <div className="col-md-12">
           <div className="owl-carousel">
-            <div className="slides">
+          <div className="slides">
               <div className="row">
-                <div className="col-lg-4 slider-left">
+                <div className="col-lg-4 slider-left col-md-4 col-sm-4 col-4">
                   <h2 className="common-heading">
-                    Application<br/>
-                    Development
+                  IT Infrastructure<br/>Managment
+                    
                   </h2>
                   <p className="common-para slider-content">
-                    We create custom applications at pace of business need. Here is why GIKS Rapid application
-                    development methodology is the right fit to create enterprise-grade custom applications
+                  Infrastructure management involves overseeing IT policies, processes, equipment, information, HR, and external contacts (such as vendors or security associations).
                   </p>
-                  <Link to="/application-development" className="common-btn mt-4 d-inline-block">
-                    Read More
-                   </Link>
-                  
-                </div>
-                <div className="col-lg-8">
-                  <div className="slider-wrapper">
-                     {/* <div className="slider-content">
-                        <h2 className="common-heading">
-                          Application<br/>
-                          Development12
-                        </h2>
-                        <p className="common-para slider-content">
-                          We create custom applications at pace of business need. Here is why GIKS Rapid application
-                          development methodology is the right fit to create enterprise-grade custom applications
-                        </p>
-                      </div>  */}
-                    <div className="img-overlay">
-                      <img src="/images/slider1.jpg" className="img-fluid" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="slides">
-              <div className="row">
-                <div className="col-lg-4 slider-left">
-                  <h2 className="common-heading">
-                    Internet of<br/>
-                    Things
-                  </h2>
-                  <p className="common-para slider-content">
-                    We are providing Innovative Solutions for Interconnected IoT devices. Helping organizations grow by providing real-time insights into their operations, optimizing their processes, reducing costs, improving Digital Customer Experience, and creating new revenue streams through innovative products and services.
-                  </p>
-                  <Link to="/internet-of-things" className="common-btn mt-4 d-inline-block">
+                  <Link to="/infrastructure-managment" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
                     Read More
                    </Link>
                 </div>
-                <div className="col-lg-8">
-                  <div className="slider-wrapper">
-                     {/* <div className="slider-content">
-                        <h2 className="common-heading">
-                          Internet of<br/>
-                         Things
-                        </h2>
-                        <p className="common-para slider-content">
-                          IoT services comprise strategic consulting,development,data
-                          analytics,and application managment aimed at helping
-                          organizations solve their business challenges via IoT technology.
-                        </p>
-                      </div>  */}
-                    <img src="/images/slider2.jpg" className="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="slides">
-              <div className="row">
-                <div className="col-lg-4 slider-left">
-                  <h2 className="common-heading">
-                  IT Security Managment
-                  </h2>
-                  <p className="common-para slider-content">
-                    To help businesses of all sizes improve their operations and reach their goals. Our team of experienced developers can create custom applications that meet your specific needs, whether you need a new software solution for your internal operations or a mobile app to engage with your customers.
-                  </p>
-                  <Link to="/it-security-managment" className="common-btn mt-4 d-inline-block">
-                    Read More
-                   </Link>
-                </div>
-                <div className="col-lg-8">
-                  <div className="slider-wrapper">
-                     {/* <div className="slider-content">
-                        <h2 className="common-heading">
-                          Application<br/>
-                          Development
-                        </h2>
-                        <p className="common-para slider-content">
-                          We create custom applications at pace of business need. Here is why GIKS Rapid application
-                          development methodology is the right fit to create enterprise-grade custom applications
-                        </p>
-                      </div>  */}
-                    <img src="/images/slider1.jpg" className="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="slides">
-              <div className="row">
-                <div className="col-lg-4 slider-left">
-                  <h2 className="common-heading">
-                    Internet of<br/>
-                    Things
-                  </h2>
-                  <p className="common-para slider-content">
-                    IoT services comprise strategic consulting,development,data
-                    analytics,and application managment aimed at helping
-                    organizations solve their business challenges via IoT technology.
-                  </p>
-                </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 col-md-8 col-sm-8 col-8">
                   <div className="slider-wrapper">
                     <div className="slider-content">
                        {/* <h2 className="common-heading">
@@ -1300,11 +1207,141 @@ Our team of experts is dedicated to delivering high-quality software services th
                           organizations solve their business challenges via IoT technology.
                         </p>  */}
                     </div>
-                    <img src="/images/slider2.jpg" className="img-fluid" />
+                    <img src="/images/slider4.jpg" className="img-fluid" />
                   </div>
                 </div>
               </div>
             </div>
+            <div className="slides">
+              <div className="row">
+                <div className="col-lg-4 slider-left col-md-4 col-sm-4 col-4">
+                  <h2 className="common-heading">
+                  Business<br/>Consulting
+                    
+                  </h2>
+                  <p className="common-para slider-content">
+                  Business Process Consulting refers to the practice of analysing, evaluating, and improving the operational processes within an organization.
+                  </p>
+                  <Link to="/business-consulting" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
+                    Read More
+                   </Link>
+                </div>
+                <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                  <div className="slider-wrapper">
+                    <div className="slider-content">
+                       {/* <h2 className="common-heading">
+                          Internet of<br/>
+                         Things
+                        </h2>
+                        <p className="common-para slider-content">
+                          IoT services comprise strategic consulting,development,data
+                          analytics,and application managment aimed at helping
+                          organizations solve their business challenges via IoT technology.
+                        </p>  */}
+                    </div>
+                    <img src="/images/slider5.jpg" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="slides">
+              <div className="row">
+                <div className="col-lg-4 slider-left col-md-4 col-sm-4 col-4">
+                  <h2 className="common-heading">
+                    Application<br/>
+                    Development
+                  </h2>
+                  <p className="common-para slider-content">
+                  As a leading application development company in India, we excel in providing cutting-edge application development solutions.
+                  </p>
+                  <Link to="/application-development" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
+                    Read More
+                   </Link>
+                  
+                </div>
+                <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                  <div className="slider-wrapper">
+                     {/* <div className="slider-content">
+                        <h2 className="common-heading">
+                          Application<br/>
+                          Development12
+                        </h2>
+                        <p className="common-para slider-content">
+                          We create custom applications at pace of business need. Here is why GIKS Rapid application
+                          development methodology is the right fit to create enterprise-grade custom applications
+                        </p>
+                      </div>  */}
+                    <div className="img-overlay">
+                      <img src="/images/slider2.jpg" className="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slides">
+              <div className="row">
+                <div className="col-lg-4 slider-left  col-md-4 col-sm-4 col-4">
+                  <h2 className="common-heading">
+                    Internet of
+                    Things
+                  </h2>
+                  <p className="common-para slider-content">
+                  Our IOT Services provide a complete range of solutions, including hardware, software, connectivity, and analytics.
+                  </p>
+                  <Link to="/internet-of-things" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
+                    Read More
+                   </Link>
+                </div>
+                <div className="col-lg-8  col-md-8 col-sm-8 col-8">
+                  <div className="slider-wrapper">
+                     {/* <div className="slider-content">
+                        <h2 className="common-heading">
+                          Internet of<br/>
+                         Things
+                        </h2>
+                        <p className="common-para slider-content">
+                          IoT services comprise strategic consulting,development,data
+                          analytics,and application managment aimed at helping
+                          organizations solve their business challenges via IoT technology.
+                        </p>
+                      </div>  */}
+                    <img src="/images/slider1.jpg" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slides">
+              <div className="row">
+                <div className="col-lg-4 slider-left  col-md-4 col-sm-4 col-4">
+                  <h2 className="common-heading">
+                  IT Security Managment
+                  </h2>
+                  <p className="common-para slider-content">
+                  With a team of highly skilled professionals, we offer comprehensive solutions to safeguard your digital assets and protect against evolving cybersecurity threats.
+                  </p>
+                  <Link to="/it-security-managment" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
+                    Read More
+                   </Link>
+                </div>
+                <div className="col-lg-8  col-md-8 col-sm-8 col-8">
+                  <div className="slider-wrapper">
+                     {/* <div className="slider-content">
+                        <h2 className="common-heading">
+                          Application<br/>
+                          Development
+                        </h2>
+                        <p className="common-para slider-content">
+                          We create custom applications at pace of business need. Here is why GIKS Rapid application
+                          development methodology is the right fit to create enterprise-grade custom applications
+                        </p>
+                      </div>  */}
+                    <img src="/images/slider3.jpg" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
 
 
           </div>
@@ -1314,7 +1351,7 @@ Our team of experts is dedicated to delivering high-quality software services th
     </div>
   </section>
   <section className="home-case-studies">
-    <div className="container">
+    <div className="container common-padding-25">
       <div className="row">
         <div className="col-lg-6 mx-auto text-center">
           <h2 className="common-heading">
@@ -1326,7 +1363,7 @@ Our team of experts is dedicated to delivering high-quality software services th
         </div>
       </div>
       <div className="row case-study-card-row">
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-3">
           <div className="case-study-card">
             <div className="upper-icons">
               <div className="left">
@@ -1363,16 +1400,16 @@ Our team of experts is dedicated to delivering high-quality software services th
                         <img src="/images/freindsclub.svg" />
                       </div>
                       <div className="case-study-second-content">
-                        <p className="case-study-second-content-heading">Enterprise Content Managment Solutions</p>
+                        <p className="case-study-second-content-heading">Freinds Club</p>
                         <p className="common-para">
                           We developed the Freinds Club official website using the Laravel framework.
                           Freinds Club is a social based in india with a large and active membership base.
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/freinds-club-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1396,7 +1433,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-3">
           <div className="case-study-card">
             <div className="upper-icons">
               <div className="left">
@@ -1440,9 +1477,9 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/national-hydrographic-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1465,7 +1502,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-3">
           <div className="case-study-card">
             <div className="upper-icons">
               <div className="left">
@@ -1507,9 +1544,9 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/ishaanav-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1532,7 +1569,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-3">
           <div className="case-study-card">
             <div className="upper-icons">
               <div className="left">
@@ -1569,16 +1606,13 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <div className="case-study-second-content">
                         <p className="case-study-second-content-heading">Jamaica Business Gateway</p>
                         <p className="common-para">
-                          Lorem ipsum dolor sit amet consectetur. Magna volutpat ornare non pretium dui vulputate
-                          tincidunt ultricies cursus. Arcu tristique felis ut leo scelerisque amet maecenas. Vestibulum
-                          suspendisse nibh quis natoque aenean. Vulputate aliquam aliquam tortor ultrices scelerisque
-                          commodo sed. Praesent et faucibus turpis sed. Fermentum at tortor velit.
+                        The Jamaica Business Gateway is an online platform developed to streamline business-related processes, foster economic growth, and enhance connectivity within the Jamaican business community. 
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/jaimaica-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1601,7 +1635,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-3">
           <div className="case-study-card">
             <div className="upper-icons">
               <div className="left">
@@ -1647,9 +1681,9 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/nrcms-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1672,7 +1706,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-3">
           <div className="case-study-card">
 
             <div className="upper-icons">
@@ -1717,9 +1751,9 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/jgc-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1742,7 +1776,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-3">
           <div className="case-study-card">
             <div className="upper-icons">
               <div className="left">
@@ -1787,9 +1821,9 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/pioneer-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1812,7 +1846,7 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3- col-3">
           <div className="case-study-card">
 
             <div className="upper-icons">
@@ -1850,17 +1884,13 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <div className="case-study-second-content">
                         <p className="case-study-second-content-heading">INCA India</p>
                         <p className="common-para">
-                          Lorem ipsum dolor sit amet consectetur. Lorem commodo curabitur sed purus ac.
-                          Proin fusce montes senectus sed cras netus cursus. Lacus at tristique nunc
-                          tempus at egestas blandit. Morbi gravida hac habitant magnis adipiscing diam
-                          lacinia tincidunt malesuada. Ultrices elementum ac sit tristique quam. Sit
-                          euismod sit orci morbi id fames sit.
+                        This case study focuses on the Indian National Cartographic Association (INCA) and its website. INCA is a professional organization based in India that aims to promote the field of cartography, support geospatial professionals, and enhance cartographic practices in the country. 
                         </p>
                         <div className="right">
                           <div>
-                            <a href="#" className="common-btn  d-inline-block">
+                            <Link to='/inca-study' className="common-btn  d-inline-block">
                               Read More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

@@ -10,7 +10,7 @@ const CustomSoftwareDevelopment = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Custom Software Development</h1>
                         <p className="common-para">
-                          Accelerate change across your enterprise to create lasting value
+                        Experience the power of tailored solutions with our Custom Software Development services.<br/>Unlock the full potential of your business by leveraging our expertise in building personalized software solutions. 
                         </p>
                     </div>
                 </div>
@@ -20,62 +20,47 @@ const CustomSoftwareDevelopment = () => {
     <section className="technology-about">
         <div className="container">
             <div className="row">
-                <div className="col-lg-8 mx-auto text-center">
-                    <h2 className="sub-pages-heading">Our Capabilities</h2>
+                <div className="col-lg-10 mx-auto text-center">
+                    <h2 className="sub-pages-heading">Our Core Services</h2>
                     <p className="common-para">
-                      We combine local insights with deep expertiseacross 10+ industries to tailor the servicesthat solve your biggest challenges.
+                       Don’t waste valuable time and resources trying to figure it out on your own. Custom apps are hard, but with us they don’t need to be
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-lg-4 mb-2">
                     <p className="product-services-box-heading">
-                      Intelligent Platform Services
+                    Custom Software Development
                     </p>
                     <p className="common-para">
-                      Transform your business into an intelligent enterprise with solutions from Oracle, Microsoft, Liferay, Salesforce, Adobe and more.
+                    Empowering businesses with tailored solutions through custom software Solution.
                     </p>
                 </div>
                 <div className="col-lg-4 mb-2">
                     <p className="product-services-box-heading">
-                      Intelligent software engineering services
+                    UI/UX App Design
                     </p>
                     <p className="common-para">
-                      Build systems to drive your business strategy using data, AI, cloud and new technologies.
+                    Design is not just what it looks like and feels like. Design is how it works. We pride ourselves in designing apps that are both visually stunning and highly intuitive.
                     </p>
                 </div>
                 <div className="col-lg-4 mb-2">
                     <p className="product-services-box-heading">
-                      Intelligent cloud and infrastructure
+                    Strategic Consulting
                     </p>
                     <p className="common-para">
-                      Accelerate growth with end-to-end services powered by intelligent automation, security and analytics.
+                    By choosing GIKS India, you will be guaranteed more than just a team of developers working on your project. In working with us, you'll have a team of strategic app consultants who will be aligned with the goals of your company.
                     </p>
                 </div>
                 <div className="col-lg-4 mb-2">
                     <p className="product-services-box-heading">
-                      Technology innovation
+                    Cloud Based Infrastructure
                     </p>
                     <p className="common-para">
-                      Shape the future of business and technology through applied technology R&D, rapid prototyping and innovation at scale.
-                    </p>
+                    As someone who has built mobile apps on a large scale for years, this is right up our alley. You can rest assured that GIKS India has over 25M+ users on its platform, so whatever challenges you may face with your app, we can handle them.
+                      </p>
                 </div>
-                <div className="col-lg-4 mb-2">
-                    <p className="product-services-box-heading">
-                      Technology strategy and advisory
-                    </p>
-                    <p className="common-para">
-                      Realize exceptional business value from technology.
-                    </p>
-                </div>
-                <div className="col-lg-4 mb-2">
-                    <p className="product-services-box-heading">
-                      Security
-                    </p>
-                    <p className="common-para">
-                      Grow confidently and build cyber resilience from the inside out with our innovative cybersecurity services.
-                    </p>
-                </div>
+             
             </div>
          
 

@@ -14,9 +14,7 @@ const InternetOfThings = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Internet of Things</h1>
                         <p className="common-para">
-                            We create custom applications at pace of business need. Here is why GIKS<br/>Rapid
-                            application development methodology is the right fit to create<br/>enterprise-grade custom
-                            applications.
+                        Our IOT Services provide a complete range of solutions, including hardware, software, connectivity, and analytics.<br/> By connecting IOT devices with our offerings, industries can achieve seamless integration and automation,<br/>leveraging the power of the Internet of Things.
                         </p>
                     </div>
                 </div>
@@ -27,69 +25,67 @@ const InternetOfThings = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Custom Application Development Using Rapid</h2>
+                    <h2 className="sub-pages-heading">Industrial IOT</h2>
                     <p className="common-para">
-                        Rapid application development tools prioritize speed and agility so that IT<br/> teams can
-                        increase their productivity and improve project outcomes.
+                    Empowering industries with smart connectivity and advanced automation. Industrial IoT refers to the network of interconnected devices, sensors, and machines in industrial settings, enabling advanced data collection, analysis, and automation for increased productivity and efficiency.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Great Looking Apps Out of the Box
+                    Connected Buildings
                     </p>
                     <p className="common-para">
-                        Pre-built themes and app templates, to quicken event driven navigation and consistent design.
+                    The success of implementing a smart building technology initiative in your facility hinges on a well-planned deployment and setup strategy.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Extensible Code Base
+                    Smart retail
                     </p>
                     <p className="common-para">
-                        Code generated can be easily extended or maintained using your favorite IDE.
+                    With the increasing popularity of smart home products, the number of smart devices continues to grow steadily. The IoT technology has emerged as a dominant force in this area.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        No Code Lock-in
+                    OTA Software
                     </p>
                     <p className="common-para">
-                        The code generated is Maven compliant, Open Source and can be exported as a ZIP or WAR file.
+                    Android devices deployed in the field have the capability to receive and install over-the-air (OTA) updates for system enhancements, application software, and time zone rules.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Lower Infra tco with Docker
+                    IOT Security
                     </p>
                     <p className="common-para">
-                        Lightweight Docker based containerization model that runs 2-3 times faster than VMs.
+                    Achieve rapid and cost-efficient deployment with a diverse range of pre-integrated IoT security solutions, catering to various sectors such as in-vehicle systems, medical devices, industrial automation systems, and Internet of Things manufacturers.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        Accelerate API Reuse
+                    Cost Reduction
                     </p>
                     <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
+                    As businesses increasingly utilize IoT devices to optimize operations and drive profitability, the development of Internet of Things technologies will further align with the specific needs of these businesses, enabling them to thrive and succeed.
                     </p>
                 </div>
-                <div className="col-lg-2">
+                <div className="col-lg-4">
                     <p className="product-services-box-heading">
-                        More productivity with fewer people
+                    Customer Experience
                     </p>
                     <p className="common-para">
-                        Custom built “Prefabs” for drag & drop use and re-use in application development.
+                    Although IoT technology has predominantly impacted back-end processes due to its recent emergence, the current state of IoT has completely transformed consumer-business relationships, revolutionizing the way customers engage with businesses through omni-channel strategies.
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Why RAD for your Applications</h2>
+                    <h2 className="sub-pages-heading">Efficiency & Productivity</h2>
                     <p className="common-para">
-                        When apps are needed by the day, why should development take months? RAD gives your enterprise
-                        a<br/> tomorrow ready approach to build applications.
+                    Enhanced productivity, driven by efficiency, serves as the foundation for revenue growth among SMBs.
                     </p>
                 </div>
             </div>
@@ -98,47 +94,42 @@ const InternetOfThings = () => {
                     <ul className="list-unstyled ps-0 first">
                         <li>
                             <p className="product-services-box-heading">
-                                Innovate as you renovate
+                            IOT based Dam Monitoring System
                             </p>
                             <p className="common-para">
-                                Pre-built themes and app templates, to quicken event driven navigation and consistent
-                                design.
+                            A system for dam water monitoring and management, established which can provide water level in real time and can allow us to come to quick conclusions regarding the safety operations of the dams.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Tackle skills shortage
+                            Internet of Things Oil and Gas Monitoring Systems
                             </p>
                             <p className="common-para">
-                                Why code from line 1? With skill obsolescence happening sooner than ever RAD takes less
-                                time, cost and skill to create applications.
+                            The Internet of Things (IoT) in the oil & gas industry is the network of physical objects connected to the Internet. Wearable devices, vehicles, equipment, buildings, and just about any other thing can be embedded with electronics, software, sensors, and network connectivity.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Scale out faster
+                            Engineering, Procurement & Construction Service: 
                             </p>
                             <p className="common-para">
-                                With a cloud built on Docker, RAD helps apps to scale out. Microservices architecture is
-                                replacing the super app with a network of smaller apps.
+                            Engineering, Procurement & Construction (EPC) services refer to a form of contracting arrangement used in the construction and engineering industries, when a customer hires a contractor to perform the entire work cycle.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Save time & budget
+                            IOT Sensors
                             </p>
                             <p className="common-para">
-                                Optimize for maintenance, not performance. With RAD failing is inexpensive and cycle
-                                times are shorter.
+                            Industries and organizations have been using various kinds of sensors for a long time but the invention of the Internet of Things has taken the evolution of sensors to a completely different level.
                             </p>
                         </li>
                         <li>
                             <p className="product-services-box-heading">
-                                Close the design code gap
+                            Mobility & agility
                             </p>
                             <p className="common-para">
-                                Code growing further from initial design is a familiar problem. RAD helps keep code
-                                close to design aiding cleaner and faster iterations.
+                            The nature of IoT technology means that businesses now have the opportunity to let their employees conduct their work from virtually any location—flexibility that can provide key advantages to SMBs in particular.
                             </p>
                         </li>
                     </ul>
@@ -146,40 +137,33 @@ const InternetOfThings = () => {
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Custom Application Development</h2>
+                    <h2 className="sub-pages-heading">Custom IoT Solutions</h2>
                     <p className="common-para">
-                        We deliver custom web, mobile and desktop software solutions that broadly fall under 3
-                        main<br/>categories –
-                        management of B2B, B2C interactions and internal operations.
+                    Our fully managed and hosted IoT platform and ecosystem facilitate the realization of custom IoT service enablement
                     </p>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Create New or Extend Existing Application</h2>
+                    <h2 className="sub-pages-heading">IOT Software for Healthcare</h2>
                     <ul className="second">
-                        <li className="common-para">Create data models, relationships and database constraints from existing
-                            system of records</li>
-                        <li className="common-para">Develop auto-import pipeline for existing database schema with support
-                            for multiple database platforms</li>
-                        <li className="common-para">Enable connection to Mobile backend services (MBaaS) of your choice
-                            (like AWS Mobile Services and Azure Mobile Services) for identity<br/>management & sync,
-                            analytics, push notifications, and more</li>
-                        <li className="common-para">Develop new integrations (or) connect with existing web services APIs
-                            (REST and SOAP) to enable an API-based custom application<br/>development</li>
+                        <li className="common-para">Our development expertise lies in creating applications and web systems that seamlessly connect all stakeholders within a smart healthcare environment, including doctors, nurses, patients, hospitals, pharmaceutical companies, foundations, and researchers.</li>
+                        <li className="common-para">Our software development focuses on creating tracking and monitoring solutions that bring complete visibility to healthcare facilities and processes. By optimizing patient flow, improving asset management, and reducing utility costs, we enable enhanced efficiency within healthcare settings.</li>
+                        <li className="common-para">By merging Internet of Things development with data science, we deliver intelligent data solutions tailored specifically for the healthcare industry.</li>
+                      
 
                     </ul>
                 </div>
             </div>
             <div className="row mt-60">
                 <div className="col-md-12">
-                    <h2 className="sub-pages-heading">Create Native Experiences</h2>
+                    <h2 className="sub-pages-heading">IOT Software for Device Management</h2>
                     <ul className="second">
-                        <li className="common-para">Enable access to native device features like camera, location, network,
-                            battery, contacts, local storage and more in your enterprise app</li>
-                        <li className="common-para">Accelerate app performance by leveraging offline storage</li>
-                        <li className="common-para">Develop native themes and UI controls (HTML5) that adapt to any screen
-                            of choice</li>
+                        <li className="common-para">Our device management software empowers clients to achieve enhanced transparency, safety, and efficiency in their infrastructure operations.</li>
+                        <li className="common-para">Our focus lies in developing user-centric web and mobile applications that enable remote control and management of devices and assets, catering to the needs of our clients.</li>
+                        <li className="common-para">
+                        With our extensive experience in Internet of Things product development, we assist our clients in unlocking the full potential of their data.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -194,8 +178,7 @@ const InternetOfThings = () => {
                             Website Development
                         </p>
                         <p className="common-para">
-                            We are a web & app development company that turns your ideas into a new driving force of
-                            your business.</p>
+                        As a web and app development company, we specialize in transforming your ideas into powerful catalysts for your business growth.</p>
                     </div>
                 </div>
                 <div className="col-lg-3">
@@ -207,8 +190,7 @@ const InternetOfThings = () => {
                         Custom App Development
                     </p>
                     <p className="common-para">
-                        Our expertise in e-commerce, adtech/martech, and people-to-people fields as well as other
-                        business areas helps us develop web and mobile solutions tailored with care for our clients.</p></div>
+                    With our proficiency in e-commerce, adtech/martech, peer-to-peer sectors, and various other business domains, we excel in crafting bespoke web and mobile solutions that cater to the unique needs of our clients.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -219,9 +201,7 @@ const InternetOfThings = () => {
                         Liferay Development
                     </p>
                     <p className="common-para">
-                        Liferay DXP offers developers a complete platform for building web apps, mobile apps, and web
-                        services quickly, using features and frameworks designed for rapid development, good
-                        performance, and ease of use.</p></div>
+                    Liferay DXP empowers developers with a comprehensive platform for fast creation of web apps, mobile apps, and web services. Its feature-rich frameworks prioritize rapid development, optimal performance, and user-friendly experience.</p></div>
                 </div>
                 <div className="col-lg-3">
                     <div className="what-we-do">
@@ -232,9 +212,7 @@ const InternetOfThings = () => {
                         Mobile App Development
                     </p>
                     <p className="common-para">
-                        To create a fast and smooth app for any platform, we also deliver products with outsourcing app
-                        development model. This model gives a reasonable solution to control the budget and other
-                        recourses.</p></div>
+                    For the efficient development of fast and seamless applications across multiple platforms, we offer an outsourcing app development model. This model provides a cost-effective solution for managing budgets and resources while ensuring the creation of high-quality products..</p></div>
                 </div>
             </div>
 

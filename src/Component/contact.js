@@ -5,8 +5,8 @@ const Contact = () => {
     <>
         <section className="contact-single">
          <div className="container">
-            <div className="row">
-               <div className="col-lg-6">
+            <div className="row mob-col-reverse">
+               <div className="col-lg-6 col-md-6 col-sm-6">
                   <div className="contact-single-left">
                      <h1 className="common-heading">
                         Get in Touch With Us
@@ -14,11 +14,7 @@ const Contact = () => {
                      <p className="common-subheading mt-4">
                         Would you like more information or<br/> to schedule an appointment?
                      </p>
-                     <div className="fill-out-box">
-                        <p className="fill-out-heading">FILL OUT THE FORM</p>
-                        <p className="common-para">We’ll get back to you as soon as possible
-                        </p>
-                     </div>
+                  
                      <ul>
                         <li className="contact-link">
                            <div>
@@ -47,7 +43,7 @@ const Contact = () => {
                               </div>
                               <div>
                                  <span className="contact-link-info common-para">
-                                 0135-3557207+91-7500872014
+                                 0135-3598127,+91-7500872014
                                  </span>
                               </div>
                            </a>
@@ -77,43 +73,50 @@ const Contact = () => {
                      </div> --> */}
                   </div>
                </div>
-               <div className="col-lg-6">
+               <div className="col-lg-6 col-md-6 col-sm-6">
                   <div className="contact-single-right">
                      <form>
                         <div className="row">
-                           <div className="col-md-6">
-                              <div className="mb-3">
+                           <div className='col-md-12'>
+                           <div className="fill-out-box mt-0">
+                        <p className="fill-out-heading">FILL OUT THE FORM</p>
+                        <p className="common-para">We’ll get back to you as soon as possible
+                        </p>
+                     </div>
+                           </div>
+                           <div className="col-md-6 col-sm-6">
+                              <div className="mb-3 input-wrapper">
                                  <label for="name" className="form-label">Full Name</label>
                                  <input type="text" className="form-control" id="name"/>
                               </div>
                            </div>
-                           <div className="col-md-6">
-                              <div className="mb-3">
+                           <div className="col-md-6 col-sm-6">
+                              <div className="mb-3 input-wrapper">
                                  <label for="lastname" className="form-label">Last Name</label>
                                  <input type="text" className="form-control" id="lastname"/>
                               </div>
                            </div>
-                           <div className="col-md-6">
+                           <div className="col-md-6 col-sm-6">
                               <div className="mb-3">
                                  <label for="email" className="form-label">E-mail</label>
                                  <input type="email" className="form-control" id="email"
                                     aria-describedby="emailHelp"/>
                               </div>
                            </div>
-                           <div className="col-md-6">
-                              <div className="mb-3">
+                           <div className="col-md-6 col-sm-6">
+                              <div className="mb-3 input-wrapper">
                                  <label for="number" className="form-label">Phone number</label>
                                  <input type="text" className="form-control" id="subject"/>
                               </div>
                            </div>
                            <div className="col-md-12">
-                              <div className="mb-3">
+                              <div className="mb-3 input-wrapper">
                                  <label for="subject" className="form-label">Subject</label>
                                  <input type="text" className="form-control" id="subject"/>
                               </div>
                            </div>
                            <div className="col-md-12">
-                              <div className="mb-4">
+                              <div className="mb-4 input-wrapper">
                                  <label className="form-label">Message</label>
                                  <textarea className="form-control" placeholder="" style={{height: "120px"}}></textarea>
                               </div>

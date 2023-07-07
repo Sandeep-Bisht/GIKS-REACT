@@ -486,7 +486,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="row mt-60">
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 col-6">
                             <div className="process-card">
                                 <div className="upper">
                                     <p className="process-card-number">
@@ -513,7 +513,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 col-6">
                             <div className="process-card">
                                 <div className="upper">
                                     <p className="process-card-number">
@@ -540,7 +540,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 col-6">
                             <div className="process-card">
                                 <div className="upper">
                                     <p className="process-card-number">
@@ -592,7 +592,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 col-6">
                             <div className="process-card">
                                 <div className="upper">
                                     <p className="process-card-number">
@@ -637,22 +637,16 @@ const About = () => {
                         <div className="col-md-12">
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
                                         <img src="/images/freindsclub.svg" />
 
                                     </div>
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Friends Club</p>
                                             <p className="common-para">
-                                                Friends Club is a social club based in India with a large and active membership
-                                                base. The club organizes various events and activities for its members and also
-                                                provides other services like court booking and food ordering. The club faced the
-                                                challenge of maintaining communication and engagement with its members,
-                                                especially during the COVID-19 pandemic when physical events and gatherings were
-                                                restricted. They needed an effective and user-friendly platform to connect with
-                                                their members and continue providing value to them.
+                                                We developed the Freinds Club official website using the Laravel framework. Freinds Club is a social based in india with a large and active membership base.
                                             </p>
                                         </div>
                                     </div>
@@ -660,19 +654,15 @@ const About = () => {
                             </div>
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">National Hydrographic office(NHO)</p>
                                             <p className="common-para">
-                                                The National Hydrographic Office (NHO) is the organization responsible for
-                                                surveying and charting India's waterways, and their website is a crucial tool
-                                                for sharing information with stakeholders and the public. When the NHO
-                                                approached our team for help with a website redesign, we were eager to take on
-                                                the challenge
+                                            The National Hydrographic Office (NHO) is the organization responsible for surveying and charting India's waterways, and their website is a crucial tool for sharing information with stakeholders and the public. When the NHO approached our team for help with a website redesign, we were eager to take on the challenge.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
 
                                         <img src="/images/nho.svg" />
@@ -685,7 +675,7 @@ const About = () => {
                             </div>
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
                                         <img src="/images/jgc.svg" />
 
@@ -693,14 +683,11 @@ const About = () => {
 
 
                                     </div>
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">JGC Gulf International Co. Ltd.</p>
                                             <p className="common-para">
-                                                (JGC Gulf) is a leading engineering, procurement, and construction company that
-                                                specializes in delivering innovative solutions for the oil and gas,
-                                                petrochemical, and other industries. When JGC Gulf approached our team for help
-                                                with their website redesign, we were excited to take on the challenge.
+                                            (JGC Gulf) is a leading engineering, procurement, and construction company that specializes in delivering innovative solutions for the oil and gas, petrochemical, and other industries. When JGC Gulf approached our team for help with their website redesign, we were excited to take on the challenge.
                                             </p>
                                         </div>
                                     </div>
@@ -708,18 +695,15 @@ const About = () => {
                             </div>
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Ishaanav Nutraceuticals Pvt Ltd</p>
                                             <p className="common-para">
-                                                The contract pharmaceutical manufacturing business client faced obstacles in
-                                                managing customer relationships, purchase orders, production processes, and
-                                                invoicing. Their operations relied on manual systems that were laborious,
-                                                error-prone, and lacked real-time insights.
+                                            The contract pharmaceutical manufacturing business client faced obstacles in managing customer relationships, purchase orders, production processes, and invoicing. Their operations relied on manual systems that were laborious, error-prone, and lacked real-time insights.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
 
                                         <img src="/images/ishana.svg" />
@@ -732,7 +716,7 @@ const About = () => {
                             </div>
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
                                         <img src="/images/nbp.svg" />
 
@@ -740,15 +724,11 @@ const About = () => {
 
 
                                     </div>
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Jamaica Business Gateway</p>
                                             <p className="common-para">
-                                                Lorem ipsum dolor sit amet consectetur. Magna volutpat ornare non pretium dui
-                                                vulputate tincidunt ultricies cursus. Arcu tristique felis ut leo scelerisque
-                                                amet maecenas. Vestibulum suspendisse nibh quis natoque aenean. Vulputate
-                                                aliquam aliquam tortor ultrices scelerisque commodo sed. Praesent et faucibus
-                                                turpis sed. Fermentum at tortor velit.
+                                            The Jamaica Business Gateway is an online platform developed to streamline business-related processes, foster economic growth, and enhance connectivity within the Jamaican business community.
                                             </p>
                                         </div>
                                     </div>
@@ -756,20 +736,15 @@ const About = () => {
                             </div>
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Northern Railways</p>
                                             <p className="common-para">
-                                                The Northern Railway, which forms the core of the Indian Railways, has
-                                                undertaken a mission to conquer distances and establish its own identity. It was
-                                                formally established in 1952 and continues to be the largest zone in terms of
-                                                route kilometers, even after the reorganization of the Indian Railways into 16
-                                                zones. The Northern Railway is now made up of five divisions: Ambala, Delhi,
-                                                Ferozpur, Lucknow, and Moradabad.
+                                            The Northern Railway, which forms the core of the Indian Railways, has undertaken a mission to conquer distances and establish its own identity. It was formally established in 1952 and continues to be the largest zone in terms of route kilometers, even after the reorganization of the Indian Railways into 16 zones. 
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
 
                                         <img src="/images/railway.svg" />
@@ -782,7 +757,7 @@ const About = () => {
                             </div>
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
                                         <img src="/images/pioneer.svg" />
 
@@ -790,15 +765,11 @@ const About = () => {
 
 
                                     </div>
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">The Pioneer Edge</p>
                                             <p className="common-para">
-                                                Pioneer Edge is a news portal dedicated to providing news and information
-                                                related to the state of Uttarakhand in India. It covers a wide range of topics
-                                                including politics, business, entertainment, sports, and more. The website aims
-                                                to be a one-stop destination for people looking for news and information related
-                                                to Uttarakhand.
+                                            Pioneer Edge is a news portal dedicated to providing news and information related to the state of Uttarakhand in India. It covers a wide range of topics including politics, business, entertainment, sports, and more. The website aims to be a one-stop destination for people looking for news and information related to Uttarakhand.
                                             </p>
                                         </div>
                                     </div>
@@ -806,19 +777,15 @@ const About = () => {
                             </div>
                             <div className="client-card">
                                 <div className="row">
-                                    <div className="col-lg-10">
+                                    <div className="col-lg-10 col-9">
                                         <div className="client-card-right">
                                             <p className="client-card-heading">INCA India</p>
                                             <p className="common-para">
-                                                Lorem ipsum dolor sit amet consectetur. Lorem commodo curabitur sed purus ac.
-                                                Proin fusce montes senectus sed cras netus cursus. Lacus at tristique nunc
-                                                tempus at egestas blandit. Morbi gravida hac habitant magnis adipiscing diam
-                                                lacinia tincidunt malesuada. Ultrices elementum ac sit tristique quam. Sit
-                                                euismod sit orci morbi id fames sit.
+                                            This case study focuses on the Indian National Cartographic Association (INCA) and its website. INCA is a professional organization based in India that aims to promote the field of cartography, support geospatial professionals, and enhance cartographic practices in the country.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-2">
+                                    <div className="col-lg-2 col-3">
 
 
                                         <img src="/images/inca.svg" />

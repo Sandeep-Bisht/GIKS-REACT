@@ -6,7 +6,7 @@ const BlogDetails = () => {
         <section className="single-blog-page blog-detail">
         <div className="container">
             <div className="row mt-60">
-                <div className="col-lg-9">
+                <div className="col-lg-9 col-md-7 col-sm-7">
                     <div className="blog-left-wrapper">
                         <div className="row">
                             <div className="col-md-12">
@@ -151,7 +151,7 @@ const BlogDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-3 col-md-5 col-sm-5">
                     <div className="blog-right-wrapper">
                         <div className="row">
                             <div className="col-md-12">
