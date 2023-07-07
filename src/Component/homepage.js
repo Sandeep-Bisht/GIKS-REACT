@@ -127,7 +127,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="col-lg-5 col-md-5 col-sm-6 home-banner-second-col">
-          <img src="/images/banner.gif" className="img-fluid" alt="" />
+          {/* <img src="/images/banner.gif" className="img-fluid banner-pic" alt="" /> */}
         </div>
       </div>
 
