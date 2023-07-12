@@ -27,6 +27,10 @@ import NorthenRailwayStudy from '../Component/nrcmsStudy'
 import JgcStudy from '../Component/jgcStudy'
 import PioneerStudy from '../Component/pioneer'
 import IncaStudy from '../Component/incaStudy'
+import Careers from '../Component/careers'
+import PrivacyPolicy from '../Component/privacy-policy'
+import  TermsCondition from '../Component/terms-condition'
+ 
 
 const ApplicationRoutes = () => {
   return (
@@ -36,13 +40,13 @@ const ApplicationRoutes = () => {
         <Route path='/' element={<Homepage/>}/>
         <Route path='/about-us' element={<About/>}/>
         <Route path='/digital-experience-platform' element={<DigitalExperience/>}/>
-        <Route path='/integrated-estate-managment-system' element={<IntegratedEstate/>}/>
-        <Route path='/intelligent-ticketing-managmnet' element={<IntelligentTicketing/>}/>
-        <Route path='/virtual-event-managment' element={<VirtualEvent/>}/>
+        <Route path='/integrated-estate-management-system' element={<IntegratedEstate/>}/>
+        <Route path='/intelligent-ticketing-management' element={<IntelligentTicketing/>}/>
+        <Route path='/virtual-event-management' element={<VirtualEvent/>}/>
         <Route path='/application-development' element={<ApplicationDevelopment/>}/>
         <Route path='/internet-of-things' element={<InternetOfThings/>}/>
-        <Route path='/it-security-managment' element={<ItSecurityManagement/>}/>
-        <Route path='/infrastructure-managment' element={<InfrastructureManagement/>}/>
+        <Route path='/it-security-management' element={<ItSecurityManagement/>}/>
+        <Route path='/infrastructure-management' element={<InfrastructureManagement/>}/>
         <Route path='/business-consulting' element={<BusinessCousulting/>}/>
         <Route path='/technologies' element={<Technologies/>}/>
         <Route path='/custom-software-development' element={<CustomSoftwareDevelopment/>}/>
@@ -59,6 +63,12 @@ const ApplicationRoutes = () => {
         <Route path='/jgc-study' element={<JgcStudy/>}/>
         <Route path='/pioneer-study' element={<PioneerStudy/>}/>
         <Route path='/inca-study' element={<IncaStudy/>}/>
+
+        <Route path='/careers' element={<Careers/>}/>
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+  
+  <Route path='/terms-condition' element={<TermsCondition />}/>
+        
 
         
     </Routes>

@@ -34,13 +34,13 @@ const PioneerStudy = () => {
       </div>
       <div className="col-md-4">
         <div className="pic">
-        <img src="/images/study-pic.jpg" className='img-fluid' alt='freindsclub' />
+        <img src="/images/pioneeredge.png" className='img-fluid' alt='freindsclub' />
           <div className="title">
-            <a href="#" className="btn ">go to site</a>
+            <a href="https://www.pioneeredge.in/" target='_blank' className="btn ">go to site</a>
           </div>
         </div>
         <div className="connect">
-          <a href="file:///C:/Users/COMPUTER/Desktop/Giks/nrcms.html">www.The Pioneer Edge.com</a>
+          <a href="https://www.pioneeredge.in/" target='_blank' className='text-white text-decoration-underline'>www.The Pioneer Edge.com</a>
         </div>
       </div>
     </div>

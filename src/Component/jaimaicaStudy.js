@@ -74,13 +74,13 @@ const JaimaicaStudy = () => {
       </div>
       <div className="col-md-4">
         <div className="pic">
-        <img src="/images/study-pic.jpg" className='img-fluid' alt='freindsclub' />
+        <img src="/images/jamaicabusinessgateway.png" className='img-fluid' alt='freindsclub' />
           <div className="title">
-            <a href="#" className="btn"> go to site</a> 
+            <a href="https://jamaicabusinessgateway.com/" target='_blank' className="btn"> go to site</a> 
           </div>
         </div>
         <div className="connect">
-          <a href="https://giksindia.com/">www.JBG.com</a>
+          <a href="https://jamaicabusinessgateway.com/" target='_blank' className='text-white text-decoration-underline'>www.jamaicabusinessgateway.com</a>
         </div>
       </div>
     </div>

@@ -85,6 +85,11 @@ body {
 
 }
 
+.bg-transparent
+{
+    background:transparent!important;
+}
+
 input:focus {
     outline: none;
 }
@@ -272,12 +277,26 @@ header .dropdown-item:focus, header .dropdown-item:hover
 }
 .home-banner{
     /* background: linear-gradient(119.82deg, #000000 36.36%, #0D99FF 129.55%); */
-    background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
+    /* background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
     background-image: url('../images/banner.gif');
     background-size: cover;
+   position: relative; */
    position: relative;
      
 }
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+  }
+  .video-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 .home-banner::before
 {
     position: absolute;
@@ -291,7 +310,22 @@ header .dropdown-item:focus, header .dropdown-item:hover
     width: -27%;
     width: 100%;
     z-index: 2;
-    background: radial-gradient(52.3% 56.85%,#01162a5e 0%,#01162a 100%);
+    /* background: radial-gradient(52.3% 56.85%,#01162a5e 0%,#01162a 100%); */
+    /* background:linear-gradient(-90deg, rgba(1,22,32,.75) 0%, rgba(1,22,32,.55) 35%); */
+}
+.home-banner::after{
+     position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+   
+    width: 100%;
+    /* z-index: 2; background: radial-gradient(52.3% 56.85%,#01162a5e 0%,#01162a 100%); */ 
+    background: linear-gradient(2deg, rgb(4 23 40) 0%, rgb(1 22 32 / 73%) 35%);
 }
 .banner-pic
 {
@@ -1108,7 +1142,7 @@ border: 2px solid #0D99FF;
     align-items: center;
 }
 .about-who-we-are .common-heading{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .about-who-we-are::before{
     position: absolute;
@@ -1387,7 +1421,7 @@ border: 2px solid #0D99FF;
 .single-blog-page .blog-right-wrapper .search-box-wrapper
 {
   position: relative;
-  border-bottom: 3px solid #007DFF;
+  border-bottom: 1px solid #007DFF;
 }
 .single-blog-page .blog-right-wrapper .search-box-wrapper input.form-control
 {
@@ -1443,7 +1477,7 @@ border: 2px solid #0D99FF;
 }
 .single-blog-page .blog-right-wrapper .separator
 {
-    height: 3px;
+    height: 1px;
     width: 100%;
     background-color:#007DFF;
     margin: 20px 0;
@@ -1499,28 +1533,29 @@ border: 2px solid #0D99FF;
     font-weight: 300;
     margin: 4px 5px 5px 0; 
 }
-.single-blog-page .blog-right-wrapper .download-brochure
+ .download-brochure
 {
     background: #0D99FF;
     padding: 10px 30px;
     display: flex;
     align-items: center;
-    width: 100%;
+    
     justify-content: center;
     border-radius: 0;
+    border: 0;
 }
-.single-blog-page .blog-right-wrapper .download-brochure .icon
+ .download-brochure .icon
 {
     padding-right:20px;
     border-right: 1px solid #fff;
 }
-.single-blog-page .blog-right-wrapper .download-brochure .icon svg{
+ .download-brochure .icon svg{
     height: 14px;
     width: 14px;
     position: relative;
     bottom: 3px;
 }
-.single-blog-page .blog-right-wrapper .download-brochure .icon-heading
+ .download-brochure .icon-heading
 {
     padding-left: 20px;
 }
@@ -1746,6 +1781,105 @@ justify-content: center;
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
     padding: 100px 0 100px 0;
 }
+
+/* ----------------------------career-acoordian-------------------- */
+.career-acoordian
+{
+    background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
+    padding: 100px 0 100px 0;
+}
+.career-acoordian .accordion-item
+{
+    border:0;
+}
+.career-acoordian .accordion-button
+{
+    background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
+    border-top: 1px solid #003F6C;
+    border-radius: 0!important;
+    border-bottom: 1px solid #003F6C;
+    padding-left: 0;
+}
+.accordion-button::after
+{
+    background-image: var(--bs-accordion-btn-active-icon)!important;
+    transform: rotate(0deg)!important;
+}
+.career-acoordian .accordion-button:focus
+{
+    box-shadow: none;
+
+}
+
+
+.career-acoordian .accordion-button:not(.collapsed)
+{
+    background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
+    box-shadow: none;
+    padding-left: 0;
+    border-top: 1px solid #003F6C;
+    border-radius: 0;
+    border-bottom: 1px solid #003F6C;
+}
+.acc-heading
+{
+    font-family: 'Playfair Display', serif;
+    color: #007DFF;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    font-weight: 600;
+}
+.acc-subheading
+{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: .3px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+.career-acoordian  .accordion-body
+{
+    background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
+    padding: 20px 0;
+}
+.career-acoordian  .accordion-body .experience
+{
+    font-family: 'Roboto', sans-serif;
+    color: #007DFF;
+    letter-spacing: .2px;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.career-acoordian  .accordion-body .common-para.circle
+{
+     position: relative;
+     padding-left: 15px;
+     padding-top: 0;
+     margin-bottom: 0;
+}
+
+.career-acoordian  .accordion-body .common-para.circle::before{
+
+    position: absolute;
+    content: '';
+    display: block;
+    left:0;
+    top:6px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.privacy-terms{
+    padding: 100px 0;
+    background-color: #01172a;
+}
+
+
+
 
 /* ---------------------------footer-------------------------- */
 footer{
@@ -1982,9 +2116,18 @@ footer .copyright-box .three ul li{
     text-align: center;
 }
  
-   
+   /*------------carrer page css----------  */
+  .career
+  {
+    background: url(../images/career-bg.jpg);
+    background-position: center;
+
+  }
 
 
+
+
+  
 
 
 /* ------------------------media query------------------ */
