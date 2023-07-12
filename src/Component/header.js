@@ -1,10 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import {HiOutlineBars3BottomRight} from 'react-icons/hi2'
 
 const Header = () => {
+
+  const location = useLocation();
+  const route = location.pathname;
+  // console.log(route,'route is this')
+
   return (
-    <header>
+    <header className={route == '/' ? 'headerTransparent' : null}>
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <Link to='/' className="navbar-brand">

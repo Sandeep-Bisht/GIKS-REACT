@@ -261,6 +261,15 @@ header .dropdown-item:focus, header .dropdown-item:hover
 .drop-icon svg{
     height: 18px;
 }
+.headerTransparent
+{
+    
+    background: rgba(0,0,0,0);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
 /* -----------------------------home page styel---------------------- */
 /* .home-wrapper{
   
