@@ -90,6 +90,18 @@ const Homepage = () => {
             }
       
       });
+
+      $(window).scroll(function() {
+        let position = $(this).scrollTop();
+    
+        if (position >= 149) {
+    
+            $("header").addClass("fixed-top");
+        } else {
+    
+            $("header").removeClass("fixed-top");
+        }
+    });
       `;
   
       const script = document.createElement('script');
@@ -110,7 +122,7 @@ const Homepage = () => {
     </div>
     <div className="container home-banner-container">
       <div className="row align-items-center">
-        <div className="col-lg-7 col-md-7 col-sm-6">
+        <div className="col-lg-7 col-md-7 col-sm-10">
           <div className="home-banner-left">
             <p className="banner-title f1">
               <span className="one">Inn</span><span className="two">ova</span><span className="three">ting</span> <span
