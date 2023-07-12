@@ -20,13 +20,13 @@ const JgcStudy = () => {
             </div>
             <div className="col-md-4">
               <div className="pic">
-                <img src="/images/study-pic.jpg" classname="img-fluid" alt="freindsclub" />
+                <img src="/images/jgc.png" classname="img-fluid" alt="freindsclub" />
                 <div className="title">
-                  <a href="#" className="btn ">go to site</a>
+                  <a href="https://jgc.com.sa/" target='_blank' className="btn ">go to site</a>
                 </div>
               </div>
               <div className="connect">
-                <a href="file:///C:/Users/COMPUTER/Desktop/Giks/nrcms.html">www.JGC Gulf International Co. Ltd..com</a>
+                <a href="https://jgc.com.sa/" target='_blank' className='text-white text-decoration-underline'>www.JGC Gulf International Co. Ltd..com</a>
               </div>
             </div>
           </div>

@@ -71,13 +71,13 @@ const FreindsCludStudy = () => {
                 </div>
                 <div class="col-md-4">
                   <div class="pic">
-                   <img src="/images/study-pic.jpg" className='img-fluid' alt='freindsclub'/>
+                   <img src="/images/friendsclubltd.in.png" className='img-fluid' alt='freindsclub'/>
                   <div class="title">
-                   <a href="#" class="btn"> go to site</a> 
+                   <a href="https://friendsclubltd.in/" target='_blank' class="btn"> go to site</a> 
                   </div>
                   </div>
                   <div class="connect">
-                   <a href="https://giksindia.com/">www.friendsclub.com</a>
+                   <a href="https://friendsclubltd.in/" target='_blank' className='text-white text-decoration-underline'>www.friendsclub.com</a>
                   </div>
              </div>
             </div>

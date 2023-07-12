@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -9,10 +10,16 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Products</p>
             <ul>
-              <li><a href="#" className="footer-link">Digital Experience Platform</a></li>
-              <li><a href="#" className="footer-link">integrated Estate Managment System</a></li>
-              <li><a href="#" className="footer-link">Intelligent Ticketing Managment</a></li>
-              <li><a href="#" className="footer-link">Virtual Event Managment</a></li>
+              <li>
+                <Link to='/digital-experience-platform' className="footer-link">Digital Experience Platform</Link>
+              </li>
+              <li>
+                <Link to='/integrated-estate-management-system' className="footer-link">integrated Estate Management System</Link>
+              </li>
+              <li>
+              <Link to='/intelligent-ticketing-management' className="footer-link">Intelligent Ticketing Management</Link></li>
+
+              <li><Link to='/virtual-event-management' className="footer-link">Virtual Event Management</Link></li>
             </ul>
           </div>
         </div>
@@ -20,9 +27,9 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Technologies</p>
             <ul>
-              <li><a href="#" className="footer-link">MERN</a></li>
-              <li><a href="#" className="footer-link">Java</a></li>
-              <li><a href="#" className="footer-link">PHP</a></li>
+              <li><Link to='/' className="footer-link">MERN</Link></li>
+              <li><Link to='/' className="footer-link">Java</Link></li>
+              <li><Link to='/' className="footer-link">PHP</Link></li>
 
             </ul>
           </div>
@@ -31,13 +38,20 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Platforms</p>
             <ul>
-              <li><a href="#" className="footer-link">Liferay</a></li>
+              {/* <li><a href="#" className="footer-link">Liferay</a></li>
               <li><a href="#" className="footer-link">Laravel</a></li>
               <li><a href="#" className="footer-link">React Native</a></li>
               <li><a href="#" className="footer-link">Android</a></li>
               <li><a href="#" className="footer-link">IOS</a></li>
               <li><a href="#" className="footer-link">Wordpress</a></li>
-              <li><a href="#" className="footer-link">salesforce</a></li>
+              <li><a href="#" className="footer-link">salesforce</a></li> */}
+              <li><Link to='/' className="footer-link">Liferay</Link></li>
+              <li><Link to='/' className="footer-link">Laravel</Link></li>
+              <li><Link to='/' className="footer-link">React Native</Link></li>
+              <li><Link to='/' className="footer-link">Android</Link></li>
+              <li><Link to='/' className="footer-link">IOS</Link></li>
+              <li><Link to='/' className="footer-link">Wordpress</Link></li>
+              <li><Link to='/' className="footer-link">salesforce</Link></li>
 
             </ul>
           </div>
@@ -46,11 +60,16 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Industries</p>
             <ul>
-              <li><a href="#" className="footer-link">EPC</a></li>
+              {/* <li><a href="#" className="footer-link">EPC</a></li>
               <li><a href="#" className="footer-link">Manufacturing (Pharmaceutical)</a></li>
               <li><a href="#" className="footer-link">Human Resource</a></li>
               <li><a href="#" className="footer-link">Government</a></li>
-              <li><a href="#" className="footer-link">Fitness</a></li>
+              <li><a href="#" className="footer-link">Fitness</a></li> */}
+              <li><Link to='/' className="footer-link">EPC</Link></li>
+              <li><Link to='/' className="footer-link">Manufacturing (Pharmaceutical)</Link></li>
+              <li><Link to='/' className="footer-link">Human Resource</Link></li>
+              <li><Link to='/' className="footer-link">Government</Link></li>
+              <li><Link to='/' className="footer-link">Fitness</Link></li>
 
             </ul>
           </div>
@@ -59,10 +78,13 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Services</p>
             <ul>
-              <li><a href="#" className="footer-link">Infrastructure Managmenet</a></li>
-              <li><a href="#" className="footer-link">Application Development</a></li>
-              <li><a href="#" className="footer-link">Internet of Things</a></li>
-              <li><a href="#" className="footer-link">IT Security Managment</a></li>
+            <li><Link to='/application-development' className="footer-link">Application Development</Link></li>
+            <li><Link to='/internet-of-things' className="footer-link">Internet of Things</Link></li>
+            <li><Link to='/it-security-management' className="footer-link">IT Security Management</Link></li>
+              <li><Link to='/infrastructure-management' className="footer-link">Infrastructure Management</Link></li>
+              <li><Link to='/business-consulting' className="footer-link">Business Consulting</Link></li>
+              
+              
 
 
             </ul>
@@ -72,9 +94,9 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Applications</p>
             <ul>
-              <li><a href="#" className="footer-link">Quarter Managment System</a></li>
-              <li><a href="#" className="footer-link">Complaint Managment System</a></li>
-              <li><a href="#" className="footer-link">Purchase Orders Managment System</a></li>
+              <li><a href="#" className="footer-link">Quarter Management System</a></li>
+              <li><a href="#" className="footer-link">Complaint Management System</a></li>
+              <li><a href="#" className="footer-link">Purchase Orders Management System</a></li>
               <li><a href="#" className="footer-link">Fitness Application</a></li>
 
 
@@ -85,8 +107,8 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Company</p>
             <ul>
-              <li><a href="#" className="footer-link">About Us</a></li>
-              <li><a href="#" className="footer-link">Blog</a></li>
+              <li><Link to='/about-us' className="footer-link">About Us</Link></li>
+              <li><Link to='/blog' className="footer-link">Blog</Link></li>
 
 
 
@@ -124,27 +146,27 @@ const Footer = () => {
             </div>
             <div className="two">
               <ul className="mb-0">
-                <li><a href="#" className="footer-link">Privacy Policy</a></li>
-                <li><a href="#" className="footer-link">Terms & Conditions</a></li>
+                <li><Link to='/privacy-policy' className="footer-link">Privacy Policy</Link></li>
+                <li><Link to='/terms-condition' className="footer-link">Terms & Conditions</Link></li>
 
                 <li><a href="#" className="footer-link"><img src="/images/iso.png" className="img-fluid" /></a></li>
               </ul>
             </div>
             <div className="three">
               <ul>
-                <li><a href="#">
+                <li><a href="https://www.instagram.com/infogiksindia/" target='_blank'>
                     <img src="/images/instagram.svg" />
                   </a></li>
-                <li><a href="#">
+                <li><a href="https://twitter.com/infogiksindia" target='_blank'>
                     <img src="/images/twitter.svg" />
                   </a></li>
-                <li><a href="#">
+                <li><a href="https://www.facebook.com/giksindia" target='_blank'>
                     <img src="/images/facebook.svg" />
                   </a></li>
-                <li><a href="#">
+                <li><a href="https://www.linkedin.com/company/8927106/admin/" target='_blank'>
                     <img src="/images/linkedin.svg" />
                   </a></li>
-                <li><a href="#">
+                <li><a href="#" target='_blank'>
                     <img src="/images/youtube.svg" />
                   </a></li>
               </ul>

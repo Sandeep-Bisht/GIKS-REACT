@@ -229,7 +229,7 @@ const BlogDetails = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-md-12">
+                            <div className="col-md-12 d-none">
                                 <button className="btn download-brochure">
                                     <span className="icon">
                                         <svg width="20" height="26" viewBox="0 0 20 26" fill="none"

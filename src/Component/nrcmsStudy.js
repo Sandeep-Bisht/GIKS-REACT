@@ -59,13 +59,13 @@ const NorthenRailwayStudy = () => {
       </div>
       <div className="col-md-4 col-4">
         <div className="pic">
-        <img src="/images/study-pic.jpg" className='img-fluid' alt='freindsclub' />
+        <img src="/images/nrcms.png" className='img-fluid' alt='freindsclub' />
           <div className="title">
-            <a href="#" className="btn ">go to site</a>
+            <a href="http://nrcms.in/" target='_blank' className="btn ">go to site</a>
           </div>
         </div>
         <div className="connect">
-          <a href="file:///C:/Users/COMPUTER/Desktop/Giks/nrcms.html">www.Northern Railways.com</a>
+          <a href="http://nrcms.in/" target='_blank' className='text-white text-decoration-underline'>www.Northern Railways.com</a>
         </div>
       </div>
     </div>

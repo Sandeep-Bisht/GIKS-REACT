@@ -8,7 +8,7 @@ const IntegratedEstate = () => {
             <div className="row">
                 <div className="col-md-10 col-lg-10">
                     <div className="about-single-content">
-                        <h1 className="common-heading">Integrated Estate Managment System</h1>
+                        <h1 className="common-heading">Integrated Estate Management System</h1>
                         <p className="common-para">
                         In order to streamline and align the working processes of Estates in government departments and Indian Railways with existing work practices, we have designed the Integrated Estate Management System (IEMS). This system serves the purpose of consolidating residents' requisitions, quarter allocations, complaints, feedback, and routing them to the appropriate officers and contractors for prompt action. By implementing IEMS, we ensure seamless integration and harmonization across various aspects of estate management.
                         </p>

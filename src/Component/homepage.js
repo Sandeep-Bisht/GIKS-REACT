@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { ReactComponent as Globe } from '../images/about-globe.svg'
 import { Link } from 'react-router-dom'
+import sliderVideo from '../video/video-bg.mp4';
 
 const Homepage = () => {
 
@@ -104,6 +105,9 @@ const Homepage = () => {
   return (
     <>
     <div className="home-banner">
+    <div class="video-container">
+      <video class="video-item" src={sliderVideo} autoPlay loop muted/>
+    </div>
     <div className="container home-banner-container">
       <div className="row align-items-center">
         <div className="col-lg-7 col-md-7 col-sm-6">
@@ -1098,7 +1102,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                 To ensure integration with existing work practices
               </p>
               <div className="product-read-more-wrapper">
-              <Link to="/integrated-estate-managment-system" className="product-read-more">
+              <Link to="/integrated-estate-management-system" className="product-read-more">
                   Click to Read More<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1119,14 +1123,14 @@ Our team of experts is dedicated to delivering high-quality software services th
             </div>
             <div className="product-card-content">
               <p className="product-card-heading">
-                Intelligent Ticketing<br/>Managment
+                Intelligent Ticketing<br/>Management
               </p>
               <p className="common-para">
                 Easiest and fastest way to
                 improve great customer Service
               </p>
               <div className="product-read-more-wrapper">
-              <Link to="/intelligent-ticketing-managmnet" className="product-read-more">
+              <Link to="/intelligent-ticketing-management" className="product-read-more">
                   Click to Read More<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1154,7 +1158,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                 physical events right now
               </p>
               <div className="product-read-more-wrapper">
-              <Link to="/virtual-event-managment" className="product-read-more">
+              <Link to="/virtual-event-Management" className="product-read-more">
                   Click to Read More<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1184,13 +1188,13 @@ Our team of experts is dedicated to delivering high-quality software services th
               <div className="row">
                 <div className="col-lg-4 slider-left col-md-4 col-sm-4 col-4">
                   <h2 className="common-heading">
-                  IT Infrastructure<br/>Managment
+                  IT Infrastructure<br/>Management
                     
                   </h2>
                   <p className="common-para slider-content">
                   Infrastructure management involves overseeing IT policies, processes, equipment, information, HR, and external contacts (such as vendors or security associations).
                   </p>
-                  <Link to="/infrastructure-managment" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
+                  <Link to="/infrastructure-Management" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
                     Read More
                    </Link>
                 </div>
@@ -1203,7 +1207,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </h2>
                         <p className="common-para slider-content">
                           IoT services comprise strategic consulting,development,data
-                          analytics,and application managment aimed at helping
+                          analytics,and application Management aimed at helping
                           organizations solve their business challenges via IoT technology.
                         </p>  */}
                     </div>
@@ -1235,7 +1239,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </h2>
                         <p className="common-para slider-content">
                           IoT services comprise strategic consulting,development,data
-                          analytics,and application managment aimed at helping
+                          analytics,and application Management aimed at helping
                           organizations solve their business challenges via IoT technology.
                         </p>  */}
                     </div>
@@ -1302,7 +1306,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                         </h2>
                         <p className="common-para slider-content">
                           IoT services comprise strategic consulting,development,data
-                          analytics,and application managment aimed at helping
+                          analytics,and application Management aimed at helping
                           organizations solve their business challenges via IoT technology.
                         </p>
                       </div>  */}
@@ -1315,12 +1319,12 @@ Our team of experts is dedicated to delivering high-quality software services th
               <div className="row">
                 <div className="col-lg-4 slider-left  col-md-4 col-sm-4 col-4">
                   <h2 className="common-heading">
-                  IT Security Managment
+                  IT Security Management
                   </h2>
                   <p className="common-para slider-content">
                   With a team of highly skilled professionals, we offer comprehensive solutions to safeguard your digital assets and protect against evolving cybersecurity threats.
                   </p>
-                  <Link to="/it-security-managment" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
+                  <Link to="/it-security-management" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
                     Read More
                    </Link>
                 </div>
@@ -1939,7 +1943,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <a href="#" className="common-read-more">Read more</a>
+                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
 
                     </div>
                   </div>
@@ -1955,7 +1959,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <a href="#" className="common-read-more">Read more</a>
+                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
                     </div>
                   </div>
                 </div>
@@ -1970,7 +1974,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <a href="#" className="common-read-more">Read more</a>
+                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
                     </div>
                   </div>
                 </div>
@@ -1985,7 +1989,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <a href="#" className="common-read-more">Read more</a>
+                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
 
                     </div>
                   </div>
@@ -2001,7 +2005,7 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <a href="#" className="common-read-more">Read more</a>
+                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
                     </div>
                   </div>
                 </div>

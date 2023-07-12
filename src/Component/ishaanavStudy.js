@@ -70,13 +70,13 @@ const IshaanavStudy = () => {
                                 </div>
                                 <div class="col-md-4">
                                   <div class="pic">
-                                  <img src="/images/study-pic.jpg" className='img-fluid' alt='freindsclub' />
+                                  <img src="/images/ishaanav.png" className='img-fluid' alt='freindsclub' />
                                       <div class="title">
-                                        <a href="#" class="btn"> go to site</a>
+                                        <a href="http://ishaanav.com/" target='_blank' class="btn"> go to site</a>
                                       </div>
                                   </div>
                                   <div class="connect">
-                                    <a href="https://giksindia.com/">www.ishaanav.com</a>
+                                  <a href="http://ishaanav.com/" target='_blank' className='text-white text-decoration-underline'>www.ishaanav.com</a>
                                   </div>
                                 </div>
                               </div>

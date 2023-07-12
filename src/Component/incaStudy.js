@@ -38,13 +38,13 @@ const IncaStudy = () => {
       </div>
       <div className="col-md-4">
         <div className="pic">
-        <img src="/images/study-pic.jpg" className='img-fluid' alt='freindsclub' />
+        <img src="/images/inca.png" className='img-fluid' alt='freindsclub' />
           <div className="title">
-            <a href="#" className="btn ">go to site</a>
+            <a href='http://www.incaindia.org/' target='_blank' className="btn ">go to site</a>
           </div>
         </div>
         <div className="connect">
-          <a href="file:///C:/Users/COMPUTER/Desktop/Giks/nrcms.html">www.The Pioneer edge.com</a>
+          <a  href='http://www.incaindia.org/' target='_blank' className='text-white text-decoration-underline'>www.incaindia.org</a>
         </div>
       </div>
     </div>
