@@ -1513,18 +1513,61 @@ border: 2px solid #0D99FF;
 }
 .single-blog-page .blog-right-wrapper .client-box
 {
-    border: 3px solid #007DFF;
-    padding: 50px 20px;
+   
+    padding: 20px 20px;
 }
+.single-blog-page .blog-right-wrapper .client-box .client-logo img{
+    width: 35px;
+    height: 35px;
+}
+.testimonial-wrapper
+{
+    border: 3px solid #007DFF;
+    padding-bottom: 30px;
+}
+.testimonial-slider .carousel-control-prev-icon,.testimonial-slider .carousel-control-next-icon
+{
+   background-image: none;
+   height: 16px;
+   width: 16px;
+   background-color:#0D99FF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+} 
+.testimonial-slider .carousel-control-prev-icon svg,.testimonial-slider .carousel-control-next-icon svg
+{
+   height: 12px;
+   width: 12px;
+}
+.testimonial-slider .carousel-control-next,.testimonial-slider .carousel-control-prev
+{
+  align-items: flex-end;
+  padding: 20px 0;
+  opacity: 1;
+ 
+}
+
 .single-blog-page .blog-right-wrapper .client-info{
     display: flex;
     align-items: center;
+   
+}
+.single-blog-page .blog-right-wrapper .client-info .client-pic
+{
+    height: 65px;
+    width: 65px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.single-blog-page .blog-right-wrapper .client-box .client-words
+{
+   margin-bottom: 5px!important;
 }
 .single-blog-page .blog-right-wrapper .client-info img{
-    height: 84px;
-    width: 84px;
+    object-fit: cover;
     border-radius: 50%;
-    margin-right: 10px;
+    
 }
 .single-blog-page .blog-right-wrapper .client-name
 {
@@ -1539,11 +1582,13 @@ border: 2px solid #0D99FF;
 {
  font-size: 10px;
  margin-bottom: 0;
+ padding: 2px 0;
+ line-height: 1.3;
 
 }
 .quote-box svg{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 .single-blog-page .blog-right-wrapper .widget-list
 {
