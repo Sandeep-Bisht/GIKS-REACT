@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer>
-    <div className="container">
+    <div className="container expand-container">
       <div className="grid-container">
         <div className="grid-container-wrapper">
           <div>
@@ -137,7 +137,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    <div className="container">
+    <div className="container expand-container">
       <div className="row">
         <div className="col-md-12">
           <div className="copyright-box">
@@ -166,7 +166,7 @@ const Footer = () => {
                 <li><a href="https://www.linkedin.com/company/8927106/admin/" target='_blank'>
                     <img src="/images/linkedin.svg" />
                   </a></li>
-                <li><a href="#" target='_blank'>
+                <li><a href="https://www.youtube.com/channel/UCPunktBBBHc9tTJEncbAbBg" target='_blank'>
                     <img src="/images/youtube.svg" />
                   </a></li>
               </ul>

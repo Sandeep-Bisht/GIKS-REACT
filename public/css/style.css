@@ -196,6 +196,10 @@ a {
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%)!important;
     
 }
+.expand-conatiner
+{
+    display: none;
+}
 /* ------------------------header----------------------------- */
 header{
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
@@ -301,6 +305,8 @@ header .dropdown-item:focus, header .dropdown-item:hover
     background-size: cover;
    position: relative; */
    position: relative;
+   background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
+   z-index: 1;
      
 }
 .video-container{
@@ -1155,7 +1161,7 @@ border: 2px solid #0D99FF;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover!important;
     position: relative;
     display: flex;
     align-items: center;
@@ -2150,12 +2156,312 @@ footer .copyright-box .three ul li{
 
 
 /* ------------------------media query------------------ */
-    
+/* @media (max-width: 2560.98px) 
+{
+
+    header .nav-link
+    {
+        font-size: 18px;
+        
+    }
+    header .dropdown-menu .dropdown-item
+    {
+        font-size: 17px;
+    }
+    .common-heading
+    {
+        font-size: 43px;
+    }
+    .navbar-brand img
+    {
+        width: 85%!important;
+    }
+    .home-banner .banner-title
+    {
+        font-size: 53px;
+    }
+    .banner-subtitle
+    {
+        font-size: 38px;
+    }
+    .common-para{
+        font-size: 17px;
+    }
+    .common-btn
+    {
+        font-size: 16px;
+    }
+    .common-read-more
+    {
+        font-size: 15px;
+    }
+    .product-card
+    {
+        height: 440px;
+    }
+    .product-card img
+    {
+        height: 170px;
+        width: 170px;
+    }
+    .product-card-heading
+    {
+        font-size: 20px;
+    }
+    .case-study-pic img
+    {
+        height: 100px;
+        width: 100px;
+    }
+    .case-study-heading
+    {
+        font-size: 16px;
+    }
+    .product-read-more
+    {
+        font-size: 15px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left .case-study-second-content-heading
+    {
+        font-size: 32px;
+    }
+    .home-blog .blog-card img
+    {
+        height: 320px;
+    }
+    .blog-heading
+    {
+        font-size: 18px;
+    }
+    .footer-heading
+    {
+        font-size: 18px;
+    }
+    .footer-link
+    {
+        font-size: 15px;
+    }
+
+    .process-card .lower .common-para
+    {
+        font-size: 15px;
+    }
+    .product-about .product-services-box
+    {
+        height: 370px;
+    }
+    .sub-pages-heading, .sub-pages-heading1
+    {
+        font-size: 25px;
+    }
+} */
+@media (min-width:1921px ) and (max-width: 2561px) { 
+
+    header .nav-link
+    {
+        font-size: 18px;
+        
+    }
+    header .dropdown-menu .dropdown-item
+    {
+        font-size: 17px;
+    }
+    .common-heading
+    {
+        font-size: 43px;
+    }
+    .navbar-brand img
+    {
+        width: 85%!important;
+    }
+    .home-banner .banner-title
+    {
+        font-size: 53px;
+    }
+    .banner-subtitle
+    {
+        font-size: 38px;
+    }
+    .common-para{
+        font-size: 17px;
+    }
+    .common-btn
+    {
+        font-size: 16px;
+    }
+    .common-read-more
+    {
+        font-size: 15px;
+    }
+    .product-card
+    {
+        height: 440px;
+    }
+    .product-card img
+    {
+        height: 170px;
+        width: 170px;
+    }
+    .product-card-heading
+    {
+        font-size: 20px;
+    }
+    .case-study-pic img
+    {
+        height: 100px;
+        width: 100px;
+    }
+    .case-study-heading
+    {
+        font-size: 16px;
+    }
+    .product-read-more
+    {
+        font-size: 15px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left .case-study-second-content-heading
+    {
+        font-size: 32px;
+    }
+    .home-blog .blog-card img
+    {
+        height: 320px;
+    }
+    .blog-heading
+    {
+        font-size: 18px;
+    }
+    .footer-heading
+    {
+        font-size: 18px;
+    }
+    .footer-link
+    {
+        font-size: 15px;
+    }
+
+    .process-card .lower .common-para
+    {
+        font-size: 15px;
+    }
+    .product-about .product-services-box
+    {
+        height: 370px;
+    }
+    .product-services-box-heading{
+        font-size: 20px;
+    }
+    .sub-pages-heading, .sub-pages-heading1
+    {
+        font-size: 25px;
+    }
+    .contact-single-left ul li .common-para
+    {
+        font-size: 16px;
+    }
+    .contact-single .fill-out-box .fill-out-heading
+    {
+        font-size: 20px;
+    }
+    .contact-single .fill-out-box .common-para
+    {
+        font-size: 16px;
+    }
+    .contact-single-right .form-label
+    {
+        font-size: 14px;
+    }
+    .expand-container
+    {
+
+    }
+ }
+
+
+ @media (min-width:1536px ) and (max-width: 1920px) 
+ {
+
+    header .nav-link
+    {
+     font-size: 17px;
+     }
+     .navbar-brand img{
+        width: 80%!important;
+     }
+     .home-banner .banner-title
+     {
+        font-size: 53px;
+     }
+     .banner-subtitle
+    {
+        font-size: 38px;
+    }
+    .common-para{
+        font-size: 15px;
+    }
+    .common-btn
+    {
+        font-size: 16px;
+    }
+    .product-card-heading
+    {
+        font-size: 17px;
+    }
+    .case-study-heading
+    {
+        font-size: 16px;
+    }
+    .case-study-card .second-view .second-view-wrapper .left .case-study-second-content-heading
+    {
+        font-size: 30px;
+    }
+    .blog-heading
+    {
+        font-size: 15px;
+    }
+    .home-blog .blog-card img
+    {
+        height: 280px;
+    }
+    .footer-heading
+    {
+       font-size: 17px;
+    }
+    .footer-link
+    {
+        font-size: 15px;
+    }
+    .process-card .lower .common-para
+    {
+        font-size: 14px;
+    }
+    .product-about .product-services-box
+    {
+        height: 380px;
+    }
+    .product-services-box-heading
+    {
+        font-size: 18px;
+    }
+ }
+
 
 @media (max-width: 1399.98px) 
 {
-  
+    /* header .nav-link
+    {
+        font-size: 18px;
+    }
+    header .dropdown-menu .dropdown-item
+    {
+        font-size: 16px;
+    }
+    header{
+        background-color: red!important;
+    } */
  }
+
+
 @media (max-width: 1199.98px)
 {  
     .home-banner-container
@@ -2565,9 +2871,6 @@ footer .copyright-box .three ul li{
 
  }
 
-
-
-
  @media (max-width: 800.98px) 
  {
     .home-slider #counter
@@ -2584,8 +2887,7 @@ footer .copyright-box .three ul li{
     }
   }
 
-
-@media (max-width: 767.98px) 
+  @media (max-width: 767.98px) 
 {
     .common-heading
     {
@@ -2927,9 +3229,6 @@ footer .copyright-box .three ul li{
 }
 
 }
-
-
-
 
  @media (max-width: 630.98px) 
  { 

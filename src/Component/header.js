@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className={route == '/' ? 'headerTransparent' : null}>
     <nav className="navbar navbar-expand-lg">
-      <div className="container">
+      <div className="container expand-container">
         <Link to='/' className="navbar-brand">
         <img src="/images/header-logo.png" className="img-fluid w-75" alt="main-logo" />
         </Link>

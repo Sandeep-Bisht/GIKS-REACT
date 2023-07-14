@@ -1947,7 +1947,8 @@ Our team of experts is dedicated to delivering high-quality software services th
             <ul className="owl-carousel owl-theme tab-slider list-unstyled">
               <li>
                 <div className="item">
-                  <div className="blog-card">
+                <Link to="/blog-detail">
+                <div className="blog-card">
                     <div className="blog-pic">
                       <img src="/images/blog/1.jpg" className="img-fluid" alt="" />
                     </div>
@@ -1955,14 +1956,17 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
+                      <span className="common-read-more">Read more</span>
 
                     </div>
                   </div>
+                </Link>
+                  
                 </div>
               </li>
               <li>
                 <div className="item">
+                <Link to="/blog-detail">
                   <div className="blog-card">
                     <div className="blog-pic">
                       <img src="/images/blog/2.jpg" className="img-fluid" alt="" />
@@ -1971,13 +1975,14 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
+                      <span className="common-read-more">Read more</span>
                     </div>
-                  </div>
+                  </div></Link>
                 </div>
               </li>
               <li>
                 <div className="item">
+                <Link to="/blog-detail">
                   <div className="blog-card">
                     <div className="blog-pic">
                       <img src="/images/blog/3.jpg" className="img-fluid" alt="" />
@@ -1986,13 +1991,14 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
+                      <span className="common-read-more">Read more</span>
                     </div>
-                  </div>
+                  </div></Link>
                 </div>
               </li>
               <li className="one">
                 <div className="item">
+                <Link to="/blog-detail">
                   <div className="blog-card">
                     <div className="blog-pic">
                       <img src="/images/blog/4.jpg" className="img-fluid" alt="" />
@@ -2001,14 +2007,15 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
+                      <span className="common-read-more">Read more</span>
 
                     </div>
-                  </div>
+                  </div></Link>
                 </div>
               </li>
               <li className="two">
                 <div className="item">
+                <Link to="/blog-detail">
                   <div className="blog-card">
                     <div className="blog-pic">
                       <img src="/images/blog/5.jpg" className="img-fluid" alt="" />
@@ -2017,9 +2024,9 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <p className="blog-heading">
                         The Internet of Things: Revolutionizing Industries and Changing the Way We Live and Work
                       </p>
-                      <Link to="/blog-detail" className="common-read-more">Read more</Link>
+                      <span className="common-read-more">Read more</span>
                     </div>
-                  </div>
+                  </div></Link>
                 </div>
               </li>
             </ul>
