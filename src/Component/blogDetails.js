@@ -36,14 +36,14 @@ const BlogDetails = () => {
                                                 <div className="post-category">
                                                     <div className="post-category-left">
                                                     <span className="post-category-heading common-para">
-                                                        Posted by:Name
+                                                        Posted by:GIKS
                                                     </span></div>
                                                     <div className="post-category-right">
                                                     <span className="post-category-heading common-para">
                                                         Category:Tech
                                                     </span></div>
                                                 </div>
-                                                <div className="post-category-comments">
+                                                <div className="post-category-comments d-none">
                                                     <span className="comment-icon">
                                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
