@@ -138,7 +138,7 @@ const Homepage = () => {
              </p>
             <a href="#" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
                  
-                 <Link to="/contact" className="nav-link ">Contact Us</Link>
+                 <Link to="/digital-experience-platform" className="nav-link ">Read More</Link>
             </a>
           </div>
         </div>

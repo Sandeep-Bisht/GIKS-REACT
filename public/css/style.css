@@ -1425,10 +1425,11 @@ border: 2px solid #0D99FF;
     color: #0D99FF;
     font-weight: 700;
     letter-spacing: .2px;
+    margin-bottom: 0;
 }
 .blog-category{
     color: #fff;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .blog-single-card-content
 {
@@ -1441,7 +1442,10 @@ border: 2px solid #0D99FF;
    justify-content: center;
  
 }
-
+.blog-single-card-content .common-para
+{
+    margin-bottom: 0;
+}
 
 .single-blog-page .blog-right-wrapper .search-box-wrapper
 {
