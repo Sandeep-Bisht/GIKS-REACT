@@ -67,6 +67,51 @@ const Homepage = () => {
         }
       });
       
+     $(".tab-slider").owlCarousel({
+        items: 5,
+        nav: true,
+        dots: false,
+        mouseDrag: true,
+        autoplay: false,
+        center: true,
+        smartSpeed: 700,
+        navText: ["<i class='fal fa-long-arrow-left'></i>", "<i class='fal fa-long-arrow-right'></i>"],
+        loop: true,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            767:{
+                     items: 1
+            },
+            768: {
+                items: 5
+            },
+            1200: {
+                items: 5
+            },
+      
+            1920: {
+                items: 5
+            },
+      
+            3840: {
+                items: 5
+            }
+      
+      
+      
+        }
+      });
+      
+
+
+
       $(".owl-carousel").owlCarousel({
               autoplay: false,
               items: 1,
@@ -138,7 +183,7 @@ const Homepage = () => {
              </p>
             <a href="#" className="common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">
                  
-                 <Link to="/contact" className="nav-link ">Contact Us</Link>
+                 <Link to="/digital-experience-platform" className="nav-link ">Read More</Link>
             </a>
           </div>
         </div>
