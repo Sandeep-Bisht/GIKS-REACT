@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const PageNotFound = () => {
   return (
@@ -17,8 +18,8 @@ const PageNotFound = () => {
                             We are sorry, but the page you requested was not found
                           </p>
                           <div className="error-page-gohome-link">
-                            <a href="#" className="error-page-btn home">Go Home</a>
-                            <a href="#" className="error-page-btn contact">Contact Us</a>
+                            <Link to="/" className="error-page-btn home">Go Home</Link>
+                            <Link to="/contact" className="error-page-btn contact">Contact Us</Link>
                           </div>
                       </div>
                 </div>

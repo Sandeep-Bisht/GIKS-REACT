@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const IncaStudy = () => {
     return (
@@ -33,7 +34,15 @@ const IncaStudy = () => {
           <p className="common-para">Visibility and Recognition:  INCA's website has helped raise the visibility and recognition of the field of cartography in India. By showcasing the achievements, research, and contributions of its members and the wider geospatial community, the website has created a platform for professionals to gain recognition for their work. This increased visibility has also contributed to the promotion of cartography as a valuable discipline in various sectors and industries.</p>
           <p className="common-para">Access to Resources:  The website's repository of publications, research papers, and resources has benefited professionals, researchers, and students interested in cartography. By providing easy access to relevant materials, INCA has supported the learning and professional development of individuals in the field. This access to resources has also facilitated the adoption of best practices and the dissemination of knowledge within the geospatial community in India.</p>
           <h3 className="sub-pages-heading1">Conclusion:</h3>
-          <p className="common-para">The Indian National Cartographic Association (INCA) and its website have played a crucial role in promoting cartographic excellence, supporting professional development, and fostering collaboration among geospatial professionals in India. Through its website, INCA has provided a platform for knowledge sharing, resource access, and community engagement. The impact of INCA can be seen in the professional growth of individuals, increased visibility of cartography as a discipline, and the enhanced collaboration and innovation within the geospatial community. With its continued efforts and online presence, INCA is poised to further empower geospatial professionals and advance the field of cartography in India.</p>
+          <p className="common-para">The Indian National Cartographic Association (INCA) and its website have played a crucial 
+          role in promoting cartographic excellence, supporting professional development, and fostering collaboration among geospatial 
+          professionals in India. Through its website, INCA has provided a platform for knowledge sharing, resource access, and community 
+          engagement. The impact of INCA can be seen in the professional growth of individuals, increased visibility of cartography as a 
+          discipline, and the enhanced collaboration and innovation within the geospatial community. With its continued efforts and online 
+          presence, INCA is poised to further empower geospatial professionals and advance the field of cartography in India.</p>
+          <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
         </div>
       </div>
       <div className="col-md-4">

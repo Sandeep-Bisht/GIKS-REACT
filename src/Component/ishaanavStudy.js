@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const IshaanavStudy = () => {
   return (
@@ -66,6 +67,9 @@ const IshaanavStudy = () => {
                                     control, and customer satisfaction, as they were able to reduce errors and gain real-time insights into
                                     their operations
                                   </p>
+                                  <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
                                   </div>
                                 </div>
                                 <div class="col-md-4">

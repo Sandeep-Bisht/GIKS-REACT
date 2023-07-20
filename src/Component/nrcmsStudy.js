@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const NorthenRailwayStudy = () => {
   return (
@@ -55,6 +56,9 @@ const NorthenRailwayStudy = () => {
           <p className="common-para">
             The Department has already associated with GIKS India for Automated Complaint Management System with Intelligent Complaint Escalations in Integration with Web Based House Allocation and Priority Management System.
           </p>
+          <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
         </div>
       </div>
       <div className="col-md-4 col-4">

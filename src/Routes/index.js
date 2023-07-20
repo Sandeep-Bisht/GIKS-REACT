@@ -30,7 +30,21 @@ import IncaStudy from '../Component/incaStudy'
 import Careers from '../Component/careers'
 import PrivacyPolicy from '../Component/privacy-policy'
 import  TermsCondition from '../Component/terms-condition'
- 
+import Mern from '../Component/mern'
+ import Java from '../Component/java'
+ import Liferay from '../Component/liferay'
+import Laravel from '../Component/laravel'
+import Android from '../Component/android'
+import Ios from '../Component/ios'
+import Wordpress from '../Component/wordpress'
+import SalesForce from '../Component/salesforce' 
+import Php from '../Component/php'
+import ReactNative from '../Component/reactNative'
+import InvestcareStudy from '../Component/investcareStudy'
+import ModernHouseStudy from '../Component/modernHouseStudy'
+import DoonValleyStudy from '../Component/doonValleyStudy'
+import MukhyaDharaStudy from '../Component/mukhyadharaStudy'
+import QuarterManagmentStudy from '../Component/quarterMangmentStudy'
 
 const ApplicationRoutes = () => {
   return (
@@ -63,11 +77,30 @@ const ApplicationRoutes = () => {
         <Route path='/jgc-study' element={<JgcStudy/>}/>
         <Route path='/pioneer-study' element={<PioneerStudy/>}/>
         <Route path='/inca-study' element={<IncaStudy/>}/>
+        <Route path='/investcare-study' element={<InvestcareStudy/>}/>
+        <Route path='/modern-house-study' element={<ModernHouseStudy/>}/>
+       
+        <Route path='/doon-valley-study' element={< DoonValleyStudy/>}/>
+        
+        <Route path='/mukhya-dhara-study' element={<MukhyaDharaStudy/>}/>
+           
+        <Route path='/quarter-managment-study' element={<QuarterManagmentStudy/>}/>
+      
 
         <Route path='/careers' element={<Careers/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
   
-  <Route path='/terms-condition' element={<TermsCondition />}/>
+       <Route path='/terms-condition' element={<TermsCondition />}/>
+       <Route path='/mern' element={<Mern />}/>
+       <Route path='/java' element={<Java/>}/>
+       <Route path='/liferay' element={<Liferay/>}/>
+       <Route path='/laravel' element={<Laravel/>}/>
+       <Route path='/android' element={<Android/>}/>
+       <Route path='/ios' element={<Ios/>}/>
+       <Route path='/wordpress' element={<Wordpress/>}/>
+       <Route path='/sales-force' element={<SalesForce/>}/>
+       <Route path='/php' element={<Php/>}/>
+       <Route path='/react-native' element={<ReactNative/>}/>
         
 
         

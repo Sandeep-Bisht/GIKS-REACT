@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const JgcStudy = () => {
   return (
@@ -16,6 +17,9 @@ const JgcStudy = () => {
                 <p className="common-para">To improve the website's functionality, we incorporated a variety of features and tools, including a project portfolio, career opportunities, and contact forms. We also implemented a content management system that would enable JGC Gulf's team to easily manage and update the website's content.</p>
                 <p className="common-para">After extensive testing and quality assurance checks, we launched the new JGC Gulf website, providing a powerful new tool for the company to showcase their capabilities, promote their services, and engage with customers. The new website has been met with enthusiastic feedback, helping JGC Gulf to establish their online presence and boost their brand recognition in the industry.
                 </p>
+                <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
               </div>
             </div>
             <div className="col-md-4">

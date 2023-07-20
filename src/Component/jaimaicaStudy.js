@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const JaimaicaStudy = () => {
   return (
@@ -70,6 +71,9 @@ const JaimaicaStudy = () => {
             business connectivity in Jamaica. By providing a centralized platform for information, services, and 
             collaboration, the website has improved accessibility, transparency, and opportunities for businesses.
           </p>
+          <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
         </div>
       </div>
       <div className="col-md-4">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const IntelligentTicketing = () => {
   return (
@@ -10,8 +11,9 @@ const IntelligentTicketing = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Intelligent Ticketing Managmnet</h1>
                         <p className="common-para">
-                           Easiest and fastest way to improve great customer Service.
+                          Easiest and fastest way to improve great customer Service. By harnessing the power of intelligent technologies, we provide a comprehensive system that optimizes ticket management from start to finish. Security and scalability are paramount, and our platform is built with enterprise-grade infrastructure to ensure data protection and performance.
                         </p>
+                        <Link to="/contact" className="nav-link common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">Contact Us</Link>
                     </div>
                 </div>
             </div>
@@ -90,6 +92,11 @@ const IntelligentTicketing = () => {
                 System is designed and developed to provide just in time complaints resolution, maintenance and support to the stakeholders. It allows you to be your brand solution and make your identity.
                 </p>
                </div>
+               <div className='col-lg-12'>
+             <Link to="/quarter-managment-study" target='_blank' className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Case Study
+             </Link>
+             </div>
            </div>
         </div>
     </section>
