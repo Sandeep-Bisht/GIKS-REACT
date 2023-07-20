@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const VirtualEvent = () => {
     return (
@@ -10,8 +11,9 @@ const VirtualEvent = () => {
                             <div className="about-single-content">
                                 <h1 className="common-heading">Virtual Event Managmnet</h1>
                                 <p className="common-para">
-                                    While nothing can be done for physical events right now, we can help you pivot your event from a physical event to a fully virtual one.
+                                While nothing can be done for physical events right now, we can help you pivot your event from a physical event to a fully virtual one. Whether you are transitioning from physical to virtual events or looking to optimize your existing virtual event strategy, we provide the expertise and support needed to ensure a successful and memorable virtual event experience.
                                 </p>
+                                <Link to="/contact" className="nav-link common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">Contact Us</Link>
                             </div>
                         </div>
                     </div>
@@ -114,6 +116,11 @@ const VirtualEvent = () => {
                             Interact directly with your virtual event attendees and expand the dialog with live chats, polls, RSS feeds, and social media.
                             </p>
                         </div>
+                        <div className='col-lg-12'>
+             <Link to="/ishaanav-study"   target='_blank'    className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Case Study
+             </Link>
+             </div>
                     </div>
                 </div>
             </section>

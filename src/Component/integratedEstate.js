@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link} from 'react-router-dom'
 const IntegratedEstate = () => {
   return (
     <>
@@ -12,6 +12,7 @@ const IntegratedEstate = () => {
                         <p className="common-para">
                         In order to streamline and align the working processes of Estates in government departments and Indian Railways with existing work practices, we have designed the Integrated Estate Management System (IEMS). This system serves the purpose of consolidating residents' requisitions, quarter allocations, complaints, feedback, and routing them to the appropriate officers and contractors for prompt action. By implementing IEMS, we ensure seamless integration and harmonization across various aspects of estate management.
                         </p>
+                        <Link to="/contact" className="nav-link common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">Contact Us</Link>
                     </div>
                 </div>
             </div>
@@ -66,6 +67,11 @@ const IntegratedEstate = () => {
                     3. Monitor and track lift performance on all lift companies engaged by the government departments. Monitor contractors through comprehensive daily, weekly and monthly reports. Automated escalations to the senior management after a customizable time period.
                     </p>
                 </div>
+                <div className='col-lg-12'>
+             <Link to="/nrcms-study" target='_blank' className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Case Study
+             </Link>
+             </div>
                 
            </div>
            

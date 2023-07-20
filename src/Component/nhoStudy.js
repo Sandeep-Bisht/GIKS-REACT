@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const NationalHydrographicStudy = () => {
     return (
@@ -21,6 +22,9 @@ const NationalHydrographicStudy = () => {
                                 <p className='common-para'>
                                 We then moved into the development phase, working with the NHO team to create a visually engaging website design that aligned with their brand identity and reflected the organization's mission and values. The new website was optimized for search engines, ensuring that it would be easy to find and attract visitors interested in the NHO's services and information.
                                 </p>
+                                <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
 
                             </div>
                         </div>

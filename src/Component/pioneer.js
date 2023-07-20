@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const PioneerStudy = () => {
   return (
@@ -29,7 +30,13 @@ const PioneerStudy = () => {
           <p className="common-para">The website has also been successful in attracting advertisers and generating revenue. Its user-friendly design and engaging content have helped it retain readers, which has been key to its success.
           </p>
           <h3 className="sub-pages-heading1">Conclusion:</h3>
-          <p className="common-para">Pioneer Edge is an example of a successful news portal that has been able to establish itself in a crowded and competitive market. By focusing on providing high-quality and accurate news, creating a community of readers, and covering topics that were not covered by other portals, Pioneer Edge has become a popular destination for people looking for news and information related to Uttarakhand.</p>
+          <p className="common-para">Pioneer Edge is an example of a successful news portal that has been able to establish itself in a 
+          crowded and competitive market. By focusing on providing high-quality and accurate news, creating a community of readers, and 
+          covering topics that were not covered by other portals, Pioneer Edge has become a popular destination for people looking for 
+          news and information related to Uttarakhand.</p>
+          <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
         </div>
       </div>
       <div className="col-md-4">

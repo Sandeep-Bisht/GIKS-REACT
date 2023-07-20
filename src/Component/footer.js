@@ -27,9 +27,9 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Technologies</p>
             <ul>
-              <li><Link to='/' className="footer-link">MERN</Link></li>
-              <li><Link to='/' className="footer-link">Java</Link></li>
-              <li><Link to='/' className="footer-link">PHP</Link></li>
+              <li><Link to='/mern' className="footer-link">MERN</Link></li>
+              <li><Link to='/java' className="footer-link">Java</Link></li>
+              <li><Link to='/php' className="footer-link">PHP</Link></li>
 
             </ul>
           </div>
@@ -45,18 +45,18 @@ const Footer = () => {
               <li><a href="#" className="footer-link">IOS</a></li>
               <li><a href="#" className="footer-link">Wordpress</a></li>
               <li><a href="#" className="footer-link">salesforce</a></li> */}
-              <li><Link to='/' className="footer-link">Liferay</Link></li>
-              <li><Link to='/' className="footer-link">Laravel</Link></li>
-              <li><Link to='/' className="footer-link">React Native</Link></li>
-              <li><Link to='/' className="footer-link">Android</Link></li>
-              <li><Link to='/' className="footer-link">IOS</Link></li>
-              <li><Link to='/' className="footer-link">Wordpress</Link></li>
-              <li><Link to='/' className="footer-link">salesforce</Link></li>
+              <li><Link to='/liferay' className="footer-link">Liferay</Link></li>
+              <li><Link to='/laravel' className="footer-link">Laravel</Link></li>
+              <li><Link to='/react-native' className="footer-link">React Native</Link></li>
+              <li><Link to='/android' className="footer-link">Android</Link></li>
+              <li><Link to='/ios' className="footer-link">IOS</Link></li>
+              <li><Link to='/wordpress' className="footer-link">Wordpress</Link></li>
+              <li><Link to='/sales-force' className="footer-link">salesforce</Link></li>
 
             </ul>
           </div>
         </div>
-        <div className="grid-container-wrapper">
+        <div className="grid-container-wrapper d-none">
           <div>
             <p className="footer-heading">Industries</p>
             <ul>
@@ -90,7 +90,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="grid-container-wrapper">
+        <div className="grid-container-wrapper d-none">
           <div>
             <p className="footer-heading">Applications</p>
             <ul>
@@ -119,8 +119,8 @@ const Footer = () => {
           <div>
             <p className="footer-heading">Connect With us</p>
             <ul>
-              <li><a href="#" className="footer-link">India</a></li>
-              <li><a href="#" className="footer-link">Canada</a></li>
+              <li><Link to='/contact' className="footer-link">India</Link></li>
+              <li><a href="https://giks.ca/contact" target="_blank" className="footer-link">Canada</a></li>
 
 
 
@@ -142,7 +142,10 @@ const Footer = () => {
         <div className="col-md-12">
           <div className="copyright-box">
             <div className="one">
+              <Link to='/'>
               <img src="/images/footer-logo.png" className="w-75" />
+              </Link>
+              
             </div>
             <div className="two">
               <ul className="mb-0">

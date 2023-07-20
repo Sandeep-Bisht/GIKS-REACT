@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const DigitalExperience = () => {
   return (
@@ -10,8 +11,9 @@ const DigitalExperience = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Enterprise Digital Experience Platform</h1>
                         <p className="common-para">
-                            Deliver personalized experiences for the entire customer journey.
+                        Deliver personalized experiences for the entire customer journey. Designed to empower enterprises with the tools and capabilities necessary to deliver exceptional digital experiences across multiple channels. Whether it's creating immersive websites, developing mobile applications, or implementing personalized marketing campaigns, our platform offers a comprehensive solution to meet your organization's needs.
                         </p>
+                        <Link to="/contact" className="nav-link common-btn mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block">Contact Us</Link>
                     </div>
                 </div>
             </div>
@@ -120,6 +122,11 @@ Harness the power of our expert Digital Consulting Services today.  Partner with
                 <p className="common-para">
                 In the rapidly evolving digital landscape, understanding the customer experience has become paramount. With the advent of Digital Experience Platforms (DXP), businesses are equipped with powerful tools to engage and interact with their customers in unprecedented ways. These platforms seamlessly integrate various digital touchpoints, enabling organizations to create personalized and immersive experiences across multiple channels. By delving into the realm of customer experience in the digital era and harnessing the capabilities of DXP, businesses can gain invaluable insights, enhance customer satisfaction, and forge long-lasting relationships in the ever-connected world.
                 </p>
+             </div>
+             <div className='col-lg-12'>
+             <Link to="/jaimaica-study" target='_blank'  className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Case Study
+             </Link>
              </div>
            </div>
         </div>

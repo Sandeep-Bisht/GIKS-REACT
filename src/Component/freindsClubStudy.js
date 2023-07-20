@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const FreindsCludStudy = () => {
   return (
@@ -67,6 +68,9 @@ const FreindsCludStudy = () => {
                                  expand its reach. The success of the platform highlights the value of integrating web and mobile 
                                     solutions to provide a seamless and convenient user experience
                         </p>
+                        <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
+                Contact Us
+             </Link>
                     </div>
                 </div>
                 <div class="col-md-4">
