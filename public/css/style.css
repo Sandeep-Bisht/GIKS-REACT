@@ -486,6 +486,10 @@ header .dropdown-item:focus, header .dropdown-item:hover
     position: relative;
     z-index: 10;
 }
+ .home-banner .common-para{
+    font-size: 16px;
+ }
+
 /* ---------------------------homeabout------------------------------- */
 .home-about{
     padding: 100px 0;
@@ -527,7 +531,9 @@ header .dropdown-item:focus, header .dropdown-item:hover
 .home-about-content{
     padding: 0 30px;
 }
-
+.about-who-we-are .common-para{
+    font-size: 16px;
+}
 
 /* --------------------home service-------------- */
 .home-service{
@@ -1146,7 +1152,7 @@ border: 2px solid #0D99FF;
 
 /* -------------------------------contact single--------------------------- */
 .contact-single{
-    padding: 100px 0 60px 0;
+    padding: 140px 0 60px 0;
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
 }
 
@@ -1397,7 +1403,7 @@ border: 2px solid #0D99FF;
 /* ------------------------single-blog-page-css-start------------------ */
 .single-blog-page{
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
-    padding: 50px 0 80px 0;
+    padding: 100px 0 80px 0;
 }
 
 .single-blog-page .blog-single-card{
@@ -2290,13 +2296,51 @@ footer .copyright-box .three ul li{
     background-position: center;
 
   }
+  .application-form .modal-header
+  {
+      border-bottom: 0!important;
+  }
+  .application-form .modal-header .modal-title
+  {
+    color: #007DFF!important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 1px solid #007dff;
+  }
+  .application-form  .modal-content
+   {
+      background-color: #fafafa!important;
+      border: 4px solid #007dff;
+   }
 
-
-
-
-  
-
-
+   .application-form  .modal-content label
+   {
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 4px;
+   }
+   .application-form  .modal-content .form-control{
+    border-radius: 0;
+    font-size: 13px;
+    padding: 5px!important;
+   }
+   .application-form  .modal-content .btn-close
+   {
+    background: #027eff;
+    opacity: 1;
+    border-radius: 0;
+    height: 10px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .application-form  .modal-content .btn-close svg path
+   {
+       fill :#fff;
+   }
 /* ------------------------media query------------------ */
 /* @media (max-width: 2560.98px) 
 {
@@ -2517,6 +2561,15 @@ footer .copyright-box .three ul li{
     {
 
     }
+    .home-banner .common-para
+    {
+        font-size: 20px;
+    }
+    .about-who-we-are .common-para
+    {
+        
+        font-size: 20px;
+    }
  }
 
 
@@ -2585,6 +2638,16 @@ footer .copyright-box .three ul li{
     {
         font-size: 18px;
     }
+    .home-banner .common-para
+    {
+        font-size: 20px;
+    }
+    .about-who-we-are .common-para
+    {
+        
+        font-size: 20px;
+    }
+
  }
 
 
@@ -3381,7 +3444,7 @@ footer .copyright-box .three ul li{
 }
 .single-blog-page
 {
-    padding: 30px;
+    padding: 80px;
 }
 .product-about .product-services-box
 {
@@ -3559,7 +3622,7 @@ footer .copyright-box .three ul li{
     }
     .contact-single
     {
-         padding: 60px 30px 60px 30px;
+         padding: 100px 30px 60px 30px;
     }
     .mob-col-reverse
     {
@@ -3612,6 +3675,11 @@ footer .copyright-box .three ul li{
     footer
     {
         padding-top: 20px;
+    }
+
+    .about-who-we-are .common-para,.home-banner .common-para
+    {
+        font-size: 14px;
     }
  }
 
