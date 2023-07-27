@@ -32,7 +32,8 @@ const Careers = () => {
     formData.append("qualification", data.qualification);
     formData.append("file", data.file);
 
-    let url = "http://localhost:4500/api/career";
+    // let url = "http://localhost:4500/api/career";
+    let url = "http://185.239.209.106:4500/api/career"
 
     try {
       let response = await axios.post(url, formData, {
