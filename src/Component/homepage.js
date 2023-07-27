@@ -138,17 +138,7 @@ const Homepage = () => {
       
       });
 
-      $(window).scroll(function() {
-        let position = $(this).scrollTop();
-    
-        if (position >= 149) {
-    
-            $("header").addClass("fixed-top");
-        } else {
-    
-            $("header").removeClass("fixed-top");
-        }
-    });
+     
       `;
   
       const script = document.createElement('script');
