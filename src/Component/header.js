@@ -21,9 +21,15 @@ const Header = () => {
               <HiOutlineBars3BottomRight />
             </span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav ms-auto d-flex align-items-center" id='custom-scroller-nav'>
-              <li className="nav-item">
+              <li className='nav-item'>
+                <Link to='/' className="navbar-brand mobile-logo d-lg-none d-block">
+                  <img src="/images/header-logo.png" className="img-fluid " alt="main-logo" />
+                </Link>
+              </li>
+              <li className="nav-item mt-lg-0 mt-md-3">
                 <Link to="/" className="nav-link">
                   Home
                 </Link>
@@ -648,14 +654,14 @@ const Header = () => {
                           fill="white" />
                       </svg>
                       </span>INCA India</Link></li>
-                  
-                  
 
 
-                  
-                    
-                    
-                    <li>
+
+
+
+
+
+                  <li>
                     <Link to="/investcare-study" className="dropdown-item">
                       <span className="drop-icon">
                         <svg width="22" height="22"
@@ -690,7 +696,7 @@ const Header = () => {
                         </svg>
                       </span>Investcare
                     </Link></li>
-                    <li>
+                  <li>
                     <Link to="/modern-house-study" className="dropdown-item">
                       <span className="drop-icon">
                         <svg width="22" height="22"
@@ -725,7 +731,7 @@ const Header = () => {
                         </svg>
                       </span>Modern House of Antiques
                     </Link></li>
-                    <li>
+                  <li>
                     <Link to="/doon-valley-study" className="dropdown-item">
                       <span className="drop-icon">
                         <svg width="22" height="22"
@@ -760,7 +766,7 @@ const Header = () => {
                         </svg>
                       </span>Doon Valley Public School
                     </Link></li>
-                    <li>
+                  <li>
                     <Link to="/mukhya-dhara-study" className="dropdown-item">
                       <span className="drop-icon">
                         <svg width="22" height="22"
@@ -795,7 +801,7 @@ const Header = () => {
                         </svg>
                       </span>Mukhyadhara
                     </Link></li>
-                    <li>
+                  <li>
                     <Link to="/quarter-managment-study" className="dropdown-item">
                       <span className="drop-icon">
                         <svg width="22" height="22"
@@ -830,7 +836,7 @@ const Header = () => {
                         </svg>
                       </span>NRHQQMS
                     </Link></li>
-                    
+
 
                 </ul>
               </li>
