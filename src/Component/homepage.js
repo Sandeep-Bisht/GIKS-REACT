@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
-import { ReactComponent as Globe } from '../images/about-globe.svg'
+
 import { Link } from 'react-router-dom'
-import sliderVideo from '../video/video-bg.mp4';
+import sliderVideo from '../video/video-bg.mp4'
 import aboutVideo  from '../video/giks-logo-animation.mp4'
+
 
 
 const Homepage = () => {
@@ -155,7 +156,7 @@ const Homepage = () => {
     <>
     <div className="home-banner">
     <div class="video-container">
-      <video class="video-item" src={sliderVideo} autoPlay loop muted/>
+      <video class="video-item" src={sliderVideo} autoPlay loop playsInline  muted/>
     </div>
     <div className="container home-banner-container">
       <div className="row align-items-center">
@@ -193,7 +194,9 @@ const Homepage = () => {
         <div className="col-lg-5 col-md-5 col-sm-5">
           <div className="home-about-pic">
 
-           <video class="" src={aboutVideo} autoPlay loop muted />
+           <video class="" src={aboutVideo} autoPlay playsInline  loop muted />
+           
+          
           </div>
 
         </div>
