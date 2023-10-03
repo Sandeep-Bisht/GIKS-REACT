@@ -428,7 +428,7 @@ const Careers = () => {
 
                       <div className="col-md-12 mt-3">
                         <ReCAPTCHA
-                          sitekey="6LfpuTsnAAAAAJqzhPZ_v6KrUyb8ekPCgVNdjT6T"
+                          sitekey="6Le7TlEmAAAAANZwWLnQD8mUeh5f4RUGxZvTgYwg"
                           onChange={onChange}
                         />
                       </div>
