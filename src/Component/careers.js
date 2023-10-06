@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
-import {FaTimes} from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
 
 const Careers = () => {
   const [verified, setVerified] = useState(false);
-  const [msg, setMsg] = useState(undefined);
+  const [loading, setLoading] = useState()
+  const [msg, setMsg] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null)
+  const recaptchaRef = useRef(null)
 
   const {
     register,
@@ -14,6 +17,8 @@ const Careers = () => {
     handleSubmit,
     formState: { errors },
     reset: resetCarrerForm,
+
+
   } = useForm({
     mode: "onBlur",
   });
@@ -30,12 +35,13 @@ const Careers = () => {
     formData.append("experience", data.experience);
     formData.append("lastCompany", data.lastCompany);
     formData.append("qualification", data.qualification);
-    formData.append("file", data.file);
+    formData.append("file", selectedFile);
 
     // let url = "http://localhost:4500/api/career";
     let url = "http://185.239.209.106:4500/api/career"
 
     try {
+      setLoading(true)
       let response = await axios.post(url, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
@@ -43,13 +49,50 @@ const Careers = () => {
       });
 
       if (response) {
+        // console.log(response, "check ressssssss")
+         if(recaptchaRef.current)
+         {
+          recaptchaRef.current.reset();
+         }
         resetCarrerForm();
         setVerified(false);
+        setLoading(false);
+        setMsg(true);
+        setTimeout(() => {
+          setMsg(false);
+        }, 3000);
       }
     } catch (error) {
       console.log(error);
     }
   };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0]; // Get the selected file
+  
+    if (file) {
+      // Check if the selected file is a .docx or .pdf file
+      if (
+        file.type !== "application/pdf" &&
+        file.type !==
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ) {
+        // Clear the file input and display an error message
+        e.target.value = ""; // Clear the file input
+        alert("Please select a .docx or .pdf file.");
+      } else {
+        // Set the selected file in the state
+        setSelectedFile(file);
+      }
+    } else {
+      // If no file is selected, you can set the state to null or an empty string, depending on your use case
+      setSelectedFile(null); // or setSelectedFile("");
+    }
+  };
+  
+  
+  
+  
 
   return (
     <>
@@ -247,7 +290,7 @@ const Careers = () => {
                 aria-label="Close"
               >
 
-                <FaTimes/>
+                <FaTimes />
               </button>
             </div>
             <div className="modal-body">
@@ -409,12 +452,16 @@ const Careers = () => {
                                 <input
                                   className="form-control"
                                   type="file"
-                                  onChange={(e) =>
+                                  onChange={(e) =>{
+                                  
                                     field.onChange(e.target.files[0])
-                                  }
+                                    handleFileChange(e);
+                                  }}
+                                  // onChange={(e) => handleFileChange(e)}
                                   ref={field.ref}
+
                                 />
-                                {errors.file && <p>{errors.file.message}</p>}
+                               
                               </div>
                             )}
                           />
@@ -430,6 +477,8 @@ const Careers = () => {
                         <ReCAPTCHA
                           sitekey="6Le7TlEmAAAAANZwWLnQD8mUeh5f4RUGxZvTgYwg"
                           onChange={onChange}
+                          ref={recaptchaRef}
+                          
                         />
                       </div>
                       <div className="col-md-12 pt-lg-3">
@@ -440,8 +489,24 @@ const Careers = () => {
                           Submit
                         </button>
                       </div>
+                      {
+                        loading ? (
+                          <div>
+                            <div className="overlay">
 
-                      <p className="">{msg}</p>
+                            </div>
+                            <div className="position-absolute top-50 start-50 translate-middle loader-parent">
+                              <div className="loader-parent"> <span class="loader"></span></div>
+                            </div>
+                          </div>
+                        ) :
+                          msg ?
+                            (<p className="success-msg">Form submitted successfully</p>
+                            )
+                            :
+                            ""
+                      }
+                      {/* <p className="">submitting message</p> */}
                     </div>
                   </form>
                 </div>
