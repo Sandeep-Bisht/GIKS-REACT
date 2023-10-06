@@ -308,13 +308,22 @@ const Careers = () => {
                             className="form-control"
                             {...register("fullName", {
                               required: true,
+                              pattern: /^[A-Za-z]+$/i,
                             })}
                           />
-                          {errors?.fullName?.type === "required" && (
+                          {/* {errors?.fullName?.type === "required" && (
                             <p className="text-danger">
                               This field is required
                             </p>
-                          )}
+                          )} */}
+
+{errors.fullName ? (
+  errors.fullName.type === "required" ? (
+    <p className="text-danger">This field is required</p>
+  ) : (
+    <p className="text-danger">Accepts Characters only</p>
+  )
+) : null}
                         </div>
                       </div>
 
@@ -405,13 +414,17 @@ const Careers = () => {
                             className="form-control"
                             {...register("experience", {
                               required: true,
+                              pattern: /^[0-9]{10}$/
                             })}
-                          />
-                          {errors?.experience?.type === "required" && (
-                            <p className="text-danger">
-                              This field is required
-                            </p>
-                          )}
+                          />                          
+
+{errors.experience ? (
+  errors.experience.type === "required" ? (
+    <p className="text-danger">This field is required</p>
+  ) : (
+    <p className="text-danger">Accepts Numbers only</p>
+  )
+) : null}
                         </div>
                       </div>
 

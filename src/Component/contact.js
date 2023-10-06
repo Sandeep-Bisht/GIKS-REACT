@@ -169,9 +169,16 @@ const Contact = () => {
                             pattern: /^[A-Za-z]+$/i,
                           })}
                         />
-                        {errors?.firstName?.type === "required" && (
-                          <p className="text-danger">This field is required</p>
-                        )}
+                       
+{errors.firstName ? (
+  errors.firstName.type === "required" ? (
+    <p className="text-danger">This field is required</p>
+  ) : (
+    <p className="text-danger">Accepts Characters only</p>
+  )
+) : null}
+
+                          
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-6">
@@ -184,11 +191,18 @@ const Contact = () => {
                           className="form-control"
                           {...register("lastName", {
                             required: true,
+                            pattern: /^[A-Za-z]+$/i,
                           })}
                         />
-                        {errors?.lastName?.type === "required" && (
-                          <p className="text-danger">This field is required</p>
-                        )}
+                       
+
+{errors.lastName ? (
+  errors.lastName.type === "required" ? (
+    <p className="text-danger">This field is required</p>
+  ) : (
+    <p className="text-danger">Accepts Characters only</p>
+  )
+) : null}
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-6">
@@ -226,12 +240,17 @@ const Contact = () => {
                           className="form-control"
                           {...register("phoneNumber", {
                             required: true,
+                            pattern: /^[0-9]{10}$/
                             
                           })}
                         />
-                        {errors?.phoneNumber?.type === "required" && (
-                          <p className="text-danger">This field is required</p>
-                        )}
+                      {errors.phoneNumber ? (
+  errors.phoneNumber.type === "required" ? (
+    <p className="text-danger">This field is required</p>
+  ) : (
+    <p className="text-danger">Accepts Numbers only</p>
+  )
+) : null}
                       </div>
                     </div>
                     <div className="col-md-12">
