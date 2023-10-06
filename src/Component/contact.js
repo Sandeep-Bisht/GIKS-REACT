@@ -166,7 +166,7 @@ const Contact = () => {
                           //   onInput={() => setMessage("")}
                           {...register("firstName", {
                             required: true,
-                            pattern: /^[A-Za-z]+$/i,
+                            pattern: /^[A-Za-z\s]+$/,
                           })}
                         />
                        
@@ -174,7 +174,7 @@ const Contact = () => {
   errors.firstName.type === "required" ? (
     <p className="text-danger">This field is required</p>
   ) : (
-    <p className="text-danger">Accepts Characters only</p>
+    <p className="text-danger">Please enter a valid firstname</p>
   )
 ) : null}
 
@@ -191,7 +191,7 @@ const Contact = () => {
                           className="form-control"
                           {...register("lastName", {
                             required: true,
-                            pattern: /^[A-Za-z]+$/i,
+                            pattern: /^[A-Za-z\s]+$/,
                           })}
                         />
                        
@@ -200,9 +200,11 @@ const Contact = () => {
   errors.lastName.type === "required" ? (
     <p className="text-danger">This field is required</p>
   ) : (
-    <p className="text-danger">Accepts Characters only</p>
+    <p className="text-danger">Please enter a valid lastname</p>
   )
 ) : null}
+
+
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-6">
@@ -236,21 +238,22 @@ const Contact = () => {
                           Phone number
                         </label>
                         <input
-                          type="text"
-                          className="form-control"
-                          {...register("phoneNumber", {
-                            required: true,
-                            pattern: /^[0-9]{10}$/
-                            
-                          })}
-                        />
-                      {errors.phoneNumber ? (
-  errors.phoneNumber.type === "required" ? (
-    <p className="text-danger">This field is required</p>
-  ) : (
-    <p className="text-danger">Accepts Numbers only</p>
-  )
-) : null}
+      type="text"
+      className="form-control"
+      {...register("phoneNumber", {
+        required: true,
+        pattern: /^[0-9]{10}$/, // Enforce exactly 10 numeric digits
+        maxLength: 10, // Enforce exactly 10 characters
+        minLength: 10, // Enforce exactly 10 characters
+      })}
+    />
+    {errors.phoneNumber ? (
+      errors.phoneNumber.type === "required" ? (
+        <p className="text-danger">This field is required</p>
+      ) : (
+        <p className="text-danger">Please enter a valid 10-digit phone number</p>
+      )
+    ) : null}
                       </div>
                     </div>
                     <div className="col-md-12">

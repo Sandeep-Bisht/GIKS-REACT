@@ -308,7 +308,7 @@ const Careers = () => {
                             className="form-control"
                             {...register("fullName", {
                               required: true,
-                              pattern: /^[A-Za-z]+$/i,
+                              pattern: /^[A-Za-z\s]+$/,
                             })}
                           />
                           {/* {errors?.fullName?.type === "required" && (
@@ -321,7 +321,7 @@ const Careers = () => {
   errors.fullName.type === "required" ? (
     <p className="text-danger">This field is required</p>
   ) : (
-    <p className="text-danger">Accepts Characters only</p>
+    <p className="text-danger">Please enter a valid name</p>
   )
 ) : null}
                         </div>
@@ -414,7 +414,7 @@ const Careers = () => {
                             className="form-control"
                             {...register("experience", {
                               required: true,
-                              pattern: /^[0-9]{10}$/
+                              pattern: /^[0-9]*$/
                             })}
                           />                          
 
