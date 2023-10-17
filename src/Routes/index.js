@@ -45,6 +45,7 @@ import ModernHouseStudy from '../Component/modernHouseStudy'
 import DoonValleyStudy from '../Component/doonValleyStudy'
 import MukhyaDharaStudy from '../Component/mukhyadharaStudy'
 import QuarterManagmentStudy from '../Component/quarterMangmentStudy'
+import Login from '../Component/login'
 
 const ApplicationRoutes = () => {
   return (
@@ -52,6 +53,7 @@ const ApplicationRoutes = () => {
       
         <Route path='/*' element={<PageNotFound/>}/>
         <Route path='/' element={<Homepage/>}/>
+        <Route path='/login' element={< Login/>} />
         <Route path='/about-us' element={<About/>}/>
         <Route path='/digital-experience-platform' element={<DigitalExperience/>}/>
         <Route path='/integrated-estate-management-system' element={<IntegratedEstate/>}/>
@@ -69,9 +71,9 @@ const ApplicationRoutes = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/blog-detail' element={<BlogDetails/>}/>
-        <Route path='/freinds-club-study' element={<FreindsCludStudy/>}/>
+        <Route path='/friends-club-study' element={<FreindsCludStudy/>}/>
         <Route path='/national-hydrographic-study' element={<NationalHydrographicStudy/>}/>
-        <Route path='/ishaanav-study' element={<IshaanavStudy/>}/>
+        <Route path='/ishaanav-study' element={<IshaanavStudy/>}/> 
         <Route path='/jaimaica-study' element={<JaimaicaStudy/>}/>
         <Route path='/nrcms-study' element={<NorthenRailwayStudy/>}/>
         <Route path='/jgc-study' element={<JgcStudy/>}/>

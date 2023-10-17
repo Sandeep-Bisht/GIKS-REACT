@@ -384,7 +384,7 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu case-study-dropdown">
                   <li>
-                    <Link to="/freinds-club-study" className="dropdown-item">
+                    <Link to="/friends-club-study" className="dropdown-item">
                       <span className="drop-icon">
                         <svg width="22" height="22"
                           viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
