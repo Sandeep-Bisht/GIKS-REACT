@@ -646,7 +646,7 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Friends Club</p>
                                             <p className="common-para">
-                                                We developed the Freinds Club official website using the Laravel framework. Freinds Club is a social based in india with a large and active membership base.
+                                                We developed the Friends Club official website using the Laravel framework. Friends Club is a social based in india with a large and active membership base.
                                             </p>
                                         </div>
                                     </div>

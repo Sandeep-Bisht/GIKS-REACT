@@ -562,7 +562,7 @@ Our team of experts is dedicated to delivering high-quality software services th
 
               </div>
               <div className="case-study-heading">
-                Freinds Club
+              Friends Club
               </div>
             </div>
             <div className="second-view">
@@ -584,12 +584,12 @@ Our team of experts is dedicated to delivering high-quality software services th
                       <div className="case-study-second-content">
                         <p className="case-study-second-content-heading">Freinds Club</p>
                         <p className="common-para">
-                          We developed the Freinds Club official website using the Laravel framework.
-                          Freinds Club is a social based in india with a large and active membership base.
+                          We developed the Friends Club official website using the Laravel framework.
+                          Friends Club is a social based in india with a large and active membership base.
                         </p>
                         <div className="right">
                           <div>
-                            <Link to='/freinds-club-study' className="common-btn  d-inline-block">
+                            <Link to='/friends-club-study' className="common-btn  d-inline-block">
                               Read More
                             </Link>
                           </div>
