@@ -53,7 +53,7 @@ const ApplicationRoutes = () => {
       
         <Route path='/*' element={<PageNotFound/>}/>
         <Route path='/' element={<Homepage/>}/>
-        <Route path='/login' element={< Login/>} />
+        {/* <Route path='/login' element={< Login/>} /> */}
         <Route path='/about-us' element={<About/>}/>
         <Route path='/digital-experience-platform' element={<DigitalExperience/>}/>
         <Route path='/integrated-estate-management-system' element={<IntegratedEstate/>}/>
