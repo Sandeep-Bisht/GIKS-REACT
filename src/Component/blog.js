@@ -238,7 +238,7 @@ const Blog = () => {
                 <div className="col-lg-3 col-md-5 col-sm-5">
                     <div className="blog-right-wrapper">
                         <div className="row">
-                            <div className="col-md-12">
+                            {/* <div className="col-md-12">
                                 <div className="search-box">
                                     <div className="search-box-wrapper">
                                         <div className="input-group mb-3">
@@ -251,7 +251,7 @@ const Blog = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-md-12">
                                 <p className="blog-right-wrapper-heading">Recent Posts</p>
                                 <div className="recent-post-box">

@@ -1,5 +1,6 @@
 import React from 'react'
 import {IoIosArrowBack,IoIosArrowForward} from "react-icons/io"
+import broucher from "../Samplefiles/GIKS_Brochure.pdf"
 
 const BlogDetails = () => {
     return (
@@ -367,7 +368,10 @@ const BlogDetails = () => {
                                                         fill="white" />
                                                 </svg>
                                             </span>
-                                            <span className="icon-heading common-para">Download Brochure</span>
+                                            <a target="_blank" href={broucher}>                 
+                   <span className="icon-heading common-para">Download Brochure</span>                 
+                </a>
+                                            {/* <span className="icon-heading common-para">Download Brochure</span> */}
                                         </button>
                                     </div>
                                     <div className="col-md-12">

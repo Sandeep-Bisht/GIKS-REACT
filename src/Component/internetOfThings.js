@@ -3,6 +3,7 @@ import { ReactComponent as CompilerSvg } from '../images/compiler.svg'
 import { ReactComponent as SettingSvg } from '../images/setting.svg'
 import { ReactComponent as LiferaySvg } from '../images/liferay.svg'
 import { ReactComponent as MobileAppSvg } from '../images/mobile.svg'
+import broucher from "../Samplefiles/GIKS_Brochure.pdf"
 
 const InternetOfThings = () => {
   return (
@@ -226,7 +227,10 @@ const InternetOfThings = () => {
                                                 fill="white" />
                                         </svg>
                                     </span>
-                                    <span className="icon-heading common-para">Download Brochure</span>
+                                    <a target="_blank" href={broucher}>                 
+                   <span className="icon-heading common-para">Download Brochure</span>                 
+                </a>
+                                    {/* <span className="icon-heading common-para">Download Brochure</span> */}
                                 </button>
                 </div>
             </div>
