@@ -290,7 +290,7 @@ const Contact = () => {
                     </div>
                     <div className="col-md-12">
                       <ReCAPTCHA
-                        sitekey="6Ld3knAoAAAAANuyyPWKFYAxnBRy9SwnL-uf8yU3"
+                        sitekey="6LdvhdMoAAAAAAH-4p2HpVvZB7xdQkVOgHw-dQOw"
                         onChange={onChange}
                         ref={recaptchaRef}
                       />
