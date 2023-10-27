@@ -488,7 +488,7 @@ const Careers = () => {
 
                       <div className="col-md-12 mt-3">
                         <ReCAPTCHA
-                          sitekey="6Le7TlEmAAAAANZwWLnQD8mUeh5f4RUGxZvTgYwg"
+                          sitekey="6Ld3knAoAAAAANuyyPWKFYAxnBRy9SwnL-uf8yU3"
                           onChange={onChange}
                           ref={recaptchaRef}
                           
