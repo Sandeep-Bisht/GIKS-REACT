@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
-
+import React, { useState,useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import sliderVideo from "../video/video-bg.mp4";
 import aboutVideo from "../video/giks-logo-animation.mp4";
 
 const Homepage = () => {
+  const [blog, setBlog] = useState()
+
+//   let url = "http://185.239.209.106:4500/api"
+let url = "http://localhost:4500/api"
+
   useEffect(() => {
     const customScript = `
     $(document).ready(function() {
@@ -143,12 +148,18 @@ const Homepage = () => {
     script.textContent = customScript;
 
     document.head.appendChild(script);
-
+    getAllBlogs();
     return () => {
       // Clean up the script when the component is unmounted
       document.head.removeChild(script);
     };
   }, []);
+
+  const getAllBlogs = async () => {
+    const response = await axios.get(`${url}/blog/find_all_blog`);
+    setBlog(response.data)
+  }
+
   return (
     <>
       <div className="home-banner">
@@ -1357,21 +1368,25 @@ const Homepage = () => {
             <div className="col-md-12">
               <div className="carousel-wrapper">
                 <ul className="owl-carousel owl-theme tab-slider list-unstyled">
-                  <li>
+                  {
+                    blog && blog.length>0 ? blog.map((item,index)=>{
+                      console.log(item,"check thed item")
+                      return(
+                        <>
+                   <li key={index}>
                     <div className="item">
                       <Link to="/blog-detail">
                         <div className="blog-card">
                           <div className="blog-pic">
                             <img
-                              src="/images/blog/1.jpg"
+                              src={`${url}/${item.featuredImage.path}`}
                               className="img-fluid"
                               alt=""
                             />
                           </div>
                           <div className="blog-content">
                             <p className="blog-heading">
-                              The Internet of Things: Revolutionizing Industries
-                              and Changing the Way We Live and Work
+                              {item.description}
                             </p>
                             <span className="common-read-more">Read more</span>
                           </div>
@@ -1379,94 +1394,12 @@ const Homepage = () => {
                       </Link>
                     </div>
                   </li>
-                  <li>
-                    <div className="item">
-                      <Link to="/blog-detail">
-                        <div className="blog-card">
-                          <div className="blog-pic">
-                            <img
-                              src="/images/blog/2.jpg"
-                              className="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                          <div className="blog-content">
-                            <p className="blog-heading">
-                              The Internet of Things: Revolutionizing Industries
-                              and Changing the Way We Live and Work
-                            </p>
-                            <span className="common-read-more">Read more</span>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="item">
-                      <Link to="/blog-detail">
-                        <div className="blog-card">
-                          <div className="blog-pic">
-                            <img
-                              src="/images/blog/3.jpg"
-                              className="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                          <div className="blog-content">
-                            <p className="blog-heading">
-                              The Internet of Things: Revolutionizing Industries
-                              and Changing the Way We Live and Work
-                            </p>
-                            <span className="common-read-more">Read more</span>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </li>
-                  <li className="one">
-                    <div className="item">
-                      <Link to="/blog-detail">
-                        <div className="blog-card">
-                          <div className="blog-pic">
-                            <img
-                              src="/images/blog/4.jpg"
-                              className="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                          <div className="blog-content">
-                            <p className="blog-heading">
-                              The Internet of Things: Revolutionizing Industries
-                              and Changing the Way We Live and Work
-                            </p>
-                            <span className="common-read-more">Read more</span>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </li>
-                  <li className="two">
-                    <div className="item">
-                      <Link to="/blog-detail">
-                        <div className="blog-card">
-                          <div className="blog-pic">
-                            <img
-                              src="/images/blog/5.jpg"
-                              className="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                          <div className="blog-content">
-                            <p className="blog-heading">
-                              The Internet of Things: Revolutionizing Industries
-                              and Changing the Way We Live and Work
-                            </p>
-                            <span className="common-read-more">Read more</span>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </li>
+                        </>
+                      )
+                    })
+                    :
+                    null
+                  }
                 </ul>
               </div>
             </div>

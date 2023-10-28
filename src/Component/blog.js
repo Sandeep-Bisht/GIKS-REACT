@@ -22,8 +22,7 @@ const Blog = () => {
 
       console.log(blog,"check the all blog ")
       const blogDetailsHandler=(item,slug)=>{
-  
-        navigate(`/blog-detail/${slug}`, { state :{ ...item }})
+        navigate(`/blog/${slug}`, { state :{ ...item }})
     }
 
   return (
@@ -40,11 +39,11 @@ const Blog = () => {
                     <div className="blog-left-wrapper">
                         {
                             blog && blog.length>0 ? blog.map((item,index)=>{
+                                console.log(item,"check the button")
                                 return(
                                     <>
                              <div className="blog-single-card" key={index}
                              onClick={()=>blogDetailsHandler(item,item.slug)}>
-                            <Link to="/blog-detail">
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="blog-single-card-pic">
@@ -66,7 +65,7 @@ const Blog = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </div></Link>
+                            </div>
                         </div>
                                     </>
                                 )
@@ -79,30 +78,18 @@ const Blog = () => {
                 <div className="col-lg-3 col-md-5 col-sm-5">
                     <div className="blog-right-wrapper">
                         <div className="row">
-                            {/* <div className="col-md-12">
-                                <div className="search-box">
-                                    <div className="search-box-wrapper">
-                                        <div className="input-group mb-3">
-                                            <input type="text" className="form-control" placeholder="Search"
-                                                aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                                            <div className="input-group-append">
-                                                <button className="btn search-btn" type="button"><i
-                                                        className="far fa-search"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
                             <div className="col-md-12">
                                 <p className="blog-right-wrapper-heading">Recent Posts</p>
-                                <div className="recent-post-box">
-                                    <p className="border-0">
-                                        <a href="#">Company Launches New Software Channel</a></p>
-                                    <p><a href="#">Paves The way for an eventual merger</a></p>
-                                    <p><a href="#">Three quarters of construction workers...</a></p>
-                                    <p><a href="#">Retail banks wake up to digital lending</a></p>
-                                    <p><a href="#">design breakthrough updates products</a></p>
-                                </div>
+                                {
+                                    blog && blog.length>0 ? blog.map((item,index)=>{
+                                        <div className="recent-post-box">
+                                        <p className="border-0">
+                                            <a href="#">{item.title}</a></p>
+                                    </div>
+                                    })
+                                    :
+                                    null
+                                }
                                 <div className="separator"></div>
                             </div>
                             <div className="col-md-12">
