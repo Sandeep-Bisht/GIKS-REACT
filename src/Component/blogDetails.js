@@ -8,7 +8,7 @@ import axios from 'axios';
 
 const BlogDetails = () => {
     const param = useParams()
-    let url = "https://185.239.209.106:4500/api";
+    let url = "https://185.239.209.106:4500/app/api";
     const location = useLocation();
     const state = location.state;
     const [blogDetails, setBlogDetails] = useState();
