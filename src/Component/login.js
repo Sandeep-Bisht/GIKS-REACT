@@ -20,7 +20,7 @@ const Login = () => {
 
     const adminLoginHandler = useMutation(
         async (data) => {
-          let url = "http://185.239.209.106:4800/api/authantication/login"
+          let url = "https://185.239.209.106:4800/api/authantication/login"
           const res = await fetch(url, {
             method: "POST",
             headers: {
