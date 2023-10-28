@@ -52,7 +52,7 @@ const Sidebar = () => {
                   <span className="px-3">
                     <RiLogoutCircleRLine />
                   </span>
-                  <Link to="/" onClick={() => handleLogout()}>
+                  <Link to="/" onClick={() => handleLogout()} >
                     Logout
                   </Link>
                 </div>
