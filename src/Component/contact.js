@@ -20,7 +20,7 @@ const Contact = () => {
 
   const handleContactUS = async (data) => {
     // let url = "http://localhost:4500/api/contact-us";
-    let url = "https://185.239.209.106:4500/api/contact-us";
+    let url = "https://185.239.209.106:4500/app/api/contact-us";
     setLoading(true);
     let response = await axios.post(url, data);
     try {

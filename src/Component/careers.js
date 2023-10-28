@@ -38,7 +38,7 @@ const Careers = () => {
     formData.append("file", selectedFile);
 
     // let url = "http://localhost:4500/api/career";
-    let url = "https://185.239.209.106:4500/api/career"
+    let url = "https://185.239.209.106:4500/app/api/career"
 
     try {
       setLoading(true)
