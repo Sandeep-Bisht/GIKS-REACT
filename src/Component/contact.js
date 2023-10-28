@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -6,8 +6,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 const Contact = () => {
   const [msg, setMsg] = useState(undefined);
   const [verified, setVerified] = useState(false);
-  const [loading, setLoading] = useState()
-  const recaptchaRef = useRef(null)
+  const [loading, setLoading] = useState();
+  const recaptchaRef = useRef(null);
 
   const {
     register,
@@ -20,14 +20,13 @@ const Contact = () => {
 
   const handleContactUS = async (data) => {
     // let url = "http://localhost:4500/api/contact-us";
-    let url = "http://185.239.209.106:4500/api/contact-us"
-    setLoading(true)
+    let url = "http://185.239.209.106:4500/api/contact-us";
+    setLoading(true);
     let response = await axios.post(url, data);
     try {
       if (response) {
-        if(recaptchaRef.current)
-        {
-         recaptchaRef.current.reset();
+        if (recaptchaRef.current) {
+          recaptchaRef.current.reset();
         }
         resetContactForm();
         setMsg(response.data.message);
@@ -148,7 +147,6 @@ const Contact = () => {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="fill-out-box mt-0">
-                        <p className="fill-out-heading">FILL OUT THE FORM</p>
                         <p className="common-para">
                           We’ll get back to you as soon as possible
                         </p>
@@ -169,16 +167,18 @@ const Contact = () => {
                             pattern: /^[A-Za-z\s]+$/,
                           })}
                         />
-                       
-{errors.firstName ? (
-  errors.firstName.type === "required" ? (
-    <p className="text-danger">This field is required</p>
-  ) : (
-    <p className="text-danger">Please enter a valid firstname</p>
-  )
-) : null}
 
-                          
+                        {errors.firstName ? (
+                          errors.firstName.type === "required" ? (
+                            <p className="text-danger">
+                              This field is required
+                            </p>
+                          ) : (
+                            <p className="text-danger">
+                              Please enter a valid firstname
+                            </p>
+                          )
+                        ) : null}
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-6">
@@ -194,17 +194,18 @@ const Contact = () => {
                             pattern: /^[A-Za-z\s]+$/,
                           })}
                         />
-                       
 
-{errors.lastName ? (
-  errors.lastName.type === "required" ? (
-    <p className="text-danger">This field is required</p>
-  ) : (
-    <p className="text-danger">Please enter a valid lastname</p>
-  )
-) : null}
-
-
+                        {errors.lastName ? (
+                          errors.lastName.type === "required" ? (
+                            <p className="text-danger">
+                              This field is required
+                            </p>
+                          ) : (
+                            <p className="text-danger">
+                              Please enter a valid lastname
+                            </p>
+                          )
+                        ) : null}
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-6">
@@ -238,22 +239,26 @@ const Contact = () => {
                           Phone number
                         </label>
                         <input
-      type="text"
-      className="form-control"
-      {...register("phoneNumber", {
-        required: true,
-        pattern: /^[0-9]{10}$/, // Enforce exactly 10 numeric digits
-        maxLength: 10, // Enforce exactly 10 characters
-        minLength: 10, // Enforce exactly 10 characters
-      })}
-    />
-    {errors.phoneNumber ? (
-      errors.phoneNumber.type === "required" ? (
-        <p className="text-danger">This field is required</p>
-      ) : (
-        <p className="text-danger">Please enter a valid 10-digit phone number</p>
-      )
-    ) : null}
+                          type="text"
+                          className="form-control"
+                          {...register("phoneNumber", {
+                            required: true,
+                            pattern: /^[0-9]{10}$/, // Enforce exactly 10 numeric digits
+                            maxLength: 10, // Enforce exactly 10 characters
+                            minLength: 10, // Enforce exactly 10 characters
+                          })}
+                        />
+                        {errors.phoneNumber ? (
+                          errors.phoneNumber.type === "required" ? (
+                            <p className="text-danger">
+                              This field is required
+                            </p>
+                          ) : (
+                            <p className="text-danger">
+                              Please enter a valid 10-digit phone number
+                            </p>
+                          )
+                        ) : null}
                       </div>
                     </div>
                     <div className="col-md-12">
@@ -285,7 +290,7 @@ const Contact = () => {
                     </div>
                     <div className="col-md-12">
                       <ReCAPTCHA
-                        sitekey="6Le7TlEmAAAAANZwWLnQD8mUeh5f4RUGxZvTgYwg"
+                        sitekey="6LdvhdMoAAAAAAH-4p2HpVvZB7xdQkVOgHw-dQOw"
                         onChange={onChange}
                         ref={recaptchaRef}
                       />
@@ -300,23 +305,21 @@ const Contact = () => {
                     </div>
 
                     {/* <p className="pt-5">{msg}</p> */}
-                    {
-                        loading ? (
-                          <div>
-                            <div className="overlay">
-
-                            </div>
-                            <div className="position-absolute top-50 start-50 translate-middle loader-parent">
-                              <div className="loader-parent"> <span class="loader">loading...</span></div>
-                            </div>
+                    {loading ? (
+                      <div>
+                        <div className="overlay"></div>
+                        <div className="position-absolute top-50 start-50 translate-middle loader-parent">
+                          <div className="loader-parent">
+                            {" "}
+                            <span class="loader">loading...</span>
                           </div>
-                        ) :
-                          msg ?
-                            (<p className="success-msg">Form submitted successfully</p>
-                            )
-                            :
-                            ""
-                      }
+                        </div>
+                      </div>
+                    ) : msg ? (
+                      <p className="success-msg">Form submitted successfully</p>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </form>
               </div>
