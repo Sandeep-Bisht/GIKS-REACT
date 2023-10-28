@@ -1,8 +1,31 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React,{useEffect,useState} from 'react'
+import { Link,useParams,useLocation,useNavigate } from 'react-router-dom'
 import {IoIosArrowBack,IoIosArrowForward} from "react-icons/io"
+import axios from 'axios'
 
 const Blog = () => {
+
+    const navigate = useNavigate()
+  const [blog, setBlog] = useState()
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    getAllBlogs();
+  }, []);
+
+  let url = "http://185.239.209.106:4500/api"
+// let url = "http://localhost:4500/api"
+
+    const getAllBlogs = async () => {
+        const response = await axios.get(`${url}/blog/find_all_blog`);
+        setBlog(response.data)
+      }
+
+      console.log(blog,"check the all blog ")
+      const blogDetailsHandler=(item,slug)=>{
+  
+        navigate(`/blog-detail/${slug}`, { state :{ ...item }})
+    }
+
   return (
     <>
         <section className="single-blog-page">
@@ -15,7 +38,12 @@ const Blog = () => {
             <div className="row mt-60 mob-col-reverse">
                 <div className="col-lg-9 col-md-7 col-sm-7">
                     <div className="blog-left-wrapper">
-                        <div className="blog-single-card">
+                        {
+                            blog && blog.length>0 ? blog.map((item,index)=>{
+                                return(
+                                    <>
+                             <div className="blog-single-card" key={index}
+                             onClick={()=>blogDetailsHandler(item,item.slug)}>
                             <Link to="/blog-detail">
                             <div className="row">
                                 <div className="col-lg-4">
@@ -24,215 +52,28 @@ const Blog = () => {
                                             <p className="date">27</p>
                                             <p className="month">May</p>
                                         </div>
-                                        <img src="/images/blog-single/blog1.jpg" className="img-fluid" alt="blog-pic" />
+                                        <img src={`${url}/${item.featuredImage.path}`} className="img-fluid" alt="blog-pic" />
                                     </div>
                                 </div>
                                 <div className="col-lg-8 ">
                                     <div className="blog-single-card-content">
-                                        <p className="blog-title">Understanding the Basics and Advantages of REST APIs</p>
+                                        <p className="blog-title">{item.title}</p>
                                         <p className="blog-category common-para">
                                             Category:Tech
                                         </p>
                                         <p className="common-para">
-                                            In this blog post, we'll explore what a REST API is, how it works, and its
-                                            advantages over other types of APIs.
+                                           {item.description}
                                         </p>
                                     </div>
                                 </div>
                             </div></Link>
                         </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog2.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">The Internet of Things: Revolutionizing Industries and
-                                            Changing ...</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            The Internet of Things (IoT) is revolutionizing the way we live and work.
-                                            It's a network of connected devices and sensors that gather data and
-                                            communicate with each other...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog3.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Developing Custom Software in Liferay is advantageous in
-                                            several ways</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            Liferay is an open-source platform for creating web portals and websites,
-                                            and it offers a range of features and tools for developing custom software
-                                            solutions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
+                                    </>
+                                )
+                            }) :
+                            ""
+                        }
 
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog4.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">What is OpenAI: A Comprehensive Overview of the Artificial
-                                            ...</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            OpenAI is a research company that aims to develop and promote friendly AI in
-                                            a way that benefits humanity as a whole.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog5.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Agile Manifesto and its principles</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            The Agile Manifesto is a set of guiding values and principles for Agile
-                                            software development. It was first introduced in 2001 by a group of
-                                            software...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog6.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Why IT Infrastructure Management is Important</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            Technology has impacted and enhanced the way companies do business,
-                                            including communication, productivity, and the speed of options trading. For
-                                            this reason...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog7.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Challenges of IoT in agriculture</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            There may be a lack of awareness of the potential benefits of IoT in
-                                            agriculture among farmers and other industry professionals. IoT technology
-                                            can be used to improve...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog8.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Successful SEO strategies for your Website</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            The main thing you need to do prior to building up your SEO procedure for
-                                            2021 is survey your present SEO system and how it is performing. You should
-                                            evaluate...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-5 col-sm-5">
