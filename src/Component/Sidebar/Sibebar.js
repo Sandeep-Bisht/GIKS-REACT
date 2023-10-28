@@ -21,7 +21,7 @@ const Sidebar = () => {
     <section>
       <div className="container-fluid px-0">
         <div className="sidebar">
-          <div className="row">
+          <div className="row" >
             <div className="col-md-12">
               <div className="sidebar-nav-wrapper">
                 <div className="sidebar-nav">
