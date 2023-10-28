@@ -58,9 +58,9 @@ const Authanticated = (props) => {
   console.log(props,)
  let token = Cookies.get("giks_token");
 
- if(!token) {
-    return <Navigate to="/" replace />
- }
+//  if(!token) {
+//     return <Navigate to="/" replace />
+//  }
 
  return props.component
 }
