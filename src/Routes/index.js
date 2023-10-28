@@ -46,11 +46,11 @@ import DoonValleyStudy from '../Component/doonValleyStudy'
 import MukhyaDharaStudy from '../Component/mukhyadharaStudy'
 import QuarterManagmentStudy from '../Component/quarterMangmentStudy'
 import Login from '../Component/login'
-import Dashboard from '../Component/Dashboard/AdimnDashboard'
+// import Dashboard from '../Component/Dashboard/AdimnDashboard'
 import Cookies from "js-cookie";
 import AdminDashboard from '../Component/Dashboard/AdimnDashboard'
 import AddBlog from '../Component/Layout/AddBlogs'
-// import Dashboard from '../Component/Layout/Dashboard'
+import Dashboard from '../Component/Layout/Dashboard'
 
 
 
@@ -89,7 +89,7 @@ const ApplicationRoutes = () => {
         <Route path='/platform-based-development' element={<PlatformBasedDevelopment/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/blog' element={<Blog/>}/>
-        <Route path="/blog-detail/:blog" element={<BlogDetail/>}/>
+        <Route path="/blog/:blog" element={<BlogDetail/>}/>
         <Route path='/friends-club-study' element={<FreindsCludStudy/>}/>
         <Route path='/national-hydrographic-study' element={<NationalHydrographicStudy/>}/>
         <Route path='/ishaanav-study' element={<IshaanavStudy/>}/> 

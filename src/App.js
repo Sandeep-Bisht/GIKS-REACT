@@ -16,7 +16,9 @@ function App() {
 
   return (
     <>
-    <Header className={location.pathname.includes("/dashboard") ? "dashboardHeader" : ""} />
+    {
+            (location.pathname.includes("/dashboard")) ? null : <Header /> 
+    }   
     <ApplicationRoutes/>
     {
             (location.pathname.includes("/dashboard")) ? null : <Footer />    
