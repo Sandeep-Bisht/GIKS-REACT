@@ -12,8 +12,8 @@ const Blog = () => {
     getAllBlogs();
   }, []);
 
-  let url = "http://185.239.209.106:4500/api"
-// let url = "http://localhost:4500/api"
+//   let url = "http://185.239.209.106:4500/api"
+let url = "http://localhost:4500/api"
 
     const getAllBlogs = async () => {
         const response = await axios.get(`${url}/blog/find_all_blog`);
