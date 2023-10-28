@@ -12,7 +12,7 @@ const Blog = () => {
     getAllBlogs();
   }, []);
 
-  let url = "https://185.239.209.106:4500/app/api"
+  let url = "https://giksindia.com/app/api"
 // let url = "http://localhost:4500/api"
 
     const getAllBlogs = async () => {

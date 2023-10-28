@@ -7,8 +7,8 @@ import aboutVideo from "../video/giks-logo-animation.mp4";
 const Homepage = () => {
   const [blog, setBlog] = useState()
 
-//   let url = "http://185.239.209.106:4500/api"
-let url = "http://localhost:4500/api"
+  let url = "https://giksindia.com/app/api"
+// let url = "http://localhost:4500/api"
 
   useEffect(() => {
     const customScript = `
