@@ -32,22 +32,10 @@ const Sidebar = () => {
                 </div>
                 <div className="sidebar-nav">
                   <span className="px-3">
-                    <BsPeople />
-                  </span>
-                  <Link to="/dashboard/patient">All Patient</Link>
-                </div>
-                <div className="sidebar-nav">
-                  <span className="px-3">
                     <TbBrandBooking />
                   </span>
                   <Link to="/dashboard/addblog">Blog</Link>
                 </div>                
-                <div className="sidebar-nav">
-                  <span className="px-3">
-                    <RxDashboard />
-                  </span>
-                  <Link to="/dashboard/allbooking">All Booking</Link>
-                </div>
                 <div className="sidebar-nav">
                   <span className="px-3">
                     <RiLogoutCircleRLine />

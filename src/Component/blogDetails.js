@@ -21,7 +21,8 @@ const BlogDetails = () => {
         }
     }, [])
 
-    let url = "http://localhost:4500/api";
+    let url = "http://185.239.209.106:4500/api"
+    // let url = "http://localhost:4500/api";
 
     const getBlogDetailBySlug = async (slug) => {
         console.log("inside get all blog", slug)
