@@ -7,8 +7,8 @@ import aboutVideo from "../video/giks-logo-animation.mp4";
 const Homepage = () => {
   const [blog, setBlog] = useState()
 
-//   let url = "http://185.239.209.106:4500/api"
-let url = "http://localhost:4500/api"
+  let url = "http://185.239.209.106:4500/api"
+// let url = "http://localhost:4500/api"
 
   useEffect(() => {
     const customScript = `
@@ -1375,7 +1375,7 @@ let url = "http://localhost:4500/api"
                         <>
                    <li key={index}>
                     <div className="item">
-                      <Link to="/blog-detail">
+                      <Link to={`/blog/${item.slug}`}>
                         <div className="blog-card">
                           <div className="blog-pic">
                             <img

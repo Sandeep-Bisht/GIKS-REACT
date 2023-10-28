@@ -44,14 +44,14 @@ const Dashboard = () => {
         </div>
         <div className="row">
           <div className="col-lg-6">
-            <div className="dash-card" onClick={()=> navigate("/dashboard/addblog")}>
+            <div className="dash-card" onClick={()=> navigate("/dashboard/blogs")}>
               <div className="dash-card-inner">
                 <div className="left">
                   <FaUsers />
                 </div>
                 <div className="right">
-                  <p className="patient-number">{ allPatient?.length}</p>
-                  <p className="dash-card-title">All Patient</p>
+                  <p className="patient-number"></p>
+                  <p className="dash-card-title">All Blogs</p>
                 </div>
               </div>
             </div>
