@@ -1,7 +1,54 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import {IoIosArrowBack,IoIosArrowForward} from "react-icons/io"
+import broucher from "../Samplefiles/GIKS_Brochure.pdf"
+import { useLocation, useParams } from "react-router-dom";
+import axios from 'axios';
+
+
 
 const BlogDetails = () => {
+    const param = useParams()
+    let url = "http://185.239.209.106:4500/api";
+    const location = useLocation();
+    const state = location.state;
+    const [blogDetails, setBlogDetails] = useState();
+    const [blogImage, setBlogImage] = useState()
+    
+
+    useEffect(() => {
+        console.log("check kr", param)
+        if (param.blog) {
+            getBlogDetailBySlug(param.blog);
+        }
+    }, [])
+
+    
+
+    const getBlogDetailBySlug = async (slug) => {
+        console.log("inside get all blog", slug)
+        // let url = "http://localhost:4000/api/blog/get_blog_by_slug";
+
+        let payload = {
+            slug: slug
+        }
+        try {
+            let response = await axios.post(`${url}/blog/get_blog_by_slug`, payload);
+            if (response) {
+                console.log(response, "api responseeeeee")
+                // Parse the 'featuredImage' string into a JavaScript object
+const blogDetail =  JSON.parse(response.data.featuredImage);
+setBlogImage(blogDetail)
+                setBlogDetails(response.data)
+            }
+
+        } catch (error) {
+            console.log("error", error)
+        }
+    }
+    const stripHtmlTags = (content)=>{
+        const doc = new DOMParser().parseFromString(content, "text/html")
+        return doc.body.textContent || "";
+    }
     return (
         <>
             <section className="single-blog-page blog-detail">
@@ -12,13 +59,12 @@ const BlogDetails = () => {
                                 <div className="row">
                                     <div className="col-md-12">
                                         <p className="blog-detail-heading mb-4">
-                                            Understanding the Basics and Advantages of REST APIs
+                                            {blogDetails?.title}
                                         </p>
                                     </div>
                                     <div className="col-md-12">
                                         <p className="blog-detail-heading text-white fs-6 fw-lighter">
-                                            In this blog post, we'll explore what a REST API is, how it works, and its
-                                            advantages over other types of APIs.
+                                            {blogDetails?.description}
                                         </p>
                                     </div>
                                     <div className="col-md-12 mt-lg-4">
@@ -63,7 +109,7 @@ const BlogDetails = () => {
                                             </div>
                                             <div className="row mt-lg-4">
                                                 <div className="col-md-12">
-                                                    <img src="/images/blog-single/blog1.jpg" className="img-fluid single-blog-detail-pic" alt="" />
+                                                    <img src={`${url}/${blogImage?.path}`} className="img-fluid single-blog-detail-pic" alt="" />
                                                 </div>
                                             </div>
                                             <div className="row mt-lg-4">
@@ -155,7 +201,7 @@ const BlogDetails = () => {
                         <div className="col-lg-3 col-md-5 col-sm-5">
                             <div className="blog-right-wrapper">
                                 <div className="row">
-                                    <div className="col-md-12">
+                                    {/* <div className="col-md-12">
                                         <div className="search-box">
                                             <div className="search-box-wrapper">
                                                 <div className="input-group mb-3">
@@ -168,8 +214,8 @@ const BlogDetails = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-md-12">
+                                    </div> */}
+                                    {/* <div className="col-md-12">
                                         <p className="blog-right-wrapper-heading">Recent Posts</p>
                                         <div className="recent-post-box">
                                             <p className="border-0">
@@ -181,8 +227,8 @@ const BlogDetails = () => {
                                             <p><a href="#">design breakthrough updates products</a></p>
                                         </div>
                                         <div className="separator"></div>
-                                    </div>
-                                    <div className="col-md-12 ">
+                                    </div> */}
+                                    {/* <div className="col-md-12 "> */}
                                         {/*                                 
                                    <div className="client-box">
                                     <p className="client-words common-para mb-4">We have chosen to work extensively with
@@ -232,7 +278,7 @@ const BlogDetails = () => {
                                     </div>
                                     </div> */}
                                         {/* ---------------copy---------------- */}
-                                        <div id="carouselExampleInterval" class="carousel slide testimonial-slider" data-bs-ride="carousel">
+                                        {/* <div id="carouselExampleInterval" class="carousel slide testimonial-slider" data-bs-ride="carousel">
                                             <div class="carousel-inner testimonial-wrapper">
                                                
                                                 <div class="carousel-item active" data-bs-interval="10000">
@@ -330,10 +376,10 @@ const BlogDetails = () => {
                                                 </span>
                                                 <span class="visually-hidden">Next</span>
                                             </button>
-                                        </div>
+                                        </div> */}
                                         {/* ---------------end------------------ */}
 
-                                    </div>
+                                    {/* </div> */}
                                     <div className="col-md-12">
                                         <p className="blog-right-wrapper-heading">Tags Widget</p>
                                         <ul className="widget-list list-unstyled ps-0">
@@ -367,7 +413,10 @@ const BlogDetails = () => {
                                                         fill="white" />
                                                 </svg>
                                             </span>
-                                            <span className="icon-heading common-para">Download Brochure</span>
+                                            <a target="_blank" href={broucher}>                 
+                   <span className="icon-heading common-para">Download Brochure</span>                 
+                </a>
+                                            {/* <span className="icon-heading common-para">Download Brochure</span> */}
                                         </button>
                                     </div>
                                     <div className="col-md-12">
