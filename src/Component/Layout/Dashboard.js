@@ -4,6 +4,7 @@ import axios from "axios";
 import { FaUserFriends, FaUsers } from "react-icons/fa";
 // import { url } from "../Util/url";
 // import '../Css/Dashboard.css'
+import url from "../../urls"
 
 const Dashboard = () => {
 
@@ -17,8 +18,7 @@ const Dashboard = () => {
   //     getAllAppointments()
   //  }, [])
 
-  let url = "https://giksindia.com/app/api"
-  // let url = "http://localhost:4500/api";
+ 
 
   //  const getAllPatient = async() => {
   //     const response = await axios.get(`${url}/patient/get_patient`)

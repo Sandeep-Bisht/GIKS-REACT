@@ -3,10 +3,10 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import broucher from "../Samplefiles/GIKS_Brochure.pdf";
 import { useLocation, useParams } from "react-router-dom";
 import axios from "axios";
+import {url} from "../urls"
 
 const BlogDetails = () => {
   const param = useParams();
-  let url = "https://giksindia.com/app/api";
   const location = useLocation();
   const state = location.state;
   const [blogDetails, setBlogDetails] = useState();
@@ -116,7 +116,7 @@ const BlogDetails = () => {
                       <div className="row mt-lg-4">
                         <div className="col-md-12">
                           <img
-                            src={`${url}/${blogImage?.path}`}
+                            src={`${url}/${blogDetails?.featuredImage?.path}`}
                             className="img-fluid single-blog-detail-pic"
                             alt=""
                           />

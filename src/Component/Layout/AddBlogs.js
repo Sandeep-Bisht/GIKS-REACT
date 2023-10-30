@@ -12,6 +12,7 @@ import slugify from "react-slugify";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import {url} from "../../urls"
 
 const AddBlog = () => {
   const [allBlogs, setAllBlogs] = useState(undefined);
@@ -20,8 +21,7 @@ const AddBlog = () => {
 
   const navigate=useNavigate();
 
-  let url = "https://giksindia.com/app/api"
-    // let url = "http://localhost:4500/api";
+  
     useEffect(() => {
     getAllBlogs();
   }, []);

@@ -3,12 +3,13 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import sliderVideo from "../video/video-bg.mp4";
 import aboutVideo from "../video/giks-logo-animation.mp4";
+import {url} from "../urls";
 
 const Homepage = () => {
   const [blog, setBlog] = useState()
 
-  let url = "https://giksindia.com/app/api"
-// let url = "http://localhost:4500/api"
+//   let url = "https://giksindia.com/app/api"
+// // let url = "http://localhost:4500/api"
 
   useEffect(() => {
     const customScript = `
