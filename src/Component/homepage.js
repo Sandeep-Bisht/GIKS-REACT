@@ -153,7 +153,7 @@ const Homepage = () => {
       // Clean up the script when the component is unmounted
       document.head.removeChild(script);
     };
-  }, []);
+  }, [blog]);
 
   const getAllBlogs = async () => {
     const response = await axios.get(`${url}/blog/find_all_blog`);
@@ -1367,13 +1367,17 @@ const Homepage = () => {
           <div className="row mt-60">
             <div className="col-md-12">
               <div className="carousel-wrapper">
-                <ul className="owl-carousel owl-theme tab-slider list-unstyled d-flex">
                 
+              
                   {
-                    blog && blog.length>0 ? blog.map((item,index)=>{
+                    blog && blog.length>0 ?
+                    <>
+                    <ul className="owl-carousel owl-theme tab-slider list-unstyled d-flex">
+                    {blog.map((item,index)=>{
                       console.log(item,"check thed item")
                       return(
                         <>
+                        <div>
                    <li key={index} >
                     <div className="col-md-12 item" >
                       <Link to={`/blog/${item.slug}`}>
@@ -1395,13 +1399,18 @@ const Homepage = () => {
                       </Link>
                     </div>
                     </li>
+                    </div>
                         </>
                       )
                     })
+                  }
+                  </ul>
+                  </>
                     :
                     null
                   }
-                </ul>
+                  
+                
               </div>
             </div>
           </div>
