@@ -1367,7 +1367,7 @@ const Homepage = () => {
           <div className="row mt-60">
             <div className="col-md-12">
               <div className="carousel-wrapper">
-                <ul className="owl-carousel owl-theme tab-slider list-unstyled">
+                <ul className="owl-carousel owl-theme tab-slider list-unstyled d-flex">
                   {
                     blog && blog.length>0 ? blog.map((item,index)=>{
                       console.log(item,"check thed item")

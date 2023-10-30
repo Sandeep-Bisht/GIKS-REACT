@@ -43,6 +43,7 @@ const AddBlog = () => {
       if(response.status==200)
       {
         setAddBlog(false);
+        getAllBlogs();
       }
       return response;
     } catch (error) {
