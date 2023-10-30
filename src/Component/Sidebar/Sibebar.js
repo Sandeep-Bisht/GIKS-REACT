@@ -34,7 +34,7 @@ const Sidebar = () => {
                   <span className="px-3">
                     <TbBrandBooking />
                   </span>
-                  <Link to="/dashboard/addblog">Blog</Link>
+                  <Link to="/dashboard/blogs">Blog</Link>
                 </div>                
                 <div className="sidebar-nav">
                   <span className="px-3">

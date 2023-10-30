@@ -1367,7 +1367,7 @@ const Homepage = () => {
           <div className="row mt-60">
             <div className="col-md-12">
               <div className="carousel-wrapper">
-                <ul className="owl-carousel owl-theme tab-slider list-unstyled">
+                <ul className="owl-carousel owl-theme tab-slider list-unstyled d-flex">
                   {
                     blog && blog.length>0 ? blog.map((item,index)=>{
                       console.log(item,"check thed item")
@@ -1375,7 +1375,7 @@ const Homepage = () => {
                         <>
                    <li key={index}>
                     <div className="item">
-                      <Link to="/blog-detail">
+                      <Link to={`/blog/${item.slug}`}>
                         <div className="blog-card">
                           <div className="blog-pic">
                             <img
