@@ -51,6 +51,7 @@ import Cookies from "js-cookie";
 import AdminDashboard from '../Component/Dashboard/AdimnDashboard'
 import AddBlog from '../Component/Layout/AddBlogs'
 import Dashboard from '../Component/Layout/Dashboard'
+// import DashboardBlog from '../Component/Layout/'
 
 
 
@@ -128,7 +129,8 @@ const ApplicationRoutes = () => {
                 <Route path="/dashboard/addbooking" element={< AddBooking />} />
                 <Route path="/dashboard/allbooking" element={< AllBooking />} />
                 <Route path="/dashboard/booking" element={< Booking/>} /> */}
-                <Route path="/dashboard/addblog" element={< AddBlog />} />
+                <Route path="/dashboard/blogs" element={< AddBlog />} />
+                {/* <Route path="/dashboard/blog" element={< DashboardBlog />} /> */}
                 </Route>
        </Routes>
   )

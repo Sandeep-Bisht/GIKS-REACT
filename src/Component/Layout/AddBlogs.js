@@ -1,4 +1,4 @@
-import React,{useNavigate} from "react";
+import React from "react";
 import { Formik, Form, Field } from "formik";
 import { Table, Input, Space, Popconfirm, Typography } from "antd";
 import { MdPlaylistAdd } from "react-icons/md";
@@ -11,13 +11,14 @@ import { Row, Col } from "react-bootstrap";
 import slugify from "react-slugify";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AddBlog = () => {
   const [allBlogs, setAllBlogs] = useState(undefined);
   const [searchVal, setSearchVal] = useState();
   const [addBlog, setAddBlog] = useState(false);
 
-  // const navigate=useNavigate();
+  const navigate=useNavigate();
 
   let url = "https://giksindia.com/app/api"
     // let url = "http://localhost:4500/api";
@@ -39,6 +40,11 @@ const AddBlog = () => {
       formData.append("content", data.content);
       formData.append("slug", slugify(data.title));
       const response = await axios.post(`${url}/blog/add_blog`, formData);
+      if(response.status==200)
+      {
+        setAddBlog(false);
+        getAllBlogs();
+      }
       return response;
     } catch (error) {
       console.log(error,"check the error")
