@@ -1,20 +1,21 @@
 import React,{useEffect,useState} from 'react'
 import { Link,useParams,useLocation,useNavigate } from 'react-router-dom'
 import {IoIosArrowBack,IoIosArrowForward} from "react-icons/io"
-import axios from 'axios'
+import axios from 'axios';
+import {url} from "../urls.js" 
 
 const Blog = () => {
 
     const navigate = useNavigate()
   const [blog, setBlog] = useState()
+
   useEffect(() => {
     window.scrollTo(0, 0);
     getAllBlogs();
   }, []);
 
-  let url = "https://giksindia.com/app/api"
-// let url = "http://localhost:4500/api"
-
+ 
+console.log("blogsssss", url)
     const getAllBlogs = async () => {
         const response = await axios.get(`${url}/blog/find_all_blog`);
         setBlog(response.data)

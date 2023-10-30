@@ -3,6 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import { FaTimes } from 'react-icons/fa'
+import url from "../urls"
 
 const Careers = () => {
   const [verified, setVerified] = useState(false);
