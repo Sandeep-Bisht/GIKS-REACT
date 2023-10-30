@@ -885,6 +885,14 @@ header .dropdown-item:focus, header .dropdown-item:hover
     visibility: hidden;
     opacity: 0;
 }
+.single-blog-detail-card .blog-html-content span{
+    color: #ffffff!important;
+    background: none!important;
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 13px!important;
+    font-weight: 300!important;
+    padding: 10px 0!important;
+}
 
 
 .tab-slider .owl-item.center .item .blog-card {

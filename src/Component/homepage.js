@@ -1368,13 +1368,14 @@ const Homepage = () => {
             <div className="col-md-12">
               <div className="carousel-wrapper">
                 <ul className="owl-carousel owl-theme tab-slider list-unstyled d-flex">
+                
                   {
                     blog && blog.length>0 ? blog.map((item,index)=>{
                       console.log(item,"check thed item")
                       return(
                         <>
-                   <li key={index}>
-                    <div className="item">
+                   <li key={index} >
+                    <div className="col-md-12 item" >
                       <Link to={`/blog/${item.slug}`}>
                         <div className="blog-card">
                           <div className="blog-pic">
@@ -1386,14 +1387,14 @@ const Homepage = () => {
                           </div>
                           <div className="blog-content">
                             <p className="blog-heading">
-                              {item.description}
+                              {/* {item.description} */} Description
                             </p>
                             <span className="common-read-more">Read more</span>
                           </div>
                         </div>
                       </Link>
                     </div>
-                  </li>
+                    </li>
                         </>
                       )
                     })

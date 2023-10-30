@@ -69,8 +69,8 @@ const BlogDetails = () => {
                         <div className="col-lg-1">
                           <div className="left">
                             <div className="blog-detail-date">
-                              <p className="date">27</p>
-                              <p className="month">May</p>
+                              <p className="date">27 </p>
+                              <p className="month">Oct </p>
                             </div>
                           </div>
                         </div>
@@ -79,12 +79,12 @@ const BlogDetails = () => {
                             <div className="post-category">
                               <div className="post-category-left">
                                 <span className="post-category-heading common-para">
-                                  Posted by:GIKS
+                                  Posted by:GIKS 
                                 </span>
                               </div>
                               <div className="post-category-right">
                                 <span className="post-category-heading common-para">
-                                  Category:Tech
+                                  Category:Tech 
                                 </span>
                               </div>
                             </div>
@@ -107,7 +107,7 @@ const BlogDetails = () => {
                                 </svg>
                               </span>
                               <span className="comments-number">
-                                6 Comments
+                                6 Comments 
                               </span>
                             </div>
                           </div>
@@ -123,7 +123,13 @@ const BlogDetails = () => {
                         </div>
                       </div>
                       <div className="row mt-lg-4">
-                        <div className="col-md-12">
+                        <div className="col-md-12 blog-html-content">
+                        {/* <p className="common-para"> */}
+                        {/* {blogDetails?.content} */}
+                        <p className="common-para" dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
+                        </p>
+                        </div>
+                        {/* <div className="col-md-12">
                           <p className="blog-title mb-1">Introduction</p>
                           <p className="common-para">
                             REST, which stands for Representational State
@@ -322,7 +328,7 @@ const BlogDetails = () => {
                               </a>
                             </li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
