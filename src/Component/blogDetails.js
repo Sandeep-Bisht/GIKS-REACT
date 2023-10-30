@@ -126,7 +126,7 @@ const BlogDetails = () => {
                         <div className="col-md-12 blog-html-content">
                         {/* <p className="common-para"> */}
                         {/* {blogDetails?.content} */}
-                        <p className="common-para" dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
+                        <p className="common-para " dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
                         </p>
                         </div>
                         {/* <div className="col-md-12">

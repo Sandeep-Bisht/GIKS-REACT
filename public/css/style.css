@@ -885,7 +885,26 @@ header .dropdown-item:focus, header .dropdown-item:hover
     visibility: hidden;
     opacity: 0;
 }
+.single-blog-detail-card .blog-html-content  p, h1, h2, h3, h4, h5, h6 {
+    color: #ffffff!important;
+    background: none!important;
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 13px!important;
+    font-weight: 300!important;
+    padding: 10px 0!important;
+}
+
+.single-blog-detail-card .blog-html-content blockquote{
+    background: #01172a!important;
+    
+}
+
 .single-blog-detail-card .blog-html-content span{
+    color: #ffffff!important;
+    background: none!important;
+}
+
+.single-blog-detail-card .blog-html-content  , h1, h2, h3, h4, h5, h6 {
     color: #ffffff!important;
     background: none!important;
     font-family: 'Roboto', sans-serif!important;

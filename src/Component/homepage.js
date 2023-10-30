@@ -8,9 +8,6 @@ import {url} from "../urls";
 const Homepage = () => {
   const [blog, setBlog] = useState()
 
-//   let url = "https://giksindia.com/app/api"
-// // let url = "http://localhost:4500/api"
-
   useEffect(() => {
     const customScript = `
     $(document).ready(function() {
@@ -1392,7 +1389,7 @@ const Homepage = () => {
                           </div>
                           <div className="blog-content">
                             <p className="blog-heading">
-                              {/* {item.description} */} Description
+                              {item.title} 
                             </p>
                             <span className="common-read-more">Read more</span>
                           </div>
