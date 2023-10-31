@@ -19,8 +19,7 @@ const BlogDetails = () => {
   }, []);
 
   const getBlogDetailBySlug = async (slug) => {
-    
-    // let url = "http://localhost:4000/api/blog/get_blog_by_slug";
+  
 
     let payload = {
       slug: slug,

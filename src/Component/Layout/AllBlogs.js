@@ -3,6 +3,7 @@ import { Formik, Form, Field } from "formik";
 import { Table, Input, Space, Popconfirm, Typography } from "antd";
 import { MdPlaylistAdd } from "react-icons/md";
 import { BiSearchAlt } from "react-icons/bi";
+import { BsPencilSquare } from "react-icons/bs";
 import { BsTrash } from "react-icons/bs";
 import JoditEditor from "jodit-react";
 import { useMutation } from "react-query";
@@ -14,10 +15,9 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {url} from "../../urls"
 
-const AddBlog = () => {
+const AllBlog = () => {
   const [allBlogs, setAllBlogs] = useState(undefined);
   const [searchVal, setSearchVal] = useState();
-  const [addBlog, setAddBlog] = useState(false);
 
   const navigate=useNavigate();
 
@@ -42,7 +42,6 @@ const AddBlog = () => {
       const response = await axios.post(`${url}/blog/add_blog`, formData);
       if(response.status==200)
       {
-        setAddBlog(false);
         getAllBlogs();
       }
       return response;
@@ -59,7 +58,6 @@ const AddBlog = () => {
       dataIndex: "title",
       key: "title",
     },
-
     {
       title: "Description",
       dataIndex: "description",
@@ -69,35 +67,41 @@ const AddBlog = () => {
       title: "Image",
       dataIndex: "featuredImage.path",
       key: "featuredImage",
-      // width: 20,
-      // maxWidth: 20,
-      render: (t, r) => (
-        <img className="w-25" src={`${url}/${r.featuredImage.path}`} />
+      render: (text, record) => (
+        <img className="w-25" src={`${url}/${record.featuredImage.path}`} />
       ),
     },
     {
       title: "Action",
       dataIndex: "Action",
       width: "20%",
-      render: (_, record) =>
-        allBlogs.length >= 1 ? (
-          <Space size="middle">
-            <Popconfirm
-              title="Sure to delete?"
-              onConfirm={() => handleDelete(record.id)}
+      render: (_, record) => (
+        <Space size="middle">
+          <a
+            onClick={() => handleEdit(record,record.slug)} // Add this line to handle the edit action
+            className="edit-icon-wrap"
+            title="Edit"
+            style={{ color: "green" }}
+          >
+            <BsPencilSquare className="text-success" />
+          </a>
+          <Popconfirm
+            title="Sure to delete?"
+            onConfirm={() => handleDelete(record.id)}
+          >
+            <a
+              className="delete-icon-wrap"
+              title="Delete"
+              style={{ color: "blue" }}
             >
-              <a
-                className="delete-icon-wrap"
-                title="Delete"
-                style={{ color: "blue" }}
-              >
-                <BsTrash className="text-danger" />
-              </a>
-            </Popconfirm>
-          </Space>
-        ) : null,
+              <BsTrash className="text-danger" />
+            </a>
+          </Popconfirm>
+        </Space>
+      ),
     },
   ];
+  
 
   const searchHandler = () => {
     const filteredData = allBlogs.filter((value) => {
@@ -122,102 +126,16 @@ const AddBlog = () => {
     }
   };
 
+  const handleEdit=(record,slug)=>{
+      navigate(`/dashboard/blogs/add-blog`,{state:{...record}})
+  }
+
+  const AddNewBlog = ()=>{
+    navigate("/dashboard/blogs/add-blog")
+  }
+
   return (
     <section className="container-fluid pt-5">
-      {addBlog ? (
-        <>
-          <div className="row">
-            <div className="col-md-12">
-              <h1 className="common-heading d-flex align-items-center justify-content-center mb-4">
-                <span className="bar one"></span>Create Blogs
-                <span className="bar two"></span>
-              </h1>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <Formik
-                initialValues={{
-                  title: "",
-                  description: "",
-                  image: "",
-                  content: "",
-                }}
-                onSubmit={mutation.mutate}
-              >
-                {({ values, setFieldValue }) => (
-                  <Form>
-                    <Row>
-                      <Col md={6}>
-                        <div className="form-group">
-                          <label htmlFor="title">Title:</label>
-                          <Field
-                            className="form-control text-dark"
-                            type="text"
-                            id="title"
-                            name="title"
-                          />
-                        </div>
-                      </Col>
-
-                      <Col md={6}>
-                        <div className="form-group">
-                          <label htmlFor="description">Description:</label>
-                          <Field
-                            className="form-control text-dark"
-                            type="text"
-                            id="description"
-                            name="description"
-                          />
-                        </div>
-                      </Col>
-                    </Row>
-
-                    <Row>
-                      <Col md={12}>
-                        <div className="form-group">
-                          <label htmlFor="image">Image:</label>
-                          <input
-                            className="form-control"
-                            type="file"
-                            id="image"
-                            name="image"
-                            onChange={(event) => {
-                              setFieldValue(
-                                "image",
-                                event.currentTarget.files[0]
-                              );
-                            }}
-                          />
-                        </div>
-                      </Col>
-                    </Row>
-
-                    <div className="col-md-12">
-                      <label htmlFor="content">Content:</label>
-                      <JoditEditor
-                        id="content"
-                        name="content"
-                        value={values.content}
-                        onChange={(value) => setFieldValue("content", value)}
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="btn btn-primary"
-                      disabled={mutation.isLoading}
-                    >
-                      {mutation.isLoading ? "Submitting..." : "Submit"}
-                    </button>
-                  </Form>
-                )}
-              </Formik>
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
           <div className="row">
             <div className="col-md-12">
               <h1 className="common-heading d-flex align-items-center justify-content-center mb-4">
@@ -233,7 +151,7 @@ const AddBlog = () => {
                   <div>
                     <button
                       className="common-add"
-                      onClick={() => setAddBlog(true)}
+                      onClick={() => AddNewBlog()}
                     >
                       <MdPlaylistAdd />
                       Add
@@ -266,10 +184,8 @@ const AddBlog = () => {
               />
             </div>
           </div>
-        </>
-      )}
     </section>
   );
 };
 
-export default AddBlog;
+export default AllBlog;
