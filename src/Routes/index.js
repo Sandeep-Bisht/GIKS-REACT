@@ -49,8 +49,9 @@ import Login from '../Component/login'
 // import Dashboard from '../Component/Dashboard/AdimnDashboard'
 import Cookies from "js-cookie";
 import AdminDashboard from '../Component/Dashboard/AdimnDashboard'
-import AddBlog from '../Component/Layout/AddBlogs'
+import AllBlog from '../Component/Layout/AllBlogs'
 import Dashboard from '../Component/Layout/Dashboard'
+import AddBlog from '../Component/Layout/AddBlog'
 // import DashboardBlog from '../Component/Layout/'
 
 
@@ -129,7 +130,8 @@ const ApplicationRoutes = () => {
                 <Route path="/dashboard/addbooking" element={< AddBooking />} />
                 <Route path="/dashboard/allbooking" element={< AllBooking />} />
                 <Route path="/dashboard/booking" element={< Booking/>} /> */}
-                <Route path="/dashboard/blogs" element={< AddBlog />} />
+                <Route path="/dashboard/blogs" element={< AllBlog />} />
+                <Route path="/dashboard/blogs/add-blog" element={< AddBlog />} />
                 {/* <Route path="/dashboard/blog" element={< DashboardBlog />} /> */}
                 </Route>
        </Routes>

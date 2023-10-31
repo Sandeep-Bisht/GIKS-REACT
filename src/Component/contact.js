@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
+import {url} from "../urls"
+
 
 const Contact = () => {
   const [msg, setMsg] = useState(undefined);
@@ -19,10 +21,8 @@ const Contact = () => {
   });
 
   const handleContactUS = async (data) => {
-    // let url = "http://localhost:4500/api/contact-us";
-    let url = "https://giksindia.com/app/api/contact-us";
     setLoading(true);
-    let response = await axios.post(url, data);
+    let response = await axios.post(`${url}/contact-us`, data);
     try {
       if (response) {
         if (recaptchaRef.current) {

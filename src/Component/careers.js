@@ -3,7 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import { FaTimes } from 'react-icons/fa'
-import url from "../urls"
+import {url} from "../urls"
 
 const Careers = () => {
   const [verified, setVerified] = useState(false);
@@ -38,12 +38,10 @@ const Careers = () => {
     formData.append("qualification", data.qualification);
     formData.append("file", selectedFile);
 
-    // let url = "http://localhost:4500/api/career";
-    let url = "https://giksindia.com/app/api/career"
 
     try {
       setLoading(true)
-      let response = await axios.post(url, formData, {
+      let response = await axios.post(`${url}/career`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
