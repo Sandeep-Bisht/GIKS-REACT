@@ -4166,7 +4166,10 @@ header .dropdown-menu .dropdown-item {
     justify-content: space-between;
     margin-bottom: 10px
 }
-
+.single-blog-page aside{
+    position: sticky;
+    top: 100px; 
+}
 
 
 

@@ -106,6 +106,7 @@ const Blog = () => {
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-5 col-sm-5">
+                            <aside>
                             <div className="blog-right-wrapper">
                                 <div className="row">
                                         <div className="col-md-12">
@@ -351,6 +352,7 @@ const Blog = () => {
 
                                 </div>
                             </div>
+                            </aside>
                         </div>
                     </div>
                 </div>
