@@ -19,6 +19,21 @@ const Blog = () => {
         setBlog(response.data)
     }
 
+    const getMonthAndDate=(created_AT)=>{
+        const dateString = created_AT;
+        const date = new Date(dateString);
+        const monthAbbreviations = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const monthIndex = date.getUTCMonth();
+        return  monthAbbreviations[monthIndex];
+    }
+
+    const getDateAsString = (created_AT) => {
+        const date = new Date(created_AT);
+        const day = date.getUTCDate();
+        return day
+      };
+
+
     const blogDetailsHandler = (item, slug) => {
         navigate(`/blog/${slug}`, { state: { ...item } })
     }
@@ -63,8 +78,8 @@ const Blog = () => {
                                                         <div className="col-lg-4">
                                                             <div className="blog-single-card-pic">
                                                                 <div className="blog-date">
-                                                                    <p className="date">27</p>
-                                                                    <p className="month">May</p>
+                                                                    <p className="date">{getDateAsString(item.created_AT)}</p>
+                                                                    <p className="month">{getMonthAndDate(item.created_AT)}</p>
                                                                 </div>
                                                                 <img src={`${url}/${item.featuredImage.path}`} className="img-fluid" alt="blog-pic" />
                                                             </div>
