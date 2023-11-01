@@ -151,7 +151,7 @@ const Homepage = () => {
       // Clean up the script when the component is unmounted
       document.head.removeChild(script);
     };
-  }, [blog]);
+  }, []);
 
   const getAllBlogs = async () => {
     const response = await axios.get(`${url}/blog/find_all_blog`);
