@@ -153,12 +153,12 @@ const AllBlog = () => {
                         }}
                       >
                         <option value="">Select a category</option>
-                        <option value="category1">Software</option>
-                        <option value="category2">Information Technology</option>
-                        <option value="category3">Artificial Intelligence</option>
-                        <option value="category3">Internet of things</option>
-                        <option value="category3">Network Security</option>
-                        <option value="category3">Virtual Reality</option>
+                        <option value="Software">Software</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Internet of things">Internet of things</option>
+                        <option value="Network Security">Network Security</option>
+                        <option value="cateVirtual Realitygory3">Virtual Reality</option>
                       </select>
                     </div>
                   </Col>

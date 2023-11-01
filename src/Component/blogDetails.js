@@ -83,7 +83,7 @@ const BlogDetails = () => {
                               </div>
                               <div className="post-category-right">
                                 <span className="post-category-heading common-para">
-                                  Category:Tech 
+                                  Category: {blogDetails?.category} 
                                 </span>
                               </div>
                             </div>

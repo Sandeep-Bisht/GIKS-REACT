@@ -64,6 +64,11 @@ const AllBlog = () => {
       key: "description",
     },
     {
+      title: "Category",
+      dataIndex: "category",
+      key: "category",
+    },
+    {
       title: "Image",
       dataIndex: "featuredImage.path",
       key: "featuredImage",

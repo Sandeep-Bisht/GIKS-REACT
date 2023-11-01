@@ -57,7 +57,7 @@ const Blog = () => {
                                     <div className="blog-single-card-content">
                                         <p className="blog-title">{item.title}</p>
                                         <p className="blog-category common-para">
-                                            Category:Tech
+                                            Category: {item.category}
                                         </p>
                                         <p className="common-para">
                                            {item.description}
