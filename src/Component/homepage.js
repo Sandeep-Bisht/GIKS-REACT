@@ -144,7 +144,7 @@ const Homepage = () => {
 
     const script = document.createElement("script");
     script.textContent = customScript;
-
+    getAllBlogs()
     document.head.appendChild(script);
     return () => {
       // Clean up the script when the component is unmounted
