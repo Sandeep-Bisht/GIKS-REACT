@@ -146,12 +146,12 @@ const Homepage = () => {
     script.textContent = customScript;
 
     document.head.appendChild(script);
-    getAllBlogs();
     return () => {
       // Clean up the script when the component is unmounted
       document.head.removeChild(script);
     };
-  }, []);
+  }, [blog]);
+
 
   const getAllBlogs = async () => {
     const response = await axios.get(`${url}/blog/find_all_blog`);
@@ -1365,8 +1365,6 @@ const Homepage = () => {
           <div className="row mt-60">
             <div className="col-md-12">
               <div className="carousel-wrapper">
-                
-              
                   {
                     blog && blog.length>0 ?
                     <>
@@ -1406,9 +1404,7 @@ const Homepage = () => {
                   </>
                     :
                     null
-                  }
-                  
-                
+                  } 
               </div>
             </div>
           </div>
