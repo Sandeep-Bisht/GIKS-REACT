@@ -19,8 +19,6 @@ const BlogDetails = () => {
   }, []);
 
   const getBlogDetailBySlug = async (slug) => {
-  
-
     let payload = {
       slug: slug,
     };
@@ -41,6 +39,19 @@ const BlogDetails = () => {
   const stripHtmlTags = (content) => {
     const doc = new DOMParser().parseFromString(content, "text/html");
     return doc.body.textContent || "";
+  };
+  const getMonthAndDate=(created_AT)=>{
+    const dateString = created_AT;
+    const date = new Date(dateString);
+    const monthAbbreviations = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const monthIndex = date.getUTCMonth();
+    return  monthAbbreviations[monthIndex];
+}
+
+const getDateAsString = (created_AT) => {
+    const date = new Date(created_AT);
+    const day = date.getUTCDate();
+    return day
   };
 
   console.log("blogImage blogImage blogDetail", blogDetails, "blogImage", blogImage);
@@ -68,8 +79,8 @@ const BlogDetails = () => {
                         <div className="col-lg-1">
                           <div className="left">
                             <div className="blog-detail-date">
-                              <p className="date">27 </p>
-                              <p className="month">Oct </p>
+                              <p className="date">{getDateAsString(blogDetails?.created_AT)}</p>
+                              <p className="month">{getMonthAndDate(blogDetails?.created_AT)}</p>
                             </div>
                           </div>
                         </div>
