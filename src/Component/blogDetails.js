@@ -19,8 +19,7 @@ const BlogDetails = () => {
   }, []);
 
   const getBlogDetailBySlug = async (slug) => {
-    
-    // let url = "http://localhost:4000/api/blog/get_blog_by_slug";
+  
 
     let payload = {
       slug: slug,
@@ -84,7 +83,7 @@ const BlogDetails = () => {
                               </div>
                               <div className="post-category-right">
                                 <span className="post-category-heading common-para">
-                                  Category:Tech 
+                                  Category: {blogDetails?.category} 
                                 </span>
                               </div>
                             </div>

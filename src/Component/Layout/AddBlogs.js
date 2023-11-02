@@ -122,6 +122,16 @@ const AddBlog = () => {
     }
   };
 
+  const config = {
+    readonly: false, // Set to true if you want to disable editing
+    uploader: {
+      insertImageAsBase64URI: true, // Set to true to insert the image as a base64 URI
+    },
+    video: {
+      insertVideoWithIFrame: true, // Allow inserting videos using iframes
+    },
+  };
+
   return (
     <section className="container-fluid pt-5">
       {addBlog ? (
@@ -199,6 +209,7 @@ const AddBlog = () => {
                         id="content"
                         name="content"
                         value={values.content}
+                        config={config}
                         onChange={(value) => setFieldValue("content", value)}
                       />
                     </div>
