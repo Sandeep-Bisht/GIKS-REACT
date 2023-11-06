@@ -6,25 +6,25 @@ const IshaanavStudy = () => {
   <section className="casestudy-singlepage">
 
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="text">
-              <h2 class="common-heading">Ishaanav Nutraceuticals:</h2>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8">
+            <div className="text">
+              <h2 className="common-heading">Ishaanav Nutraceuticals:</h2>
 
-              <h3 class="sub-pages-heading1">Background:</h3>
-              <p class="common-para">The contract pharmaceutical manufacturing business client faced obstacles in managing customer
+              <h3 className="sub-pages-heading1">Background:</h3>
+              <p className="common-para">The contract pharmaceutical manufacturing business client faced obstacles in managing customer
                 relationships, purchase orders, production processes, and invoicing. Their operations relied on
                 manual systems that were laborious, error-prone, and lacked real-time insights.</p>
 
-              <h3 class="sub-pages-heading1">Goals:</h3>
-                <p class="common-para">The client aimed to enhance operational efficiency by digitizing their client management, purchase
+              <h3 className="sub-pages-heading1">Goals:</h3>
+                <p className="common-para">The client aimed to enhance operational efficiency by digitizing their client management, purchase
                   order management, production management, and invoicing processes. They sought to implement a
                   CRM system to improve customer relationship management and communication, both externally
                   with clients and internally between departments.
                 </p>
-                <h3 class="sub-pages-heading1">Solution:</h3>
-                <p class="common-para">
+                <h3 className="sub-pages-heading1">Solution:</h3>
+                <p className="common-para">
                   Our team collaborated closely with the client to understand their specific needs and challenges. Our
                   solution was to implement a cloud-based system that centralized their data and enabled real-time
                   access across all departments.
@@ -43,8 +43,8 @@ const IshaanavStudy = () => {
                           with the client's accounting software to ensure accurate financial reporting.
                         </p>
 
-                          <h3 class="sub-pages-heading1">Result:</h3>
-                          <p class="common-para">
+                          <h3 className="sub-pages-heading1">Result:</h3>
+                          <p className="common-para">
                             By digitalizing their operations, the client experienced significant improvements in efficiency and
                             productivity. The implementation of the CRM system enabled them to manage customer
                             relationships and communication more effectively, leading to increased customer satisfaction and
@@ -57,8 +57,8 @@ const IshaanavStudy = () => {
                               cash flow for the client. <br/> <br/>All in all, the digitalization of their operations enabled the client to reduce
                                 errors, improve communication with clients, and gain real-time insights into their operations.
                               </p>
-                                <h3 class="sub-pages-heading1">Conclusion:</h3>
-                                <p class="common-para">
+                                <h3 className="sub-pages-heading1">Conclusion:</h3>
+                                <p className="common-para">
                                   The digitization of our client's client management, purchase order management, production
                                   management, and invoicing processes yielded considerable improvements in efficiency and
                                   productivity across all aspects of their operations. Additionally, the implementation of a CRM system
@@ -72,14 +72,14 @@ const IshaanavStudy = () => {
              </Link>
                                   </div>
                                 </div>
-                                <div class="col-md-4">
-                                  <div class="pic">
+                                <div className="col-md-4">
+                                  <div className="pic">
                                   <img src="/images/ishaanav.png" className='img-fluid' alt='freindsclub' />
-                                      <div class="title">
-                                        <a href="http://ishaanav.com/" target='_blank' class="btn"> go to site</a>
+                                      <div className="title">
+                                        <a href="http://ishaanav.com/" target='_blank' className="btn"> go to site</a>
                                       </div>
                                   </div>
-                                  <div class="connect">
+                                  <div className="connect">
                                   <a href="http://ishaanav.com/" target='_blank' className='text-white text-decoration-underline'>www.ishaanav.com</a>
                                   </div>
                                 </div>

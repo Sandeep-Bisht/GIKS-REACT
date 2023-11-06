@@ -35,7 +35,6 @@ const Login = () => {
             // responseMsg.value = await res.msg;
             if (res.status == 200) {
               
-            console.log(res.status,"check the token for store the giks")
               loginModalRef.current.click();
               setToken(res.token);
               Cookies.set("giks_token", res.token, { expires: 7 }); // 'expires' sets the expiration time in days

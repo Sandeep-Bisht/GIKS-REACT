@@ -950,33 +950,33 @@ border: 2px solid #0D99FF;
 /* ---------shubham tab slider css------------ */
 
 .tab-slider .owl-stage .active{
-    clip-path: polygon(0 2%, 100% 7%, 100% 100%, 0% 100%);
+    clipPath: polygon(0 2%, 100% 7%, 100% 100%, 0% 100%);
    
      transform-style: preserve-3d;
     transform: perspective(1206px) rotateY(15deg); 
 }
 
 .tab-slider .owl-stage .active + .active{
-    clip-path: polygon(0 10%, 100% 12%, 100% 100%, 0% 100%);
+    clipPath: polygon(0 10%, 100% 12%, 100% 100%, 0% 100%);
    transform-style: preserve-3d;
     transform: perspective(1206px) rotateY(17deg);
 }
 
 .tab-slider .owl-stage .active + .active + .active{
-    clip-path: unset;
+    clipPath: unset;
     transform-style: preserve-3d;
     transform: perspective(1206px) rotateY(0deg);
  }
 
  .tab-slider .owl-stage .active + .active + .active + .active{
       
-    clip-path: polygon(0 11%, 100% 11%, 100% 100%, 0% 100%);
+    clipPath: polygon(0 11%, 100% 11%, 100% 100%, 0% 100%);
     transform-style: preserve-3d;
     transform: perspective(1206px) rotateY(-18deg);
  }
 
  .tab-slider .owl-stage .active + .active + .active + .active + .active{
-    clip-path: polygon(0 8%, 100% 6%, 100% 100%, 0% 100%);
+    clipPath: polygon(0 8%, 100% 6%, 100% 100%, 0% 100%);
     transform-style: preserve-3d;
     transform: perspective(1206px) rotateY(-20deg);
  }
@@ -3384,21 +3384,21 @@ footer .copyright-box .three ul li{
     }
 
     .tab-slider .owl-stage .active{
-        clip-path:none;
+        clipPath:none;
        
          transform-style: none;
         transform: none; 
     }
     
     .tab-slider .owl-stage .active + .active{
-        clip-path:none;
+        clipPath:none;
        
         transform-style: none;
        transform: none; 
     }
     
     .tab-slider .owl-stage .active + .active + .active{
-        clip-path:none;
+        clipPath:none;
        
         transform-style: none;
        transform: none; 
@@ -3406,14 +3406,14 @@ footer .copyright-box .three ul li{
     
      .tab-slider .owl-stage .active + .active + .active + .active{
           
-        clip-path:none;
+        clipPath:none;
        
         transform-style: none;
        transform: none; 
      }
     
      .tab-slider .owl-stage .active + .active + .active + .active + .active{
-        clip-path:none;
+        clipPath:none;
        
         transform-style: none;
        transform: none; 

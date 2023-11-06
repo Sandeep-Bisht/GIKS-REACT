@@ -41,7 +41,6 @@ const Blog = () => {
         let categoryName = e.target.value;
         try {
           const response = await axios.get(`${url}/blog/find_all_blog`);
-          console.log(response, "check all filters blogs");
       
           if (response && response.data && response.data.length > 0) {
             const categoryFilter = response.data.filter((item) => {
@@ -69,7 +68,6 @@ const Blog = () => {
                             <div className="blog-left-wrapper">
                                 {
                                     blog && blog.length > 0 ? blog.map((item, index) => {
-                                        console.log(item, "check the button")
                                         return (
                                             <>
                                                 <div className="blog-single-card" key={index}
@@ -160,7 +158,7 @@ const Blog = () => {
                                         <p className="blog-right-wrapper-heading">Recent Posts</p>
                                         {
                                             blog && blog.length > 0 ? blog.map((item, index) => {
-                                                <div className="recent-post-box">
+                                                <div className="recent-post-box" key={index}>
                                                     <p className="border-0">
                                                         <a href="#">{item.title}</a></p>
                                                 </div>
@@ -171,10 +169,10 @@ const Blog = () => {
                                         <div className="separator"></div>
                                     </div>
                                     <div className="col-md-12">
-                                        <div id="carouselExampleInterval" class="carousel slide testimonial-slider" data-bs-ride="carousel">
-                                            <div class="carousel-inner testimonial-wrapper">
+                                        <div id="carouselExampleInterval" className="carousel slide testimonial-slider" data-bs-ride="carousel">
+                                            <div className="carousel-inner testimonial-wrapper">
 
-                                                <div class="carousel-item active" data-bs-interval="10000">
+                                                <div className="carousel-item active" data-bs-interval="10000">
                                                     <div className="client-box">
                                                         <div className='client-logo'>
                                                             <img src="/images/case-study/3.png" className="img-fluid " alt="main-logo" />
@@ -202,11 +200,11 @@ const Blog = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item" data-bs-interval="2000">
+                                                <div className="carousel-item" data-bs-interval="2000">
                                                     <div className="client-box">
                                                         <div className='client-logo'>
 
-                                                            <img src="/images/case-study/7.png" class="img-fluid" alt="" />
+                                                            <img src="/images/case-study/7.png" className="img-fluid" alt="" />
                                                         </div>
                                                         <p className="client-words common-para mb-4">
                                                             "Thanks to GIKS India, our news portal has experienced tremendous growth. Their digital marketing service has significantly increased our website traffic and engagement.
@@ -231,10 +229,10 @@ const Blog = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
+                                                <div className="carousel-item">
                                                     <div className="client-box">
                                                         <div className='client-logo'>
-                                                            <img src="/images/case-study/2.png" class="img-fluid" alt="" />
+                                                            <img src="/images/case-study/2.png" className="img-fluid" alt="" />
                                                         </div>
                                                         <p className="client-words common-para mb-4">
                                                             "GIKS India has been instrumental in transforming our NHO website. Their tailored approach, attention to detail, and prompt support have been exceptional. Highly recommended."
@@ -259,15 +257,15 @@ const Blog = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"><IoIosArrowBack /></span>
-                                                <span class="visually-hidden">Previous</span>
+                                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                                <span className="carousel-control-prev-icon" aria-hidden="true"><IoIosArrowBack /></span>
+                                                <span className="visually-hidden">Previous</span>
                                             </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                                <span className="carousel-control-next-icon" aria-hidden="true">
                                                     <IoIosArrowForward />
                                                 </span>
-                                                <span class="visually-hidden">Next</span>
+                                                <span className="visually-hidden">Next</span>
                                             </button>
                                         </div>
                                     </div>

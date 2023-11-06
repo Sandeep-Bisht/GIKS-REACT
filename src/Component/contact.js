@@ -311,7 +311,7 @@ const Contact = () => {
                         <div className="position-absolute top-50 start-50 translate-middle loader-parent">
                           <div className="loader-parent">
                             {" "}
-                            <span class="loader">loading...</span>
+                            <span className="loader">loading...</span>
                           </div>
                         </div>
                       </div>
