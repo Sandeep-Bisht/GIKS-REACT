@@ -110,6 +110,13 @@ const Blog = () => {
                                         <div className="col-md-12">
                                             <p className="blog-right-wrapper-heading">Categories</p>
                                             <ul className="widget-list list-unstyled ps-0">
+                                            <li>
+                                                                    <button className="widget-list-item"
+                                                                    value="Software"
+                                                                    onClick={()=>getAllBlogs()}>
+                                                                       All Categories
+                                                                    </button>
+                                                                </li>
                                                                 <li>
                                                                     <button className="widget-list-item"
                                                                     value="Software"

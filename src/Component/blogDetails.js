@@ -150,8 +150,8 @@ const getDateAsString = (created_AT) => {
                       </div>
                       <div className="row mt-lg-4">
                         <div className="col-md-12 blog-html-content">
-                        {/* <p className="common-para"> */}
-                        {/* {blogDetails?.content} */}
+                        {/* <p className="common-para"> 
+                         {blogDetails?.content} */}
                         <p className="common-para " dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
                         </p>
                         </div>
