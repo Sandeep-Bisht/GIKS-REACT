@@ -11,12 +11,16 @@ const BlogDetails = () => {
   const state = location.state;
   const [blogDetails, setBlogDetails] = useState();
   const [blogImage, setBlogImage] = useState();
+  const [categoryBlog,setCategoryBlog] = useState();
 
   useEffect(() => {
     if (param.blog) {
       getBlogDetailBySlug(param.blog);
     }
   }, []);
+  useEffect(()=>{
+    getAllBlogs()
+  },[blogDetails])
 
   const getBlogDetailBySlug = async (slug) => {
     let payload = {
@@ -25,10 +29,8 @@ const BlogDetails = () => {
     try {
       let response = await axios.post(`${url}/blog/get_blog_by_slug`, payload);
       if (response) {
-        console.log("check response", response.data)
         // Parse the 'featuredImage' string into a JavaScript object
         // const blogDetail = JSON.parse(response.data.featuredImage);
-        console.log("inside get all blog", response.data);
         // setBlogImage(blogDetail);
         setBlogDetails(response.data);
       }
@@ -48,13 +50,27 @@ const BlogDetails = () => {
     return  monthAbbreviations[monthIndex];
 }
 
+const getAllBlogs = async () => {
+  const response = await axios.get(`${url}/blog/find_all_blog`);
+  if(response.data && response.data.length>0)
+{
+    const categoryRelatedData=response.data.filter((item)=>{
+      if(blogDetails?.category!=null)
+      {
+        return blogDetails?.category==item.category
+      }
+      return null
+  })
+  return setCategoryBlog(categoryRelatedData);
+}
+}
+
 const getDateAsString = (created_AT) => {
     const date = new Date(created_AT);
     const day = date.getUTCDate();
     return day
   };
 
-  console.log("blogImage blogImage blogDetail", blogDetails, "blogImage", blogImage);
   return (
     <>
       <section className="single-blog-page blog-detail">
@@ -110,9 +126,9 @@ const getDateAsString = (created_AT) => {
                                   <path
                                     d="M7.96852 15.364L9.35692 17.678C9.42355 17.7891 9.51781 17.881 9.63051 17.9448C9.74321 18.0086 9.87052 18.0422 10 18.0422C10.1295 18.0422 10.2569 18.0086 10.3696 17.9448C10.4823 17.881 10.5765 17.7891 10.6432 17.678L12.0315 15.364C12.0982 15.253 12.1924 15.1611 12.3051 15.0973C12.4178 15.0334 12.5452 14.9999 12.6747 14.9999H18.25C18.4489 14.9999 18.6397 14.9209 18.7803 14.7802C18.921 14.6396 19 14.4488 19 14.2499V2.25C19 2.05109 18.921 1.86032 18.7803 1.71967C18.6397 1.57902 18.4489 1.5 18.25 1.5H1.75007C1.55115 1.5 1.36039 1.57902 1.21974 1.71967C1.07909 1.86032 1.00007 2.05109 1.00007 2.25V14.25C1.00007 14.4489 1.07909 14.6396 1.21974 14.7803C1.36039 14.9209 1.55115 14.9999 1.75007 14.9999L7.32539 14.9999C7.45491 14.9999 7.58222 15.0334 7.69492 15.0973C7.80763 15.1611 7.90189 15.253 7.96852 15.364Z"
                                     stroke="white"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                   />
                                 </svg>
                               </span>
@@ -134,8 +150,8 @@ const getDateAsString = (created_AT) => {
                       </div>
                       <div className="row mt-lg-4">
                         <div className="col-md-12 blog-html-content">
-                        {/* <p className="common-para"> */}
-                        {/* {blogDetails?.content} */}
+                        {/* <p className="common-para"> 
+                         {blogDetails?.content} */}
                         <p className="common-para " dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
                         </p>
                         </div>
@@ -293,8 +309,8 @@ const getDateAsString = (created_AT) => {
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
                                   <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
                                     d="M11.7188 7.8125H7.8125V4.6875C7.8125 3.825 8.5125 3.90625 9.375 3.90625H10.9375V0H7.8125C6.5693 0 5.37701 0.49386 4.49794 1.37294C3.61886 2.25201 3.125 3.4443 3.125 4.6875V7.8125H0V11.7188H3.125V20.3125H7.8125V11.7188H10.1562L11.7188 7.8125Z"
                                     fill="#FAFAFA"
                                   />
@@ -311,8 +327,8 @@ const getDateAsString = (created_AT) => {
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
                                   <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
                                     d="M15.1038 1.70846C14.5556 1.95112 13.9743 2.11035 13.379 2.18085C14.0015 1.80733 14.4776 1.21776 14.6973 0.518332C14.1084 0.867352 13.4645 1.11377 12.7931 1.24706C12.3817 0.805392 11.8467 0.497972 11.2579 0.364899C10.6692 0.231826 10.054 0.279278 9.4926 0.501064C8.93122 0.722849 8.44971 1.10867 8.11088 1.60821C7.77205 2.10774 7.59163 2.6978 7.59316 3.3014C7.59243 3.53185 7.61823 3.76163 7.67006 3.98618C6.4756 3.92628 5.30707 3.61594 4.24029 3.07529C3.17351 2.53465 2.2323 1.77578 1.47773 0.847906C1.09174 1.50934 0.973052 2.29326 1.14595 3.03931C1.31885 3.78537 1.77027 4.43717 2.40786 4.86138C1.93015 4.84641 1.46301 4.71706 1.04563 4.4842V4.52082C1.04563 5.97827 2.08195 7.19403 3.45518 7.46868C3.01341 7.58923 2.54987 7.60677 2.10026 7.51994C2.29229 8.1166 2.66579 8.63843 3.16865 9.01262C3.6715 9.38681 4.27862 9.59468 4.9053 9.60724C4.282 10.0972 3.56818 10.4593 2.80471 10.673C2.04123 10.8866 1.24311 10.9476 0.456055 10.8523C1.78534 11.7055 3.36363 12.1999 5.06276 12.1999C10.5923 12.1999 13.6134 7.62248 13.6134 3.64928C13.6134 3.52112 13.6134 3.39295 13.606 3.26112C14.192 2.84 14.7046 2.30902 15.1074 1.70846H15.1038Z"
                                     fill="white"
                                   />
@@ -329,8 +345,8 @@ const getDateAsString = (created_AT) => {
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
                                   <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
                                     d="M0.561788 5.66964H3.90311V16.4203H0.561788V5.66964ZM2.23297 0.325543C3.30137 0.325543 4.16943 1.1936 4.16943 2.262C4.16943 3.33145 3.30137 4.19985 2.23297 4.19985C1.97549 4.20472 1.71963 4.15822 1.48033 4.06306C1.24104 3.9679 1.02311 3.82599 0.8393 3.64562C0.655488 3.46526 0.509476 3.25006 0.409802 3.01261C0.310127 2.77516 0.258789 2.52022 0.258789 2.2627C0.258789 2.00517 0.310127 1.75023 0.409802 1.51278C0.509476 1.27533 0.655488 1.06013 0.8393 0.879769C1.02311 0.699404 1.24104 0.557493 1.48033 0.462332C1.71963 0.36717 1.97549 0.320667 2.23297 0.325543ZM5.99894 5.66929H9.2038V7.13839H9.24824C9.69443 6.29325 10.7844 5.40228 12.4097 5.40228C15.793 5.40228 16.418 7.62901 16.418 10.5238V16.4203H13.0788V11.1922C13.0788 9.94568 13.0559 8.34186 11.3427 8.34186C9.60415 8.34186 9.33713 9.69985 9.33713 11.1023V16.4203H5.99859V5.66964L5.99894 5.66929Z"
                                     fill="white"
                                   />
@@ -346,6 +362,7 @@ const getDateAsString = (created_AT) => {
               </div>
             </div>
             <div className="col-lg-3 col-md-5 col-sm-5">
+            <aside>
               <div className="blog-right-wrapper">
                 <div className="row">
                   {/* <div className="col-md-12">
@@ -527,117 +544,39 @@ const getDateAsString = (created_AT) => {
                   {/* ---------------end------------------ */}
 
                   {/* </div> */}
-                  <div className="col-md-12">
-                    <p className="blog-right-wrapper-heading">Tags Widget</p>
-                    <ul className="widget-list list-unstyled ps-0">
-                      <li>
-                        <a href="#" className="widget-list-item">
-                          Technology
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="widget-list-item">
-                          S.E.O
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="widget-list-item">
-                          UI UX
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="widget-list-item">
-                          Website Design
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="widget-list-item">
-                          Graphic Design
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="widget-list-item">
-                          Web Applications
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col-md-12 d-none">
-                    <button className="btn download-brochure">
-                      <span className="icon">
-                        <svg
-                          width="20"
-                          height="26"
-                          viewBox="0 0 20 26"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.25 10.5H7.5C7.83152 10.5 8.14946 10.3683 8.38388 10.1339C8.6183 9.89946 8.75 9.58152 8.75 9.25C8.75 8.91848 8.6183 8.60054 8.38388 8.36612C8.14946 8.1317 7.83152 8 7.5 8H6.25C5.91848 8 5.60054 8.1317 5.36612 8.36612C5.1317 8.60054 5 8.91848 5 9.25C5 9.58152 5.1317 9.89946 5.36612 10.1339C5.60054 10.3683 5.91848 10.5 6.25 10.5ZM6.25 13C5.91848 13 5.60054 13.1317 5.36612 13.3661C5.1317 13.6005 5 13.9185 5 14.25C5 14.5815 5.1317 14.8995 5.36612 15.1339C5.60054 15.3683 5.91848 15.5 6.25 15.5H13.75C14.0815 15.5 14.3995 15.3683 14.6339 15.1339C14.8683 14.8995 15 14.5815 15 14.25C15 13.9185 14.8683 13.6005 14.6339 13.3661C14.3995 13.1317 14.0815 13 13.75 13H6.25ZM20 9.175C19.987 9.06017 19.9618 8.94704 19.925 8.8375V8.725C19.8649 8.59647 19.7847 8.47833 19.6875 8.375L12.1875 0.875C12.0842 0.77777 11.966 0.697601 11.8375 0.6375C11.8002 0.6322 11.7623 0.6322 11.725 0.6375C11.598 0.564677 11.4578 0.51793 11.3125 0.5H3.75C2.75544 0.5 1.80161 0.895088 1.09835 1.59835C0.395088 2.30161 0 3.25544 0 4.25V21.75C0 22.7446 0.395088 23.6984 1.09835 24.4017C1.80161 25.1049 2.75544 25.5 3.75 25.5H16.25C17.2446 25.5 18.1984 25.1049 18.9017 24.4017C19.6049 23.6984 20 22.7446 20 21.75V9.25C20 9.25 20 9.25 20 9.175ZM12.5 4.7625L15.7375 8H13.75C13.4185 8 13.1005 7.8683 12.8661 7.63388C12.6317 7.39946 12.5 7.08152 12.5 6.75V4.7625ZM17.5 21.75C17.5 22.0815 17.3683 22.3995 17.1339 22.6339C16.8995 22.8683 16.5815 23 16.25 23H3.75C3.41848 23 3.10054 22.8683 2.86612 22.6339C2.6317 22.3995 2.5 22.0815 2.5 21.75V4.25C2.5 3.91848 2.6317 3.60054 2.86612 3.36612C3.10054 3.1317 3.41848 3 3.75 3H10V6.75C10 7.74456 10.3951 8.69839 11.0983 9.40165C11.8016 10.1049 12.7554 10.5 13.75 10.5H17.5V21.75ZM13.75 18H6.25C5.91848 18 5.60054 18.1317 5.36612 18.3661C5.1317 18.6005 5 18.9185 5 19.25C5 19.5815 5.1317 19.8995 5.36612 20.1339C5.60054 20.3683 5.91848 20.5 6.25 20.5H13.75C14.0815 20.5 14.3995 20.3683 14.6339 20.1339C14.8683 19.8995 15 19.5815 15 19.25C15 18.9185 14.8683 18.6005 14.6339 18.3661C14.3995 18.1317 14.0815 18 13.75 18Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </span>
-                      <a target="_blank" href={broucher}>
-                        <span className="icon-heading common-para">
-                          Download Brochure
-                        </span>
-                      </a>
-                      {/* <span className="icon-heading common-para">Download Brochure</span> */}
-                    </button>
-                  </div>
-                  <div className="col-md-12">
-                    <div className="separator"></div>
-                  </div>
-                  <div className="col-md-12">
-                    <div className="bottom-blog">
-                      <a href="#">
-                        <div className="bottom-blog-pic">
-                          <img src="/images/blog-single/blog9.jpg" />
-                        </div>
-                        <div>
-                          <span className="bottom-blog-heading">
-                            Business Planning, Strategy & Execut...
-                          </span>
-                          <span className="bottom-blog-subheading">
-                            Business Solution
-                          </span>
-                        </div>
-                      </a>
+                  {
+                    categoryBlog && categoryBlog.length>0 &&
+                    <div className="col-md-12">
+                    <p className="" style={{color:"#fff"}}>Related Blogs</p>
+                    {
+                      categoryBlog.map((item,index)=>{
+                        console.log(item,"check the item hurrrrrrrrrrr")
+                        return(
+                          <>
+                           <div className="bottom-blog" key={index}>
+                            <a href="#">
+                              <div className="bottom-blog-pic">
+                                <img src={`${url}/${item?.featuredImage?.path}`} />
+                              </div>
+                              <div>
+                                <span className="bottom-blog-heading">
+                                  {item.title}
+                                </span>
+                                <span className="bottom-blog-subheading">
+                                  Business Solution
+                                </span>
+                              </div>
+                            </a>
+                         </div>
+                          </>
+                        )
+                      })
+                    }
                     </div>
-                    <div className="bottom-blog">
-                      <a href="#">
-                        <div className="bottom-blog-pic">
-                          <img src="/images/blog-single/blog10.jpg" />
-                        </div>
-                        <div>
-                          <span className="bottom-blog-heading">
-                            DEVELOPING A STRATEGY AND ROADMAP FOR CL...
-                          </span>
-                          <span className="bottom-blog-subheading">
-                            Marketing
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                    <div className="bottom-blog">
-                      <a href="#">
-                        <div className="bottom-blog-pic">
-                          <img src="/images/blog-single/blog11.jpg" />
-                        </div>
-                        <div>
-                          <span className="bottom-blog-heading">
-                            MANAGEMENT OF GENERATION CHANGES IN BUSI...
-                          </span>
-                          <span className="bottom-blog-subheading">
-                            Consumer Products
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  }
                 </div>
               </div>
+              </aside>
             </div>
           </div>
         </div>

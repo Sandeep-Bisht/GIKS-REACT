@@ -161,9 +161,9 @@ const Homepage = () => {
   return (
     <>
       <div className="home-banner">
-        <div class="video-container">
+        <div className="video-container">
           <video
-            class="video-item"
+            className="video-item"
             src={sliderVideo}
             autoPlay
             loop
@@ -213,7 +213,7 @@ const Homepage = () => {
             <div className="col-lg-5 col-md-5 col-sm-5">
               <div className="home-about-pic">
                 <video
-                  class=""
+                  className=""
                   src={aboutVideo}
                   autoPlay
                   playsInline
@@ -1370,7 +1370,6 @@ const Homepage = () => {
                     <>
                     <ul className="owl-carousel owl-theme tab-slider list-unstyled d-flex">
                     {blog.map((item,index)=>{
-                      console.log(item,"check thed item")
                       return(
                         <>
                         <div>

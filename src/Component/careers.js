@@ -48,7 +48,6 @@ const Careers = () => {
       });
 
       if (response) {
-        // console.log(response, "check ressssssss")
          if(recaptchaRef.current)
          {
           recaptchaRef.current.reset();

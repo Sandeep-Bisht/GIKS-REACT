@@ -75,6 +75,21 @@ const AllBlog = () => {
     setAllBlogs(filteredData);
   };
 
+  const config = {
+    readonly: false,
+    uploader: {
+      insertImageAsBase64URI: true,
+      imagesExtensions: ['jpg', 'png', 'jpeg', 'gif'],
+      insertImage: (file, onSuccess, onError) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          onSuccess(e.target.result);
+        };
+        reader.readAsDataURL(file);
+      },
+    },
+  };
+
 
   return (
     <section className="container-fluid pt-5">
@@ -183,6 +198,7 @@ const AllBlog = () => {
                   <JoditEditor
                     id="content"
                     name="content"
+                    config={config}
                     value={values.content}
                     onChange={(value) => setFieldValue("content", value)}
                   />
