@@ -269,32 +269,7 @@ const Blog = () => {
                                             </button>
                                         </div>
                                     </div>
-                                    <div className="col-md-12">
-                                        <p className="blog-right-wrapper-heading">Tags Widget</p>
-                                        <ul className="widget-list list-unstyled ps-0">
-                                            <li>
-                                                <a href="#" className="widget-list-item">Technology</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="widget-list-item">S.E.O</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="widget-list-item">UI UX</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="widget-list-item">Website Design</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="widget-list-item">Graphic Design</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="widget-list-item">Web Applications</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                    <div className="col-md-12">
+                                    {/* <div className="col-md-12">
                                         <div className="bottom-blog">
                                             <a href="#">
                                                 <div className="bottom-blog-pic">
@@ -346,7 +321,7 @@ const Blog = () => {
 
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                 </div>
                             </div>
