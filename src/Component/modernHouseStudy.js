@@ -7,7 +7,7 @@ const ModernHouseStudy = () => {
             <section className="casestudy-singlepage">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8 col-8">
+                        <div className="col-md-8">
                             <div className="text">
                                 <h2 className="common-heading">Modern House of Antiques</h2>
                                 <p className="common-para">
@@ -55,7 +55,7 @@ const ModernHouseStudy = () => {
              </Link>
                             </div>
                         </div>
-                        <div className="col-md-4 col-4">
+                        <div className="col-md-4">
                             <div className="pic">
                                 <img src="/images/mha.png" className='img-fluid' alt='freindsclub' />
                                 <div className="title">
