@@ -35,7 +35,13 @@ const Sidebar = () => {
                     <TbBrandBooking />
                   </span>
                   <Link to="/dashboard/blogs">Blog</Link>
-                </div>                
+                </div>    
+                <div className="sidebar-nav">
+                  <span className="px-3">
+                    <TbBrandBooking />
+                  </span>
+                  <Link to="/dashboard/categories">Category</Link>
+                </div>            
                 <div className="sidebar-nav">
                   <span className="px-3">
                     <RiLogoutCircleRLine />

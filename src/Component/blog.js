@@ -38,13 +38,17 @@ const Blog = () => {
         navigate(`/blog/${slug}`, { state: { ...item } })
     }
     const categoryFilterHandler = async (e) => {
-        let categoryName = e.target.value;
+        const categoryName = e.target.value;
         try {
-          const response = await axios.get(`${url}/blog/find_all_blog`);
+          const response = await axios.get(`${url}/blog/get_blog_by_category`, {
+            params: {
+              category: categoryName, // Include the selected category in the request
+            },
+          });
       
           if (response && response.data && response.data.length > 0) {
-            const categoryFilter = response.data.filter((item) => {
-              return item.category === categoryName;
+            const categoryFilter = response.data.map((item) => {
+              return item;
             });
             setBlog(categoryFilter);
           }
@@ -53,7 +57,6 @@ const Blog = () => {
         }
       };
       
-
     return (
         <>
             <section className="single-blog-page">
