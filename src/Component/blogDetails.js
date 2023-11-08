@@ -84,11 +84,6 @@ const getDateAsString = (created_AT) => {
                       {blogDetails?.title}
                     </p>
                   </div>
-                  <div className="col-md-12">
-                    <p className="blog-detail-heading text-white fs-6 fw-lighter">
-                      {blogDetails?.description}
-                    </p>
-                  </div>
                   <div className="col-md-12 mt-lg-4">
                     <div className="single-blog-detail-card">
                       <div className="row">
@@ -105,12 +100,12 @@ const getDateAsString = (created_AT) => {
                             <div className="post-category">
                               <div className="post-category-left">
                                 <span className="post-category-heading common-para">
-                                  Posted by:GIKS 
+                                  Posted by : GIKS 
                                 </span>
                               </div>
                               <div className="post-category-right">
                                 <span className="post-category-heading common-para">
-                                  Category: {blogDetails?.category} 
+                                  {`Category : ${blogDetails?.category}`} 
                                 </span>
                               </div>
                             </div>
@@ -147,6 +142,11 @@ const getDateAsString = (created_AT) => {
                             alt=""
                           />
                         </div>
+                        <div className="row mt-lg-4">
+                    <p className="blog-details-heading text-white fs-6 fw-lighter">
+                      {blogDetails?.description}
+                    </p>
+                  </div>
                       </div>
                       <div className="row mt-lg-4">
                         <div className="col-md-12 blog-html-content">
