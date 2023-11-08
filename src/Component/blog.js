@@ -37,23 +37,21 @@ const Blog = () => {
     const blogDetailsHandler = (item, slug) => {
         navigate(`/blog/${slug}`, { state: { ...item } })
     }
-    const categoryFilterHandler = async (e) => {
-        let categoryName = e.target.value;
+
+      const categoryFilterHandler = async (e) => {
+        const categoryName = e.target.value;
+        let payload = {
+          category: categoryName,
+        };
         try {
-          const response = await axios.get(`${url}/blog/find_all_blog`);
-      
-          if (response && response.data && response.data.length > 0) {
-            const categoryFilter = response.data.filter((item) => {
-              return item.category === categoryName;
-            });
-            setBlog(categoryFilter);
-          }
+          let response = await axios.post(`${url}/blog/get_blog_by_category`, payload);
+          console.log(response,"check the response ")
+            setBlog(response?.data);
         } catch (error) {
-          console.error("Error fetching blogs:", error);
+          console.log("error", error);
         }
       };
-      
-
+      console.log(blog,"check the blog")
     return (
         <>
             <section className="single-blog-page">
@@ -86,7 +84,7 @@ const Blog = () => {
                                                             <div className="blog-single-card-content">
                                                                 <p className="blog-title">{item.title}</p>
                                                                 <p className="blog-category common-para">
-                                                                    Category:Tech
+                                                                    {`Category : ${item.category}`}
                                                                 </p>
                                                                 <p className="common-para">
                                                                     {item.description}

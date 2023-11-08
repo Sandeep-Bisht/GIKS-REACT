@@ -3434,6 +3434,19 @@ footer .copyright-box .three ul li{
         bottom: auto;
      }
 
+     @media (max-width: 767.98px) {
+        .owl-theme .owl-nav {
+            margin-top: 318px;
+        }
+
+        .blog-heading{
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+        }
+
+     }
+
    /* -------------------footer----- */
    .grid-container { 
     display: flex;
@@ -3895,6 +3908,11 @@ header .dropdown-menu .dropdown-item {
     {
         margin-bottom: 5px;
     }
+    .case-study-card .case-study-heading{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
   }
 
 
@@ -4014,8 +4032,22 @@ header .dropdown-menu .dropdown-item {
         width: 60px;
     }
 
+    .single-blog-page {
+        padding: 70px;
+    }
+
   }
 
+  @media  (max-width:410.98px){
+     .single-blog-page {
+        padding: 74px;
+    }
+  }
+@media (max-width:390.98px) {
+    .single-blog-page {
+        padding: 64px;
+    }
+}
   @media (max-width: 380.98px)
   {
     .client-card-heading
@@ -4027,6 +4059,10 @@ header .dropdown-menu .dropdown-item {
         height: 60px;
         width: 60px;
     }
+    .single-blog-page {
+        padding: 59px;
+    }
+    
   }
 
   /* sidebar css */

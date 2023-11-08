@@ -9,6 +9,10 @@ const Homepage = () => {
   const [blog, setBlog] = useState()
 
   useEffect(() => {
+    getAllBlogs()
+  }, [])
+
+  useEffect(() => {
     const customScript = `
     $(document).ready(function() {
 
@@ -145,7 +149,7 @@ const Homepage = () => {
     const script = document.createElement("script");
     script.textContent = customScript;
     document.head.appendChild(script);
-    getAllBlogs()
+    
     return () => {
       // Clean up the script when the component is unmounted
       document.head.removeChild(script);
