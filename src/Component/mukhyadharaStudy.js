@@ -7,7 +7,7 @@ const MukhyaDharaStudy = () => {
             <section className="casestudy-singlepage">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8 col-8">
+                        <div className="col-md-8">
                             <div className="text">
                                 <h2 className="common-heading">Mukhyadhara</h2>
                                 <p className="common-para">
@@ -30,12 +30,12 @@ const MukhyaDharaStudy = () => {
                                    In conclusion, Mukhyadhara.in is a reliable and trustworthy news website that provides accurate and timely news updates to its readers. The website's team of experienced journalists and reporters, combined with its strict editorial policy, ensures that readers receive the most accurate news and updates. The website's focus on local news stories and technology news makes it a popular choice among readers who are interested in staying up-to-date with the latest happenings in their region and the tech industry.
                                 </p>
                                 <Link to="/contact" className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
-                Contact Us
-             </Link>
+                       Contact Us
+                      </Link>
                                 
                             </div>
                         </div>
-                        <div className="col-md-4 col-4">
+                        <div className="col-md-4">
                             <div className="pic">
                                 <img src="/images/mukhyadhara.jpg" className='img-fluid' alt='freindsclub' />
                                 <div className="title">

@@ -7,7 +7,7 @@ const NorthenRailwayStudy = () => {
      <section className="casestudy-singlepage">
          <div className="container">
     <div className="row">
-      <div className="col-md-8 col-8">
+      <div className="col-md-8">
         <div className="text">
           <h2 className="common-heading">Northern Railways Complaint Management System</h2>
           <p className="common-para">The Northern Railway, which forms the core of the Indian Railways, has undertaken a mission to conquer distances and establish its own identity. It was formally established in 1952 and continues to be the largest zone in terms of route kilometers, even after the reorganization of the Indian Railways into 16 zones. The Northern Railway is now made up of five divisions: Ambala, Delhi, Ferozpur, Lucknow, and Moradabad.
@@ -61,7 +61,7 @@ const NorthenRailwayStudy = () => {
              </Link>
         </div>
       </div>
-      <div className="col-md-4 col-4">
+      <div className="col-md-4">
         <div className="pic">
         <img src="/images/nrcms.png" className='img-fluid' alt='freindsclub' />
           <div className="title">
