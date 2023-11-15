@@ -77,7 +77,7 @@ const Blog = () => {
                                                                     <p className="date">{getDateAsString(item.created_AT)}</p>
                                                                     <p className="month">{getMonthAndDate(item.created_AT)}</p>
                                                                 </div>
-                                                                <img src={`${url}/${item.featuredImage.path}`} className="img-fluid" alt="blog-pic" />
+                                                                <img src={`${url}/${item?.featuredImage.path}`} className="img-fluid" alt="blog-pic" />
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-8 ">

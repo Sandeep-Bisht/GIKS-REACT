@@ -143,7 +143,7 @@ const getDateAsString = (created_AT) => {
                           />
                         </div>
                         <div className="row mt-lg-4">
-                    <p className="blog-details-heading text-white fs-6 fw-lighter">
+                    <p className="blog-details-heading text-white fs-6 fw-lighter blog-dtails-description">
                       {blogDetails?.description}
                     </p>
                   </div>
@@ -152,7 +152,7 @@ const getDateAsString = (created_AT) => {
                         <div className="col-md-12 blog-html-content">
                         {/* <p className="common-para"> 
                          {blogDetails?.content} */}
-                        <p className="common-para " dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
+                        <p className="common-para blog-details-content " dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
                         </p>
                         </div>
                         {/* <div className="col-md-12">
