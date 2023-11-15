@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import broucher from "../Samplefiles/GIKS_Brochure.pdf";
-import { useLocation, useParams } from "react-router-dom";
+import {  useLocation, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import {url} from "../urls"
 
 const BlogDetails = () => {
   const param = useParams();
   const location = useLocation();
+  const navigate = useNavigate();
   const state = location.state;
   const [blogDetails, setBlogDetails] = useState();
   const [blogImage, setBlogImage] = useState();
@@ -32,6 +33,7 @@ const BlogDetails = () => {
         // Parse the 'featuredImage' string into a JavaScript object
         // const blogDetail = JSON.parse(response.data.featuredImage);
         // setBlogImage(blogDetail);
+        navigate(`/blog/${slug}`)
         setBlogDetails(response.data);
       }
     } catch (error) {
@@ -553,7 +555,8 @@ const getDateAsString = (created_AT) => {
                         console.log(item,"check the item hurrrrrrrrrrr")
                         return(
                           <>
-                           <div className="bottom-blog" key={index}>
+                           <div className="bottom-blog" key={index}
+                           onClick={()=>getBlogDetailBySlug(item.slug)}>
                             <a href="#">
                               <div className="bottom-blog-pic">
                                 <img src={`${url}/${item?.featuredImage?.path}`} />
