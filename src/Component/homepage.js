@@ -159,7 +159,10 @@ const Homepage = () => {
 
   const getAllBlogs = async () => {
     const response = await axios.get(`${url}/blog/find_all_blog`);
-    setBlog(response.data)
+    if(response.data && response.data.length>0)
+    {
+      setBlog(response.data)
+    }
   }
 
   return (
@@ -463,7 +466,7 @@ const Homepage = () => {
                           organizations solve their business challenges via IoT technology.
                         </p>  */}
                         </div>
-                        <img src="/images/slider4.jpg" className="img-fluid" />
+                        <img src="/images/slider4.jpeg" className="img-fluid" />
                       </div>
                     </div>
                   </div>
@@ -501,7 +504,7 @@ const Homepage = () => {
                           organizations solve their business challenges via IoT technology.
                         </p>  */}
                         </div>
-                        <img src="/images/slider5.jpg" className="img-fluid" />
+                        <img src="/images/slider5.jpeg" className="img-fluid" />
                       </div>
                     </div>
                   </div>
@@ -541,7 +544,7 @@ const Homepage = () => {
                       </div>  */}
                         <div className="img-overlay">
                           <img
-                            src="/images/slider2.jpg"
+                            src="/images/slider2.jpeg"
                             className="img-fluid"
                           />
                         </div>
@@ -578,7 +581,7 @@ const Homepage = () => {
                           organizations solve their business challenges via IoT technology.
                         </p>
                       </div>  */}
-                        <img src="/images/slider1.jpg" className="img-fluid" />
+                        <img src="/images/slider1.jpeg" className="img-fluid" />
                       </div>
                     </div>
                   </div>
@@ -611,7 +614,7 @@ const Homepage = () => {
                           development methodology is the right fit to create enterprise-grade custom applications
                         </p>
                       </div>  */}
-                        <img src="/images/slider3.jpg" className="img-fluid" />
+                        <img src="/images/slider3.jpeg" className="img-fluid" />
                       </div>
                     </div>
                   </div>

@@ -4,7 +4,7 @@
 
 body {
     font-size: 14px;
-   
+    background-color: #01162b;
 }
 
 .f1 {
@@ -2682,7 +2682,7 @@ footer .copyright-box .three ul li{
 
     header .nav-link
     {
-     font-size: 17px;
+     font-size: 18px;
      }
      .navbar-brand img{
         width: 80%!important;
@@ -2696,7 +2696,7 @@ footer .copyright-box .three ul li{
         font-size: 38px;
     }
     .common-para{
-        font-size: 15px;
+        font-size: 18px;
     }
     .common-btn
     {
@@ -2708,7 +2708,7 @@ footer .copyright-box .three ul li{
     }
     .case-study-heading
     {
-        font-size: 16px;
+        font-size: 17px;
     }
     .case-study-card .second-view .second-view-wrapper .left .case-study-second-content-heading
     {
@@ -2716,7 +2716,7 @@ footer .copyright-box .three ul li{
     }
     .blog-heading
     {
-        font-size: 15px;
+        font-size: 17px;
     }
     .home-blog .blog-card img
     {
@@ -2724,15 +2724,15 @@ footer .copyright-box .three ul li{
     }
     .footer-heading
     {
-       font-size: 17px;
+       font-size: 20px;
     }
     .footer-link
     {
-        font-size: 15px;
+        font-size: 18px;
     }
     .process-card .lower .common-para
     {
-        font-size: 14px;
+        font-size: 16px;
     }
     .product-about .product-services-box
     {
@@ -2750,6 +2750,35 @@ footer .copyright-box .three ul li{
     {
         
         font-size: 20px;
+    }
+    .product-read-more-wrapper{
+        bottom:20px
+    }
+    .product-card{
+        height: 400px;
+    }
+    .common-read-more{
+        font-size: 15px;
+    }
+    .footer-icon-apple{
+        width: 130px!important;
+        height: 40px!important;
+    }
+    .product-services-box-heading{
+        font-size: 20px;
+    }
+    header .dropdown-menu .dropdown-item{
+        font-size: 15px;
+    }
+    .blog-title{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .contact-single-left ul li .common-para{
+        font-size: 18px;
+    }
+    .contact-single-right .form-label{
+        font-size: 18px;
     }
 
  }

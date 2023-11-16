@@ -145,13 +145,6 @@ const Contact = () => {
               <div className="contact-single-right">
                 <form onSubmit={handleSubmit(handleContactUS)}>
                   <div className="row">
-                    <div className="col-md-12">
-                      <div className="fill-out-box mt-0">
-                        <p className="common-para">
-                          We’ll get back to you as soon as possible
-                        </p>
-                      </div>
-                    </div>
                     <div className="col-md-6 col-sm-6">
                       <div className="mb-3 input-wrapper">
                         <label htmlFor="name" className="form-label">
@@ -316,7 +309,10 @@ const Contact = () => {
                         </div>
                       </div>
                     ) : msg ? (
+                      <>
                       <p className="success-msg">Form submitted successfully</p>
+                      <p className="success-msg mt-3">We’ll get back to you as soon as possible</p>
+                      </>
                     ) : (
                       ""
                     )}
