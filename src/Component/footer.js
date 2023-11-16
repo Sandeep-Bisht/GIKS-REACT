@@ -132,8 +132,8 @@ const Footer = () => {
 
         </div>
         <div className="d-flex align-items-end justify-content-start">
-          <img src="/images/footer-icon1.png" alt="icon 1" width="100" height="31" className="me-2" />
-          <img src="/images/footer-icon2.png" alt="icon 2" width="100" height="31" />
+          <img src="/images/footer-icon1.png" alt="icon 1" width="100" height="31" className="me-2 footer-icon-apple" />
+          <img src="/images/footer-icon2.png" alt="icon 2" width="100" height="31" className="footer-icon-apple"/>
         </div>
       </div>
     </div>

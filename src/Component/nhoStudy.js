@@ -9,7 +9,7 @@ const NationalHydrographicStudy = () => {
                     <div className="row">
                         <div className="col-md-8">
                             <div className="text">
-                                <h2 className="sub-pages-heading1">National Hydrographic Office:</h2>
+                                <h2 className="common-heading">National Hydrographic Office:</h2>
                                 <p className="common-para">
                                 The National Hydrographic Office (NHO) is the organization responsible for surveying and charting India's waterways, and their website is a crucial tool for sharing information with stakeholders and the public. When the NHO approached our team for help with a website redesign, we were eager to take on the challenge.
                                 </p>
