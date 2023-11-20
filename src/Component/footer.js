@@ -14,7 +14,7 @@ const Footer = () => {
                 <Link to='/digital-experience-platform' className="footer-link">Digital Experience Platform</Link>
               </li>
               <li>
-                <Link to='/integrated-estate-management-system' className="footer-link">integrated Estate Management System</Link>
+                <Link to='/integrated-estate-management-system' className="footer-link">Integrated Estate Management System</Link>
               </li>
               <li>
               <Link to='/intelligent-ticketing-management' className="footer-link">Intelligent Ticketing Management</Link></li>

@@ -7,15 +7,16 @@ import { ReactComponent as MobileAppSvg } from '../images/mobile.svg'
 const InfrastructureManagement = () => {
   return (
     <>
-        <section className="about-who-we-are repeated-hero-banner services-application-development">
+        <section className="about-who-we-are repeated-hero-banner services-itInfrastructreManagement-development">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 col-lg-10">
                     <div className="about-single-content">
                         <h1 className="common-heading">Infrastructure Management</h1>
                         <p className="common-para">
-                        Infrastructure management involves overseeing IT policies, processes, equipment, information,<br/> HR, and external contacts (such as vendors or security associations). Its purpose is to ensure smooth and efficient IT operations.
-                        </p>
+                        Infrastructure management involves overseeing IT policies, processes, equipment, information,
+HR, and external contacts (such as vendors or security associations). Its purpose is to ensure smooth and efficient IT operations.
+we ensure the reliability, scalability, and security of our clients' infrastructure.                        </p>
                     </div>
                 </div>
             </div>

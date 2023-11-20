@@ -78,13 +78,9 @@ const JaimaicaStudy = () => {
       </div>
       <div className="col-md-4">
         <div className="pic">
+          <Link to="https://jamaicabusinessgateway.com/" target='_blank'>
         <img src="/images/jamaicabusinessgateway.png" className='img-fluid' alt='freindsclub' />
-          <div className="title">
-            <a href="https://jamaicabusinessgateway.com/" target='_blank' className="btn"> go to site</a> 
-          </div>
-        </div>
-        <div className="connect">
-          <a href="https://jamaicabusinessgateway.com/" target='_blank' className='text-white text-decoration-underline'>www.jamaicabusinessgateway.com</a>
+        </Link>
         </div>
       </div>
     </div>

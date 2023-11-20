@@ -3,7 +3,7 @@ import React from 'react'
 const PlatformBasedDevelopment = () => {
   return (
     <>
-        <section className="about-who-we-are repeated-hero-banner technologies">
+        <section className="about-who-we-are repeated-hero-banner platform_based_development">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 col-lg-10">
@@ -11,7 +11,9 @@ const PlatformBasedDevelopment = () => {
                         <h1 className="common-heading">Platform Based Development</h1>
                         <p className="common-para">
                         Deliver personalized experiences for the entire customer journey.
-                        </p>
+we specialize in crafting tailored solutions that leverage the power of robust platforms to meet the diverse needs of our clients. 
+Through strategic analysis and collaboration, we identify and implement the most suitable platforms, frameworks, and ecosystems 
+to build scalable, efficient, and feature-rich applications.                        </p>
                     </div>
                 </div>
             </div>

@@ -4,12 +4,12 @@ import { Link} from 'react-router-dom'
 const VirtualEvent = () => {
     return (
         <>
-            <section className="about-who-we-are repeated-hero-banner digital-experience-platform">
+            <section className="about-who-we-are repeated-hero-banner Virtual-Event-Management">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-10 col-lg-10">
                             <div className="about-single-content">
-                                <h1 className="common-heading">Virtual Event Managmnet</h1>
+                                <h1 className="common-heading">Virtual Event Management</h1>
                                 <p className="common-para">
                                 While nothing can be done for physical events right now, we can help you pivot your event from a physical event to a fully virtual one. Whether you are transitioning from physical to virtual events or looking to optimize your existing virtual event strategy, we provide the expertise and support needed to ensure a successful and memorable virtual event experience.
                                 </p>

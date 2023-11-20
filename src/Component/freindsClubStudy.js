@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 const FreindsCludStudy = () => {
+
   return (
   
        
@@ -75,13 +76,9 @@ const FreindsCludStudy = () => {
                 </div>
                 <div className="col-md-4">
                   <div className="pic">
+                    <Link to="https://friendsclubltd.in/" target='_blank'>
                    <img src="/images/friendsclubltd.in.png" className='img-fluid' alt='freindsclub'/>
-                  <div className="title">
-                   <a href="https://friendsclubltd.in/" target='_blank' className="btn"> go to site</a> 
-                  </div>
-                  </div>
-                  <div className="connect">
-                   <a href="https://friendsclubltd.in/" target='_blank' className='text-white text-decoration-underline'>www.friendsclub.com</a>
+                   </Link>
                   </div>
              </div>
             </div>

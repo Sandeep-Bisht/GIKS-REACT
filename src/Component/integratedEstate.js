@@ -3,7 +3,7 @@ import { Link} from 'react-router-dom'
 const IntegratedEstate = () => {
   return (
     <>
-    <section className="about-who-we-are repeated-hero-banner digital-experience-platform">
+    <section className="about-who-we-are repeated-hero-banner Integrated-Estate-Management-System">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 col-lg-10">

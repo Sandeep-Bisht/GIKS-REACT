@@ -15,7 +15,7 @@ const Laravel = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 ">
                             <div className="tech-plat-pic d-flex justify-content-center">
-                                <img src="https://giksindia.com/documents/35271/97735/laravel.png/67dfd5ee-5338-a3ca-f48f-39cef9a03bfe?t=1682339840940" width="100%" height="100%" />
+                                <img src="../images/laravel_development.png" width="100%" height="100%" />
                             </div>
                         </div>
                     </div>

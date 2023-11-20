@@ -24,13 +24,9 @@ const JgcStudy = () => {
             </div>
             <div className="col-md-4">
               <div className="pic">
+                <Link to="https://jgc.com.sa/" target='_blank'>
                 <img src="/images/jgc.png" classname="img-fluid" alt="freindsclub" />
-                <div className="title">
-                  <a href="https://jgc.com.sa/" target='_blank' className="btn ">go to site</a>
-                </div>
-              </div>
-              <div className="connect">
-                <a href="https://jgc.com.sa/" target='_blank' className='text-white text-decoration-underline'>www.JGC Gulf International Co. Ltd..com</a>
+                </Link>
               </div>
             </div>
           </div>

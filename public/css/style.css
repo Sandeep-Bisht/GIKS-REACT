@@ -544,6 +544,14 @@ header .dropdown-item:focus, header .dropdown-item:hover
 }
 
 /* --------------------home service-------------- */
+.particle-component
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
 .home-service{
     position: relative;
     padding: 200px 0;
@@ -554,12 +562,15 @@ header .dropdown-item:focus, header .dropdown-item:hover
     top:0px;
     left: 0;
      height: 30%;
+     display: none;
 }
 .grid-two img{
     position: absolute;
     bottom:0px;
     right: 0;
     height: 30%;
+    display: none;
+
    
 }
 .product-card
@@ -1881,6 +1892,24 @@ justify-content: center;
     background-position: center;
 
 }
+.Integrated-Estate-Management-System
+{
+    background: url(../images/Integrated_Estate_Management_System.jpeg);
+    background-position: center;
+
+}
+.Intelligent-Ticketing-Management
+{
+    background: url(../images/Intelligent_Ticketing_Management.jpeg);
+    background-position: center;
+
+}
+.Virtual-Event-Management
+{
+    background: url(../images/Virtual_Event_Management.jpeg);
+    background-position: center;
+
+}
 .product-about
 {
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
@@ -1917,12 +1946,40 @@ justify-content: center;
 /* --------------------------services-application-development----------------------- */
 .services-application-development
 {
-    background: url(../images/application-development.jpg);
+    background: url(../images/application-development.jpeg);
     background-position: center;
    
     background-size: cover;
     background-repeat: no-repeat;
 }
+ .services-internetOfThings-development
+{
+    background: url(../images/internet_of_things.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services-itSecurityManagement-development
+{
+    background: url(../images/IT_security_management.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services-itInfrastructreManagement-development
+{
+    background: url(../images/it_infrastructure_management.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}.services-businessConsulting-development
+{
+    background: url(../images/business_consulting.jpeg);
+    background-position: center;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 .services-about
 {
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
@@ -1953,7 +2010,28 @@ justify-content: center;
 /* --------------------------------technologies pages---------------- */
 .technologies
 {
-    background: url(../images/technologies.jpg);
+    background: url(../images/technologies.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.platform_based_development
+{
+    background: url(../images/platform_based_development.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mobile_app_development
+{
+    background: url(../images/mobile_app_development.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.custom_software_development
+{
+    background: url(../images/custom_software_development.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4249,6 +4327,17 @@ header .dropdown-menu .dropdown-item {
     position: sticky;
     top: 100px; 
 }
+.particle-section{
+    position: relative!important; /* Ensure proper positioning */
+    width: 100%; /* Or specify a width */
+    height: 400px!important; /* Or specify a height */
+    /* Other styles for the section */
+  }
+  .home-service .home-service-particle-js canvas {
+    position: relative!important;
+    height: 400px!important
+    
+  }
 
 
 

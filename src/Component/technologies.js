@@ -11,7 +11,8 @@ const Technologies = () => {
                         <h1 className="common-heading">Our Technologies</h1>
                         <p className="common-para">
                         Accelerate change across your enterprise to create lasting value
-                        </p>
+Our commitment to cutting-edge technologies sets us apart in delivering innovative solutions. 
+From robust programming languages to advanced frameworks, our skilled team stays at the forefront of technological advancements.                        </p>
                     </div>
                 </div>
             </div>

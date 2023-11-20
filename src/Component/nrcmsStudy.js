@@ -63,13 +63,9 @@ const NorthenRailwayStudy = () => {
       </div>
       <div className="col-md-4">
         <div className="pic">
+          <Link to="http://nrcms.in/" target='_blank'>
         <img src="/images/nrcms.png" className='img-fluid' alt='freindsclub' />
-          <div className="title">
-            <a href="http://nrcms.in/" target='_blank' className="btn ">go to site</a>
-          </div>
-        </div>
-        <div className="connect">
-          <a href="http://nrcms.in/" target='_blank' className='text-white text-decoration-underline'>www.Northern Railways.com</a>
+        </Link>
         </div>
       </div>
     </div>
