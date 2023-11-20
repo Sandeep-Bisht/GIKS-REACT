@@ -15,7 +15,12 @@ const ApplicationDevelopment = () => {
                     <div className="about-single-content">
                         <h1 className="common-heading">Application Development</h1>
                         <p className="common-para">
-                        As a leading application development company in India,<br/> we excel in providing cutting-edge application development solutions.
+                        As a leading application development company in India,
+we excel in providing cutting-edge application development solutions.
+From conceptualization to deployment, we follow a systematic approach, 
+ensuring the development of high-quality, scalable, and efficient applications. 
+We specialize in creating user-friendly interfaces and robust back-end systems, 
+fostering seamless user experiences.<br/> we excel in providing cutting-edge application development solutions.
                         </p>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ import broucher from "../Samplefiles/GIKS_Brochure.pdf"
 const BusinessCousulting = () => {
   return (
     <>
-        <section className="about-who-we-are repeated-hero-banner services-application-development">
+        <section className="about-who-we-are repeated-hero-banner services-businessConsulting-development">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 col-lg-10">

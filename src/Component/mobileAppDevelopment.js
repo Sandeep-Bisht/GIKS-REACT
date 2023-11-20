@@ -3,15 +3,18 @@ import React from 'react'
 const MobileAppDevelopment = () => {
   return (
     <>
-        <section className="about-who-we-are repeated-hero-banner technologies">
+        <section className="about-who-we-are repeated-hero-banner mobile_app_development">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 col-lg-10">
                     <div className="about-single-content">
                         <h1 className="common-heading">Mobile App Development</h1>
                         <p className="common-para">
-                        Helping your business with world-class mobile application development services.
-                        </p>
+                        Helping your business with world-class mobile application development services. 
+We take pride in offering cutting-edge Mobile App Development services that cater 
+to the dynamic needs of today's digital landscape. Leveraging the latest technologies 
+and industry best practices, we create customized solutions for iOS and Android platforms, 
+ensuring seamless performance across a diverse range of devices.                        </p>
                     </div>
                 </div>
             </div>

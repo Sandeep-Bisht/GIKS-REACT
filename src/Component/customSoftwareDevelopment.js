@@ -3,7 +3,7 @@ import React from 'react'
 const CustomSoftwareDevelopment = () => {
   return (
     <>
-        <section className="about-who-we-are repeated-hero-banner technologies">
+        <section className="about-who-we-are repeated-hero-banner custom_software_development">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 col-lg-10">

@@ -9,7 +9,7 @@ const IntelligentTicketing = () => {
             <div className="row">
                 <div className="col-md-10 col-lg-10">
                     <div className="about-single-content">
-                        <h1 className="common-heading">Intelligent Ticketing Managmnet</h1>
+                        <h1 className="common-heading">Intelligent Ticketing Management</h1>
                         <p className="common-para">
                           Easiest and fastest way to improve great customer Service. By harnessing the power of intelligent technologies, we provide a comprehensive system that optimizes ticket management from start to finish. Security and scalability are paramount, and our platform is built with enterprise-grade infrastructure to ensure data protection and performance.
                         </p>
