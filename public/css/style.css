@@ -544,6 +544,14 @@ header .dropdown-item:focus, header .dropdown-item:hover
 }
 
 /* --------------------home service-------------- */
+.particle-component
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
 .home-service{
     position: relative;
     padding: 200px 0;
@@ -554,12 +562,15 @@ header .dropdown-item:focus, header .dropdown-item:hover
     top:0px;
     left: 0;
      height: 30%;
+     display: none;
 }
 .grid-two img{
     position: absolute;
     bottom:0px;
     right: 0;
     height: 30%;
+    display: none;
+
    
 }
 .product-card

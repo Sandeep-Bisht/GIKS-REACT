@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import sliderVideo from "../video/video-bg.mp4";
 import aboutVideo from "../video/giks-logo-animation.mp4";
+import ParticleComponent from './partical'
 import {url} from "../urls";
 
 const Homepage = () => {
@@ -259,6 +260,8 @@ const Homepage = () => {
         </div>
       </section>
       <section className="home-service">
+ <ParticleComponent/>
+        
         <div className="grid-one">
           <img src="/images/service-grid-one.png" />
         </div>
@@ -268,7 +271,7 @@ const Homepage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="common-heading ">Products</h2>
+              <h2 className="common-heading position-relative">Products</h2>
             </div>
           </div>
           <div className="row mt-60 common-padding-25">
