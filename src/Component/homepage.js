@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import sliderVideo from '../video/video-bg.mp4'
 import aboutVideo  from '../video/giks-logo-animation.mp4'
+import ParticleComponent from './partical'
 
 
 
@@ -226,17 +227,17 @@ Our team of experts is dedicated to delivering high-quality software services th
     </div>
   </section>
   <section className="home-service">
-    
-    <div className="grid-one">
+    <ParticleComponent/>
+    <div className="grid-one d-none">
       <img src="/images/service-grid-one.png"/>
     </div>
-    <div className="grid-two">
+    <div className="grid-two d-none">
       <img src="/images/service-grid-two.png"/>
     </div>
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
-          <h2 className="common-heading ">Products</h2>
+          <h2 className="common-heading position-relative">Products</h2>
         </div>
       </div>
       <div className="row mt-60 common-padding-25">
