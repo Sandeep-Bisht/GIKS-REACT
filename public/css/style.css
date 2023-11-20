@@ -1881,6 +1881,24 @@ justify-content: center;
     background-position: center;
 
 }
+.Integrated-Estate-Management-System
+{
+    background: url(../images/Integrated_Estate_Management_System.jpeg);
+    background-position: center;
+
+}
+.Intelligent-Ticketing-Management
+{
+    background: url(../images/Intelligent_Ticketing_Management.jpeg);
+    background-position: center;
+
+}
+.Virtual-Event-Management
+{
+    background: url(../images/Virtual_Event_Management.jpeg);
+    background-position: center;
+
+}
 .product-about
 {
     background: linear-gradient(146deg, rgb(1 23 43) 0%, rgb(1, 22, 41) 211%, rgb(4, 34, 60) 100%);
@@ -4249,6 +4267,17 @@ header .dropdown-menu .dropdown-item {
     position: sticky;
     top: 100px; 
 }
+.particle-section{
+    position: relative!important; /* Ensure proper positioning */
+    width: 100%; /* Or specify a width */
+    height: 400px!important; /* Or specify a height */
+    /* Other styles for the section */
+  }
+  .home-service .home-service-particle-js canvas {
+    position: relative!important;
+    height: 400px!important
+    
+  }
 
 
 

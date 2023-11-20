@@ -4,7 +4,7 @@ import { Link} from 'react-router-dom'
 const VirtualEvent = () => {
     return (
         <>
-            <section className="about-who-we-are repeated-hero-banner digital-experience-platform">
+            <section className="about-who-we-are repeated-hero-banner Virtual-Event-Management">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-10 col-lg-10">

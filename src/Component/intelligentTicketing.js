@@ -4,7 +4,7 @@ import { Link} from 'react-router-dom'
 const IntelligentTicketing = () => {
   return (
     <>
-    <section className="about-who-we-are repeated-hero-banner digital-experience-platform">
+    <section className="about-who-we-are repeated-hero-banner Intelligent-Ticketing-Management">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 col-lg-10">

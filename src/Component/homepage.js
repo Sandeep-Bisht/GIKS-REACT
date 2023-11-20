@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import sliderVideo from "../video/video-bg.mp4";
@@ -7,6 +7,8 @@ import {url} from "../urls";
 
 const Homepage = () => {
   const [blog, setBlog] = useState()
+  const [player, setPlayer] = useState(null);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     getAllBlogs()
@@ -165,18 +167,59 @@ const Homepage = () => {
     }
   }
 
+  useEffect(() => {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    window.onYouTubeIframeAPIReady = initPlayer;
+
+    return () => {
+      window.onYouTubeIframeAPIReady = null;
+    };
+  }, []);
+
+  const initPlayer = () => {
+    const newPlayer = new window.YT.Player(videoRef.current, {
+      videoId: 'F1UkQ3SD9YI', // Replace with your video ID
+      playerVars: {
+        autoplay: 1,
+        loop: 1,
+        playlist: 'F1UkQ3SD9YI', // Set the same video ID in the playlist for loop
+        mute: 1,
+        fs:1,
+        controls:0,
+        // modestbranding: 1,
+        showinfo: 0,
+      },
+      events: {
+        onReady: onPlayerReady,
+      },
+    });
+
+    setPlayer(newPlayer);
+  };
+
+  const onPlayerReady = (event) => {
+    event.target.playVideo(); // Start playing the video
+  };
+
   return (
     <>
-      <div className="home-banner">
-        <div className="video-container">
-          <video
+      <div className="home-banner" style={{ position: 'relative' }}>
+        <div className="video-container"
+              ref={videoRef}>
+        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/F1UkQ3SD9YI_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+          {/* <iframe
             className="video-item"
-            src={sliderVideo}
+            href={"https://youtu.be/F1UkQ3SD9YI"}
             autoPlay
             loop
             playsInline
             muted
-          />
+          /> */}
         </div>
         <div className="container home-banner-container">
           <div className="row align-items-center">
@@ -259,6 +302,8 @@ const Homepage = () => {
         </div>
       </section>
       <section className="home-service">
+        {/* <a href="https://streamable.com/29hibo/" /> */}
+        {/* <a href="https://youtu.be/F1UkQ3SD9YI"/> */}
         <div className="grid-one">
           <img src="/images/service-grid-one.png" />
         </div>
