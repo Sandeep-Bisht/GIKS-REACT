@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 import Homepage from '../Component/homepage'
 import About from '../Component/about'
 import DigitalExperience from '../Component/digitalExperience'
@@ -17,7 +17,7 @@ import MobileAppDevelopment from '../Component/mobileAppDevelopment'
 import PlatformBasedDevelopment from '../Component/platformBasedDevelopment'
 import Contact from '../Component/contact'
 import Blog from '../Component/blog'
-import BlogDetails from '../Component/blogDetails'
+import BlogDetail from '../Component/blogDetails'
 import PageNotFound from '../Component/pageNotFound'
 import FreindsCludStudy from '../Component/freindsClubStudy'
 import NationalHydrographicStudy from '../Component/nhoStudy'
@@ -45,13 +45,36 @@ import ModernHouseStudy from '../Component/modernHouseStudy'
 import DoonValleyStudy from '../Component/doonValleyStudy'
 import MukhyaDharaStudy from '../Component/mukhyadharaStudy'
 import QuarterManagmentStudy from '../Component/quarterMangmentStudy'
+import Login from '../Component/login'
+// import Dashboard from '../Component/Dashboard/AdimnDashboard'
+import Cookies from "js-cookie";
+import AdminDashboard from '../Component/Dashboard/AdimnDashboard'
+import AllBlog from '../Component/Layout/AllBlogs'
+import Dashboard from '../Component/Layout/Dashboard'
+import AddBlog from '../Component/Layout/AddBlog'
+// import DashboardBlog from '../Component/Layout/'
+
+
+
+const Authanticated = (props) => {
+  console.log(props,)
+ let token = Cookies.get("giks_token");
+
+//  if(!token) {
+//     return <Navigate to="/" replace />
+//  }
+
+ return props.component
+}
 
 const ApplicationRoutes = () => {
+  
   return (
     <Routes>
       
         <Route path='/*' element={<PageNotFound/>}/>
         <Route path='/' element={<Homepage/>}/>
+        <Route path='/login' element={< Login/>} />
         <Route path='/about-us' element={<About/>}/>
         <Route path='/digital-experience-platform' element={<DigitalExperience/>}/>
         <Route path='/integrated-estate-management-system' element={<IntegratedEstate/>}/>
@@ -68,10 +91,10 @@ const ApplicationRoutes = () => {
         <Route path='/platform-based-development' element={<PlatformBasedDevelopment/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/blog' element={<Blog/>}/>
-        <Route path='/blog-detail' element={<BlogDetails/>}/>
-        <Route path='/freinds-club-study' element={<FreindsCludStudy/>}/>
+        <Route path="/blog/:blog" element={<BlogDetail/>}/>
+        <Route path='/friends-club-study' element={<FreindsCludStudy/>}/>
         <Route path='/national-hydrographic-study' element={<NationalHydrographicStudy/>}/>
-        <Route path='/ishaanav-study' element={<IshaanavStudy/>}/>
+        <Route path='/ishaanav-study' element={<IshaanavStudy/>}/> 
         <Route path='/jaimaica-study' element={<JaimaicaStudy/>}/>
         <Route path='/nrcms-study' element={<NorthenRailwayStudy/>}/>
         <Route path='/jgc-study' element={<JgcStudy/>}/>
@@ -101,10 +124,17 @@ const ApplicationRoutes = () => {
        <Route path='/sales-force' element={<SalesForce/>}/>
        <Route path='/php' element={<Php/>}/>
        <Route path='/react-native' element={<ReactNative/>}/>
-        
-
-        
-    </Routes>
+       <Route path="/dashboard"  element={<Authanticated component= {<AdminDashboard />} /> } >
+                <Route index element={< Dashboard/>} />
+                {/* <Route path="/dashboard/patient" element={< People/>} />
+                <Route path="/dashboard/addbooking" element={< AddBooking />} />
+                <Route path="/dashboard/allbooking" element={< AllBooking />} />
+                <Route path="/dashboard/booking" element={< Booking/>} /> */}
+                <Route path="/dashboard/blogs" element={< AllBlog />} />
+                <Route path="/dashboard/blogs/add-blog" element={< AddBlog />} />
+                {/* <Route path="/dashboard/blog" element={< DashboardBlog />} /> */}
+                </Route>
+       </Routes>
   )
 }
 

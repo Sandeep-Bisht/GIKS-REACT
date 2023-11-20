@@ -3,6 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import { FaTimes } from 'react-icons/fa'
+import {url} from "../urls"
 
 const Careers = () => {
   const [verified, setVerified] = useState(false);
@@ -37,19 +38,16 @@ const Careers = () => {
     formData.append("qualification", data.qualification);
     formData.append("file", selectedFile);
 
-    // let url = "http://localhost:4500/api/career";
-    let url = "http://185.239.209.106:4500/api/career"
 
     try {
       setLoading(true)
-      let response = await axios.post(url, formData, {
+      let response = await axios.post(`${url}/career`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
 
       if (response) {
-        // console.log(response, "check ressssssss")
          if(recaptchaRef.current)
          {
           recaptchaRef.current.reset();
@@ -308,13 +306,22 @@ const Careers = () => {
                             className="form-control"
                             {...register("fullName", {
                               required: true,
+                              pattern: /^[A-Za-z\s]+$/,
                             })}
                           />
-                          {errors?.fullName?.type === "required" && (
+                          {/* {errors?.fullName?.type === "required" && (
                             <p className="text-danger">
                               This field is required
                             </p>
-                          )}
+                          )} */}
+
+{errors.fullName ? (
+  errors.fullName.type === "required" ? (
+    <p className="text-danger">This field is required</p>
+  ) : (
+    <p className="text-danger">Please enter a valid name</p>
+  )
+) : null}
                         </div>
                       </div>
 
@@ -405,13 +412,17 @@ const Careers = () => {
                             className="form-control"
                             {...register("experience", {
                               required: true,
+                              pattern: /^[0-9]*$/
                             })}
-                          />
-                          {errors?.experience?.type === "required" && (
-                            <p className="text-danger">
-                              This field is required
-                            </p>
-                          )}
+                          />                          
+
+{errors.experience ? (
+  errors.experience.type === "required" ? (
+    <p className="text-danger">This field is required</p>
+  ) : (
+    <p className="text-danger">Accepts Numbers only</p>
+  )
+) : null}
                         </div>
                       </div>
 
@@ -475,7 +486,7 @@ const Careers = () => {
 
                       <div className="col-md-12 mt-3">
                         <ReCAPTCHA
-                          sitekey="6Le7TlEmAAAAANZwWLnQD8mUeh5f4RUGxZvTgYwg"
+                          sitekey="6LdvhdMoAAAAAAH-4p2HpVvZB7xdQkVOgHw-dQOw"
                           onChange={onChange}
                           ref={recaptchaRef}
                           

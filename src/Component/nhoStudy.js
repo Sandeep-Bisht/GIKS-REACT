@@ -5,12 +5,12 @@ const NationalHydrographicStudy = () => {
     return (
         <>
             <section className="casestudy-singlepage">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="text">
-                                <h2 class="sub-pages-heading1">National Hydrographic Office:</h2>
-                                <p class="common-para">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-8">
+                            <div className="text">
+                                <h2 className="common-heading">National Hydrographic Office:</h2>
+                                <p className="common-para">
                                 The National Hydrographic Office (NHO) is the organization responsible for surveying and charting India's waterways, and their website is a crucial tool for sharing information with stakeholders and the public. When the NHO approached our team for help with a website redesign, we were eager to take on the challenge.
                                 </p>
                                 <p className='common-para'>
@@ -28,14 +28,14 @@ const NationalHydrographicStudy = () => {
 
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="pic">
+                        <div className="col-md-4">
+                            <div className="pic">
                                 <img src="/images/hydrobharat.png" className='img-fluid' alt='freindsclub' />
-                                <div class="title">
-                                    <a href="https://hydrobharat.gov.in/" target='_blank' class="btn"> go to site</a>
+                                <div className="title">
+                                    <a href="https://hydrobharat.gov.in/" target='_blank' className="btn"> go to site</a>
                                 </div>
                             </div>
-                            <div class="connect">
+                            <div className="connect">
                                 <a href="https://hydrobharat.gov.in/" target='_blank' className='text-white text-decoration-underline'>hydrobharat.gov.in</a>
                             </div>
                         </div>

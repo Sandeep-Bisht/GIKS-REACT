@@ -1,281 +1,190 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import {IoIosArrowBack,IoIosArrowForward} from "react-icons/io"
+import React, { useEffect, useState } from 'react'
+import { Link, useParams, useLocation, useNavigate } from 'react-router-dom'
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
+import axios from 'axios'
+import { url } from "../urls";
 
 const Blog = () => {
-  return (
-    <>
-        <section className="single-blog-page">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <h1 className="common-heading text-center">Blog</h1>
-                </div>
-            </div>
-            <div className="row mt-60 mob-col-reverse">
-                <div className="col-lg-9 col-md-7 col-sm-7">
-                    <div className="blog-left-wrapper">
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog1.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Understanding the Basics and Advantages of REST APIs</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            In this blog post, we'll explore what a REST API is, how it works, and its
-                                            advantages over other types of APIs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog2.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">The Internet of Things: Revolutionizing Industries and
-                                            Changing ...</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            The Internet of Things (IoT) is revolutionizing the way we live and work.
-                                            It's a network of connected devices and sensors that gather data and
-                                            communicate with each other...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog3.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Developing Custom Software in Liferay is advantageous in
-                                            several ways</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            Liferay is an open-source platform for creating web portals and websites,
-                                            and it offers a range of features and tools for developing custom software
-                                            solutions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
 
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog4.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">What is OpenAI: A Comprehensive Overview of the Artificial
-                                            ...</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            OpenAI is a research company that aims to develop and promote friendly AI in
-                                            a way that benefits humanity as a whole.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog5.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Agile Manifesto and its principles</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            The Agile Manifesto is a set of guiding values and principles for Agile
-                                            software development. It was first introduced in 2001 by a group of
-                                            software...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog6.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Why IT Infrastructure Management is Important</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            Technology has impacted and enhanced the way companies do business,
-                                            including communication, productivity, and the speed of options trading. For
-                                            this reason...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog7.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Challenges of IoT in agriculture</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            There may be a lack of awareness of the potential benefits of IoT in
-                                            agriculture among farmers and other industry professionals. IoT technology
-                                            can be used to improve...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
-                        </div>
-                        <div className="blog-single-card">
-                            <Link to="/blog-detail">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="blog-single-card-pic">
-                                        <div className="blog-date">
-                                            <p className="date">27</p>
-                                            <p className="month">May</p>
-                                        </div>
-                                        <img src="/images/blog-single/blog8.jpg" className="img-fluid" alt="blog-pic" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8 ">
-                                    <div className="blog-single-card-content">
-                                        <p className="blog-title">Successful SEO strategies for your Website</p>
-                                        <p className="blog-category common-para">
-                                            Category:Tech
-                                        </p>
-                                        <p className="common-para">
-                                            The main thing you need to do prior to building up your SEO procedure for
-                                            2021 is survey your present SEO system and how it is performing. You should
-                                            evaluate...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div></Link>
+    const navigate = useNavigate()
+    const [blog, setBlog] = useState()
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        getAllBlogs();
+    }, []);
+
+
+    const getAllBlogs = async () => {
+        const response = await axios.get(`${url}/blog/find_all_blog`);
+        setBlog(response.data)
+    }
+
+    const getMonthAndDate=(created_AT)=>{
+        const dateString = created_AT;
+        const date = new Date(dateString);
+        const monthAbbreviations = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const monthIndex = date.getUTCMonth();
+        return  monthAbbreviations[monthIndex];
+    }
+
+    const getDateAsString = (created_AT) => {
+        const date = new Date(created_AT);
+        const day = date.getUTCDate();
+        return day
+      };
+
+
+    const blogDetailsHandler = (item, slug) => {
+        navigate(`/blog/${slug}`, { state: { ...item } })
+    }
+
+      const categoryFilterHandler = async (e) => {
+        const categoryName = e.target.value;
+        let payload = {
+          category: categoryName,
+        };
+        try {
+          let response = await axios.post(`${url}/blog/get_blog_by_category`, payload);
+          console.log(response,"check the response ")
+            setBlog(response?.data);
+        } catch (error) {
+          console.log("error", error);
+        }
+      };
+      console.log(blog,"check the blog")
+    return (
+        <>
+            <section className="single-blog-page">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <h1 className="common-heading text-center">Blog</h1>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-3 col-md-5 col-sm-5">
-                    <div className="blog-right-wrapper">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="search-box">
-                                    <div className="search-box-wrapper">
-                                        <div className="input-group mb-3">
-                                            <input type="text" className="form-control" placeholder="Search"
-                                                aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                                            <div className="input-group-append">
-                                                <button className="btn search-btn" type="button"><i
-                                                        className="far fa-search"></i></button>
-                                            </div>
+                    <div className="row mt-60 mob-col-reverse">
+                        <div className="col-lg-9 col-md-7 col-sm-7">
+                            <div className="blog-left-wrapper">
+                                {
+                                    blog && blog.length > 0 ? blog.map((item, index) => {
+                                        return (
+                                            <>
+                                                <div className="blog-single-card" key={index}
+                                                    onClick={() => blogDetailsHandler(item, item.slug)}>
+                                                    <div className="row">
+                                                        <div className="col-lg-4">
+                                                            <div className="blog-single-card-pic">
+                                                                <div className="blog-date">
+                                                                    <p className="date">{getDateAsString(item.created_AT)}</p>
+                                                                    <p className="month">{getMonthAndDate(item.created_AT)}</p>
+                                                                </div>
+                                                                <img src={`${url}/${item?.featuredImage.path}`} className="img-fluid" alt="blog-pic" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-8 ">
+                                                            <div className="blog-single-card-content">
+                                                                <p className="blog-title">{item.title}</p>
+                                                                <p className="blog-category common-para">
+                                                                    {`Category : ${item.category}`}
+                                                                </p>
+                                                                <p className="common-para">
+                                                                    {item.description}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </>
+                                        )
+                                    }) :
+                                        ""
+                                }
+
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-5 col-sm-5">
+                            <aside>
+                            <div className="blog-right-wrapper">
+                                <div className="row">
+                                        <div className="col-md-12">
+                                            <p className="blog-right-wrapper-heading">Categories</p>
+                                            <ul className="widget-list list-unstyled ps-0">
+                                            <li>
+                                                                    <button className="widget-list-item"
+                                                                    value="Software"
+                                                                    onClick={()=>getAllBlogs()}>
+                                                                       All Categories
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button className="widget-list-item"
+                                                                    value="Software"
+                                                                    onClick={(e)=>categoryFilterHandler(e)}>
+                                                                        Software
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button className="widget-list-item"
+                                                                    value="Information Technology"
+                                                                    onClick={(e)=>categoryFilterHandler(e)}>
+                                                                        Information Technology
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button className="widget-list-item"
+                                                                    value="Artificial Intelligence"
+                                                                    onClick={(e)=>categoryFilterHandler(e)}>
+                                                                        Artificial Intelligence
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button className="widget-list-item"
+                                                                    value="Internet of things"
+                                                                    onClick={(e)=>categoryFilterHandler(e)}>
+                                                                        Internet of things
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button className="widget-list-item"
+                                                                    value="Network Security"
+                                                                    onClick={(e)=>categoryFilterHandler(e)}>
+                                                                        Network Security
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                <button className="widget-list-item"
+                                                                    value="Virtual Reality"
+                                                                    onClick={(e)=>categoryFilterHandler(e)}>
+                                                                        Virtual Reality
+                                                                    </button>
+                                                                </li>
+                                            </ul>
                                         </div>
+                                    <div className="col-md-12">
+                                        <p className="blog-right-wrapper-heading">Recent Posts</p>
+                                        {
+                                            blog && blog.length > 0 ? blog.map((item, index) => {
+                                                <div className="recent-post-box" key={index}>
+                                                    <p className="border-0">
+                                                        <a href="#">{item.title}</a></p>
+                                                </div>
+                                            })
+                                                :
+                                                null
+                                        }
+                                        <div className="separator"></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-md-12">
-                                <p className="blog-right-wrapper-heading">Recent Posts</p>
-                                <div className="recent-post-box">
-                                    <p className="border-0">
-                                        <a href="#">Company Launches New Software Channel</a></p>
-                                    <p><a href="#">Paves The way for an eventual merger</a></p>
-                                    <p><a href="#">Three quarters of construction workers...</a></p>
-                                    <p><a href="#">Retail banks wake up to digital lending</a></p>
-                                    <p><a href="#">design breakthrough updates products</a></p>
-                                </div>
-                                <div className="separator"></div>
-                            </div>
-                            <div className="col-md-12">
-                            <div id="carouselExampleInterval" class="carousel slide testimonial-slider" data-bs-ride="carousel">
-                                            <div class="carousel-inner testimonial-wrapper">
-                                               
-                                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div className="col-md-12">
+                                        <div id="carouselExampleInterval" className="carousel slide testimonial-slider" data-bs-ride="carousel">
+                                            <div className="carousel-inner testimonial-wrapper">
+
+                                                <div className="carousel-item active" data-bs-interval="10000">
                                                     <div className="client-box">
                                                         <div className='client-logo'>
-                                                        <img src="/images/case-study/3.png" className="img-fluid " alt="main-logo" />
+                                                            <img src="/images/case-study/3.png" className="img-fluid " alt="main-logo" />
                                                         </div>
                                                         <p className="client-words common-para mb-4">
-                                                        "Partnering with GIKS India Pvt. Ltd. has been a game-changer for our business. Their team is professional, proactive, and always goes the extra mile. 
-                                                       
+                                                            "Partnering with GIKS India Pvt. Ltd. has been a game-changer for our business. Their team is professional, proactive, and always goes the extra mile.
+
                                                         </p>
                                                         <div className="client-info">
                                                             <div className="client-pic">
@@ -296,15 +205,15 @@ const Blog = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item" data-bs-interval="2000">
-                                                <div className="client-box">
+                                                <div className="carousel-item" data-bs-interval="2000">
+                                                    <div className="client-box">
                                                         <div className='client-logo'>
-                                                     
-                                                        <img src="/images/case-study/7.png" class="img-fluid" alt=""/>
+
+                                                            <img src="/images/case-study/7.png" className="img-fluid" alt="" />
                                                         </div>
                                                         <p className="client-words common-para mb-4">
-                                                        "Thanks to GIKS India, our news portal has experienced tremendous growth. Their digital marketing service has significantly increased our website traffic and engagement. 
-                                                            
+                                                            "Thanks to GIKS India, our news portal has experienced tremendous growth. Their digital marketing service has significantly increased our website traffic and engagement.
+
                                                         </p>
                                                         <div className="client-info">
                                                             <div className="client-pic">
@@ -325,13 +234,13 @@ const Blog = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                <div className="client-box">
+                                                <div className="carousel-item">
+                                                    <div className="client-box">
                                                         <div className='client-logo'>
-                                                        <img src="/images/case-study/2.png" class="img-fluid" alt=""/>
+                                                            <img src="/images/case-study/2.png" className="img-fluid" alt="" />
                                                         </div>
                                                         <p className="client-words common-para mb-4">
-                                                        "GIKS India has been instrumental in transforming our NHO website. Their tailored approach, attention to detail, and prompt support have been exceptional. Highly recommended."
+                                                            "GIKS India has been instrumental in transforming our NHO website. Their tailored approach, attention to detail, and prompt support have been exceptional. Highly recommended."
                                                         </p>
                                                         <div className="client-info">
                                                             <div className="client-pic">
@@ -353,105 +262,81 @@ const Blog = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"><IoIosArrowBack/></span>
-                                                <span class="visually-hidden">Previous</span>
+                                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                                <span className="carousel-control-prev-icon" aria-hidden="true"><IoIosArrowBack /></span>
+                                                <span className="visually-hidden">Previous</span>
                                             </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true">
-                                                    <IoIosArrowForward/>
+                                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                                <span className="carousel-control-next-icon" aria-hidden="true">
+                                                    <IoIosArrowForward />
                                                 </span>
-                                                <span class="visually-hidden">Next</span>
+                                                <span className="visually-hidden">Next</span>
                                             </button>
                                         </div>
-                            </div>
-                            <div className="col-md-12">
-                                <p className="blog-right-wrapper-heading">Tags Widget</p>
-                                <ul className="widget-list list-unstyled ps-0">
-                                    <li>
-                                        <a href="#" className="widget-list-item">Technology</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="widget-list-item">S.E.O</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="widget-list-item">UI UX</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="widget-list-item">Website Design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="widget-list-item">Graphic Design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="widget-list-item">Web Applications</a>
-                                    </li>
-                                </ul>
-                            </div>
-                          
-                          
-                            <div className="col-md-12">
-                                <div className="bottom-blog">
-                                    <a href="#">
-                                        <div className="bottom-blog-pic">
-                                            <img src="/images/blog-single/blog9.jpg"/>
-                                        </div>
-                                       <div>
-                                          <span className="bottom-blog-heading">Business Planning, Strategy &
-                                            Execut...
-                                          </span>
-                                          <span className="bottom-blog-subheading">
-                                            Business Solution
-                                          </span>
-                                       </div>
+                                    </div>
+                                    {/* <div className="col-md-12">
+                                        <div className="bottom-blog">
+                                            <a href="#">
+                                                <div className="bottom-blog-pic">
+                                                    <img src="/images/blog-single/blog9.jpg" />
+                                                </div>
+                                                <div>
+                                                    <span className="bottom-blog-heading">Business Planning, Strategy &
+                                                        Execut...
+                                                    </span>
+                                                    <span className="bottom-blog-subheading">
+                                                        Business Solution
+                                                    </span>
+                                                </div>
 
-                                        
-                                    </a>
-                                </div>
-                                <div className="bottom-blog">
-                                    <a href="#">
-                                        <div className="bottom-blog-pic">
-                                            <img src="./images/blog-single/blog10.jpg"/>
-                                        </div>
-                                       <div>
-                                          <span className="bottom-blog-heading">
-                                            DEVELOPING A STRATEGY AND ROADMAP FOR CL... 
-                                           </span>
-                                          <span className="bottom-blog-subheading">
-                                            Marketing
-                                          </span>
-                                       </div>
 
-                                        
-                                    </a>
-                                </div>
-                                <div className="bottom-blog">
-                                    <a href="#">
-                                        <div className="bottom-blog-pic">
-                                            <img src="/images/blog-single/blog11.jpg"/>
+                                            </a>
                                         </div>
-                                       <div>
-                                          <span className="bottom-blog-heading">
-                                            MANAGEMENT OF GENERATION CHANGES IN BUSI...
-                                           </span>
-                                          <span className="bottom-blog-subheading">
-                                            Consumer Products
-                                          </span>
-                                       </div>
+                                        <div className="bottom-blog">
+                                            <a href="#">
+                                                <div className="bottom-blog-pic">
+                                                    <img src="./images/blog-single/blog10.jpg" />
+                                                </div>
+                                                <div>
+                                                    <span className="bottom-blog-heading">
+                                                        DEVELOPING A STRATEGY AND ROADMAP FOR CL...
+                                                    </span>
+                                                    <span className="bottom-blog-subheading">
+                                                        Marketing
+                                                    </span>
+                                                </div>
 
-                                        
-                                    </a>
+
+                                            </a>
+                                        </div>
+                                        <div className="bottom-blog">
+                                            <a href="#">
+                                                <div className="bottom-blog-pic">
+                                                    <img src="/images/blog-single/blog11.jpg" />
+                                                </div>
+                                                <div>
+                                                    <span className="bottom-blog-heading">
+                                                        MANAGEMENT OF GENERATION CHANGES IN BUSI...
+                                                    </span>
+                                                    <span className="bottom-blog-subheading">
+                                                        Consumer Products
+                                                    </span>
+                                                </div>
+
+
+                                            </a>
+                                        </div>
+                                    </div> */}
+
                                 </div>
                             </div>
-
+                            </aside>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    </>
-  )
+            </section>
+        </>
+    )
 }
 
 export default Blog

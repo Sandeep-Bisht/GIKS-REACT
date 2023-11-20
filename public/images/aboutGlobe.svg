@@ -13,7 +13,7 @@
                 <g filter="url(#filter0_dddd_1844_2089)">
                   <ellipse cx="229.121" cy="231.248" rx="229.121" ry="231.248"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 670.642 515.768)"
-                    stroke="url(#paint1_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="0.1 6" />
+                    stroke="url(#paint1_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="0.1 6" />
                 </g>
               </g>
               <mask id="mask1_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="357" y="245" width="233"
@@ -25,7 +25,7 @@
                 <g filter="url(#filter1_dddd_1844_2089)">
                   <ellipse cx="206.081" cy="207.994" rx="206.081" ry="207.994"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 632.373 520.812)"
-                    stroke="url(#paint3_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="10 9" />
+                    stroke="url(#paint3_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="10 9" />
                 </g>
               </g>
               <mask id="mask2_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="339" y="197" width="265"
@@ -37,7 +37,7 @@
                 <g filter="url(#filter2_dddd_1844_2089)">
                   <ellipse cx="232.571" cy="234.731" rx="232.571" ry="234.731"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 648.586 513.281)"
-                    stroke="url(#paint5_radial_1844_2089)" stroke-width="2" stroke-linecap="round"
+                    stroke="url(#paint5_radial_1844_2089)" strokeWidth="2" strokeLinecap="round"
                     stroke-dasharray="0.1 9" />
                 </g>
               </g>
@@ -50,7 +50,7 @@
                 <g filter="url(#filter3_dddd_1844_2089)">
                   <ellipse cx="219.237" cy="221.273" rx="219.237" ry="221.273"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 616.984 512.369)"
-                    stroke="url(#paint7_radial_1844_2089)" stroke-width="3" stroke-linecap="round"
+                    stroke="url(#paint7_radial_1844_2089)" strokeWidth="3" strokeLinecap="round"
                     stroke-dasharray="0.1 12" />
                 </g>
               </g>
@@ -63,7 +63,7 @@
                 <g filter="url(#filter4_dddd_1844_2089)">
                   <ellipse cx="239.574" cy="241.798" rx="239.574" ry="241.798"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 637.224 511.648)"
-                    stroke="url(#paint9_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="0.1 7" />
+                    stroke="url(#paint9_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="0.1 7" />
                 </g>
               </g>
               <mask id="mask5_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="331" y="205" width="255"
@@ -75,7 +75,7 @@
                 <g filter="url(#filter5_dddd_1844_2089)">
                   <ellipse cx="209.516" cy="211.461" rx="209.516" ry="211.461"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 619.537 511.634)"
-                    stroke="url(#paint11_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="10 14" />
+                    stroke="url(#paint11_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="10 14" />
                 </g>
               </g>
               <mask id="mask6_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="306" y="205" width="255"
@@ -87,7 +87,7 @@
                 <g filter="url(#filter6_dddd_1844_2089)">
                   <ellipse cx="221.748" cy="223.807" rx="221.748" ry="223.807"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 603.229 511.739)"
-                    stroke="url(#paint13_radial_1844_2089)" stroke-width="3" stroke-linecap="round"
+                    stroke="url(#paint13_radial_1844_2089)" strokeWidth="3" strokeLinecap="round"
                     stroke-dasharray="0.1 12" />
                 </g>
               </g>
@@ -100,12 +100,12 @@
                 <g filter="url(#filter7_dddd_1844_2089)">
                   <ellipse cx="219.237" cy="221.273" rx="219.237" ry="221.273"
                     transform="matrix(-0.382683 0.92388 -0.382644 -0.923896 664.434 511.962)"
-                    stroke="url(#paint15_radial_1844_2089)" stroke-width="3" stroke-linecap="round"
+                    stroke="url(#paint15_radial_1844_2089)" strokeWidth="3" strokeLinecap="round"
                     stroke-dasharray="0.1 12" />
                 </g>
               </g>
               <g style="mix-blend-mode:color-dodge" filter="url(#filter8_f_1844_2089)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
+                <path fillRule="evenodd" clipRule="evenodd"
                   d="M343.016 520.454C343.016 604.824 359.158 680.228 384.378 733.793C395.092 756.55 406.821 774.223 418.905 787.13C434.214 801.371 449.912 808.174 464.695 808.174C493.196 808.174 525.1 782.887 551.057 727.758C576.276 674.193 592.418 598.788 592.418 514.419C592.418 430.049 576.276 354.644 551.057 301.08C540.342 278.322 528.614 260.65 516.53 247.743C501.22 233.502 485.522 226.699 470.739 226.699C442.238 226.699 410.334 251.986 384.378 307.115C359.158 360.679 343.016 436.084 343.016 520.454ZM404.957 801.461C424.767 822.421 447.105 834.209 470.739 834.209C552.325 834.209 618.463 693.736 618.463 520.454C618.463 392.328 582.304 282.14 530.477 233.412C510.668 212.452 488.33 200.664 464.695 200.664C383.11 200.664 316.972 341.137 316.972 514.419C316.972 642.545 353.131 752.733 404.957 801.461Z"
                   fill="url(#paint16_radial_1844_2089)" />
               </g>
@@ -118,7 +118,7 @@
                 <g filter="url(#filter9_dddd_1844_2089)">
                   <ellipse cx="194.614" cy="196.421" rx="194.614" ry="196.421"
                     transform="matrix(-0.923879 -0.382683 0.923896 -0.382644 470.482 677.415)"
-                    stroke="url(#paint18_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="0.1 6" />
+                    stroke="url(#paint18_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="0.1 6" />
                 </g>
               </g>
               <mask id="mask9_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="233" y="411" width="468"
@@ -130,7 +130,7 @@
                 <g filter="url(#filter10_dddd_1844_2089)">
                   <ellipse cx="175.044" cy="176.669" rx="175.044" ry="176.669"
                     transform="matrix(-0.923879 -0.382683 0.923896 -0.382644 466.197 644.912)"
-                    stroke="url(#paint20_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="10 9" />
+                    stroke="url(#paint20_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="10 9" />
                 </g>
               </g>
               <mask id="mask10_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="208" y="396" width="533"
@@ -142,7 +142,7 @@
                 <g filter="url(#filter11_dddd_1844_2089)">
                   <ellipse cx="197.545" cy="199.379" rx="197.545" ry="199.379"
                     transform="matrix(-0.92388 -0.382683 0.923896 -0.382644 472.593 658.686)"
-                    stroke="url(#paint22_radial_1844_2089)" stroke-width="2" stroke-linecap="round"
+                    stroke="url(#paint22_radial_1844_2089)" strokeWidth="2" strokeLinecap="round"
                     stroke-dasharray="0.1 9" />
                 </g>
               </g>
@@ -155,7 +155,7 @@
                 <g filter="url(#filter12_dddd_1844_2089)">
                   <ellipse cx="186.219" cy="187.948" rx="186.219" ry="187.948"
                     transform="matrix(-0.92388 -0.382683 0.923896 -0.382644 473.369 631.842)"
-                    stroke="url(#paint24_radial_1844_2089)" stroke-width="3" stroke-linecap="round"
+                    stroke="url(#paint24_radial_1844_2089)" strokeWidth="3" strokeLinecap="round"
                     stroke-dasharray="0.1 12" />
                 </g>
               </g>
@@ -168,7 +168,7 @@
                 <g filter="url(#filter13_dddd_1844_2089)">
                   <ellipse cx="203.492" cy="205.382" rx="203.492" ry="205.382"
                     transform="matrix(-0.92388 -0.382683 0.923896 -0.382644 473.981 649.034)"
-                    stroke="url(#paint26_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="0.1 7" />
+                    stroke="url(#paint26_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="0.1 7" />
                 </g>
               </g>
               <mask id="mask13_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="216" y="389" width="518"
@@ -180,7 +180,7 @@
                 <g filter="url(#filter14_dddd_1844_2089)">
                   <ellipse cx="177.961" cy="179.614" rx="177.961" ry="179.614"
                     transform="matrix(-0.92388 -0.382683 0.923896 -0.382644 473.994 634.013)"
-                    stroke="url(#paint28_radial_1844_2089)" stroke-linecap="round" stroke-dasharray="10 14" />
+                    stroke="url(#paint28_radial_1844_2089)" strokeLinecap="round" stroke-dasharray="10 14" />
                 </g>
               </g>
               <mask id="mask14_1844_2089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="216" y="368" width="518"
@@ -192,7 +192,7 @@
                 <g filter="url(#filter15_dddd_1844_2089)">
                   <ellipse cx="188.351" cy="190.1" rx="188.351" ry="190.1"
                     transform="matrix(-0.92388 -0.382683 0.923896 -0.382644 473.904 620.159)"
-                    stroke="url(#paint30_radial_1844_2089)" stroke-width="3" stroke-linecap="round"
+                    stroke="url(#paint30_radial_1844_2089)" strokeWidth="3" strokeLinecap="round"
                     stroke-dasharray="0.1 12" />
                 </g>
               </g>
@@ -205,12 +205,12 @@
                 <g filter="url(#filter16_dddd_1844_2089)">
                   <ellipse cx="186.219" cy="187.948" rx="186.219" ry="187.948"
                     transform="matrix(-0.92388 -0.382683 0.923896 -0.382644 473.715 672.146)"
-                    stroke="url(#paint32_radial_1844_2089)" stroke-width="3" stroke-linecap="round"
+                    stroke="url(#paint32_radial_1844_2089)" strokeWidth="3" strokeLinecap="round"
                     stroke-dasharray="0.1 12" />
                 </g>
               </g>
               <g style="mix-blend-mode:color-dodge" filter="url(#filter17_f_1844_2089)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
+                <path fillRule="evenodd" clipRule="evenodd"
                   d="M466.502 400.282C395.181 400.282 331.589 413.934 286.576 435.127C267.423 444.145 252.765 453.908 242.143 463.834C230.493 476.388 225.126 489.04 225.126 500.623C225.126 522.98 245.124 549.322 291.702 571.253C336.715 592.446 400.307 606.098 471.628 606.098C542.949 606.098 606.54 592.446 651.554 571.253C670.706 562.235 685.364 552.472 695.986 542.546C707.636 529.992 713.004 517.34 713.004 505.757C713.004 483.4 693.006 457.057 646.428 435.127C601.414 413.934 537.823 400.281 466.502 400.282ZM227.811 449.887C210.011 466.712 200 485.684 200 505.757C200 575.055 319.317 631.232 466.502 631.232C575.335 631.232 668.932 600.517 710.319 556.493C728.118 539.668 738.13 520.696 738.13 500.623C738.13 431.325 618.813 375.147 471.628 375.147C362.794 375.147 269.197 405.863 227.811 449.887Z"
                   fill="url(#paint33_radial_1844_2089)" />
               </g>

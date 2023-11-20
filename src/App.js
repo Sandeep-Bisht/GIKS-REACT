@@ -16,9 +16,15 @@ function App() {
 
   return (
     <>
-    <Header/>
+    {
+            (location.pathname.includes("/dashboard")) ? null : <Header /> 
+    }   
     <ApplicationRoutes/>
-    <Footer/>
+    {
+            (location.pathname.includes("/dashboard")) ? null : <Footer />    
+
+    }
+    {/* <Footer/> */}
     </>
 
   );
