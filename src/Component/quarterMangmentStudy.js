@@ -29,13 +29,9 @@ const QuarterManagmentStudy = () => {
             </div>
             <div className="col-md-4">
               <div className="pic">
+                <Link to="http://nrhqqms.com/" target='_blank'>
                 <img src="/images/nrhqqms.png" classname="img-fluid" alt="freindsclub" />
-                <div className="title">
-                  <a href="http://nrhqqms.com/" target='_blank' className="btn ">go to site</a>
-                </div>
-              </div>
-              <div className="connect">
-                <a href="http://nrhqqms.com/" target='_blank' className='text-white text-decoration-underline'>nrhqqms.com</a>
+                </Link>
               </div>
             </div>
           </div>

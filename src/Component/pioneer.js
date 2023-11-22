@@ -9,7 +9,7 @@ const PioneerStudy = () => {
     <div className="row">
       <div className="col-md-8">
         <div className="text">
-          <h2 className="common-heading">The Pioneer Edge</h2>
+          <h1 className="common-heading">The Pioneer Edge</h1>
           <h3 className="sub-pages-heading1">Introduction:</h3>
           <p className="common-para">Pioneer Edge is a news portal dedicated to providing news and information related to the state of Uttarakhand in India. It covers a wide range of topics including politics, business, entertainment, sports, and more. The website aims to be a one-stop destination for people looking for news and information related to Uttarakhand
           </p>

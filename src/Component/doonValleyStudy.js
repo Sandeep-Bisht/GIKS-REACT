@@ -9,7 +9,7 @@ const DoonValleyStudy = () => {
           <div className="row">
             <div className="col-md-8">
               <div className="text">
-                <h2 className="common-heading">Doon Valley Public School</h2>
+                <h1 className="common-heading">Doon Valley Public School</h1>
                  <p className='common-para'>
                  Doon Valley Public School (DVPS) is a private co-educational school located in Dehradun, Uttarakhand, India. Established in 2001, the school offers education to students from nursery to className XII. The school aims to provide a holistic education to its students by focusing on both academic and extracurricular activities. This case study will analyze the website of Doon Valley Public School and assess its design, functionality, and content.
                  </p>
@@ -36,13 +36,9 @@ const DoonValleyStudy = () => {
             </div>
             <div className="col-md-4">
               <div className="pic">
+                <Link to="https://doonvalleypublicschool.com/" target="_blank">
                 <img src="/images/dvps.png" className="img-fluid" alt="freindsclub" />
-                <div className="title">
-                  <a href="https://doonvalleypublicschool.com/" target='_blank' className="btn ">go to site</a>
-                </div>
-              </div>
-              <div className="connect">
-                <a href="https://doonvalleypublicschool.com/" target='_blank' className='text-white text-decoration-underline'>doonvalleypublicschool.com</a>
+                </Link>
               </div>
             </div>
           </div>

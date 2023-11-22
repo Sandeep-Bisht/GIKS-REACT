@@ -50,13 +50,9 @@ const InvestcareStudy = () => {
             </div>
             <div className="col-md-4">
               <div className="pic">
+                <Link to="https://investcare.in/">
                 {/* <img src="/images/jgc.png" className="img-fluid" alt="freindsclub" /> */}
-                <div className="title">
-                  <a href="https://investcare.in/" target='_blank' className="btn ">go to site</a>
-                </div>
-              </div>
-              <div className="connect">
-                <a href="https://investcare.in/" target='_blank' className='text-white text-decoration-underline'>investcare.in</a>
+                </Link>
               </div>
             </div>
           </div>

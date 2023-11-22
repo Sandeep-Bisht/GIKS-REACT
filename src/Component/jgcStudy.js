@@ -9,7 +9,7 @@ const JgcStudy = () => {
           <div className="row">
             <div className="col-md-8">
               <div className="text">
-                <h2 className="common-heading">JGC Gulf International Co. Ltd.</h2>
+                <h1 className="common-heading">JGC Gulf International Co. Ltd.</h1>
                 <p className="common-para">(JGC Gulf) is a leading engineering, procurement, and construction company that specializes in delivering innovative solutions for the oil and gas, petrochemical, and other industries. When JGC Gulf approached our team for help with their website redesign, we were excited to take on the challenge.</p>
                 <p className="common-para">We began by analyzing JGC Gulf's needs and requirements to determine the best platform for their website. After careful consideration, we recommended the WordPress framework due to its flexibility, scalability, and ease of use. With WordPress, we could create a website that would be easy for JGC Gulf to manage, update, and customize as needed.</p>
                 <p className="common-para">We then moved into the development phase, working closely with JGC Gulf's team to create a visually stunning website that aligned with their brand identity and mission. The new website was optimized for search engines, ensuring that it would attract potential customers and generate leads.</p>

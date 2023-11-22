@@ -9,7 +9,7 @@ const IncaStudy = () => {
     <div className="row">
       <div className="col-md-8">
         <div className="text">
-          <h2 className="common-heading">INCA India</h2>
+          <h1 className="common-heading">INCA India</h1>
           <h3 className="sub-pages-heading1">Introduction:</h3>
           <p className="common-para">This case study focuses on the Indian National Cartographic Association (INCA) and its website. INCA is a professional organization based in India that aims to promote the field of cartography, support geospatial professionals, and enhance cartographic practices in the country. This case study explores the background of INCA, the objectives of the organization, the features and functionality of its website, and the impact of INCA on the geospatial community.
           </p>
@@ -47,13 +47,9 @@ const IncaStudy = () => {
       </div>
       <div className="col-md-4">
         <div className="pic">
+          <Link to="http://www.incaindia.org/" target='_blank'>
         <img src="/images/inca.png" className='img-fluid' alt='freindsclub' />
-          <div className="title">
-            <a href='http://www.incaindia.org/' target='_blank' className="btn ">go to site</a>
-          </div>
-        </div>
-        <div className="connect">
-          <a  href='http://www.incaindia.org/' target='_blank' className='text-white text-decoration-underline'>www.incaindia.org</a>
+        </Link>
         </div>
       </div>
     </div>

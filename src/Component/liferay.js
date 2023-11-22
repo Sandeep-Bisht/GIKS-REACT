@@ -60,7 +60,7 @@ const Liferay = () => {
                         <div className="row align-items-center mob-col-reverse">
                             <div className="col-lg-6 col-md-6 col-sm-6 ">
                                 <div className="product-about-content">
-                                    <h1 className="common-heading text-uppercase">Liferay Migration Services from 6.0 to Liferay DXP</h1>
+                                    <h2 className="common-heading text-uppercase">Liferay Migration Services from 6.0 to Liferay DXP</h2>
                                     <p className="common-para">Helping businesses migrate from other portal solutions to commercially viable LIFERAY Digital Experience Platforms. We provide Portal Migration services not only from one Liferay version to another Liferay version but also to move their existing portals into Liferay Portal Framework..</p>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const Liferay = () => {
                         <div className="row align-items-center mob-col-reverse">
                             <div className="col-lg-6 col-md-6 col-sm-6 ">
                                 <div className="product-about-content">
-                                    <h1 className="common-heading text-uppercase">Liferay Portal Development Powered by Liferay Commercial Edition Suite</h1>
+                                    <h2 className="common-heading text-uppercase">Liferay Portal Development Powered by Liferay Commercial Edition Suite</h2>
                                     <p className="common-para">Our certified Liferay developers build Digital Experience Platforms that Transform Businesses. Liferay Portal Development envelopes state-of-the-art and error free coding to build enterprise portals that are personalized and easy to manage for both users and administrators. Creating user-centric enterprise software that have Intuitive interfaces and modern engagement tools to resolve complex business challenges.</p>
                                 </div>
                             </div>

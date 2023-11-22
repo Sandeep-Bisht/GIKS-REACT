@@ -9,7 +9,7 @@ const MukhyaDharaStudy = () => {
                     <div className="row">
                         <div className="col-md-8">
                             <div className="text">
-                                <h2 className="common-heading">Mukhyadhara</h2>
+                                <h1 className="common-heading">Mukhyadhara</h1>
                                 <p className="common-para">
                                 Mukhyadhara.in is a news website that provides the latest news and updates on various categories such as politics, technology, entertainment, and sports. The website was launched in 2019 and has since then gained popularity among the Indian audience due to its accurate and timely reporting.
                                 </p>
@@ -37,15 +37,9 @@ const MukhyaDharaStudy = () => {
                         </div>
                         <div className="col-md-4">
                             <div className="pic">
+                                <Link to="https://mukhyadhara.in/" target='_blank'>
                                 <img src="/images/mukhyadhara.jpg" className='img-fluid' alt='freindsclub' />
-                                <div className="title">
-                                    <a href="https://mukhyadhara.in/" target='_blank' className="btn ">go to site</a>
-                                </div>
-                            </div>
-                            <div className="connect">
-                                <a href="https://mukhyadhara.in/" target='_blank' className='text-white text-decoration-underline'>
-                                    mukhyadhara.in
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

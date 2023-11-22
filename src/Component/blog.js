@@ -274,60 +274,6 @@ const Blog = () => {
                                             </button>
                                         </div>
                                     </div>
-                                    {/* <div className="col-md-12">
-                                        <div className="bottom-blog">
-                                            <a href="#">
-                                                <div className="bottom-blog-pic">
-                                                    <img src="/images/blog-single/blog9.jpg" />
-                                                </div>
-                                                <div>
-                                                    <span className="bottom-blog-heading">Business Planning, Strategy &
-                                                        Execut...
-                                                    </span>
-                                                    <span className="bottom-blog-subheading">
-                                                        Business Solution
-                                                    </span>
-                                                </div>
-
-
-                                            </a>
-                                        </div>
-                                        <div className="bottom-blog">
-                                            <a href="#">
-                                                <div className="bottom-blog-pic">
-                                                    <img src="./images/blog-single/blog10.jpg" />
-                                                </div>
-                                                <div>
-                                                    <span className="bottom-blog-heading">
-                                                        DEVELOPING A STRATEGY AND ROADMAP FOR CL...
-                                                    </span>
-                                                    <span className="bottom-blog-subheading">
-                                                        Marketing
-                                                    </span>
-                                                </div>
-
-
-                                            </a>
-                                        </div>
-                                        <div className="bottom-blog">
-                                            <a href="#">
-                                                <div className="bottom-blog-pic">
-                                                    <img src="/images/blog-single/blog11.jpg" />
-                                                </div>
-                                                <div>
-                                                    <span className="bottom-blog-heading">
-                                                        MANAGEMENT OF GENERATION CHANGES IN BUSI...
-                                                    </span>
-                                                    <span className="bottom-blog-subheading">
-                                                        Consumer Products
-                                                    </span>
-                                                </div>
-
-
-                                            </a>
-                                        </div>
-                                    </div> */}
-
                                 </div>
                             </div>
                             </aside>

@@ -661,7 +661,7 @@ const Header = () => {
 
 
 
-                  <li>
+                  {/* <li>
                     <Link to="/investcare-study" className="dropdown-item">
                       <span className="drop-icon">
                         <svg width="22" height="22"
@@ -695,7 +695,8 @@ const Header = () => {
                             fill="white" />
                         </svg>
                       </span>Investcare
-                    </Link></li>
+                    </Link>
+                    </li> */}
                   <li>
                     <Link to="/modern-house-study" className="dropdown-item">
                       <span className="drop-icon">
