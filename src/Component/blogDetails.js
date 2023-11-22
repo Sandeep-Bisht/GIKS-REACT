@@ -401,7 +401,7 @@ const getDateAsString = (created_AT) => {
             hashtag={"#Giksindia..."}
             imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
           >
-            <FacebookIcon size={20} round={true} style={{marginLeft:"120px"}}/>
+            <FacebookIcon size={30} round={true} style={{marginLeft:"120px"}}/>
           </FacebookShareButton>
           <TwitterShareButton
             url={`${url}/blog/${blogDetails?.slug}`}
@@ -409,7 +409,7 @@ const getDateAsString = (created_AT) => {
             hashtag={"#Giksindia..."}
             imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
           >
-            <TwitterIcon size={20} round={true} style={{marginLeft:"10px"}}/>
+            <TwitterIcon size={30} round={true} style={{marginLeft:"10px"}}/>
           </TwitterShareButton>
           <LinkedinShareButton
             url={`${url}/blog/${blogDetails?.slug}`}
@@ -417,7 +417,7 @@ const getDateAsString = (created_AT) => {
             hashtag={"#Giksindia..."}
             imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
           >
-            <LinkedinIcon size={20} round={true} style={{marginLeft:"10px"}}/>
+            <LinkedinIcon size={30} round={true} style={{marginLeft:"10px"}}/>
           </LinkedinShareButton>
           <WhatsappShareButton
             url={`${url}/blog/${blogDetails?.slug}`}
@@ -425,7 +425,7 @@ const getDateAsString = (created_AT) => {
             hashtag={"#Giksindia..."}
             imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
           >
-            <WhatsappIcon size={20} round={true} style={{marginLeft:"10px"}}/>
+            <WhatsappIcon size={30} round={true} style={{marginLeft:"10px"}}/>
           </WhatsappShareButton>
         </div>
       </section>
