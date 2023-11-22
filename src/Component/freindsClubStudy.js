@@ -11,7 +11,7 @@ const FreindsCludStudy = () => {
             <div className="row">
                 <div className="col-md-8">
                     <div className="text">
-                          <h2 className="common-heading">Friends Club Pvt. Ltd.</h2>
+                          <h1 className="common-heading">Friends Club Pvt. Ltd.</h1>
                           <p className="common-para">An end-to-end web portal application with customized development to automate the business
                             processes. The suit has integrated application development in integrated Hybrid Wordpress and
                             Laravel frameworks for best results and customer experiences.</p>

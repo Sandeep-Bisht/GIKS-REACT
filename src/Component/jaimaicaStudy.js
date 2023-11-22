@@ -12,7 +12,7 @@ const JaimaicaStudy = () => {
     <div className="row">
       <div className="col-md-8">
         <div className="text">
-          <h2 className="common-heading">Jamaica Business Gateway</h2>
+          <h1 className="common-heading">Jamaica Business Gateway</h1>
           <h3 className="sub-pages-heading1">Introduction:</h3>
           <p className="common-para">The Jamaica Business Gateway is an online platform developed to streamline business-related 
             processes, foster economic growth, and enhance connectivity within the Jamaican business 

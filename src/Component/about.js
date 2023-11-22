@@ -63,7 +63,7 @@ const About = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1 className="common-heading">We Got the Skills</h1>
+                            <h2 className="common-heading">We Got the Skills</h2>
                         </div>
                     </div>
                     <div className="row mt-60">
@@ -482,7 +482,7 @@ const About = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1 className="common-heading text-center">Our Process</h1>
+                            <h2 className="common-heading text-center">Our Process</h2>
                         </div>
                     </div>
                     <div className="row mt-60">

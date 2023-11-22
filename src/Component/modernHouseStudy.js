@@ -9,7 +9,7 @@ const ModernHouseStudy = () => {
                     <div className="row">
                         <div className="col-md-8">
                             <div className="text">
-                                <h2 className="common-heading">Modern House of Antiques</h2>
+                                <h1 className="common-heading">Modern House of Antiques</h1>
                                 <p className="common-para">
                                 The beneficiary of our product is a premium Antiques provider, with a Physical store, We discussed and finalised the technical architecture while proposing Custom Liferay and React based, with implemented Headless API’s of Liferay E Commerce.</p>
                                
@@ -57,13 +57,9 @@ const ModernHouseStudy = () => {
                         </div>
                         <div className="col-md-4">
                             <div className="pic">
+                                <Link to="https://modernhouseofantiques.com" target='_blank'>
                                 <img src="/images/mha.png" className='img-fluid' alt='freindsclub' />
-                                <div className="title">
-                                    <a href="https://modernhouseofantiques.com" target='_blank' className="btn ">go to site</a>
-                                </div>
-                            </div>
-                            <div className="connect">
-                                <a href="https://modernhouseofantiques.com" target='_blank' className='text-white text-decoration-underline'>https://modernhouseofantiques.com</a>
+                                </Link>
                             </div>
                         </div>
                     </div>

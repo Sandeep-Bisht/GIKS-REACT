@@ -183,7 +183,7 @@ const Homepage = () => {
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-7 col-sm-10">
               <div className="home-banner-left">
-                <p className="banner-title f1">
+                <h1 className="banner-title f1">
                   <span className="one">Inn</span>
                   <span className="two">ova</span>
                   <span className="three">ting</span>{" "}
@@ -191,7 +191,7 @@ const Homepage = () => {
                   <span className="five-second">hno</span>
                   <span className="five">logi</span>
                   <span className="six">es</span>
-                </p>
+                </h1>
                 <p className="banner-subtitle f1">Delivering Solutions</p>
                 <p className="common-para">
                   Offering customized and innovative solutions for scalable
@@ -233,12 +233,12 @@ const Homepage = () => {
 
             <div className="col-lg-7 col-md-7 col-sm-7">
               <div className="home-about-content text-center">
-                <h1 className="common-heading">About Us</h1>
+                <h2 className="common-heading">About Us</h2>
                 <p className="common-subheading">
                   We deliver tailor-made fast, secure, and business process
                   automation solutions.
                 </p>
-                <p className="common-para">
+                <p className="common-para about-para-home-page">
                   We are the leading Software Development Company in India
                   providing Digital solutions for businesses Our team of experts
                   is dedicated to delivering high-quality software services that

@@ -10,7 +10,7 @@ const IshaanavStudy = () => {
         <div className="row">
           <div className="col-md-8">
             <div className="text">
-              <h2 className="common-heading">Ishaanav Nutraceuticals:</h2>
+              <h1 className="common-heading">Ishaanav Nutraceuticals:</h1>
 
               <h3 className="sub-pages-heading1">Background:</h3>
               <p className="common-para">The contract pharmaceutical manufacturing business client faced obstacles in managing customer

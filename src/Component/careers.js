@@ -119,7 +119,7 @@ const Careers = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h1 className="common-heading mb-lg-5">Current Opportunities</h1>
+              <h2 className="common-heading mb-lg-5">Current Opportunities</h2>
             </div>
             <div className="col-lg-12">
               <div className="accordion" id="accordionExample">
