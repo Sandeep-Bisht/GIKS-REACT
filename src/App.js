@@ -17,11 +17,11 @@ function App() {
   return (
     <>
     {
-            (location.pathname.includes("/dashboard")) ? null : <Header /> 
+            (location.pathname.includes("/dashboard")) || (location.pathname.includes("/nrcms")) ? null : <Header /> 
     }   
     <ApplicationRoutes/>
     {
-            (location.pathname.includes("/dashboard")) ? null : <Footer />    
+            (location.pathname.includes("/dashboard"))  || (location.pathname.includes("/nrcms")) ? null : <Footer />    
 
     }
     {/* <Footer/> */}

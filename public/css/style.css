@@ -4339,6 +4339,28 @@ header .dropdown-menu .dropdown-item {
     
   }
 
+  /* ................. nrcms page css ................... */
+
+ .nrcms-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 30px;
+    /* margin-left: 100px; */
+  }
+  .nrcms-header .nrcms-nav-heading{
+    color:#fff;
+  }
+  .nrcms-top-section{
+    background: url('/images/nrcms-bg.png');
+    background-size: cover!important;
+    height: 800px;
+    width: 100%;
+  }
+  .nrcms-after-top{
+    padding-top: 100px;
+  }
+
 
 
 

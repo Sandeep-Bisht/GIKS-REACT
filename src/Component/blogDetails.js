@@ -23,6 +23,9 @@ const BlogDetails = () => {
   const [blogDetails, setBlogDetails] = useState();
   const [blogImage, setBlogImage] = useState();
   const [categoryBlog,setCategoryBlog] = useState();
+  const [title,setTitle]=useState("");
+
+  const newUrl='https://giksindia.com'
 
   useEffect(() => {
     if (param.blog) {
@@ -45,6 +48,7 @@ const BlogDetails = () => {
         // setBlogImage(blogDetail);
         navigate(`/blog/${slug}`)
         setBlogDetails(response.data);
+        setTitle(response.data.title);
       }
     } catch (error) {
       console.log("error", error);
@@ -82,7 +86,7 @@ const getDateAsString = (created_AT) => {
     const day = date.getUTCDate();
     return day
   };
-  console.log(blogDetails,"check current blog details")
+  console.log(title,"check current blog details")
 
   return (
     <>
@@ -395,38 +399,28 @@ const getDateAsString = (created_AT) => {
           </div>
         </div>
         <div>
-            <FacebookShareButton
-            url={`${url}/blog/${blogDetails?.slug}`}
-            quote={blogDetails && blogDetails.title?blogDetails.title:""}
-            hashtag={"#Giksindia..."}
-            imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
+            <FacebookShareButton className="text-right"
+            url={`${url}/${blogDetails?.featuredImage?.path}`}
+            quote={blogDetails?.title}
+            title={title?title:""}
+            hashtag={`#Giksindia.../${blogDetails?.title}`}
           >
             <FacebookIcon size={30} round={true} style={{marginLeft:"120px"}}/>
           </FacebookShareButton>
           <TwitterShareButton
-            url={`${url}/blog/${blogDetails?.slug}`}
+            url={`${url}/${blogDetails?.featuredImage?.path}`}
             quote={blogDetails && blogDetails.title?blogDetails.title:""}
-            hashtag={"#Giksindia..."}
-            imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
+            hashtag={blogDetails && blogDetails.title?blogDetails.title:""}
           >
             <TwitterIcon size={30} round={true} style={{marginLeft:"10px"}}/>
           </TwitterShareButton>
           <LinkedinShareButton
-            url={`${url}/blog/${blogDetails?.slug}`}
+            url={`${url}/${blogDetails?.featuredImage?.path}`}
             quote={blogDetails && blogDetails.title?blogDetails.title:""}
             hashtag={"#Giksindia..."}
-            imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
           >
             <LinkedinIcon size={30} round={true} style={{marginLeft:"10px"}}/>
           </LinkedinShareButton>
-          <WhatsappShareButton
-            url={`${url}/blog/${blogDetails?.slug}`}
-            quote={blogDetails && blogDetails.title?blogDetails.title:""}
-            hashtag={"#Giksindia..."}
-            imageUrl={blogDetails && blogDetails.featuredImage?blogDetails.featuredImage.path:""}
-          >
-            <WhatsappIcon size={30} round={true} style={{marginLeft:"10px"}}/>
-          </WhatsappShareButton>
         </div>
       </section>
     </>
