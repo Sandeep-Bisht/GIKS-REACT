@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 const About = () => {
 
-    useEffect(()=>{
+    useEffect(() => {
         const customScript = `
         $('.ivySlide').owlCarousel({
             smartSpeed: 500,
@@ -30,17 +30,17 @@ const About = () => {
             // $('.slideState span').html(sldPercent + "%")
         }
       `;
-  
-      const script = document.createElement('script');
-      script.textContent = customScript;
-  
-      document.head.appendChild(script);
-  
-      return () => {
-        // Clean up the script when the component is unmounted
-        document.head.removeChild(script);
-      };
-    },[])
+
+        const script = document.createElement('script');
+        script.textContent = customScript;
+
+        document.head.appendChild(script);
+
+        return () => {
+            // Clean up the script when the component is unmounted
+            document.head.removeChild(script);
+        };
+    }, [])
     return (
         <>
             <section className="about-who-we-are">
@@ -646,7 +646,13 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Friends Club</p>
                                             <p className="common-para">
-                                                We developed the Friends Club official website using the Laravel framework. Friends Club is a social based in india with a large and active membership base.
+                                                We used Laravel framework to build the Friends Club web application, providing members with
+                                                easy access to news, event updates, and a calendar. Users could register for events and renew
+                                                memberships online. Our integration included features like Member Management, Event Management,
+                                                Court Booking, Transaction Management, Venue Booking, Sports Booking and Tournament Management. The booking
+                                                system allowed members to effortlessly schedule and confirm registration. We also implemented
+                                                a content management system that would enable Friends Club to easily manage and update the
+                                                website's content.
                                             </p>
                                         </div>
                                     </div>
@@ -658,8 +664,11 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">National Hydrographic office(NHO)</p>
                                             <p className="common-para">
-                                            The National Hydrographic Office (NHO) is the organization responsible for surveying and charting India's waterways, and their website is a crucial tool for sharing information with stakeholders and the public. When the NHO approached our team for help with a website redesign, we were eager to take on the challenge.
-                                            </p>
+                                                We've created the Hydrobharat website for an improved user experience and streamlined navigation.
+                                                Our upgrades feature responsive design for multi-device accessibility and advanced
+                                                functionalities, such as improved data accessibility and dynamic content updates.
+                                                Additionally, we introduced a Warnings Information and Navigation Services module,
+                                                ensuring timely delivery of crucial information related to hydrological activities.                                            </p>
                                         </div>
                                     </div>
                                     <div className="col-lg-2 col-3">
@@ -687,8 +696,14 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">JGC Gulf International Co. Ltd.</p>
                                             <p className="common-para">
-                                            (JGC Gulf) is a leading engineering, procurement, and construction company that specializes in delivering innovative solutions for the oil and gas, petrochemical, and other industries. When JGC Gulf approached our team for help with their website redesign, we were excited to take on the challenge.
-                                            </p>
+                                                We crafted a visually stunning website that embodies their brand identity and mission.
+                                                Optimized for search engines, the site is designed to attract potential customers and
+                                                generate leads. Prioritizing responsiveness and accessibility, we ensured a seamless
+                                                user experience across all devices while implementing robust security measures to
+                                                safeguard against cyber threats. The website features essential elements such as a
+                                                project portfolio, career opportunities, and contact forms. Additionally, a user-friendly
+                                                content management system was integrated, empowering JGC Gulf's team to effortlessly
+                                                manage and update the site's content                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -699,8 +714,15 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Ishaanav Nutraceuticals Pvt Ltd</p>
                                             <p className="common-para">
-                                            The contract pharmaceutical manufacturing business client faced obstacles in managing customer relationships, purchase orders, production processes, and invoicing. Their operations relied on manual systems that were laborious, error-prone, and lacked real-time insights.
-                                            </p>
+                                                We designed a tailored CRM solution for comprehensive customer relationship management,
+                                                encompassing lead tracking, pipeline management, and automated email campaigns.
+                                                Additionally, we developed an automated purchase order management system, streamlining
+                                                the entire purchasing process, from quote requests to purchase order issuance and
+                                                inventory monitoring. Furthermore, a production management system was implemented,
+                                                allowing the client to monitor the entire production process, incorporating batch
+                                                tracking and quality control for regulatory compliance. Lastly, we introduced an
+                                                invoicing system to simplify billing processes, from invoice generation to payment
+                                                tracking and managing accounts receivable                                            </p>
                                         </div>
                                     </div>
                                     <div className="col-lg-2 col-3">
@@ -728,8 +750,15 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Jamaica Business Gateway</p>
                                             <p className="common-para">
-                                            The Jamaica Business Gateway is an online platform developed to streamline business-related processes, foster economic growth, and enhance connectivity within the Jamaican business community.
-                                            </p>
+                                                Embracing a user-focused design strategy, we ensured a seamless and intuitive interface
+                                                for businesses and investors, facilitating efficient navigation and interaction.
+                                                The platform's evolution included a strategic integration of digital government services,
+                                                reducing paperwork and expediting various processes, ultimately enhancing the overall
+                                                efficiency of the platform. Moreover, our efforts concentrated on information accessibility,
+                                                culminating in the establishment of a centralized repository for investment information.
+                                                This initiative has empowered users with convenient access to crucial data, fostering
+                                                informed decision-making and contributing to the platform's success as a comprehensive
+                                                business resource                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -740,7 +769,7 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">Northern Railways</p>
                                             <p className="common-para">
-                                            The Northern Railway, which forms the core of the Indian Railways, has undertaken a mission to conquer distances and establish its own identity. It was formally established in 1952 and continues to be the largest zone in terms of route kilometers, even after the reorganization of the Indian Railways into 16 zones. 
+                                                The Northern Railway, which forms the core of the Indian Railways, has undertaken a mission to conquer distances and establish its own identity. It was formally established in 1952 and continues to be the largest zone in terms of route kilometers, even after the reorganization of the Indian Railways into 16 zones.
                                             </p>
                                         </div>
                                     </div>
@@ -769,7 +798,7 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">The Pioneer Edge</p>
                                             <p className="common-para">
-                                            Pioneer Edge is a news portal dedicated to providing news and information related to the state of Uttarakhand in India. It covers a wide range of topics including politics, business, entertainment, sports, and more. The website aims to be a one-stop destination for people looking for news and information related to Uttarakhand.
+                                                Pioneer Edge is a news portal dedicated to providing news and information related to the state of Uttarakhand in India. It covers a wide range of topics including politics, business, entertainment, sports, and more. The website aims to be a one-stop destination for people looking for news and information related to Uttarakhand.
                                             </p>
                                         </div>
                                     </div>
@@ -781,7 +810,7 @@ const About = () => {
                                         <div className="client-card-right">
                                             <p className="client-card-heading">INCA India</p>
                                             <p className="common-para">
-                                            This case study focuses on the Indian National Cartographic Association (INCA) and its website. INCA is a professional organization based in India that aims to promote the field of cartography, support geospatial professionals, and enhance cartographic practices in the country.
+                                                This case study focuses on the Indian National Cartographic Association (INCA) and its website. INCA is a professional organization based in India that aims to promote the field of cartography, support geospatial professionals, and enhance cartographic practices in the country.
                                             </p>
                                         </div>
                                     </div>
