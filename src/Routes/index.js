@@ -52,6 +52,7 @@ import AdminDashboard from '../Component/Dashboard/AdimnDashboard'
 import AllBlog from '../Component/Layout/AllBlogs'
 import Dashboard from '../Component/Layout/Dashboard'
 import AddBlog from '../Component/Layout/AddBlog'
+import Nrcms from '../Component/nrcms'
 // import DashboardBlog from '../Component/Layout/'
 
 
@@ -123,6 +124,7 @@ const ApplicationRoutes = () => {
        <Route path='/wordpress' element={<Wordpress/>}/>
        <Route path='/sales-force' element={<SalesForce/>}/>
        <Route path='/php' element={<Php/>}/>
+       <Route path='/nrcms' element={<Nrcms/>}/>
        <Route path='/react-native' element={<ReactNative/>}/>
        <Route path="/dashboard"  element={<Authanticated component= {<AdminDashboard />} /> } >
                 <Route index element={< Dashboard/>} />
