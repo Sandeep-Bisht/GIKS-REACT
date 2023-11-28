@@ -137,11 +137,11 @@ function NrcmsTopPage() {
       <section className="nrcms-mid-area">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7 nrcms-img-railway-wrapper">
+            <div class="col-lg-11 nrcms-img-railway-wrapper">
               <span className='nrcms-video-section'>video section</span>
+              <div className='nrcms-img-railway'>
+              <img className='nrcms-img-railway img-fluid' src="images/Northern Railway - Complaint Management System - nrcms.png" />
             </div>
-            <div className='col-lg-5 nrcms-img-railway'>
-              <img className='nrcms-img-railway' src="images/Northern Railway - Complaint Management System - nrcms.png" />
             </div>
           </div>
         </div>
@@ -162,15 +162,16 @@ function NrcmsTopPage() {
         </div>
         <div className='contaner-fluid nrcms-all-in-app-container'>
           <div className='row left-part'>
-            <div className='col-lg-5'>
+            <div className='col-lg-4'>
               <div className='row left-part'>
-                <div className='col-lg-9 mobile-app-image-wrapper'></div>
-                <div className='col-lg-3' style={{ background: "#F4F4F4" }}>
-                  <img src="/images/Multiple channel mockup.png" className='mobile-app-image' alt="" />
+                <div className='col-lg-12 mobile-app-image-wrapper'>
+                <div className=''>
+                  <img src="/images/Multiplechannelmockup.png" className='mobile-app-image img-fluid' alt="" />
+                </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-7 mobile-app-text-part'>
+            <div className='col-lg-8 mobile-app-text-part'>
               <div className='mobile-app-text-insideDiv text-center'>
                 <div className='inside-text-app'>
                   <div className='d-flex justify-content-center'>

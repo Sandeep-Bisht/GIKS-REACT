@@ -4694,8 +4694,8 @@ line-height: 5%;
 }
 .nrcms-img-railway{
     position: relative;
-    bottom: 30px;
-    right: 20px;
+    bottom: 20px;
+    left: 130px;
 }
 .nrcms-video-section{
     color: #1B2A41;
@@ -4718,8 +4718,8 @@ line-height: 135%;
 }
 .mobile-app-image{
     position: relative;
-    top: 27px;
-    right: 270px;
+    top: 50px;
+    left: 200px;
 }
 .mobile-app-text-part{
     background: #F4F4F4;
@@ -4727,8 +4727,8 @@ line-height: 135%;
 .mobile-app-text-insideDiv{
     border-top:1px solid #CDB042;
     border-bottom:1px solid #CDB042;
-    margin-top: 60px;
-    height: 250px;
+    margin-top: 80px;
+    height: 210px;
 }
 .nrcms-all-in-app-section .left-part{
     height: 369px;
@@ -4737,7 +4737,7 @@ line-height: 135%;
     padding-top: 75px;
 }
 .inside-text-app{
-    padding-top:80px;
+    padding-top:60px;
 }
 .mobile-app-para{
     color: #1B2A41;
