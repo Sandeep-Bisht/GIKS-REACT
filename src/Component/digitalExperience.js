@@ -1,7 +1,34 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link} from 'react-router-dom'
 
 const DigitalExperience = () => {
+    useEffect(() => {
+        playVideoOne();
+        playVideoTwo();
+  },[]); 
+  const playVideoOne=()=>{
+    const video = document.getElementById('myVideo1');
+    if (video) {
+      video.play().catch(error => {
+        // Autoplay was prevented
+        // You might want to handle this case gracefully
+        console.error('Autoplay was prevented:', error);
+      });
+      video.addEventListener('ended', () => {
+        video.pause();
+      });
+    }
+  }
+  const playVideoTwo=()=>{
+    const video = document.getElementById('myVideo2');
+    if (video) {
+      video.play().catch(error => {
+        // Autoplay was prevented
+        // You might want to handle this case gracefully
+        console.error('Autoplay was prevented:', error);
+      });
+    }
+  }
   return (
     <>
     <section className="about-who-we-are repeated-hero-banner digital-experience-platform">
@@ -30,15 +57,15 @@ const DigitalExperience = () => {
                     </div>
                  </div>
                  <div className="col-lg-6 col-md-6 col-sm-6 ">
-                     <div className="product-about-pic d-flex justify-content-center">
-                         <img src="/images/digital-experience/1.gif"/>
+                 <div className="product-about-pic d-flex justify-content-center">
+                         <video id="myVideo1" src="/images/digital-experience/1.mp4" autoplay muted loop  onClick={playVideoOne} style={{height:"70%",width:"70%",outline:"none"}}/>
                      </div>
                  </div>
             </div>
             <div className="row align-items-center mt-60 mb-lg-5 pb-lg-5">
                 <div className="col-lg-6 col-md-6 col-sm-6">
-                    <div className="product-about-pic d-flex justify-content-center">
-                        <img src="/images/digital-experience/2.gif"/>
+                <div className="product-about-pic d-flex justify-content-center">
+                        <video id="myVideo2" src="/images/digital-experience/2.mp4" autoplay muted loop onClick={playVideoTwo} style={{height:"70%",width:"70%",outline:"none"}}/>
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6">

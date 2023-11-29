@@ -4694,8 +4694,8 @@ line-height: 5%;
 }
 .nrcms-img-railway{
     position: relative;
-    bottom: 30px;
-    right: 20px;
+    bottom: 20px;
+    left: 130px;
 }
 .nrcms-video-section{
     color: #1B2A41;
@@ -4718,8 +4718,8 @@ line-height: 135%;
 }
 .mobile-app-image{
     position: relative;
-    top: 27px;
-    right: 270px;
+    top: 50px;
+    left: 200px;
 }
 .mobile-app-text-part{
     background: #F4F4F4;
@@ -4727,8 +4727,8 @@ line-height: 135%;
 .mobile-app-text-insideDiv{
     border-top:1px solid #CDB042;
     border-bottom:1px solid #CDB042;
-    margin-top: 60px;
-    height: 250px;
+    margin-top: 80px;
+    height: 210px;
 }
 .nrcms-all-in-app-section .left-part{
     height: 369px;
@@ -4737,15 +4737,251 @@ line-height: 135%;
     padding-top: 75px;
 }
 .inside-text-app{
-    padding-top:80px;
+    padding-top:60px;
 }
 .mobile-app-para{
-    color: #1B2A41;
+color: #1B2A41;
 font-variant-numeric: lining-nums proportional-nums;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 96%;
 }
-    
+.Nrcmsfooter{
+    background-color: #fff;
+  }
+  
+  .nrcms-common-heading{
+    color:#1B2A41;
+    font-weight: 500; 
+    font-size: 28px;
+  }
+  .nrcms-common-heading .bar .one{
+    margin-right: 5px;
+  }
+
+  .nrcms-common-heading .bar .two{
+    margin-right: 5px;
+  }
+
+  .nrcms-common-heading .bar{
+    background: #CDB042;
+    display: inline-block;
+    height: 2px;
+    width: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .Nrcmsfootersecond{
+    background: url('/images/Rectangle.jpg');
+    background-size: cover!important;
+    height: 571px;
+    width: 100%;
+  }
+
+  .nrcms-footer-heading {
+    font-family: 'Playfair Display', serif;
+    color:  #CDB042;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 17px rgba(13, 211, 255, 0.5);
+    letter-spacing: .4px;
+  }
+
+  .section-gap {
+    padding: 100px 0 !important;
+}
+
+  .nrcms-footer-heading{
+    margin-bottom: 50px;
+     justify-content: center; 
+  }
+  
+.nrcms-footerlogo2{
+    padding-left: 15px;
+    height: 55px;
+}
+
+.nrcms{
+    height: 50px;
+}
+
+.common-paranrcms{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600; 
+}
+
+.nrcms-one{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600; 
+}
+
+.nrcms-one ul{
+    list-style: none;
+    padding-left: 0;
+}
+.Nrcmsfootersecond .single-footer-widget ul li{
+    margin-bottom: 20px;
+}
+
+.Nrcmsfootersecond .single-footer-widget ul li{
+    display: flex;
+    align-items: center;
+}
+.Nrcmsfootersecond .single-footer-widget ul li svg{
+    margin-right: 10px;
+}
+.Nrcmsfootersecond .single-footer-widget ul li p{
+    margin-bottom: 0;
+}
+
+.nrcms-icon{
+    color: #CDB042;
+    font-size: 20px;
+}
+.nrcms-straight{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nrcms-two ul{
+    list-style: none;
+    padding-left: 0;
+}
+.nrcms-two{
+    display: flex;
+    justify-content: center;
+}
+.nrcms-line{
+    color:  #fff;
+    border: 2px solid #ffffff;
+}
+.nrcms-last{
+    background-color: #fff;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.nrcms-last-footer a{
+    font-size: 15px;
+    color: #0058B3;
+    font-weight: 600;
+}
+.nrcms-last-footer span{
+     color: #000;
+     font-weight: 450;
+     margin-top: 15px;
+}
+
+.common-paranrcms-last{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600; 
+    margin-left: 20px;
+}
+.bar-three{
+    background: #CDB042;
+    display: inline-block;
+    height: 2px;
+    width: 100px;
+}
+.nrcms-testimonials{
+    background-color: #fff;
+    padding:40px 0px 40px 0px
+}
+.crousel-card{
+    background-color: #f4f4f4;
+    height: 189px;
+}
+.crousel-para{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #000;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+.nrcms-testimonials-row{
+    padding: 20px 0px 60px 0px
+}
+.double-quoted{
+    color: #B9B9B9;
+text-align: center;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.view-button{
+    display: flex;
+width: 286.667px;
+padding: 1px 32px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 5px;
+background: #2252E4;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+}
+/* -------------------how-to use-------------- */
+.how-to-use
+{
+    background-image: url('../images/how-to-use-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+.how-to-use .heading-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.how-to-use .heading-wrapper::after
+{
+    position: absolute;
+    content: '';
+}
+.functionalities-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+.functionalities-wrapper .functionality-box
+{
+    text-align: center;
+    position: relative;
+}
+.functionality-box-heading
+{
+    font-weight: 500;
+}
+.nrcms-userfunctionality{
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.user-managment-row{
+    margin:40px 0px 60px 0px
+}
+.customer-experience-line{
+    margin: auto;
+}
+.customer-experience-row{
+    padding: 40px 0px 40px 0px;
+}
+.product-about-pic{
+    background-color: transparent;
+}
 
