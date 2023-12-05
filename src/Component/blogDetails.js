@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import broucher from "../Samplefiles/GIKS_Brochure.pdf";
-import {  useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import {url} from "../urls"
+import { url } from "../urls";
 import {
   FacebookShareButton,
+  FacebookShareCount,
   FacebookIcon,
   TwitterShareButton,
   LinkedinShareButton,
@@ -13,7 +14,8 @@ import {
   LinkedinIcon,
   WhatsappShareButton,
   WhatsappIcon,
-} from 'react-share';
+} from "react-share";
+import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
   const param = useParams();
@@ -22,19 +24,21 @@ const BlogDetails = () => {
   const state = location.state;
   const [blogDetails, setBlogDetails] = useState();
   const [blogImage, setBlogImage] = useState();
-  const [categoryBlog,setCategoryBlog] = useState();
-  const [title,setTitle]=useState("");
+  const [categoryBlog, setCategoryBlog] = useState();
 
-  const newUrl='https://giksindia.com'
+
+
+
+
 
   useEffect(() => {
     if (param.blog) {
       getBlogDetailBySlug(param.blog);
     }
   }, []);
-  useEffect(()=>{
-    getAllBlogs()
-  },[blogDetails])
+  useEffect(() => {
+    getAllBlogs();
+  }, [blogDetails]);
 
   const getBlogDetailBySlug = async (slug) => {
     let payload = {
@@ -46,9 +50,9 @@ const BlogDetails = () => {
         // Parse the 'featuredImage' string into a JavaScript object
         // const blogDetail = JSON.parse(response.data.featuredImage);
         // setBlogImage(blogDetail);
-        navigate(`/blog/${slug}`)
+        navigate(`/blog/${slug}`);
         setBlogDetails(response.data);
-        setTitle(response.data.title);
+        // setTitle(response.data.title);
       }
     } catch (error) {
       console.log("error", error);
@@ -58,38 +62,50 @@ const BlogDetails = () => {
     const doc = new DOMParser().parseFromString(content, "text/html");
     return doc.body.textContent || "";
   };
-  const getMonthAndDate=(created_AT)=>{
+  const getMonthAndDate = (created_AT) => {
     const dateString = created_AT;
     const date = new Date(dateString);
-    const monthAbbreviations = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const monthAbbreviations = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
     const monthIndex = date.getUTCMonth();
-    return  monthAbbreviations[monthIndex];
-}
+    return monthAbbreviations[monthIndex];
+  };
 
-const getAllBlogs = async () => {
-  const response = await axios.get(`${url}/blog/find_all_blog`);
-  if(response.data && response.data.length>0)
-{
-    const categoryRelatedData=response.data.filter((item)=>{
-      if(blogDetails?.category!=null)
-      {
-        return blogDetails?.category==item.category
-      }
-      return null
-  })
-  return setCategoryBlog(categoryRelatedData);
-}
-}
+  const getAllBlogs = async () => {
+    const response = await axios.get(`${url}/blog/find_all_blog`);
+    if (response.data && response.data.length > 0) {
+      const categoryRelatedData = response.data.filter((item) => {
+        if (blogDetails?.category != null) {
+          return blogDetails?.category == item.category;
+        }
+        return null;
+      });
+      return setCategoryBlog(categoryRelatedData);
+    }
+  };
 
-const getDateAsString = (created_AT) => {
+  const getDateAsString = (created_AT) => {
     const date = new Date(created_AT);
     const day = date.getUTCDate();
-    return day
+    return day;
   };
-  console.log(title,"check current blog details")
+  console.log(blogDetails && blogDetails.title, "check current blog details");
 
   return (
-    <>
+    <>   
       <section className="single-blog-page blog-detail">
         <div className="container">
           <div className="row mt-60">
@@ -107,8 +123,12 @@ const getDateAsString = (created_AT) => {
                         <div className="col-lg-1">
                           <div className="left">
                             <div className="blog-detail-date">
-                              <p className="date">{getDateAsString(blogDetails?.created_AT)}</p>
-                              <p className="month">{getMonthAndDate(blogDetails?.created_AT)}</p>
+                              <p className="date">
+                                {getDateAsString(blogDetails?.created_AT)}
+                              </p>
+                              <p className="month">
+                                {getMonthAndDate(blogDetails?.created_AT)}
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -117,12 +137,12 @@ const getDateAsString = (created_AT) => {
                             <div className="post-category">
                               <div className="post-category-left">
                                 <span className="post-category-heading common-para">
-                                  Posted by : GIKS 
+                                  Posted by : GIKS
                                 </span>
                               </div>
                               <div className="post-category-right">
                                 <span className="post-category-heading common-para">
-                                  {`Category : ${blogDetails?.category}`} 
+                                  {`Category : ${blogDetails?.category}`}
                                 </span>
                               </div>
                             </div>
@@ -145,7 +165,7 @@ const getDateAsString = (created_AT) => {
                                 </svg>
                               </span>
                               <span className="comments-number">
-                                6 Comments 
+                                6 Comments
                               </span>
                             </div>
                           </div>
@@ -160,17 +180,21 @@ const getDateAsString = (created_AT) => {
                           />
                         </div>
                         <div className="row mt-lg-4">
-                    <p className="blog-details-heading text-white fs-6 fw-lighter blog-dtails-description">
-                      {blogDetails?.description}
-                    </p>
-                  </div>
+                          <p className="blog-details-heading text-white fs-6 fw-lighter blog-dtails-description">
+                            {blogDetails?.description}
+                          </p>
+                        </div>
                       </div>
                       <div className="row mt-lg-4">
                         <div className="col-md-12 blog-html-content">
-                        {/* <p className="common-para"> 
+                          {/* <p className="common-para"> 
                          {blogDetails?.content} */}
-                        <p className="common-para blog-details-content " dangerouslySetInnerHTML={{ __html: blogDetails?.content }} >
-                        </p>
+                          <p
+                            className="common-para blog-details-content "
+                            dangerouslySetInnerHTML={{
+                              __html: blogDetails?.content,
+                            }}
+                          ></p>
                         </div>
                       </div>
                     </div>
@@ -179,69 +203,109 @@ const getDateAsString = (created_AT) => {
               </div>
             </div>
             <div className="col-lg-3 col-md-5 col-sm-5">
-            <aside>
-              <div className="blog-right-wrapper">
-                <div className="row">
-                  {/* ---------------end------------------ */}
-                  {
-                    categoryBlog && categoryBlog.length>0 &&
-                    <div className="col-md-12">
-                    <p className="" style={{color:"#fff"}}>Related Blogs</p>
-                    {
-                      categoryBlog.map((item,index)=>{
-                        console.log(item,"check the item hurrrrrrrrrrr")
-                        return(
-                          <>
-                           <div className="bottom-blog" key={index}
-                           onClick={()=>getBlogDetailBySlug(item.slug)}>
-                            <a href="#">
-                              <div className="bottom-blog-pic">
-                                <img src={`${url}/${item?.featuredImage?.path}`} />
+              <aside>
+                <div className="blog-right-wrapper">
+                  <div className="row">
+                    {/* ---------------end------------------ */}
+                    {categoryBlog && categoryBlog.length > 0 && (
+                      <div className="col-md-12">
+                        <p className="" style={{ color: "#fff" }}>
+                          Related Blogs
+                        </p>
+                        {categoryBlog.map((item, index) => {
+                          console.log(item, "check the item hurrrrrrrrrrr");
+                          return (
+                            <>
+                              <div
+                                className="bottom-blog"
+                                key={index}
+                                onClick={() => getBlogDetailBySlug(item.slug)}
+                              >
+                                <a href="#">
+                                  <div className="bottom-blog-pic">
+                                    <img
+                                      src={`${url}/${item?.featuredImage?.path}`}
+                                    />
+                                  </div>
+                                  <div>
+                                    <span className="bottom-blog-heading">
+                                      {item.title}
+                                    </span>
+                                    <span className="bottom-blog-subheading">
+                                      Business Solution
+                                    </span>
+                                  </div>
+                                </a>
                               </div>
-                              <div>
-                                <span className="bottom-blog-heading">
-                                  {item.title}
-                                </span>
-                                <span className="bottom-blog-subheading">
-                                  Business Solution
-                                </span>
-                              </div>
-                            </a>
-                         </div>
-                          </>
-                        )
-                      })
-                    }
-                    </div>
-                  }
+                            </>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
               </aside>
             </div>
           </div>
         </div>
         <div>
-            <FacebookShareButton className="text-right"
+          {/* <FacebookShareButton
+            className="text-right"
             url={`${url}/${blogDetails?.featuredImage?.path}`}
-            quote={blogDetails?.title}
-            title={title?.title}
-            hashtag={`#Giksindia.../${blogDetails?.title}`}
+            // quote={`${blogDetails && blogDetails.title} - ${title?.title}`}
+            // hashtag={`#Giksindia #${blogDetails && blogDetails.title}`}
+             quote="Your static quote here"
+             hashtag={`#${encodeURIComponent('Giksindia')}, #${encodeURIComponent('YourStaticTitle')}`}
+  
           >
-            <FacebookIcon size={30} round={true} style={{marginLeft:"120px"}}/>
-          </FacebookShareButton>
+           
+          </FacebookShareButton> */}
+  {/* <Helmet>
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={blogDetails && blogDetails.description} />
+        <meta property="og:url" content={`${url}/${blogDetails?.featuredImage?.path}`} />
+        <meta property="og:hashtag" content={"#Giksindia , #ReactShare"} />
+      </Helmet> */}
+
+      <FacebookShareButton
+        url='https://giksindia.com/'
+        // url={`${url}/${blogDetails?.featuredImage?.path}`}
+        title="This is my post"
+        // hashtag={`#${encodeURIComponent('Giksindia')}, #${encodeURIComponent('ReactShare')}`}
+        hashtag="#Giksindia"
+      >
+        <FacebookIcon size={30} round={true} style={{ marginLeft: "120px" }} />
+      </FacebookShareButton>
+
+    
+
+
+          {/* <FacebookIcon
+              size={30}
+              round={true}
+             
+            /> */}
           <TwitterShareButton
             url={`${url}/${blogDetails?.featuredImage?.path}`}
-            quote={blogDetails && blogDetails.title?blogDetails.title:""}
-            hashtag={blogDetails && blogDetails.title?blogDetails.title:""}
+            quote={blogDetails && blogDetails.title ? blogDetails.title : ""}
+            hashtag={blogDetails && blogDetails.title ? blogDetails.title : ""}
           >
-            <TwitterIcon size={30} round={true} style={{marginLeft:"10px"}}/>
+            <TwitterIcon
+              size={30}
+              round={true}
+              style={{ marginLeft: "10px" }}
+            />
           </TwitterShareButton>
           <LinkedinShareButton
             url={`${url}/${blogDetails?.featuredImage?.path}`}
-            quote={blogDetails && blogDetails.title?blogDetails.title:""}
+            quote={blogDetails && blogDetails.title ? blogDetails.title : ""}
             hashtag={"#Giksindia..."}
           >
-            <LinkedinIcon size={30} round={true} style={{marginLeft:"10px"}}/>
+            <LinkedinIcon
+              size={30}
+              round={true}
+              style={{ marginLeft: "10px" }}
+            />
           </LinkedinShareButton>
         </div>
       </section>

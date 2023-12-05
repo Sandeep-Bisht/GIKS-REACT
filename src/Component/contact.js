@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import {url} from "../urls"
+import CalendlyComponent from "./calendlyComponent";
 
 
 const Contact = () => {
@@ -141,20 +142,21 @@ const Contact = () => {
                      </div> --> */}
               </div>
             </div>
+
+            
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="contact-single-right">
-                <form onSubmit={handleSubmit(handleContactUS)}>
+              <CalendlyComponent />
+                {/* <form onSubmit={handleSubmit(handleContactUS)}>
                   <div className="row">
                     <div className="col-md-6 col-sm-6">
                       <div className="mb-3 input-wrapper">
                         <label htmlFor="name" className="form-label">
                           First Name
                         </label>
-                        {/* <input type="text" className="form-control" id="firstname" name='firstName'/> */}
                         <input
                           type="text"
                           className="form-control"
-                          //   onInput={() => setMessage("")}
                           {...register("firstName", {
                             required: true,
                             pattern: /^[A-Za-z\s]+$/,
@@ -236,9 +238,9 @@ const Contact = () => {
                           className="form-control"
                           {...register("phoneNumber", {
                             required: true,
-                            pattern: /^[0-9]{10}$/, // Enforce exactly 10 numeric digits
-                            maxLength: 10, // Enforce exactly 10 characters
-                            minLength: 10, // Enforce exactly 10 characters
+                            pattern: /^[0-9]{10}$/, 
+                            maxLength: 10, 
+                            minLength: 10, 
                           })}
                         />
                         {errors.phoneNumber ? (
@@ -297,7 +299,6 @@ const Contact = () => {
                       </button>
                     </div>
 
-                    {/* <p className="pt-5">{msg}</p> */}
                     {loading ? (
                       <div>
                         <div className="overlay"></div>
@@ -317,7 +318,7 @@ const Contact = () => {
                       ""
                     )}
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>
