@@ -9,7 +9,6 @@ import {
   TwitterIcon,
   LinkedinIcon,
 } from 'react-share';
-import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
   const navigate = useNavigate();
@@ -71,16 +70,6 @@ const getDateAsString = (created_AT) => {
 
   return (
     <>
-    <Helmet>
-        <title>{title}</title>
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={blogDetails?.description} />
-        <meta property="og:image" content={`${url}/${blogDetails?.featuredImage?.path}`} />
-        <meta property="og:image:secure_url" content={`${url}/${blogDetails?.featuredImage?.path}`} />
-        <meta property="og:url" content={currentUrl} />
-        <meta property="og:image:alt" content={title}/>
-      </Helmet>
-
       <section className="single-blog-page blog-detail">
         <div className="container">
           <div className="row mt-60">
