@@ -1,37 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import broucher from "../Samplefiles/GIKS_Brochure.pdf";
-import {  useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import axios from "axios";
 import {url} from "../urls"
 import {
-  FacebookShareButton,
   FacebookIcon,
   TwitterShareButton,
   LinkedinShareButton,
   TwitterIcon,
   LinkedinIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
 } from 'react-share';
+import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
-  const param = useParams();
-  const location = useLocation();
   const navigate = useNavigate();
-  const state = location.state;
-  const [blogDetails, setBlogDetails] = useState();
-  const [blogImage, setBlogImage] = useState();
+  const currentBlogDetails = useLoaderData();
+  const [blogDetails, setBlogDetails] = useState(currentBlogDetails);
   const [categoryBlog,setCategoryBlog] = useState();
-  const [title,setTitle]=useState("");
+  const [title,setTitle]=useState(currentBlogDetails.title);
 
-  const newUrl='https://giksindia.com'
-
-  useEffect(() => {
-    if (param.blog) {
-      getBlogDetailBySlug(param.blog);
-    }
-  }, []);
   useEffect(()=>{
     getAllBlogs()
   },[blogDetails])
@@ -43,9 +29,6 @@ const BlogDetails = () => {
     try {
       let response = await axios.post(`${url}/blog/get_blog_by_slug`, payload);
       if (response) {
-        // Parse the 'featuredImage' string into a JavaScript object
-        // const blogDetail = JSON.parse(response.data.featuredImage);
-        // setBlogImage(blogDetail);
         navigate(`/blog/${slug}`)
         setBlogDetails(response.data);
         setTitle(response.data.title);
@@ -54,10 +37,7 @@ const BlogDetails = () => {
       console.log("error", error);
     }
   };
-  const stripHtmlTags = (content) => {
-    const doc = new DOMParser().parseFromString(content, "text/html");
-    return doc.body.textContent || "";
-  };
+
   const getMonthAndDate=(created_AT)=>{
     const dateString = created_AT;
     const date = new Date(dateString);
@@ -86,10 +66,21 @@ const getDateAsString = (created_AT) => {
     const day = date.getUTCDate();
     return day
   };
-  console.log(title,"check current blog details")
+
+  const currentUrl = window.location.href;
 
   return (
     <>
+    <Helmet>
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={blogDetails?.description} />
+        <meta property="og:image" content={`${url}/${blogDetails?.featuredImage?.path}`} />
+        <meta property="og:image:secure_url" content={`${url}/${blogDetails?.featuredImage?.path}`} />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image:alt" content={title}/>
+      </Helmet>
+
       <section className="single-blog-page blog-detail">
         <div className="container">
           <div className="row mt-60">
@@ -221,14 +212,9 @@ const getDateAsString = (created_AT) => {
           </div>
         </div>
         <div>
-            <FacebookShareButton className="text-right"
-            url={`${url}/${blogDetails?.featuredImage?.path}`}
-            quote={blogDetails?.title}
-            title={title?.title}
-            hashtag={`#Giksindia.../${blogDetails?.title}`}
-          >
-            <FacebookIcon size={30} round={true} style={{marginLeft:"120px"}}/>
-          </FacebookShareButton>
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} target="_blank">
+              <FacebookIcon size={30} round={true} style={{marginLeft:"120px"}}/>
+            </a>
           <TwitterShareButton
             url={`${url}/${blogDetails?.featuredImage?.path}`}
             quote={blogDetails && blogDetails.title?blogDetails.title:""}

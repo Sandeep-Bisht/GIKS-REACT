@@ -1,5 +1,5 @@
-import React from 'react'
-import { Route, Routes, Navigate } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Route, Outlet, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Homepage from '../Component/homepage'
 import About from '../Component/about'
 import DigitalExperience from '../Component/digitalExperience'
@@ -53,28 +53,41 @@ import AllBlog from '../Component/Layout/AllBlogs'
 import Dashboard from '../Component/Layout/Dashboard'
 import AddBlog from '../Component/Layout/AddBlog'
 import Nrcms from '../Component/nrcms'
+import Header from '../Component/header'
+import Footer from '../Component/footer'
+import { getAllBlogs, getBlogBySlug } from '../ContextApi/IntialApis'
 // import DashboardBlog from '../Component/Layout/'
 
 
+const DefaultUi = () =>{
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+
+  return (
+    <>
+    <Header/>
+      <Outlet/>
+    <Footer/>
+    </>
+  )
+}
 
 const Authanticated = (props) => {
-  console.log(props,)
  let token = Cookies.get("giks_token");
 
-//  if(!token) {
-//     return <Navigate to="/" replace />
-//  }
 
  return props.component
 }
-
-const ApplicationRoutes = () => {
-  
-  return (
-    <Routes>
-      
+const ApplicationRoutes = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+        <Route element={<DefaultUi/>}>
         <Route path='/*' element={<PageNotFound/>}/>
-        <Route path='/' element={<Homepage/>}/>
+        <Route index path='/' element={<Homepage/>}/>
         <Route path='/login' element={< Login/>} />
         <Route path='/about-us' element={<About/>}/>
         <Route path='/digital-experience-platform' element={<DigitalExperience/>}/>
@@ -91,8 +104,8 @@ const ApplicationRoutes = () => {
         <Route path='/mobile-app-development' element={<MobileAppDevelopment/>}/>
         <Route path='/platform-based-development' element={<PlatformBasedDevelopment/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/blog' element={<Blog/>}/>
-        <Route path="/blog/:blog" element={<BlogDetail/>}/>
+        <Route path='/blog' element={<Blog/>} loader={getAllBlogs}/>
+        <Route path="/blog/:blog" element={<BlogDetail/>} loader={getBlogBySlug}/>
         <Route path='/friends-club-study' element={<FreindsCludStudy/>}/>
         <Route path='/national-hydrographic-study' element={<NationalHydrographicStudy/>}/>
         <Route path='/ishaanav-study' element={<IshaanavStudy/>}/> 
@@ -124,20 +137,18 @@ const ApplicationRoutes = () => {
        <Route path='/wordpress' element={<Wordpress/>}/>
        <Route path='/sales-force' element={<SalesForce/>}/>
        <Route path='/php' element={<Php/>}/>
-       <Route path='/nrcms' element={<Nrcms/>}/>
        <Route path='/react-native' element={<ReactNative/>}/>
+       </Route>
+       
+       <Route path='/nrcms' element={<Nrcms/>}/>
        <Route path="/dashboard"  element={<Authanticated component= {<AdminDashboard />} /> } >
-                <Route index element={< Dashboard/>} />
-                {/* <Route path="/dashboard/patient" element={< People/>} />
-                <Route path="/dashboard/addbooking" element={< AddBooking />} />
-                <Route path="/dashboard/allbooking" element={< AllBooking />} />
-                <Route path="/dashboard/booking" element={< Booking/>} /> */}
-                <Route path="/dashboard/blogs" element={< AllBlog />} />
-                <Route path="/dashboard/blogs/add-blog" element={< AddBlog />} />
-                {/* <Route path="/dashboard/blog" element={< DashboardBlog />} /> */}
-                </Route>
-       </Routes>
-  )
-}
+          <Route index element={< Dashboard/>} />
+          <Route path="/dashboard/blogs" element={< AllBlog />} />
+          <Route path="/dashboard/blogs/add-blog" element={< AddBlog />} />
+        </Route>
+    </Route>
+
+  ));
+
 
 export default ApplicationRoutes
