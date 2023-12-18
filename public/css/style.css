@@ -2650,6 +2650,14 @@ footer .copyright-box .three ul li {
     margin-top: 10px;
     font-weight: 600;
 }
+.integratedEstate-video video{
+    outline:none!important;
+    border: none!important;
+    box-shadow: none!important;
+    margin: 0px!important;
+    padding: 0px;
+    box-sizing: border-box!important;
+}
 
 /* ------------------------media query------------------ */
 /* @media (max-width: 2560.98px) 
@@ -2996,26 +3004,14 @@ footer .copyright-box .three ul li {
     }
 
 }
-
-
-@media (max-width: 1399.98px) {
-    /* header .nav-link
-    {
-        font-size: 18px;
-    }
-    header .dropdown-menu .dropdown-item
-    {
-        font-size: 16px;
-    }
-    header{
-        background-color: red!important;
-    } */
-}
-
+  
 
 @media (max-width: 1199.98px) {
     .home-banner-container {
         /* height: 80vh; */
+    }
+    .product-read-more {
+        opacity: 1;
     }
 
     .home-banner .banner-title {
@@ -3080,6 +3076,9 @@ footer .copyright-box .three ul li {
 
     .common-subheading {
         font-size: 18px;
+    }
+    .product-read-more {
+        opacity: 1;
     }
 
     .common-para {
@@ -3174,6 +3173,9 @@ footer .copyright-box .three ul li {
 
     .common-heading {
         font-size: 28px;
+    }
+    .product-read-more {
+        opacity: 1;
     }
 
     .common-subheading {
@@ -3291,7 +3293,7 @@ footer .copyright-box .three ul li {
     }
 
     .product-card {
-        height: 300px;
+        height: 320px;
         margin-bottom: 25px;
     }
 
@@ -3488,6 +3490,9 @@ footer .copyright-box .three ul li {
     .home-slider #counter {
         margin-left: 20px;
     }
+    .product-read-more {
+        opacity: 1;
+    }
 
     .contact-single-right .form-control {
         padding: 4px 8px;
@@ -3501,6 +3506,9 @@ footer .copyright-box .three ul li {
 @media (max-width: 767.98px) {
     .common-heading {
         font-size: 19px;
+    }
+    .product-read-more {
+        opacity: 1;
     }
 
     .common-subheading {
@@ -3558,7 +3566,7 @@ footer .copyright-box .three ul li {
     }
 
     .product-card {
-        height: 280px;
+        height: 300px;
     }
 
     .product-card img {
@@ -3900,6 +3908,9 @@ footer .copyright-box .three ul li {
     .vertical-text-box {
         left: 35px;
     }
+    .product-read-more {
+        opacity: 1;
+    }
 
     .casestudy-singlepage img {
         height: 230px;
@@ -3910,7 +3921,9 @@ footer .copyright-box .three ul li {
     .home-banner-container .row {
         flex-direction: column-reverse;
     }
-
+    .product-read-more {
+        opacity: 1;
+    }
     .home-banner-container .row img {
         width: 300px;
         margin-top: 70px;
@@ -3949,7 +3962,7 @@ footer .copyright-box .three ul li {
     }
 
     .product-card {
-        height: 234px;
+        height: 260px;
     }
 
     .product-card img {
@@ -4148,7 +4161,9 @@ footer .copyright-box .three ul li {
     .case-study-card {
         padding: 10px 4px;
     }
-
+    .product-read-more {
+        opacity: 1;
+    }
     .common-padding-25 {
         padding: 0 20px;
     }
@@ -4169,6 +4184,9 @@ footer .copyright-box .three ul li {
 @media (max-width: 483.98px) {
     footer .copyright-box .one {
         width: 25%;
+    }
+    .product-read-more {
+        opacity: 1;
     }
 
     footer .copyright-box .two {
@@ -4205,7 +4223,9 @@ footer .copyright-box .three ul li {
     .common-heading {
         font-size: 19px;
     }
-
+    .product-read-more {
+        opacity: 1;
+    }
     .common-subheading {
         font-size: 13px;
         padding: 0;
@@ -4251,7 +4271,7 @@ footer .copyright-box .three ul li {
     }
 
     .product-card {
-        height: 210px;
+        height: 250px;
         padding: 10px;
         border-radius: 3px;
     }
@@ -4330,17 +4350,26 @@ footer .copyright-box .three ul li {
     .single-blog-page {
         padding: 74px;
     }
+    .product-read-more {
+        opacity: 1;
+    }
 }
 
 @media (max-width:390.98px) {
     .single-blog-page {
         padding: 64px;
     }
+    .product-read-more {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 380.98px) {
     .client-card-heading {
         font-size: 13px;
+    }
+    .product-read-more {
+        opacity: 1;
     }
 
     .about-clients .client-card img {
@@ -4518,7 +4547,8 @@ footer .copyright-box .three ul li {
     position: fixed;
     width: 100%;
     top: 0;
-    padding-top: 30px;
+    padding: 12px 0px 12px 0px;
+    background: transparent;
     /* margin-left: 100px; */
 }
 
@@ -4529,7 +4559,7 @@ footer .copyright-box .three ul li {
 .nrcms-top-section {
     background: url('/images/nrcms-bg.png');
     background-size: cover !important;
-    height: 800px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -4600,7 +4630,7 @@ line-height: 5%;
     margin-bottom: auto;
 }
 .nrcms-login-signup-button{
-    margin-top: 120px;
+    margin-top: 60px;
 }
 /* ---------------------nrcms common css----------------- */
 .nrcms-common-heading
@@ -4981,7 +5011,44 @@ margin-top: 40px;
 .customer-experience-row{
     padding: 40px 0px 40px 0px;
 }
-.product-about-pic{
-    background-color: transparent;
+.providing-support-image{
+    justify-content: flex-end;
 }
+.providing-support-image2{
+    justify-content: flex-end;
+}
+.channel-support{
+    background-color: #fff;
+}
+.providing-support-wrapper{
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="855" height="198" viewBox="0 0 855 198" fill="none"%3E%3Cpath d="M851 4H97C45.6375 4 4 45.6375 4 97V99V101C4 152.362 45.6375 194 97 194H851" stroke="%23002044" stroke-width="7" stroke-linecap="square"%3E%3C/path%3E%3C/svg%3E');     background-size: 77% 50%;
+    background-repeat: no-repeat;
+    background-position: 32% 52%;
+    justify-content: center;
+    align-items: center;
+}
+.channel-support-down{
+
+}
+.nrcms-providing-support-area{
+    background-color: #fff;
+    padding: 60px 0 0px 0;
+}
+.channel-support-para{
+    color: #1B2A41;
+text-align: center;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%;
+}
+.channel-support-second-para{
+    color: #1D1D1D;
+text-align: center;
+font-size: 15px;
+font-weight: 500;
+margin-top: 10px;
+line-height: 125%;
+}
+
 
