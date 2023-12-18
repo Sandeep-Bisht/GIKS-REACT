@@ -1,23 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams, useLocation, useNavigate } from 'react-router-dom'
+import { useNavigate, useLoaderData } from 'react-router-dom'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import axios from 'axios'
 import { url } from "../urls";
 
 const Blog = () => {
 
+    const allBlogs = useLoaderData();
     const navigate = useNavigate()
-    const [blog, setBlog] = useState()
+    const [blog, setBlog] = useState(allBlogs)
     useEffect(() => {
         window.scrollTo(0, 0);
-        getAllBlogs();
     }, []);
 
 
-    const getAllBlogs = async () => {
-        const response = await axios.get(`${url}/blog/find_all_blog`);
-        setBlog(response.data)
-    }
 
     const getMonthAndDate=(created_AT)=>{
         const dateString = created_AT;
@@ -111,7 +107,7 @@ const Blog = () => {
                                             <li>
                                                                     <button className="widget-list-item"
                                                                     value="Software"
-                                                                    onClick={()=>getAllBlogs()}>
+                                                                    onClick={()=>setBlog(allBlogs)}>
                                                                        All Categories
                                                                     </button>
                                                                 </li>
