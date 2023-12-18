@@ -2,9 +2,9 @@ import React from 'react'
 
 function NrcmsHeader() {
   return (
-    <header>
+    <header className='nrcms-header'>
       <div className='container'>
-        <div className='row nrcms-header'>
+        <div className='row'>
           <div className='col-2'>
             <img src="/images/nrcmsLogo.png" alt='nrcms-logo' />
           </div>

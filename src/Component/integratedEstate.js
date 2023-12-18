@@ -55,8 +55,8 @@ const IntegratedEstate = () => {
                     </div>
                  </div>
                  <div className="col-lg-6 col-md-6 col-sm-6">
-                     <div className="product-about-pic d-flex justify-content-center">
-                         <video id="myVideo1" src="/images/digital-experience/1.mp4" autoplay muted loop  onClick={playVideoOne} style={{height:"70%",width:"70%",outline:"none"}}/>
+                     <div className="product-about-pic integratedEstate-video d-flex justify-content-center">
+                         <video id="myVideo1" src="/images/digital-experience/1.mp4" autoplay muted loop  onClick={playVideoOne} style={{height:"100%",width:"70%",outline:"none"}}/>
                      </div>
                  </div>
             </div>
