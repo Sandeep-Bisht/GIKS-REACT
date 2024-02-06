@@ -908,7 +908,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-3">
+            {/* <div className="col-lg-3 col-3">
               <div className="case-study-card">
                 <div className="upper-icons">
                   <div className="left">
@@ -997,7 +997,7 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-3 col-3">
               <div className="case-study-card">
                 <div className="upper-icons">
