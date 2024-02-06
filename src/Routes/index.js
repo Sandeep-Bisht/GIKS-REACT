@@ -109,7 +109,7 @@ const ApplicationRoutes = createBrowserRouter(
         <Route path='/friends-club-study' element={<FreindsCludStudy/>}/>
         <Route path='/national-hydrographic-study' element={<NationalHydrographicStudy/>}/>
         <Route path='/ishaanav-study' element={<IshaanavStudy/>}/> 
-        <Route path='/jaimaica-study' element={<JaimaicaStudy/>}/>
+        {/* <Route path='/jaimaica-study' element={<JaimaicaStudy/>}/> */}
         <Route path='/nrcms-study' element={<NorthenRailwayStudy/>}/>
         <Route path='/jgc-study' element={<JgcStudy/>}/>
         <Route path='/pioneer-study' element={<PioneerStudy/>}/>
