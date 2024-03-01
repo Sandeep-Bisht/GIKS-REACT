@@ -1,44 +1,25 @@
 import React, { useState, useEffect } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import broucher from "../Samplefiles/GIKS_Brochure.pdf";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { url } from "../urls";
 import {
-  FacebookShareButton,
-  FacebookShareCount,
   FacebookIcon,
   TwitterShareButton,
   LinkedinShareButton,
   TwitterIcon,
   LinkedinIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
-} from "react-share";
-import { Helmet } from "react-helmet";
+} from 'react-share';
 
 const BlogDetails = () => {
-  const param = useParams();
-  const location = useLocation();
   const navigate = useNavigate();
-  const state = location.state;
-  const [blogDetails, setBlogDetails] = useState();
-  const [blogImage, setBlogImage] = useState();
-  const [categoryBlog, setCategoryBlog] = useState();
+  const currentBlogDetails = useLoaderData();
+  const [blogDetails, setBlogDetails] = useState(currentBlogDetails);
+  const [categoryBlog,setCategoryBlog] = useState();
+  const [title,setTitle]=useState(currentBlogDetails.title);
 
-
-
-
-
-
-  useEffect(() => {
-    if (param.blog) {
-      getBlogDetailBySlug(param.blog);
-    }
-  }, []);
-  useEffect(() => {
-    getAllBlogs();
-  }, [blogDetails]);
+  useEffect(()=>{
+    getAllBlogs()
+  },[blogDetails])
 
   const getBlogDetailBySlug = async (slug) => {
     let payload = {
@@ -47,10 +28,7 @@ const BlogDetails = () => {
     try {
       let response = await axios.post(`${url}/blog/get_blog_by_slug`, payload);
       if (response) {
-        // Parse the 'featuredImage' string into a JavaScript object
-        // const blogDetail = JSON.parse(response.data.featuredImage);
-        // setBlogImage(blogDetail);
-        navigate(`/blog/${slug}`);
+        navigate(`/blog/${slug}`)
         setBlogDetails(response.data);
         // setTitle(response.data.title);
       }
@@ -58,11 +36,8 @@ const BlogDetails = () => {
       console.log("error", error);
     }
   };
-  const stripHtmlTags = (content) => {
-    const doc = new DOMParser().parseFromString(content, "text/html");
-    return doc.body.textContent || "";
-  };
-  const getMonthAndDate = (created_AT) => {
+
+  const getMonthAndDate=(created_AT)=>{
     const dateString = created_AT;
     const date = new Date(dateString);
     const monthAbbreviations = [
@@ -102,7 +77,8 @@ const BlogDetails = () => {
     const day = date.getUTCDate();
     return day;
   };
-  console.log(blogDetails && blogDetails.title, "check current blog details");
+
+  const currentUrl = window.location.href;
 
   return (
     <>   
@@ -249,42 +225,9 @@ const BlogDetails = () => {
           </div>
         </div>
         <div>
-          {/* <FacebookShareButton
-            className="text-right"
-            url={`${url}/${blogDetails?.featuredImage?.path}`}
-            // quote={`${blogDetails && blogDetails.title} - ${title?.title}`}
-            // hashtag={`#Giksindia #${blogDetails && blogDetails.title}`}
-             quote="Your static quote here"
-             hashtag={`#${encodeURIComponent('Giksindia')}, #${encodeURIComponent('YourStaticTitle')}`}
-  
-          >
-           
-          </FacebookShareButton> */}
-  {/* <Helmet>
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={blogDetails && blogDetails.description} />
-        <meta property="og:url" content={`${url}/${blogDetails?.featuredImage?.path}`} />
-        <meta property="og:hashtag" content={"#Giksindia , #ReactShare"} />
-      </Helmet> */}
-
-      <FacebookShareButton
-        url='https://giksindia.com/'
-        // url={`${url}/${blogDetails?.featuredImage?.path}`}
-        title="This is my post"
-        // hashtag={`#${encodeURIComponent('Giksindia')}, #${encodeURIComponent('ReactShare')}`}
-        hashtag="#Giksindia"
-      >
-        <FacebookIcon size={30} round={true} style={{ marginLeft: "120px" }} />
-      </FacebookShareButton>
-
-    
-
-
-          {/* <FacebookIcon
-              size={30}
-              round={true}
-             
-            /> */}
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} target="_blank">
+              <FacebookIcon size={30} round={true} style={{marginLeft:"120px"}}/>
+            </a>
           <TwitterShareButton
             url={`${url}/${blogDetails?.featuredImage?.path}`}
             quote={blogDetails && blogDetails.title ? blogDetails.title : ""}

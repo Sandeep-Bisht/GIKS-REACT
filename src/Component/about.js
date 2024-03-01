@@ -736,7 +736,7 @@ const About = () => {
 
                                 </div>
                             </div>
-                            <div className="client-card">
+                            {/* <div className="client-card">
                                 <div className="row">
                                     <div className="col-lg-2 col-3">
 
@@ -762,7 +762,7 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="client-card">
                                 <div className="row">
                                     <div className="col-lg-10 col-9">

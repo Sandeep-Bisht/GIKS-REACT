@@ -908,7 +908,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-3">
+            <div className="col-lg-3 col-3 d-none">
               <div className="case-study-card">
                 <div className="upper-icons">
                   <div className="left">
@@ -946,7 +946,7 @@ const Homepage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="row">
+                  {/* <div className="row">
                     <div className="col-lg-12">
                       <div className="second-view-wrapper">
                         <div className="left">
@@ -978,7 +978,7 @@ const Homepage = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="lower-icons">
                   <div className="left">

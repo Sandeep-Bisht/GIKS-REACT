@@ -150,11 +150,11 @@ Harness the power of our expert Digital Consulting Services today.  Partner with
                 In the rapidly evolving digital landscape, understanding the customer experience has become paramount. With the advent of Digital Experience Platforms (DXP), businesses are equipped with powerful tools to engage and interact with their customers in unprecedented ways. These platforms seamlessly integrate various digital touchpoints, enabling organizations to create personalized and immersive experiences across multiple channels. By delving into the realm of customer experience in the digital era and harnessing the capabilities of DXP, businesses can gain invaluable insights, enhance customer satisfaction, and forge long-lasting relationships in the ever-connected world.
                 </p>
              </div>
-             <div className='col-lg-12'>
+             {/* <div className='col-lg-12'>
              <Link to="/jaimaica-study" target='_blank'  className="nav-link text-white text-uppercase fw-bold  mt-lg-4 mt-md-3 mt-sm-3 mt-2 d-inline-block download-brochure">
                 Case Study
              </Link>
-             </div>
+             </div> */}
            </div>
         </div>
     </section>

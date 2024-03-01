@@ -27,7 +27,7 @@ function NrcmsTopPage() {
                     <path d="M11.3984 16.0859L14.1953 13.2812H3.125V11.7188H14.1953L11.3984 8.91406L12.5 7.8125L17.1875 12.5L12.5 17.1875L11.3984 16.0859Z" fill="white" />
                   </svg>
                   <button className='nrcms-login-button btn text-white'>
-                    Login
+                    Demo
                   </button>
                 </div>
                 <div className='nrcms-signup-button ms-3'>
@@ -38,7 +38,7 @@ function NrcmsTopPage() {
                     Signup
                   </button>
                 </div>
-                <div className='ms-3'>
+                {/* <div className='ms-3'>
                   <img src="/images/qrImage.png" alt='' style={{ height: "60px" }} />
                 </div>
                 <div className='ms-3 nrcms-align-text'>
@@ -51,7 +51,7 @@ function NrcmsTopPage() {
                     <p className='nrcms-scan-text'>&</p>
                     <p className='nrcms-scan-text'>Android</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className='col-lg-6 nrcms-after-top text-center'>
@@ -66,11 +66,11 @@ function NrcmsTopPage() {
             <div class="col-md-12">
               <div class="counter-area-wrapper">
                 <div class="single-counter">
-                  <span class="count-no f2">10000+</span>
+                  <span class="count-no f2">15K+</span>
                   <span class="count-name f2">Total Quarters</span>
                 </div>
                 <div class="single-counter">
-                  <span class="count-no f2">18K+</span>
+                  <span class="count-no f2">58K+</span>
                   <span class="count-name f2">Resolved Complains</span>
                 </div>
                 <div class="single-counter">
@@ -197,83 +197,6 @@ function NrcmsTopPage() {
                       Telephone
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="counter-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="counter-area-wrapper">
-                <div class="single-counter">
-                  <span class="count-no f2">10000+</span>
-                  <span class="count-name f2">Total Quarters</span>
-                </div>
-                <div class="single-counter">
-                  <span class="count-no f2">18K+</span>
-                  <span class="count-name f2">Resolved Complains</span>
-                </div>
-                <div class="single-counter">
-                  <span class="count-no f2">5K+</span>
-                  <span class="count-name f2">Daily Visitors</span>
-                </div>
-                <div class="single-counter">
-                  <span class="count-no f2">0.02%</span>
-                  <span class="count-name f2">Pending Complaints</span>
-                </div>
-                <div class="single-counter border-0">
-                  <span class="count-no f2">1</span>
-                  <span class="count-name f2">Admin</span>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="row mt-lg-5 pt-lg-4">
-            <div class="col-lg-4">
-              <div class="choose-us-card">
-                <div class="choose-us-card-pic">
-                  <img src="images/1.svg" class="img-fluid" />
-                </div>
-                <div class="choose-us-card-content">
-                  <h2 class="choose-us-heading f2">Easy to implement
-                    use, and scale</h2>
-                  <p class="common-para">
-                    The developed system is easy to use via multiple platforms and utilities. The developed system will provide just in time reporting and adhoc reporting to the management to support in decision making.
-                  </p>
-                  <a href="#" class="choose-us-link">Get Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="choose-us-card">
-                <div class="choose-us-card-pic">
-                  <img src="images/2.svg" class="img-fluid" />
-                </div>
-                <div class="choose-us-card-content">
-                  <h2 class="choose-us-heading f2">
-                    Scalable to All</h2>
-                  <p class="common-para">
-                    The developed system is easy to use via multiple platforms and utilities. The developed system will provide just in time reporting and adhoc reporting to the management to support in decision making.
-                  </p>
-                  <a href="#" class="choose-us-link">Get Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="choose-us-card">
-                <div class="choose-us-card-pic">
-                  <img src="images/3.svg" class="img-fluid" />
-                </div>
-                <div class="choose-us-card-content">
-                  <h2 class="choose-us-heading f2">Work smarter, not harder</h2>
-                  <p class="common-para">
-                    The developed system is easy to use via multiple platforms and utilities. The developed system will provide just in time reporting and adhoc reporting to the management to support in decision making.
-                  </p>
-                  <a href="#" class="choose-us-link">Get Details</a>
                 </div>
               </div>
             </div>
@@ -408,6 +331,101 @@ function NrcmsTopPage() {
           </div>
         </div>
       </section>
+      <section className="nrcms-providing-support-area">
+        <div class="container">
+          <div class="row">
+            <div className='col-4'>
+              <hr className='nrcms-lines' />
+            </div>
+            <div className='col-4  text-center'>
+              <span className='nrcms-video-section'>Providing Support</span>
+            </div>
+            <div className='col-4'>
+              <hr className='nrcms-lines' />
+            </div>
+            <div className='col-lg-12 providing-support-wrapper'>
+              <div className="text-center" style={{ marginTop: "60px", position: "relative", right: "40px" }}>
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="855" height="198" viewBox="0 0 855 198" fill="none">
+                  <path d="M851 4H97C45.6375 4 4 45.6375 4 97V99V101C4 152.362 45.6375 194 97 194H851" stroke="#002044" stroke-width="7" stroke-linecap="square" />
+                </svg> */}
+                <div className='row d-flex providing-support-image'>
+                  <div className='col-lg-3'>
+                  </div>
+                  <div className='col-lg-3'>
+                    <img src="images/unsplash_TaOGbz_S-Qw.png" />
+                  </div>
+                  <div className='col-lg-3'>
+                    <img src="images/unsplash_WEDDt-u3q3o.png" />
+                  </div>
+                  <div className='col-lg-3'>
+                    <img src="images/unsplash_xdBNTAdqU3A.png" />
+                  </div>
+                </div>
+                <div className='col-lg-12'>
+                  <div className='row'>
+                    <div className='col-lg-3'>
+                      <div className='channel-support'>
+                        <p className='channel-support-para'>Channel Support</p>
+                      </div>
+                    </div>
+                    <div className='col-lg-3'>
+                      <div className='channel-support text-center'>
+                        <p className='channel-support-second-para'>Email</p>
+                      </div>
+                    </div>
+                    <div className='col-lg-3'>
+                      <div className='channel-support text-center'>
+                        <p className='channel-support-second-para'>Live chat</p>
+                      </div>
+                    </div>
+                    <div className='col-lg-3'>
+                      <div className='channel-support text-center'>
+                        <p className='channel-support-second-para'>Facebook Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='row d-flex providing-support-image2'>
+                  <div className='col-lg-3'></div>
+                  <div className='col-lg-3'>
+                    <img src="images/unsplash_6OF-Ly-5oJY.png" />
+                  </div>
+                  <div className='col-lg-3'>
+                    <img src="images/unsplash_bmmcfZqSjBU.png" />
+                  </div>
+                  <div className='col-lg-3'>
+                    <img src="images/unsplash_npxXWgQ33ZQ.png" />
+                  </div>
+                </div>
+                <div className='col-lg-12'>
+                  <div className='row'>
+                    <div className='col-lg-3'>
+                      <div className='channel-support-down'>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div className='col-lg-3'>
+                      <div className='channel-support-down text-center'>
+                        <p className='channel-support-second-para'>Email</p>
+                      </div>
+                    </div>
+                    <div className='col-lg-3'>
+                      <div className='channel-support-down text-center'>
+                        <p className='channel-support-second-para'>Live chat</p>
+                      </div>
+                    </div>
+                    <div className='col-lg-3'>
+                      <div className='channel-support-down text-center'>
+                        <p className='channel-support-second-para'>Facebook Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className='nrcms-testimonials'>
         <div className='container'>
           <div className='row nrcms-testimonials-row'>
@@ -466,65 +484,66 @@ function NrcmsTopPage() {
       </section>
       <section className="Nrcmsfooter">
         <div className="container">
-            <div className='row customer-experience-row'>
-            <div className='col-2 customer-experience-line'>
+          <div className='row customer-experience-row'>
+            <div className='col-1 customer-experience-line'>
               <hr className='nrcms-lines' />
             </div>
-            <div className='col-8  text-center'>
-              <span className='nrcms-video-section'>We are dedicated for best customer experience</span>
+            <div className='col-10  text-center'>
+              <span className='nrcms-video-section'>We are dedicated for want to impliment similar section</span>
             </div>
-            <div className='col-2 customer-experience-line'>
+            <div className='col-1 customer-experience-line'>
               <hr className='nrcms-lines' />
             </div>
           </div>
-            <div className="row">
-              <div className="col-md-6 my-4">
-                <img src="/images/mask group.jpg" className="img-fluid"></img>
-              </div>
-              <div className="col-md-6">
-                <div className="nrcms-Rectangle d-flex my-4">
-                  <div className="nrcms-straight">
-                    <img src="images/Rectangle 75.png"></img>
-                  </div>
-                  <div>
-                    <img src="images/Rectangle 73.png"></img>
-                  </div>
+          <div className="row">
+            <div className="col-md-6 my-4">
+              <img src="/images/mask group.jpg" className="img-fluid"></img>
+            </div>
+            <div className="col-md-6">
+              <div className="nrcms-Rectangle d-flex my-4">
+                <div className="nrcms-straight">
+                  <img src="images/Rectangle 75.png"></img>
                 </div>
+                <div>
+                  <img src="images/Rectangle 73.png"></img>
+                </div>
+              </div>
 
-                <div className="nrcms-two">
-                  <ul>
-                    <li className="d-flex my-4">
-                      <IoLocation className="nrcms-icon fs-2 " />
-                      <p className="common-paranrcms-last text-dark">
-                        Colony IOW office, Concerned Colony, Delhi Division, New
-                        Delhi
-                      </p>
-                    </li>
-                    <li className="d-flex my-4">
-                      <MdEmail className="nrcms-icon fs-2" />
-                      <p className="common-paranrcms-last text-dark">
-                        mailto:info@nrcms.in
-                      </p>
-                    </li>
-                    <li className="d-flex my-4">
-                      <FaPhoneAlt className="nrcms-icon fs-2" />
-                      <p className="common-paranrcms-last text-dark">
-                        +91-7500872014
-                      </p>
-                    </li>
-                  </ul>
+              <div className="nrcms-two">
+                <ul>
+                  <li className="d-flex my-4">
+                    <IoLocation className="nrcms-icon fs-2 " />
+                    <p className="common-paranrcms-last text-dark">
+                      GIKS INDIA PVT LTD,2nd floor,Sujok
+                      Building Mansarovar Colony, Ballupur
+                      Chowk, Dehradun, Uttarakhand 248001
+                    </p>
+                  </li>
+                  <li className="d-flex my-4">
+                    <MdEmail className="nrcms-icon fs-2" />
+                    <p className="common-paranrcms-last text-dark">
+                      mailto:info@giksindia.com
+                    </p>
+                  </li>
+                  <li className="d-flex my-4">
+                    <FaPhoneAlt className="nrcms-icon fs-2" />
+                    <p className="common-paranrcms-last text-dark">
+                      +91-7500872014
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div className="nrcms-Rectangle d-flex my-4">
+                <div className="nrcms-straight">
+                  <img src="images/Rectangle 75.png"></img>
                 </div>
-                <div className="nrcms-Rectangle d-flex my-4">
-                  <div className="nrcms-straight">
-                    <img src="images/Rectangle 75.png"></img>
-                  </div>
-                  <div>
-                    <img src="images/Rectangle 73.png"></img>
-                  </div>
+                <div>
+                  <img src="images/Rectangle 73.png"></img>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
       <section className="Nrcmsfootersecond">
         <div className="container">
@@ -554,8 +573,9 @@ function NrcmsTopPage() {
                     {" "}
                     <IoLocation className="nrcms-icon fs-2" />
                     <p>
-                      Colony IOW office, Concerned Colony, Delhi Division, New
-                      Delhi
+                      GIKS INDIA PVT LTD,2nd floor,Sujok
+                      Building Mansarovar Colony, Ballupur
+                      Chowk, Dehradun, Uttarakhand 248001
                     </p>
                   </li>
                   <li>
@@ -564,14 +584,15 @@ function NrcmsTopPage() {
                   </li>
                   <li>
                     {" "}
-                    <MdEmail className="nrcms-icon" /> mailto:info@nrcms.in
+                    <MdEmail className="nrcms-icon" /> mailto:info@giksindia.com
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-md-4 single-footer-widget">
               <div className="nrcms-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3503.2836248374633!2d77.253418!3d28.591267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3cb704096a9%3A0xc4a25f8cae278c41!2sI.O.W%20Office%20(ESTATE)!5e0!3m2!1sen!2sin!4v1701233919861!5m2!1sen!2sin" width="350" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3503.2836248374633!2d-74.0060!3d40.7128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3cb704096a9%3A0xc4a25f8cae278c41!2sI.O.W%20Office%20(ESTATE)!5e0!3m2!1sen!2sin!4v1701233919861!5m2!1sen!2sin" width="350" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
           <hr className="nrcms-line" />
